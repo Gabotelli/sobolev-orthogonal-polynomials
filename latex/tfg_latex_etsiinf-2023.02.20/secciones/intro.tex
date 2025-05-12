@@ -1,0 +1,190 @@
+\chapter{Introducción}
+\label{ch:intro}
+
+Los polinomios ortogonales constituyen un área fundamental de la matemática con numerosas aplicaciones. En este trabajo nos centramos en una generalización particular: los polinomios ortogonales de Sobolev. La característica distintiva de estos polinomios es que su ortogonalidad viene dada por productos internos que involucran derivadas, lo que resulta en propiedades notablemente diferentes a las de los polinomios ortogonales clásicos.
+
+\section{Definiciones}
+
+Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de Sobolev, es esencial establecer el marco teórico que usaremos a lo largo del trabajo. En este sentido, comenzaremos por definir los siguientes conceptos del álgebra lineal.
+
+\textbf{Definición 1.} \cite{Horn_Johnson_2012} Una matriz $A \in \mathcal{M}_{n}(\mathbb{C})$ se denomina \textit{hermitiana} si $A = A^*$, donde $A^*$ denota la matriz conjugada transpuesta de $A$. En el caso real, una matriz simétrica satisface $A = A^t$.
+
+Una matriz hermitiana $A$ se dice:
+\begin{enumerate}
+	\item \textit{Definida positiva} (HPD) si para todo vector no nulo $x \in \mathbb{C}^n$, se cumple $x^*Ax > 0$. Equivalentemente, si todos sus autovalores son estrictamente positivos.
+
+	\item \textit{Semidefinida positiva} (HPSD) si para todo vector $x \in \mathbb{C}^n$, se cumple $x^*Ax \geq 0$. Equivalentemente, si todos sus autovalores son no negativos.
+\end{enumerate}
+
+Para una matriz hermitiana, el producto escalar $\langle x, y \rangle_A = x^*Ay$ define un producto interno si y solo si $A$ es definida positiva.
+
+\textbf{Definición 2.} \cite{dunford1963linear} El \textit{radio espectral} de una matriz cuadrada $A \in \mathcal{M}_{n}(\mathbb{C})$, denotado por $\rho(A)$, se define como el máximo de los valores absolutos de sus autovalores:
+\begin{equation}
+	\rho(A) = \max\{|\lambda| : \lambda \text{ es autovalor de } A\}
+\end{equation}
+donde los autovalores son los escalares $\lambda \in \mathbb{C}$ tales que existe un vector no nulo $v \in \mathbb{C}^n$ que satisface $Av = \lambda v$.
+
+\textbf{Definición 3.} Sea $A \in \mathcal{M}_{n}(\mathbb{C})$ matriz cuadrada,  la matriz $\mathbf{A}^{*}\mathbf{A}$  ( $\mathbf{A}^{t}\mathbf{A}$ en el caso de matrices con entradas reales) es una matriz hermitiana y semidefinida positiva. Por lo tanto, tiene $n$ autovalores mayores o iguales que cero contados con su multiplicidad
+$$
+	0 \leq \lambda_{n,n}\leq \dots \leq \lambda_{2,n} \leq \lambda_{1,n}
+$$
+
+
+\noindent Los valores singulares de $\mathbf{A}$ son:
+$$
+	\sigma_{k,n}= \sqrt{\lambda_{k,n}}
+$$
+\noindent siendo:
+$$
+	0 \leq \sigma_{n,n} \leq \dots \sigma_{2,n} \leq \sigma_{1,n}
+$$
+
+\noindent Utilizando el criterio de Rayleigh y el Principio de min-max de  Courant-Fischer \cite{gallier2017spectral} se tiene que estos valores singulares tienen relación con la norma de aplicaciones lineales y continuas cuando consideramos la norma euclídea en los espacios $\mathbb{C}^n$. De hecho,
+\begin{enumerate}
+	\item $$
+		      \sigma_{1,n}^2 =
+		      \max \{ <\mathbf{A}^{t}\mathbf{A}x,x>: \Vert x \Vert =1 \}
+		      = \max \{\Vert \mathbf{A} x \Vert : \Vert x \Vert =1\}=
+		      \Vert \mathbf{A} \Vert^2
+	      $$
+	\item Principio min-max: el segundo mayor valor singular de una matriz es el mínimo de las normas de las restricciones de la aplicación $\mathbf{A}$ a los espacios de codimnesión $1$.
+	      $$
+		      \sigma_{2,n}^2 = \min_{V: cod(V)=1} \max \{\Vert \mathbf{A}x \Vert , x\in V, \Vert x \Vert =1\}= \min_{V: cod(V)=1} \Vert \mathbf{A}/V \Vert
+	      $$
+
+	      \noindent siendo $\mathbf{A}/V$ la restricción de la aplicación lineal $\mathbf{A}$ al subespacio $V$.
+
+\end{enumerate}
+
+\textbf{Definición 4.} Un \textit{espacio prehilbertiano} o \textit{espacio con producto interno} $(X, \langle \cdot, \cdot \rangle)$ es un espacio vectorial $X$ dotado de un producto interno $\langle \cdot, \cdot \rangle: X \times X \rightarrow \mathbb{C}$ (o $\mathbb{R}$), que satisface las siguientes propiedades para todo $x, y, z \in X$ y $\alpha \in \mathbb{C}$ (o $\mathbb{R}$):
+\begin{enumerate}
+	\item $\langle x, y \rangle = \overline{\langle y, x \rangle}$ (simetría hermitiana)
+	\item $\langle \alpha x + \beta y, z \rangle = \alpha \langle x, z \rangle + \beta \langle y, z \rangle$ (linealidad en la primera variable)
+	\item $\langle x, x \rangle \geq 0$ y $\langle x, x \rangle = 0$ si y solo si $x = 0$ (definida positiva)
+\end{enumerate}
+
+Un \textit{espacio de Hilbert} es un espacio prehilbertiano que además es completo respecto a la norma inducida por el producto interno $\|x\| = \sqrt{\langle x, x \rangle}$, es decir, toda sucesión de Cauchy converge a un elemento del espacio.
+
+Los productos interos que se trabajarán son de la forma:
+\begin{enumerate}
+	\item Continuo Real con Soportes Compactos
+	      \begin{equation}
+		      \langle p(t), q(t) \rangle = \int_{a}^{b} p(t) q(t) w_1(t) \, dt + \int_{c}^{d} p'(t) q'(t) w_2(t) \, dt
+	      \end{equation}
+	      donde $w_1(t)$ y $w_2(t)$ son pesos continuos, no negativos, integrables y distintos de la función $f \equiv 0$.
+	\item Discreto Real con Átomo
+	      \begin{equation}
+		      \langle p(t), q(t) \rangle = \int_{a}^{b} p(t) q(t) w_1(t) \, dt + p'(c) q'(c) \, dt
+	      \end{equation}
+	      con $w_1(t)$ peso continuo, no negativo, integrable y distinto de la función $f \equiv 0$.
+	\item Continuo Complejo en Circunferencias
+	      \begin{equation}
+		      \langle p(t), q(t) \rangle = \int_{0}^{2\pi} p(t) q(t) w_1(t) \, dt + \int_{0}^{2\pi} p'(t) q'(t) w_2(t) \, dt
+	      \end{equation}
+	      donde $w_1(t)$ y $w_2(t)$ son pesos continuos, no negativos, integrables y distintos de la función $f \equiv 0$.
+	\item Discreto Complejo en Circunferencia con Átomo
+	      \begin{equation}
+		      \langle p(t), q(t) \rangle = \int_{0}^{2\pi} p(t) q(t) w_1(t) \, dt + p'(c) q'(c) \, dt
+	      \end{equation}
+	      donde $w_1(t)$ peso continuo, no negativo, integrable y distinto de la función $f \equiv 0$.
+\end{enumerate}
+
+Desde una perspectiva matricial, que facilita el análisis algebraico, podemos considerar que una matriz infinita HPD $M$ induce en $\mathbb{P}[z]$ el siguiente producto:
+\begin{equation}
+	\langle p(z), q(z) \rangle_M = v M w^{*},
+\end{equation}
+donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, \ldots) \in c_{00} = \{(x_n)_{n=1}^{\infty} \in \mathbb{C}^{\mathbb{N}} : \exists n_0 \in \mathbb{N} \quad | \quad x_n=0 ,\forall n\geq n_0\}$ para polinomios $p(z) = \sum_{k=0}^n v_k z^k$ y $q(z) = \sum_{k=0}^m w_k z^k$. La matriz de momentos $M = (c_{ij})^{\infty}_{i,j=0}$ definida por: $c_{ij} = \langle z^i, z^j \rangle_{M}$ Esto induce una norma Hilbertiana denotada por: $\|p(z)\|^{2}_{M} = \langle p(z), p(z)\rangle_{M},\forall p(z) \in P[z]$
+
+\textbf{Definición 5.} Sea $\{\textbf{M}_0,\textbf{M}_1\}$ un conjunto de matrices HPSD, siendo $\textbf{M}_0$ HPD, el producto matricial de Sobolev inducido, denotado por $\langle \cdot, \cdot \rangle_{\textbf{M}_{\textbf{S}}}$, se define como:
+\begin{equation}
+	\langle p(t), q(t) \rangle_{\textbf{M}_{\textbf{S}}} = \langle p(t), q(t) \rangle_{\textbf{M}_0} + \langle p'(t), q'(t) \rangle_{\textbf{M}_1},\quad \forall p(t), q(t) \in \mathbb{P}[t]
+\end{equation}
+
+\textbf{Definición 6.} Sea $\mathcal{D}$ la aplicación $\mathcal{D}:\mathbb{P}[z] \mapsto \mathbb{P}[z]$ tal que: $D(p(z))=zp(z)$.
+Esta aplicación es lineal ya que
+$$\mathcal{D}(\alpha p(z) + \beta q(z))=z(\alpha p(z) + \beta q(z))=\alpha \mathcal{D}(p(z)) + \beta \mathcal{D}(q(z))$$
+
+\section{Resultados previos}
+
+En la literatura se ha abordado el problema de los ceros de polinomios ortogonales de Sobolev mayoritariamente desde la perspectiva de la localización general de los ceros.
+
+Primero vamos a probar que la acotacion del operador multiplicación en $\mathbb{P}[t]$ es condicion suficiente para la acotación de los ceros de los polinomios ortogonales respecto a un producto inducido por una matriz HPD.
+
+\textbf{Proposición 1.} Sea \textbf{M} una matriz HPD y $\{\varphi_n(z)\}_{n=0}^{\infty}$ la secuencia de polinomios ortonormales asociados al producto interno inducido por \textbf{M}. Si $\mathcal{D}$ está acotado en $\mathbb{P}[z]$, el conjunto de ceros de los polonomios ortonormales asociados a \textbf{M} está acotado. Además,
+$$Z=\{z\in\mathbb{C}: \exists n \in \mathbb{N},\varphi_n(z)=0\} \subset \{z\in\mathbb{C}:|z|<\|\mathcal{D}\|\}.$$
+\textit{Demostración.} Asumamos que para $z_0 \in Z$ existe un $n \in \mathbb{N}$ tal que $\varphi_n(z_0)=0$. Luego, $\varphi_n(z)=(z-z_0)P_{n-1}(z)$, $0 \neq P_{n-1} \in \mathbb{P}_{n-1}[z]$. Por lo tanto, $\varphi_n(z_0)=zP_{n-1}(z)-z_0P_{n-1}(z)$ y porque $\varphi_n(z)$ y $P_{n-1}(z)$ son ortogonales en \textit{M} se sigue que
+$$\|zP_{n-1}(z)\|^2=<\varphi_n(z)+z_0P_{n-1}(z),\varphi_n(z)+z_0P_{n-1}(z)> = \|\varphi_n(z)\|^2+|z_0|^2\|P_{n-1}(z)\|^2,$$
+por lo que,
+$$|z_0|^2\|P_{n-1}(z)\|^2=\|zP_{n-1}(z)\|^2- \|\varphi_n(z)\|^2<\|zP_{n-1}(z)\|^2=\|\mathcal{D}(P_{n-1})\|\leq\|\mathcal{D}\|\|P_{n-1}(z)\|.$$
+Como $\|P_{n-1}(z)\| \neq 0$, se concluye que
+$$|z_0|^2<\|\mathcal{D}\|,$$
+como se requería.
+\hfill$\square$
+
+Para acotar el operador multiplicación veamos que \todo{introducir cita} se ha demostrado que el conjunto de medidas $\{\mu_j\}_{j=0}^k$ en el plano complejo es secuencialmente dominado si $supp(\mu_j) \subset supp(\mu_{j-1})$ para todo $j = 1,\ldots,k.$ y
+$$d\mu_j = f_{j-1}d\mu_{j-1}, \quad f_{j-1} \in L_{\infty}(\mu_{j-1}),\quad j=1,\ldots,k.$$
+En nuestro caso sería,
+\begin{equation}
+	[c,d] \subset [a,b] \quad y \quad\exists c > 0, w_1(t)\leq c \cdot w_0(t)
+\end{equation}
+
+Para trabajar con matrices de momentos introduciremos la definición para esta noción y un teorema que nos dará la acotación.
+
+\textbf{Definición 7.} Sea $\{\textbf{M}_j\}_{j=0}^{k}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_j\}_{j=0}^{k}$ es secuencialmente dominada si existe una constante positiva $C$ tal que para cada valor de $j=1,\ldots,k$
+$$\textbf{M}_j \leq C \cdot \textbf{M}_{j-1}.$$
+
+\textbf{Teorema 1. (C. Escribano y R. Gonzalo)} Sea $\{\textbf{M}_j\}_{j=0}^{k}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para cada $j=0,\ldots,k$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
+$$\langle p(z),q(z) \rangle_{\textbf{M}_S}=\sum_{j=0}^{k} \langle p^{(j)},q^{(j)} \rangle_{\textbf{M}_j}.$$
+Entonces, el operador multiplicación está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$\todo{pongo la demostracion?}
+
+Volviendo a nuestro caso, tendriamos el conjunto $\{\textbf{M}_0,\textbf{M}_1\}$ de matrices HPD sequencialmente dominadas donde $\mathcal{D}_0$ y $\mathcal{D}_1$ están acotados en sus respectivos productos, y por lo tanto el producto de Sobolev asociado a la matriz $\textbf{M}_S$:
+$$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\langle p(t),q(t) \rangle_{\textbf{M}_0}+\langle p'(t),q'(t) \rangle_{\textbf{M}_1}.$$
+Está acotado en $(\mathbb{P}[t],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}$
+
+\noindent Puesto que $\dfrac{w_1(t)}{w_0(t)}$ es una función continua en $[a,b]$ consideremos
+$$
+	\alpha= \max \{ \dfrac{w_1(t)}{w_0(t)}, t\in [a,b]\}
+$$
+
+\noindent Veamos que $\mathcal{D}$ es acotado en este caso además:
+$$
+	\Vert \mathcal{D} \Vert \leq C= (R^{2}+2\alpha)^{1/2}.
+$$
+$$
+	\Vert \mathcal{D}(p(t))\Vert^{2} = \int_{a}^{b} t^2p^2(t)w_0(t)\; dt +  \int_{a}^{b} (tp'(t))^2w_1(t)\; dt=
+$$
+$$
+	\int_{a}^{b} t^2p^2(t)w_0(t)\; dt +  \int_{a}^{b} (p(t)+tp'(t))^2w_1(t)\; dt \leq
+$$
+\noindent utilizando que $(a+b)^2\leq 2(a^2+b^2)$ si $a,b\geq 0$ se tiene que:
+$$
+	\int_{a}^{b} t^2p^2(t)w_0(t)\; dt+2(\int_{a}^{b} p(t)^2w_1(t)\; dt +\int_{a}^{b} t^2p'(t)^2w_1(t)\; dt) \leq
+$$
+$$
+	R^{2} (\int_{a}^{b} p^2(t)w_0(t)\; dt +  \int_{a}^{b} p'(t)^2w_1(t)\; dt)+ 2\int_{a}^{b} p(t)^2w_1(t)\; dt \leq
+$$
+$$
+	R^{2} \Vert p(t)\Vert^{2} + 2\alpha \int_{a}^{b} p(t)^2w_0(t)\; dt \leq (R^{2}+2\alpha)\Vert p(t) \Vert^{2}
+$$
+
+\noindent Por ejemplo, si $[a,b]=[-1,1]$ y $\alpha =1$ quedar\'{\i}a $C=\sqrt{1+2}=\sqrt{3}$. En los ejemplos se analizarán los módulos de los valores (autovalores, valores singulares, ceros), aunque no se mencione explícitamente.
+
+Un resultado fundamental establece que los ceros de polinomios ortogonales de Sobolev están contenidos en un disco centrado en cero cuyo radio es la norma del operador $\mathcal{D}$. Sin embargo, existen casos donde $\|\mathcal{D}\| = \infty$ pero los ceros siguen acotados.
+
+G. López y H. Pijeira introdujeron el concepto de medidas secuencialmente dominadas $\mu_k = w_k \, d\mu_{k-1}$ con $w_k \in L^{\infty}(\mu_{k-1})$ como condición suficiente para garantizar la acotación de $\mathcal{D}$ y, consecuentemente, de los ceros de los polinomios Sobolev.
+
+Por su parte, C. Escribano y R. Gonzalo demostraron un resultado análogo para matrices HPD secuencialmente dominadas (MSD).
+
+Para casos con soportes disjuntos, M. Alfaro y M. Luisa Rezola propusieron que los ceros están contenidos en el disco centrado en el punto de co($[a,b]$) más alejado de co($[c,d]$) con radio igual al diámetro de co($[a,b]$) $\cup$ co($[c,d]$).
+
+\section{Objetivos}
+
+Como se ha expuesto anteriormente, los trabajos previos se centran en la forma del conjunto de ceros, acotación usando la norma del operador multiplicación $\mathcal{D}$ y propiedades de los productos internos. Sin embargo, este trabajo se enfocará en el comportamiento del cero más grande, veamos la razón de esta elección.
+
+\textbf{Proposición 2.} Sea $Z$ el conjunto de ceros de los polinomios ortogonales asociados al producto de Sobolev y $Z_n$ el conjunto de ceros de los polinomios asociados al producto de Sobolev de grado menor o igual que $n$. $Z$ es acotado, si y solo si el $\lim_{n \to \infty} \max\{Z_n\} = L < \infty$.
+
+\textit{Demostración.} Si $Z$ es acotado, entonces $\exists L < \infty$ tal que $|z| \leq L$ para todo $z \in Z$. Por lo tanto, $\max\{Z_n\} \leq L$ para todo $n$, y por lo tanto $\lim_{n \to \infty} \max\{Z_n\} = L < \infty$.
+Si $\lim_{n \to \infty} \max\{Z_n\} = L < \infty$, entonces $\exists n_0$ tal que para todo $n \geq n_0$, $\max\{Z_n\} \leq L$. Por lo tanto, $|z| \leq L$ para todo $z \in Z$, y así $Z$ es acotado.
+
+\hfill$\square$
+
