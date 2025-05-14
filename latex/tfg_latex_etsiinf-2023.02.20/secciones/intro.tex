@@ -121,7 +121,7 @@ $$|z_0|^2<\|\mathcal{D}\|,$$
 como se requería.
 \hfill$\square$
 
-Para acotar el operador multiplicación veamos que \todo{introducir cita} se ha demostrado que el conjunto de medidas $\{\mu_j\}_{j=0}^k$ en el plano complejo es secuencialmente dominado si $supp(\mu_j) \subset supp(\mu_{j-1})$ para todo $j = 1,\ldots,k.$ y
+Para acotar el operador multiplicación veamos que se ha demostrado que el conjunto de medidas $\{\mu_j\}_{j=0}^k$ en el plano complejo es secuencialmente dominado si $supp(\mu_j) \subset supp(\mu_{j-1})$ para todo $j = 1,\ldots,k.$ y
 $$d\mu_j = f_{j-1}d\mu_{j-1}, \quad f_{j-1} \in L_{\infty}(\mu_{j-1}),\quad j=1,\ldots,k.$$
 En nuestro caso sería,
 \begin{equation}
@@ -135,7 +135,7 @@ $$\textbf{M}_j \leq C \cdot \textbf{M}_{j-1}.$$
 
 \textbf{Teorema 1. (C. Escribano y R. Gonzalo)} Sea $\{\textbf{M}_j\}_{j=0}^{k}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para cada $j=0,\ldots,k$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
 $$\langle p(z),q(z) \rangle_{\textbf{M}_S}=\sum_{j=0}^{k} \langle p^{(j)},q^{(j)} \rangle_{\textbf{M}_j}.$$
-Entonces, el operador multiplicación está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$\todo{pongo la demostracion?}
+Entonces, el operador multiplicación está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$
 
 Volviendo a nuestro caso, tendriamos el conjunto $\{\textbf{M}_0,\textbf{M}_1\}$ de matrices HPD sequencialmente dominadas donde $\mathcal{D}_0$ y $\mathcal{D}_1$ están acotados en sus respectivos productos, y por lo tanto el producto de Sobolev asociado a la matriz $\textbf{M}_S$:
 $$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\langle p(t),q(t) \rangle_{\textbf{M}_0}+\langle p'(t),q'(t) \rangle_{\textbf{M}_1}.$$
@@ -171,11 +171,18 @@ $$
 
 Un resultado fundamental establece que los ceros de polinomios ortogonales de Sobolev están contenidos en un disco centrado en cero cuyo radio es la norma del operador $\mathcal{D}$. Sin embargo, existen casos donde $\|\mathcal{D}\| = \infty$ pero los ceros siguen acotados.
 
-G. López y H. Pijeira introdujeron el concepto de medidas secuencialmente dominadas $\mu_k = w_k \, d\mu_{k-1}$ con $w_k \in L^{\infty}(\mu_{k-1})$ como condición suficiente para garantizar la acotación de $\mathcal{D}$ y, consecuentemente, de los ceros de los polinomios Sobolev.
+G. López y H. Pijeira \cite{lagomasino1999zero} introdujeron el concepto de medidas secuencialmente dominadas $\mu_k = w_k \, d\mu_{k-1}$ con $w_k \in L^{\infty}(\mu_{k-1})$ como condición suficiente para garantizar la acotación de $\mathcal{D}$ y, consecuentemente, de los ceros de los polinomios Sobolev.
 
 Por su parte, C. Escribano y R. Gonzalo demostraron un resultado análogo para matrices HPD secuencialmente dominadas (MSD).
 
 Para casos con soportes disjuntos, M. Alfaro y M. Luisa Rezola propusieron que los ceros están contenidos en el disco centrado en el punto de co($[a,b]$) más alejado de co($[c,d]$) con radio igual al diámetro de co($[a,b]$) $\cup$ co($[c,d]$).
+
+Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente dominados. En este caso veremos el resultado de M. Alfaro y M. Luisa Rezola.
+
+\textbf{Teorema 2.} \cite{garcia2001ceros} Si co($S_{\mu_0}$) $\cap$ co($S_{\mu_1}$) = $\emptyset$, entonces los ceros de $Q'_n$ son simples
+y están contenidos en el interior de co($S_{\mu_0}$) $\cup$ co($S_{\mu_1}$), y los ceros de $Q_n$ están
+contenidos en el disco centrado en el punto de co($S_{\mu_1}$) más alejado de co($S_{\mu_0}$) y
+radio el diámetro de co($S_{\mu_0}$) $\cup$ co($S_{\mu_1}$).
 
 \section{Objetivos}
 
