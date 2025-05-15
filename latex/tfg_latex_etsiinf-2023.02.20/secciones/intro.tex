@@ -113,9 +113,10 @@ Primero vamos a probar que la acotacion del operador multiplicación en $\mathbb
 \textbf{Proposición 1.} Sea \textbf{M} una matriz HPD y $\{\varphi_n(z)\}_{n=0}^{\infty}$ la secuencia de polinomios ortonormales asociados al producto interno inducido por \textbf{M}. Si $\mathcal{D}$ está acotado en $\mathbb{P}[z]$, el conjunto de ceros de los polonomios ortonormales asociados a \textbf{M} está acotado. Además,
 $$Z=\{z\in\mathbb{C}: \exists n \in \mathbb{N},\varphi_n(z)=0\} \subset \{z\in\mathbb{C}:|z|<\|\mathcal{D}\|\}.$$
 \textit{Demostración.} Asumamos que para $z_0 \in Z$ existe un $n \in \mathbb{N}$ tal que $\varphi_n(z_0)=0$. Luego, $\varphi_n(z)=(z-z_0)P_{n-1}(z)$, $0 \neq P_{n-1} \in \mathbb{P}_{n-1}[z]$. Por lo tanto, $\varphi_n(z_0)=zP_{n-1}(z)-z_0P_{n-1}(z)$ y porque $\varphi_n(z)$ y $P_{n-1}(z)$ son ortogonales en \textit{M} se sigue que
-$$\|zP_{n-1}(z)\|^2=<\varphi_n(z)+z_0P_{n-1}(z),\varphi_n(z)+z_0P_{n-1}(z)> = \|\varphi_n(z)\|^2+|z_0|^2\|P_{n-1}(z)\|^2,$$
+$$\|zP_{n-1}(z)\|^2=\langle\varphi_n(z)+z_0P_{n-1}(z),\varphi_n(z)+z_0P_{n-1}(z)\rangle = \|\varphi_n(z)\|^2+|z_0|^2\|P_{n-1}(z)\|^2,$$
 por lo que,
-$$|z_0|^2\|P_{n-1}(z)\|^2=\|zP_{n-1}(z)\|^2- \|\varphi_n(z)\|^2<\|zP_{n-1}(z)\|^2=\|\mathcal{D}(P_{n-1})\|\leq\|\mathcal{D}\|\|P_{n-1}(z)\|.$$
+$$|z_0|^2\|P_{n-1}(z)\|^2=\|zP_{n-1}(z)\|^2- \|\varphi_n(z)\|^2<\|zP_{n-1}(z)\|^2=$$
+$$\|zP_{n-1}(z)\|^2=\|\mathcal{D}(P_{n-1})\|^2\leq\|\mathcal{D}\|^2\|P_{n-1}(z)\|^2.$$
 Como $\|P_{n-1}(z)\| \neq 0$, se concluye que
 $$|z_0|^2<\|\mathcal{D}\|,$$
 como se requería.

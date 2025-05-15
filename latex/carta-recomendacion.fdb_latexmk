@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746643997.45967 "c:/Users/Usuario/Documents/tfg/latex/carta-recomendacion.tex" "carta-recomendacion.pdf" "carta-recomendacion" 1746643997.98932 0
+["pdflatex"] 1747321338.22217 "c:/Users/Usuario/Documents/tfg-git/latex/carta-recomendacion.tex" "carta-recomendacion.pdf" "carta-recomendacion" 1747321339.05052 0
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741717721 81861 29ffef0802181d09b8910355f0664874 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733660841 11987865 41a819896cd8cfc1d1e5d7ae9cb4a5df ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -26,8 +26,8 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty" 1615976160 4288 94714aa7f535440f33181fec52a31963 ""
-  "c:/Users/Usuario/Documents/tfg/latex/carta-recomendacion.tex" 1746643997 2839 889400e87bffa4ab3d14d88765b27a60 ""
-  "carta-recomendacion.aux" 1746643997 232 73e76a51b3ab6978a073af3f7982faa6 "pdflatex"
+  "c:/Users/Usuario/Documents/tfg-git/latex/carta-recomendacion.tex" 1746643997 2839 889400e87bffa4ab3d14d88765b27a60 ""
+  "carta-recomendacion.aux" 1747321338 232 73e76a51b3ab6978a073af3f7982faa6 "pdflatex"
   "carta-recomendacion.tex" 1746643997 2839 889400e87bffa4ab3d14d88765b27a60 ""
   (generated)
   "carta-recomendacion.aux"
