@@ -25,6 +25,29 @@
 
 \usepackage{multirow}
 
+%% Definiciones de entornos para teoremas, lemas, etc.
+\usepackage{amsthm}
+
+% Crear un estilo personalizado con más espacio
+\newtheoremstyle{espaciado}
+{1em}   % Espacio por encima
+{1em}   % Espacio por debajo
+{\itshape}  % Fuente del cuerpo en itálica
+{}      % Sangría
+{\bfseries} % Fuente del encabezado
+{.}     % Puntuación después del encabezado
+{.5em}  % Espacio después del encabezado
+{}      % Especificación del encabezado (vacío significa normal)
+
+% Aplicar el estilo personalizado
+\theoremstyle{espaciado}
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{definition}[theorem]{Definición}
+
 \definecolor{commentcolor}{rgb}{.804,0,0}
 \definecolor{keywordcolor}{rgb}{.608,.19,1}
 \definecolor{stringcolor}{rgb}{0,.545,0}
