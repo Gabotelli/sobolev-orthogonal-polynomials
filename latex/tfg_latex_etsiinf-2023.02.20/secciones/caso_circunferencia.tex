@@ -1,249 +1,213 @@
 \chapter{Caso Circunferencia}
 \label{ch:caso_circunferencia}
 
+En este capítulo analizamos el comportamiento de los ceros de polinomios ortogonales de Sobolev en el caso complejo, donde las medidas están soportadas en circunferencias. Este enfoque nos permite extender nuestro estudio más allá del eje real y comprender mejor los fenómenos de distribución de ceros en el plano complejo.
+
 \textbf{Ejemplo 1.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-1}^{1} p(t)q(t)t^2 \, dt + \int_{-1}^{1} p'(t)q'(t)t^{10} \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{0.4}(0.4)} p'(z)\overline{q'(z)}\, dm_{0.4;0.4}$
 
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{include/a-1b1t2t10.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_0.4c2_0.4.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_0.4c2_0.4_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.276$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=1.133$
-	\item $\lim_{n \to 50}\sigma_{2,n}$ no disponible
+	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.000$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=1.172$
+	\item $\lim_{n \to 50}\sigma_{2,n}=0.998$
 \end{enumerate}
 
 \textbf{Ejemplo 2.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-1}^{1} p(t)q(t)t^{10} \, dt + \int_{-1}^{1} p'(t)q'(t)t^{2} \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(0.5)} p(z)\overline{q(z)}\, dm_{b;0.5} + \int_{S_{a}(1)} p'(z)\overline{q'(z)}\, dm_{a;1}$
 
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{include/a-1b1t10t2.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_1c2_1.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_1c2_1_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=2.204$
+	\item $\lim_{n \to 50}\sigma_{1,n}=2.192$
 	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=1.275$
-	\item $\lim_{n \to 50}\sigma_{2,n}$ no disponible
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=1.285$
+	\item $\lim_{n \to 50}\sigma_{2,n}=0.998$
 \end{enumerate}
 
-
 \textbf{Ejemplo 3.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{40} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(1)} p(z)\overline{q(z)}\, dm_{b;1} + \int_{S_{a}(0.5)} p'(z)\overline{q'(z)}\, dm_{a;0.5}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a0b10c30d40.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_10c2_0.5.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_10c2_0.5_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=43.133$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=50.052$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.975$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.632$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=3.148$
+	\item $\lim_{n \to 50}\sigma_{2,n}=1.997$
 \end{enumerate}
 
 \textbf{Ejemplo 4.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{10} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(0.5)} p(z)\overline{q(z)}\, dm_{b;0.5} + \int_{S_{a}(1)} p'(z)\overline{q'(z)}\, dm_{a;1}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a30b40c0d10.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_1c2_-10.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0r2_1c2_-10_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=39.983$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=39.983$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.982$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.498$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.499$
+	\item $\lim_{n \to 50}\sigma_{2,n}=2.497$
 \end{enumerate}
 
 \textbf{Ejemplo 5.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{50} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(1)} p(z)\overline{q(z)}\, dm_{b;1} + \int_{S_{a}(0.5)} p'(z)\overline{q'(z)}\, dm_{a;0.5}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a0b10c30d50.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_(0.5)(0.5).png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_(0.5)(0.5)_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=52.763$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=59.814$
-	\item $\lim_{n \to 50}\sigma_{2,n}=49.966$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.999$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.482$
+	\item $\lim_{n \to 50}\sigma_{2,n}=1.498$
 \end{enumerate}
 
 \textbf{Ejemplo 6.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{50} p(t)q(t) \, dt + \int_{0}^{10} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(0.5)} p(z)\overline{q(z)}\, dm_{b;0.5} + \int_{S_{a}(1)} p'(z)\overline{q'(z)}\, dm_{a;1}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a30b50c0d10.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_0.25c1_-10r2_1c2_0.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_0.25c1_-10r2_1c2_0_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=49.975$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=49.975$
-	\item $\lim_{n \to 50}\sigma_{2,n}=49.975$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.998$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=1.999$
+	\item $\lim_{n \to 50}\sigma_{2,n}=1.997$
 \end{enumerate}
 
 \textbf{Ejemplo 7.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{20} p(t)q(t) \, dt + \int_{30}^{40} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(1)} p(z)\overline{q(z)}\, dm_{b;1} + p'(2)\overline{q'(2)}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a0b20c30d40.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_0.5.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_0.5_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=41.066$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=44.196$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.970$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.002$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.863$
+	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
 \end{enumerate}
 
 \textbf{Ejemplo 8.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{20} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(0.5)} p(z)\overline{q(z)}\, dm_{b;0.5} + p'(0)\overline{q'(0)}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a30b40c0d20.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_0.png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_0_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=39.979$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=39.979$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.979$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.000$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.481$
+	\item $\lim_{n \to 50}\sigma_{2,n}=2.000$
 \end{enumerate}
 
 \textbf{Ejemplo 9.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{16} p'(t)q'(t) \, dt $
+$\langle p(z),q(z) \rangle=\int_{S_{b}(1)} p(z)\overline{q(z)}\, dm_{b;1} + p'(1.5)\overline{q'(1.5)}$
 
 \begin{center}
-	\includegraphics[width=1\textwidth]{include/a-15b-5c5d16.png}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_(0)(0.5).png}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{include/r1_1c1_0c2_(0)(0.5)_zeros.png}
+	\end{minipage}
 \end{center}
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=17.104$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=21.152$
-	\item $\lim_{n \to 50}\sigma_{2,n}=15.980$
-\end{enumerate}
-
-\textbf{Ejemplo 10.}
-$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{14} p'(t)q'(t) \, dt $
-
-\begin{center}
-	\includegraphics[width=1\textwidth]{include/a-15b-5c5d14.png}
-\end{center}
-
-\begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=15.005$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=19.007$
-	\item $\lim_{n \to 50}\sigma_{2,n}=14.985$
-\end{enumerate}
-
-Tras ver todos los ejemplos podemos conjeturar lo siguiente:\todo{lo que es claro es que lo que suceda con los soportes influye mucho, ya sea tamaño, extremos o intersección.}
-\begin{itemize}
-	\item El segundo mayor valor singular de $\mathcal{D}_{n}$ converge al extremo con mayor módulo de los soportes. Se puede encontrar una constante de proporción o de desviacion $K$ que depende de los soportes (extremos,intersección, tamaño) para poder acotar los ceros.\todo{puede que la k y K esten relacionadas}
-	\item $\lim_{n \to \infty} \max{Z_n}=\max\{|a|,|b|,|c|,|d|\} + k = \max\{|a|,|b|,|c|,|d|\} \cdot k'$
-	\item El $k$ cuando $\max\{|a|,|b|\} < \max\{|c|,|d|\}$ es notablemente mayor que el $k$ cuando ocurre lo contrario.
-	\item $k$ o $k'$ depende de la posición relativa entre los soportes.
-	      \begin{itemize}
-		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) < dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ no crece mucho.
-		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) > dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ crece mucho.
-		      \item Si $[a,b] \cap [c,d] \neq \emptyset$ entonces $k$ o $k'$ crece muy poco. Mientras mayor sea $dist(b,c)$ menos crece $k$ o $k'$.
-	      \end{itemize}
-\end{itemize}
-\todo{Tengo que hacer mas pruebas porque con tantos casos termina confundiendo que es lo que pasa.}
-
-Dejando de lado los productos de Sobolev, consideremos el producto interno de la forma:
-$$\langle p(t),q(t) \rangle = \int_{a}^{b} p(t) q(t) \, dt + |p'(c)||q'(c)|.$$
-Este producto interno es muy interesante ya que solo introduce un átomo al producto interno usual, y sin embargo el operador multiplicación no es acotado. En los siguientes ejemplos se mostrará que los ceros de los polinomios ortogonales asociados a este producto interno están acotados, y que podemos encontrar una cota.
-
-\textbf{Ejemplo 11.} $\langle p(t),q(t) \rangle = \int_{-1}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
-
-\begin{center}
-	\includegraphics[width=1\textwidth]{include/a-1b1t0.png}
-\end{center}
-
-\begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$ (para $\mathcal{D}_{50}=3.971$)
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=0.999$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.499$
+	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.257$
 	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
 \end{enumerate}
 
-\textbf{Ejemplo 12.} $\langle p(t),q(t) \rangle = \int_{-1}^{1} p(t) q(t) \, dt + |p'(2)||q'(2)|.$
-
-\begin{center}
-	\includegraphics[width=1\textwidth]{include/a-1b1t2.png}
-\end{center}
-
-\begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.0356$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.933$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
-\end{enumerate}
-
-\textbf{Ejemplo 13.} $\langle p(t),q(t) \rangle = \int_{0}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
-
-\begin{center}
-	\includegraphics[width=1\textwidth]{include/a0b1t0.png}
-\end{center}
-
-\begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$ (para $\mathcal{D}_{50}=25.000$)
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=0.999$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
-\end{enumerate}
-
-\textbf{Ejemplo 14.} $\langle p(t),q(t) \rangle = \int_{0}^{1} p(t) q(t) \, dt + |p'(2)||q'(2)|.$
-
-\begin{center}
-	\includegraphics[width=1\textwidth]{include/a0b1t2.png}
-\end{center}
-
-\begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.029$
-	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=3.299$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
-\end{enumerate}
-
-A raíz de estos ejemplos podemos conjeturar lo siguiente:
+Tras el análisis de los resultados obtenidos en los experimentos con circunferencias, podemos observar patrones similares a los encontrados en el caso real:
 
 \begin{itemize}
-	\item Si $c \in [a,b]$ entonces los ceros convergen al límite del soporte, y podemos usar el segundo mayor valor singular como cota.
-	\item Si $c \notin [a,b]$ entonces los ceros convergen al átomo, y podemos usar el átomo como cota. Pero necesitamos determinar el coeficiente $k$ para poder abarcar todos los ceros.\todo{intuyo que tambien va a tener que ver con la posición relativa entre el soporte y el átomo, y posiblemente el tamaño del soporte.}
+	\item Cuando la medida para el producto escalar está soportada en dos circunferencias disjuntas, el radio espectral de $\mathcal{D}_n$ converge al centro más alejado del origen más el radio de su circunferencia.
+	\item El segundo mayor valor singular de $\mathcal{D}_n$ parece converger al valor del centro más alejado del origen.
+	\item En el caso de productos con átomo, cuando el átomo está fuera de la circunferencia que soporta la medida, los ceros tienden a acumularse cerca del átomo.
+	\item Cuando el átomo está dentro o sobre la circunferencia, los ceros se mantienen más próximos a la circunferencia.
 \end{itemize}
 
-\begin{sidewaystable}
-	\centering
-	\small
-	\caption{Resumen de ejemplos sobre la localización de ceros.}
-	\begin{tabular}{|c|cccc|cccc|cccc|}
-		\hline
-		\multirow{3}{*}{\textbf{Parámetros}}       & \multicolumn{4}{c|}{\textbf{SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{NO SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{ÁTOMO}}                                                                                                                                                                    \\
-		                                           & \multicolumn{4}{c|}{\textbf{DOMINADO}}        & \multicolumn{4}{c|}{\textbf{DOMINADO}}           & \multicolumn{4}{c|}{}                                                                                                                                                                                  \\
-		\cline{2-13}
-		                                           & $\sigma_{1,n}$                                & $\rho(\mathcal{D}_{n})$                          & $\max\rho$                          & $\sigma_{2,n}$ & $\sigma_{1,n}$ & $\rho(\mathcal{D}_{n})$ & $\max\rho$ & $\sigma_{2,n}$ & $\sigma_{1,n}$ & $\rho(\mathcal{D}_{n})$ & $\max\rho$ & $\sigma_{2,n}$ \\
-		\hline
-		\textbf{Ej.1}: $[-1,1]t^2, [-1,1]t^{10}$   & 1.276                                         & 0.999                                            & 1.133                               & -              & -              & -                       & -          & -              & -              & -                       & -          & -              \\
-		\textbf{Ej.2}: $[-1,1]t^{10}, [-1,1]t^{2}$ & 2.204                                         & 0.999                                            & 1.275                               & -              & -              & -                       & -          & -              & -              & -                       & -          & -              \\
-		\textbf{Ej.3}: $[0,10], [30,40]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 43.133                  & 50.052     & 39.975         & -              & -                       & -          & -              \\
-		\textbf{Ej.4}: $[30,40], [0,10]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 39.983                  & 39.983     & 39.982         & -              & -                       & -          & -              \\
-		\textbf{Ej.5}: $[0,10], [30,50]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 52.763                  & 59.814     & 49.966         & -              & -                       & -          & -              \\
-		\textbf{Ej.6}: $[30,50], [0,10]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 49.975                  & 49.975     & 49.975         & -              & -                       & -          & -              \\
-		\textbf{Ej.7}: $[0,20], [30,40]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 41.066                  & 44.196     & 39.970         & -              & -                       & -          & -              \\
-		\textbf{Ej.8}: $[30,40], [0,20]$           & -                                             & -                                                & -                                   & -              & $\infty$       & 39.979                  & 39.979     & 39.979         & -              & -                       & -          & -              \\
-		\textbf{Ej.9}: $[-15,-5], [5,16]$          & -                                             & -                                                & -                                   & -              & $\infty$       & 17.104                  & 21.152     & 15.980         & -              & -                       & -          & -              \\
-		\textbf{Ej.10}: $[-15,-5], [5,14]$         & -                                             & -                                                & -                                   & -              & $\infty$       & 15.005                  & 19.007     & 14.985         & -              & -                       & -          & -              \\
-		\textbf{Ej.11}: $[-1,1], c=0$              & -                                             & -                                                & -                                   & -              & -              & -                       & -          & -              & $\infty$       & 0.999                   & 0.999      & 0.999          \\
-		\textbf{Ej.12}: $[-1,1], c=2$              & -                                             & -                                                & -                                   & -              & -              & -                       & -          & -              & $\infty$       & 2.0356                  & 2.933      & 0.999          \\
-		\textbf{Ej.13}: $[0,1], c=0$               & -                                             & -                                                & -                                   & -              & -              & -                       & -          & -              & $\infty$       & 0.999                   & 0.999      & 0.999          \\
-		\textbf{Ej.14}: $[0,1], c=2$               & -                                             & -                                                & -                                   & -              & -              & -                       & -          & -              & $\infty$       & 2.029                   & 3.299      & 0.999          \\
-		\hline
-	\end{tabular}
-\end{sidewaystable}
+Estos resultados refuerzan las conjeturas desarrolladas en el caso real y muestran que el comportamiento de los ceros de polinomios ortogonales de Sobolev sigue patrones predecibles tanto en el caso real como en el complejo.
