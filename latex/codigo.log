@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  11 MAR 2025 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  26 MAY 2025 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Documents/tfg/codigo.tex
-(c:/Users/Usuario/Documents/tfg/codigo.tex
+**c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex
+(c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -489,6 +489,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 16.
+ (codigo.out) (codigo.out)
 \@outlinefile=\write3
 \openout3 = `codigo.out'.
 
@@ -508,7 +509,7 @@ File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -520,7 +521,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -532,7 +533,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing } inserted.
 <inserted text> 
                 }
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -543,7 +544,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -555,7 +556,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Extra }, or forgotten $.
 <recently read> }
                  
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -566,7 +567,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -578,7 +579,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -590,7 +591,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing } inserted.
 <inserted text> 
                 }
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -601,7 +602,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -613,7 +614,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:184: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:184: Extra }, or forgotten $.
 <recently read> }
                  
 l.184 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -624,7 +625,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:196: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:196: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.196 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -636,7 +637,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:196: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:196: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.196 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -735,7 +736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--207
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 [2]
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -747,7 +748,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -759,7 +760,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing } inserted.
 <inserted text> 
                 }
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -770,7 +771,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -782,7 +783,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Extra }, or forgotten $.
 <recently read> }
                  
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -793,7 +794,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -805,7 +806,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -817,7 +818,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing } inserted.
 <inserted text> 
                 }
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -828,7 +829,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -840,7 +841,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:350: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:350: Extra }, or forgotten $.
 <recently read> }
                  
 l.350 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -851,7 +852,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:362: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:362: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.362 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -863,7 +864,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:362: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:362: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.362 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -960,7 +961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--373
 [3]
 
 [4]
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -972,7 +973,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -984,7 +985,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing } inserted.
 <inserted text> 
                 }
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -995,7 +996,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1007,7 +1008,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Extra }, or forgotten $.
 <recently read> }
                  
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1018,7 +1019,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1030,7 +1031,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1042,7 +1043,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing } inserted.
 <inserted text> 
                 }
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1053,7 +1054,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1065,7 +1066,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:518: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:518: Extra }, or forgotten $.
 <recently read> }
                  
 l.518 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1076,7 +1077,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:532: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:532: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.532 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -1088,7 +1089,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:532: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:532: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.532 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -1195,7 +1196,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--539
 [5]
 
 [6]
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1207,7 +1208,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1219,7 +1220,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing } inserted.
 <inserted text> 
                 }
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1230,7 +1231,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1242,7 +1243,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Extra }, or forgotten $.
 <recently read> }
                  
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1253,7 +1254,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1265,7 +1266,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing delimiter (. inserted).
 <to be read again> 
                    {
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1277,7 +1278,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing } inserted.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing } inserted.
 <inserted text> 
                 }
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1288,7 +1289,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Missing delimiter (. inserted).
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Missing delimiter (. inserted).
 <to be read again> 
                    }
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1300,7 +1301,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:686: Extra }, or forgotten $.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:686: Extra }, or forgotten $.
 <recently read> }
                  
 l.686 ...sh \left{\mathrm{n}\backslash \right}$''}
@@ -1311,7 +1312,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:700: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:700: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.700 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -1323,7 +1324,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/Usuario/Documents/tfg/codigo.tex:700: Misplaced alignment tab character &.
+c:/Users/Usuario/Documents/tfg-git/latex/codigo.tex:700: Misplaced alignment tab character &.
 <argument> &
             bsol;\_
 l.700 ...eft(\mathrm{t}\right)\textrm{\ en 3D}$''}
@@ -1436,24 +1437,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--707
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-Package rerunfilecheck Warning: File `codigo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `codigo.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `codigo.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15157 strings out of 473682
- 220623 string characters out of 5718264
- 663833 words of memory out of 5000000
- 38075 multiletter control sequences out of 15000+600000
+ 15162 strings out of 473682
+ 220848 string characters out of 5718264
+ 663891 words of memory out of 5000000
+ 38076 multiletter control sequences out of 15000+600000
  561147 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,86p,535b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,86p,545b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb>
 Output written on codigo.pdf (9 pages, 123308 bytes).
 PDF statistics:

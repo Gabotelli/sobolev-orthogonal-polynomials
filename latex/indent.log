@@ -1,7 +1,7 @@
 INFO:  latexindent.pl version 3.24.4, 2024-07-18, a script to indent .tex files
        latexindent.pl lives here: C:/Users/Usuario/AppData/Local/Programs/MiKTeX/scripts/latexindent/
-       Mon May 26 13:20:09 2025
-       Filename: c:/Users/Usuario/Documents/tfg-git/latex/tfg_latex_etsiinf-2023.02.20/secciones/__latexindent_temp_caso_circunferencia.tex
+       Mon May 26 21:24:42 2025
+       Filename: c:/Users/Usuario/Documents/tfg-git/latex/tfg_latex_etsiinf-2023.02.20/secciones/__latexindent_temp_intro.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory

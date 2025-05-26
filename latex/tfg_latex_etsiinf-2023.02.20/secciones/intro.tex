@@ -75,6 +75,23 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 	Un \textit{espacio de Hilbert} es un espacio prehilbertiano que además es completo respecto a la norma inducida por el producto interno $\|x\| = \sqrt{\langle x, x \rangle}$, es decir, toda sucesión de Cauchy converge a un elemento del espacio.
 \end{definition}
 
+\begin{definition}\label{def:circum_lebesgue_measure}
+	Sea
+	\(
+	S_{a}(r)\;=\;\bigl\{\,z\in\mathbb{C}\;:\;|z-a|=r\bigr\}
+	\)
+	la circunferencia de centro \(a\in\mathbb{C}\) y radio \(r>0\).
+	Denotaremos por \(dm_{a;r}\) la \textbf{medida de Lebesgue} en \(S_{a}(r)\).
+	Para toda función continua \(f:S_{a}(r)\to\mathbb{C}\) definimos
+	$$
+		\int_{S_{a}(r)} f(z)\,dm_{a;r}(z)
+		\;:=\;
+		\frac{1}{2\pi}\int_{0}^{2\pi} f\!\bigl(a+re^{i\theta}\bigr)\,d\theta,
+	$$
+	de modo que \(dm_{a;r}\) queda normalizada
+	\(\bigl(dm_{a;r}(S_{a}(r))=1\bigr)\).
+\end{definition}
+
 Los productos internos que se trabajarán son de la forma:
 \begin{enumerate}
 	\item Continuo Real con Soportes Compactos
@@ -121,6 +138,7 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	Sea $\mathcal{D}$ la aplicación $\mathcal{D}:\mathbb{P}[z] \mapsto \mathbb{P}[z]$ tal que: $D(p(z))=zp(z)$.
 	Esta aplicación es lineal ya que
 	$$\mathcal{D}(\alpha p(z) + \beta q(z))=z(\alpha p(z) + \beta q(z))=\alpha \mathcal{D}(p(z)) + \beta \mathcal{D}(q(z))$$
+	\noindent Nos referiremos como $\mathbf{D}$ a la representación matricial del operador multiplicación por $z$ en la base de los polinomios ortonormales.
 \end{definition}
 
 \begin{definition}\label{def:bounded_eval_point}
@@ -172,7 +190,7 @@ Este resultado fundamental y usado extensamente en la literatura establece que l
 
 Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino1999zero} introdujeron el concepto de medidas secuencialmente dominadas. Diremos que el producto de Sobolev con dos medidas es secuencialmente dominado si
 $$supp(\mu_2) \subset supp(\mu_{1}) , \qquad j = 1,2.$$ y
-$$d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}.$$
+$$d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}).$$
 En nuestros casos continuos sería,
 \begin{equation}
 	[c,d] \subset [a,b] \quad y \quad\exists c > 0, w_1(t)\leq c \cdot w_0(t)
@@ -185,47 +203,57 @@ y
 Para trabajar con matrices de momentos introduciremos la definición para esta noción y un teorema análogo que nos dará la acotación.
 
 \begin{definition}\label{def:seq_dominated}
-	\cite{escribano2025boundedness} Sea $\{\textbf{M}_j\}_{j=0}^{k}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_j\}_{j=0}^{k}$ es secuencialmente dominada si existe una constante positiva $C$ tal que para cada valor de $j=1,\ldots,k$
-	$$\textbf{M}_j \leq C \cdot \textbf{M}_{j-1}.$$
+	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_1,\textbf{M}_2\}$ es secuencialmente dominada si existe una constante positiva $C$ tal que
+	$$\textbf{M}_2 \leq C \cdot \textbf{M}_{1}.$$
 \end{definition}
 
 \begin{theorem}\label{thm:bounded_operator}
-	\cite{escribano2025boundedness} Sea $\{\textbf{M}_j\}_{j=0}^{k}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para cada $j=0,\ldots,k$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
-	$$\langle p(z),q(z) \rangle_{\textbf{M}_S}=\sum_{j=0}^{k} \langle p^{(j)},q^{(j)} \rangle_{\textbf{M}_j}.$$
+	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para $j=1,2$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
+	$$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\langle p(t),q(t) \rangle_{\textbf{M}_1}+\langle p'(t),q'(t) \rangle_{\textbf{M}_2}.$$
 	Entonces, el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$
 \end{theorem}
 
-Volviendo a nuestro caso, tendriamos el conjunto $\{\textbf{M}_0,\textbf{M}_1\}$ de matrices HPD sequencialmente dominadas donde $\mathcal{D}_0$ y $\mathcal{D}_1$ están acotados en sus respectivos productos, y por lo tanto el producto de Sobolev asociado a la matriz $\textbf{M}_S$:
-$$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\langle p(t),q(t) \rangle_{\textbf{M}_0}+\langle p'(t),q'(t) \rangle_{\textbf{M}_1}.$$
-Está acotado en $(\mathbb{P}[t],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}$
+\begin{proposition}\label{prop:bounded_operator_continuous}
+	Para el caso continuo real secuencialmente dominado con soportes $I_1=I_2=[a,b]$, definamos
+	\(
+	R = \max\{|a|,|b|\},
+	\qquad
+	\alpha = \max_{t\in[a,b]}\frac{w_1(t)}{w_0(t)}.
+	\)
+	Entonces el operador multiplicación $\mathcal{D}$
+	es acotado en el producto Sobolev y satisface
+	\(
+	\|\mathcal{D}\|\;\le\;\sqrt{R^{2}+2\alpha}\,.
+	\)
+\end{proposition}
 
-\noindent Puesto que $\dfrac{w_1(t)}{w_0(t)}$ es una función continua en $[a,b]$ consideremos
-$$
-	\alpha= \max \{ \dfrac{w_1(t)}{w_0(t)}, t\in [a,b]\}
-$$
+\begin{proof}
+	Sea $p(t)\in\mathbb{P}[t]$.
+	\noindent Utilizando que $(a+b)^2\leq 2(a^2+b^2)$ para $a,b\ge0$, se obtiene:
+	$$
+		\Vert \mathcal{D}(p(t))\Vert^{2}
+		= \int_{a}^{b} t^2 p^2(t) w_0(t)\,dt
+		\;+\;\int_{a}^{b} \Bigl[(tp(t))'\Bigr]^2 w_1(t)\,dt
+	$$
+	$$
+		= \int_{a}^{b} t^2 p^2(t) w_0(t)\,dt
+		+ \int_{a}^{b} \Bigl(p(t)+tp'(t)\Bigr)^2 w_1(t)\,dt
+		\;\le\;
+	$$
+	$$
+		\int_{a}^{b} t^2p^2(t)w_0(t)\; dt+2\Bigl(\int_{a}^{b} p(t)^2w_1(t)\; dt +\int_{a}^{b} t^2p'(t)^2w_1(t)\; dt\Bigr) \leq
+	$$
+	$$
+		R^{2} \Bigl(\int_{a}^{b} p^2(t)w_0(t)\; dt +  2\int_{a}^{b} p'(t)^2w_1(t)\; dt\Bigr)+ 2\int_{a}^{b} p(t)^2w_1(t)\; dt \leq
+	$$
+	$$
+		R^{2} \Vert p(t)\Vert^{2} + 2\alpha \int_{a}^{b} p(t)^2w_0(t)\; dt \leq (R^{2}+2\alpha)\Vert p(t) \Vert^{2}
+	$$
 
-\noindent Veamos que $\mathcal{D}$ es acotado en este caso además:
-$$
-	\Vert \mathcal{D} \Vert \leq C= (R^{2}+2\alpha)^{1/2}.
-$$
-$$
-	\Vert \mathcal{D}(p(t))\Vert^{2} = \int_{a}^{b} t^2p^2(t)w_0(t)\; dt +  \int_{a}^{b} (tp'(t))^2w_1(t)\; dt=
-$$
-$$
-	\int_{a}^{b} t^2p^2(t)w_0(t)\; dt +  \int_{a}^{b} (p(t)+tp'(t))^2w_1(t)\; dt \leq
-$$
-\noindent utilizando que $(a+b)^2\leq 2(a^2+b^2)$ si $a,b\geq 0$ se tiene que:
-$$
-	\int_{a}^{b} t^2p^2(t)w_0(t)\; dt+2(\int_{a}^{b} p(t)^2w_1(t)\; dt +\int_{a}^{b} t^2p'(t)^2w_1(t)\; dt) \leq
-$$
-$$
-	R^{2} (\int_{a}^{b} p^2(t)w_0(t)\; dt +  \int_{a}^{b} p'(t)^2w_1(t)\; dt)+ 2\int_{a}^{b} p(t)^2w_1(t)\; dt \leq
-$$
-$$
-	R^{2} \Vert p(t)\Vert^{2} + 2\alpha \int_{a}^{b} p(t)^2w_0(t)\; dt \leq (R^{2}+2\alpha)\Vert p(t) \Vert^{2}
-$$
+\end{proof}
 
-\noindent Por ejemplo, si $[a,b]=[-1,1]$ y $\alpha =1$ quedar\'{\i}a $C=\sqrt{1+2}=\sqrt{3}$. En los ejemplos se analizarán los módulos de los valores (autovalores, valores singulares, ceros), aunque no se mencione explícitamente.
+\noindent Por ejemplo, si $[a,b]=[-1,1]$ y $\alpha=1$, entonces
+$\|\mathcal{D}\|\le\sqrt{1+2}=\sqrt{3}$.
 
 Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente dominados. En este caso veremos el resultado de M. Alfaro y M. Luisa Rezola cuando estos soporte son disjuntos.
 
@@ -237,24 +265,22 @@ Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente do
 \end{theorem}
 
 \begin{lemma}\label{lem:bounded_eval_point_in_hull}
-	\cite{escribano2025zeros} Toda evaluación puntual acotada de una medida $\mu$ está contenida en el envoltorio polinómicamente convexo del soporte de $\mu$.
+	\cite{escribano2025zeros} Todo \emph{punto de evaluación acotado} de una medida $\mu$ está contenido en la envoltura polinómicamente convexa del soporte de $\mu$.
 
-	\noindent Además, un punto de evaluación puntual de una medida $\mu$ es un punto de evaluación de la matriz de momentos asociada a $\mu$.
+	\noindent Además, todo \emph{punto de evaluación acotado} de una medida $\mu$ es un punto de evaluación de la matriz de momentos asociada a $\mu$.
 \end{lemma}
 
 \begin{definition}\label{def:bounded_eval_point_matrix}
 	\cite{escribano2025zeros} Sea $M$ una matriz hermítica positiva definida (HPD) y $a\in\mathbb{C}$.
-	Decimos que $a$ es una \emph{evaluación puntual acotada} (bpe) de $M$ si existe una constante $C>0$ tal que
-	\[
-		|p(a)|^{2}\;\le\;C\,\|p(z)\|_{M}^{2},
-		\qquad p(z)\in\mathbb{P}[z].
-	\]
+	Decimos que $a$ es un \emph{punto de evaluación acotado} (bpe) de $M$ si existe una constante $C>0$ tal que
+	\[ |p(a)|^{2}\;\le\;C\,\|p(z)\|_{M}^{2}, \quad p(z)\in\mathbb{P}[z]. \]
 \end{definition}
+
 
 \begin{proposition}\label{prop:equiv_bounded_eval_point}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD y $a\in\mathbb{C}$. Entonces son equivalentes:
 	\begin{enumerate}
-		\item $a$ es una evaluación puntual acotada de $M$;
+		\item $a$ es un \emph{punto de evaluación acotado} de $M$;
 		\item el conjunto $\{M,\,M(a)\}$ es secuencialmente dominado;
 		\item $\gamma_{a}(M) > 0$.
 	\end{enumerate}
@@ -285,7 +311,7 @@ Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente do
 
 \section{Motivación y Objetivos}
 
-Como se ha puede observar, estudio de los ceros de los polinomios ortogonales de Sobolev se ha abordado desde el enfoque de acotar el operador multiplicación $\mathcal{D}$. En este trabajo nos proponemos estudiar el comportamiento del mayor cero, ya que sabemos que si este es acotado entonces todos los ceros lo serán. Para ello usaremos herramientas de cálculo númerico como Maple, que nos permitirá calcular y visualizar los polinomios ortogonales de Sobolev y sus ceros.
+Como se ha puede observar, estudio de los ceros de los polinomios ortogonales de Sobolev se ha abordado desde el enfoque de acotar el operador multiplicación $\mathcal{D}$. En este trabajo nos proponemos estudiar el comportamiento asintótico de $\rho(\mathcal{D}_n)$, ya que sabemos que si este es acotado entonces todos los ceros lo serán. Para ello usaremos herramientas de cálculo númerico como Maple, que nos permitirá calcular y visualizar los polinomios ortogonales de Sobolev y sus ceros.
 
 Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabemos que los polinomios mónicos ortogonales de Sobolev se pueden obtener a partir de la matriz del operador multiplicación $\mathcal{D}$ y la matriz de momentos asociada al producto interno $\mathbf{M}$.
 $$
