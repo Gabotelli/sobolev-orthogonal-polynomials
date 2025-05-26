@@ -49,12 +49,12 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 		\item $$
 			      \sigma_{1,n}^2 =
 			      \max \{ <\mathbf{A}^{t}\mathbf{A}x,x>: \Vert x \Vert =1 \}
-			      = \max \{\Vert \mathbf{A} x \Vert : \Vert x \Vert =1\}=
+			      = \max \{\Vert \mathbf{A} x \Vert^2 : \Vert x \Vert =1\}=
 			      \Vert \mathbf{A} \Vert^2
 		      $$
 		\item Principio min-max: el segundo mayor valor singular de una matriz es el mínimo de las normas de las restricciones de la aplicación $\mathbf{A}$ a los espacios de codimnesión $1$.
 		      $$
-			      \sigma_{2,n}^2 = \min_{V: cod(V)=1} \max \{\Vert \mathbf{A}x \Vert , x\in V, \Vert x \Vert =1\}= \min_{V: cod(V)=1} \Vert \mathbf{A}/V \Vert
+			      \sigma_{2,n}^2 = \min_{V: cod(V)=1} \max \{\Vert \mathbf{A}x \Vert^2 , x\in V, \Vert x \Vert =1\}= \min_{V: cod(V)=1} \Vert \mathbf{A}/V \Vert^2
 		      $$
 
 		      \noindent siendo $\mathbf{A}/V$ la restricción de la aplicación lineal $\mathbf{A}$ al subespacio $V$.
@@ -75,18 +75,18 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 	Un \textit{espacio de Hilbert} es un espacio prehilbertiano que además es completo respecto a la norma inducida por el producto interno $\|x\| = \sqrt{\langle x, x \rangle}$, es decir, toda sucesión de Cauchy converge a un elemento del espacio.
 \end{definition}
 
-Los productos interos que se trabajarán son de la forma:
+Los productos internos que se trabajarán son de la forma:
 \begin{enumerate}
 	\item Continuo Real con Soportes Compactos
 	      \begin{equation}
 		      \langle p(t), q(t) \rangle = \int_{a}^{b} p(t) q(t) w_1(t) \, dt + \int_{c}^{d} p'(t) q'(t) w_2(t) \, dt
 	      \end{equation}
-	      donde $w_1(t)$ y $w_2(t)$ son pesos continuos, no negativos, integrables y distintos de la función $f \equiv 0$.
+	      donde $w_1(t)$ y $w_2(t)$ son pesos continuos, no negativos y distintos de la función $f \equiv 0$.
 	\item Discreto Real con Átomo
 	      \begin{equation}
 		      \langle p(t), q(t) \rangle = \int_{a}^{b} p(t) q(t) w_1(t) \, dt + p'(c) q'(c)
 	      \end{equation}
-	      con $w_1(t)$ peso continuo, no negativo, integrable y distinto de la función $f \equiv 0$.
+	      con $w_1(t)$ peso continuo, no negativo y distinto de la función $f \equiv 0$.
 	\item Continuo Complejo en Circunferencias
 	      \begin{equation}
 		      \langle p(z) , q(z) \rangle_{S}\;=\;
@@ -100,7 +100,7 @@ Los productos interos que se trabajarán son de la forma:
 		      \langle p(z) , q(z) \rangle_{S}\;=\;
 		      \int_{S_{b}(r_b)} p(z)\,\overline{q(z)}\,dm_{b;r_b}
 		      \;+\;
-		      p'(z)\,\overline{q'(z)}.
+		      p'(c)\,\overline{q'(c)}.
 	      \end{equation}
 \end{enumerate}
 
@@ -144,12 +144,13 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 		\left\{ z \in \mathbb{C} :\, |p(z)| \leq \max_{\xi\in K}|p(\xi)|\ \text{ para todo } p\in\mathbb{P}[z] \right\}.
 	\]
 \end{definition}
+Nótese que para el caso real, $P_C(K)$ coincide con los intervalos del soporte, y para el caso circunferencia, $P_C(K)$ coincide con las circunferencias del soporte.
 
 \section{Estado del arte}
 
 En la literatura se ha abordado el problema de los ceros de polinomios ortogonales de Sobolev mayoritariamente desde la perspectiva de la localización general de los ceros.
 
-Primero vamos a probar que la acotacion del operador multiplicación $\mathcal{D}$ en $\mathbb{P}[t]$ es condicion suficiente para la acotación de los ceros de los polinomios ortogonales respecto a un producto inducido por una matriz HPD.
+Primero vamos a probar que la acotacion del operador multiplicación $\mathcal{D}$ en $\mathbb{P}[z]$ es condicion suficiente para la acotación de los ceros de los polinomios ortogonales respecto a un producto inducido por una matriz HPD.
 
 \begin{proposition}\label{prop:bounded_zeros}
 	\cite{escribano2025boundedness} Sea \textbf{M} una matriz HPD y $\{\varphi_n(z)\}_{n=0}^{\infty}$ la secuencia de polinomios ortonormales asociados al producto interno inducido por \textbf{M}. Si $\mathcal{D}$ está acotado en $\mathbb{P}[z]$, el conjunto de ceros de los polonomios ortonormales asociados a \textbf{M} está acotado. Además,
@@ -169,10 +170,10 @@ Primero vamos a probar que la acotacion del operador multiplicación $\mathcal{D
 
 Este resultado fundamental y usado extensamente en la literatura establece que los ceros de polinomios ortogonales de Sobolev están contenidos en un disco centrado en cero cuyo radio es la norma del operador $\mathcal{D}$. Veamos resultados que nos permiten acotar la norma del operador multiplicación $\mathcal{D}$.
 
-Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino1999zero} introdujeron el concepto de medidas secuencialmente dominadas. Diremos que el producto de Sobolev es secuencialmente dominado si
-$$supp(\mu_j) \subset supp(\mu_{j-1}) , \qquad j = 1,\ldots,k.$$ y
-$$d\mu_j = f_{j-1}d\mu_{j-1}, \qquad f_{j-1} \in L_{\infty}(\mu_{j-1}),\qquad j=1,\ldots,k.$$
-En nuestro caso sería,
+Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino1999zero} introdujeron el concepto de medidas secuencialmente dominadas. Diremos que el producto de Sobolev con dos medidas es secuencialmente dominado si
+$$supp(\mu_2) \subset supp(\mu_{1}) , \qquad j = 1,2.$$ y
+$$d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}.$$
+En nuestros casos continuos sería,
 \begin{equation}
 	[c,d] \subset [a,b] \quad y \quad\exists c > 0, w_1(t)\leq c \cdot w_0(t)
 \end{equation}
