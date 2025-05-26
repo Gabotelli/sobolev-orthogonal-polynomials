@@ -53,7 +53,7 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \ to 50} \rho(\mathcal{D}_{n})=39.983$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=39.983$
 	\item $\max\{Z_{n}\}_{n=0}^{50}=39.983$
 	\item $\lim_{n \to 50}\sigma_{2,n}=39.982$
 \end{enumerate}
@@ -142,24 +142,6 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 	\item $\lim_{n \to 50}\sigma_{2,n}=14.985$
 \end{enumerate}
 
-Tras ver todos los ejemplos podemos conjeturar lo siguiente:\todo{lo que es claro es que lo que suceda con los soportes influye mucho, ya sea tamaño, extremos o intersección.}
-\begin{itemize}
-	\item El segundo mayor valor singular de $\mathcal{D}_{n}$ converge al extremo con mayor módulo de los soportes. Se puede encontrar una constante de proporción o de desviacion $K$ que depende de los soportes (extremos,intersección, tamaño) para poder acotar los ceros.\todo{puede que la k y K esten relacionadas}
-	\item $\lim_{n \to \infty} \max{Z_n}=\max\{|a|,|b|,|c|,|d|\} + k = \max\{|a|,|b|,|c|,|d|\} \cdot k'$
-	\item El $k$ cuando $\max\{|a|,|b|\} < \max\{|c|,|d|\}$ es notablemente mayor que el $k$ cuando ocurre lo contrario.
-	\item $k$ o $k'$ depende de la posición relativa entre los soportes.
-	      \begin{itemize}
-		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) < dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ no crece mucho.
-		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) > dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ crece mucho.
-		      \item Si $[a,b] \cap [c,d] \neq \emptyset$ entonces $k$ o $k'$ crece muy poco. Mientras mayor sea $dist(b,c)$ menos crece $k$ o $k'$.
-	      \end{itemize}
-\end{itemize}
-\todo{Tengo que hacer mas pruebas porque con tantos casos termina confundiendo que es lo que pasa.}
-
-Dejando de lado los productos de Sobolev, consideremos el producto interno de la forma:
-$$\langle p(t),q(t) \rangle = \int_{a}^{b} p(t) q(t) \, dt + |p'(c)||q'(c)|.$$
-Este producto interno es muy interesante ya que solo introduce un átomo al producto interno usual, y sin embargo el operador multiplicación no es acotado. En los siguientes ejemplos se mostrará que los ceros de los polinomios ortogonales asociados a este producto interno están acotados, y que podemos encontrar una cota.
-
 \textbf{Ejemplo 11.} $\langle p(t),q(t) \rangle = \int_{-1}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
 
 \begin{center}
@@ -181,7 +163,7 @@ Este producto interno es muy interesante ya que solo introduce un átomo al prod
 
 \begin{enumerate}
 	\item $\lim_{n \to 50}\sigma_{1,n}=\infty$
-	\item $\lim_{n \ to 50} \rho(\mathcal{D}_{n})=2.0356$
+	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.0356$
 	\item $\max\{\rho(\mathcal{D}_{n})\}_{n=0}^{50}=2.933$
 	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
 \end{enumerate}
@@ -212,13 +194,6 @@ Este producto interno es muy interesante ya que solo introduce un átomo al prod
 	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
 \end{enumerate}
 
-A raíz de estos ejemplos podemos conjeturar lo siguiente:
-
-\begin{itemize}
-	\item Si $c \in [a,b]$ entonces los ceros convergen al límite del soporte, y podemos usar el segundo mayor valor singular como cota.
-	\item Si $c \notin [a,b]$ entonces los ceros convergen al átomo, y podemos usar el átomo como cota. Pero necesitamos determinar el coeficiente $k$ para poder abarcar todos los ceros.\todo{intuyo que tambien va a tener que ver con la posición relativa entre el soporte y el átomo, y posiblemente el tamaño del soporte.}
-\end{itemize}
-
 \begin{sidewaystable}
 	\centering
 	\small
@@ -247,3 +222,30 @@ A raíz de estos ejemplos podemos conjeturar lo siguiente:
 		\hline
 	\end{tabular}
 \end{sidewaystable}
+
+\newpage
+
+Tras ver todos los ejemplos podemos conjeturar lo siguiente:
+
+\begin{itemize}
+	\item El segundo mayor valor singular de $\mathcal{D}_{n}$ converge al extremo con mayor módulo de los soportes. Se puede encontrar una constante de proporción o de desviacion $K$ que depende de los soportes (extremos,intersección, tamaño) para poder acotar los ceros.\todo{puede que la k y K esten relacionadas}
+	\item $\lim_{n \to \infty} \max{Z_n}=\max\{|a|,|b|,|c|,|d|\} + k = \max\{|a|,|b|,|c|,|d|\} \cdot k'$
+	\item El $k$ cuando $\max\{|a|,|b|\} < \max\{|c|,|d|\}$ es notablemente mayor que el $k$ cuando ocurre lo contrario.
+	\item $k$ o $k'$ depende de la posición relativa entre los soportes.
+	      \begin{itemize}
+		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) < dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ no crece mucho.
+		      \item Si $[a,b] \cap [c,d] = \emptyset$ y $dist(b,c) > dist(a,b) + dist(c,d)$ entonces $k$ o $k'$ crece mucho.
+		      \item Si $[a,b] \cap [c,d] \neq \emptyset$ entonces $k$ o $k'$ crece muy poco. Mientras mayor sea $dist(b,c)$ menos crece $k$ o $k'$.
+	      \end{itemize}
+\end{itemize}
+
+Dejando de lado los productos de Sobolev, consideremos el producto interno de la forma:
+$$\langle p(t),q(t) \rangle = \int_{a}^{b} p(t) q(t) \, dt + |p'(c)||q'(c)|.$$
+Este producto interno es muy interesante ya que solo introduce un átomo al producto interno usual, y sin embargo el operador multiplicación no es acotado. En los siguientes ejemplos se mostrará que los ceros de los polinomios ortogonales asociados a este producto interno están acotados, y que podemos encontrar una cota.
+
+A raíz de estos ejemplos podemos conjeturar lo siguiente:
+
+\begin{itemize}
+	\item Si $c \in [a,b]$ entonces los ceros convergen al límite del soporte, y podemos usar el segundo mayor valor singular como cota.
+	\item Si $c \notin [a,b]$ entonces los ceros convergen al átomo, y podemos usar el átomo como cota. Pero necesitamos determinar el coeficiente $k$ para poder abarcar todos los ceros.
+\end{itemize}
