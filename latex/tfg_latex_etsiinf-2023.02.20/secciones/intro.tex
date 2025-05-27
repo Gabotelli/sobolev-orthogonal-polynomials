@@ -29,32 +29,32 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 \end{definition}
 
 \begin{definition}\label{def:singular_values}
-	Sea $A \in \mathcal{M}_{n}(\mathbb{C})$ matriz cuadrada,  la matriz $\mathbf{A}^{*}\mathbf{A}$  ( $\mathbf{A}^{t}\mathbf{A}$ en el caso de matrices con entradas reales) es una matriz hermitiana y semidefinida positiva. Por lo tanto, tiene $n$ autovalores mayores o iguales que cero contados con su multiplicidad
+	Sea $A \in \mathcal{M}_{n}(\mathbb{C})$ matriz finita, la matriz $\mathbf{A}^{*}\mathbf{A}$  ( $\mathbf{A}^{t}\mathbf{A}$ en el caso de matrices con entradas reales) es una matriz hermitiana de orden n y semidefinida positiva. Por lo tanto, tiene $n$ autovalores mayores o iguales que cero contados con su multiplicidad
 	$$
-		0 \leq \lambda_{n,n}\leq \dots \leq \lambda_{2,n} \leq \lambda_{1,n}
+		0 \leq \lambda_{n}\leq \dots \leq \lambda_{2} \leq \lambda_{1}
 	$$
 
 
 	\noindent Los valores singulares de $\mathbf{A}$ son:
 	$$
-		\sigma_{k,n}= \sqrt{\lambda_{k,n}}
+		\sigma_{k}= \sqrt{\lambda_{k}}
 	$$
 	\noindent siendo:
 	$$
-		0 \leq \sigma_{n,n} \leq \dots \sigma_{2,n} \leq \sigma_{1,n}
+		0 \leq \sigma_{n} \leq \dots \sigma_{2} \leq \sigma_{1}
 	$$
 
 	\noindent Utilizando el criterio de Rayleigh y el Principio de min-max de  Courant-Fischer \cite{gallier2017spectral} se tiene que estos valores singulares tienen relación con la norma de aplicaciones lineales y continuas cuando consideramos la norma euclídea en los espacios $\mathbb{C}^n$. De hecho,
 	\begin{enumerate}
 		\item $$
-			      \sigma_{1,n}^2 =
+			      \sigma_{1}^2 =
 			      \max \{ <\mathbf{A}^{t}\mathbf{A}x,x>: \Vert x \Vert =1 \}
 			      = \max \{\Vert \mathbf{A} x \Vert^2 : \Vert x \Vert =1\}=
 			      \Vert \mathbf{A} \Vert^2
 		      $$
 		\item Principio min-max: el segundo mayor valor singular de una matriz es el mínimo de las normas de las restricciones de la aplicación $\mathbf{A}$ a los espacios de codimnesión $1$.
 		      $$
-			      \sigma_{2,n}^2 = \min_{V: cod(V)=1} \max \{\Vert \mathbf{A}x \Vert^2 , x\in V, \Vert x \Vert =1\}= \min_{V: cod(V)=1} \Vert \mathbf{A}/V \Vert^2
+			      \sigma_{2}^2 = \min_{V: cod(V)=1} \max \{\Vert \mathbf{A}x \Vert^2 , x\in V, \Vert x \Vert =1\}= \min_{V: cod(V)=1} \Vert \mathbf{A}/V \Vert^2
 		      $$
 
 		      \noindent siendo $\mathbf{A}/V$ la restricción de la aplicación lineal $\mathbf{A}$ al subespacio $V$.
