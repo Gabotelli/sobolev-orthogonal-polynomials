@@ -3,25 +3,283 @@
 
 Los polinomios ortogonales constituyen un área fundamental de la matemática con numerosas aplicaciones. En este trabajo nos centramos en una generalización particular: los polinomios ortogonales de Sobolev. La característica distintiva de estos polinomios es que su ortogonalidad viene dada por productos internos que involucran derivadas, lo que resulta en propiedades notablemente diferentes a las de los polinomios ortogonales clásicos.
 
-\section{Definiciones}
-
 Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de Sobolev, es esencial establecer el marco teórico que usaremos a lo largo del trabajo. En este sentido, comenzaremos por definir los siguientes conceptos del álgebra lineal.
 
+\section{Polinomios Ortogonales}
+
+\begin{definition}\label{def:espacio-polinomios}
+	Sea $\mathbb{K}$ un cuerpo (normalmente $\mathbb{R}$ o $\mathbb{C}$).
+	El \emph{espacio de polinomios en una variable} se define como
+	\[
+		\mathbb{P}[z]\;=\;
+		\Bigl\{\,p(z)=\sum_{k=0}^{n} a_k\,z^{\,k}\;:\;
+		a_k\in\mathbb{K},\;n\in\mathbb{N}\Bigr\}.
+	\]
+	Para cada $n\in\mathbb{N}$ denotamos
+	$
+		\mathbb{P}_{n}[z]=\{p\in\mathbb{P}[z]:\deg p\le n\},
+	$
+	de modo que $\mathbb{P}[z]=\bigcup_{n=0}^{\infty}\mathbb{P}_{n}[z]$.
+	El conjunto $\{1,z,z^{2},\dots,z^{n}\}$ forma una base de
+	$\mathbb{P}_{n}[z]$, luego $\dim\!\bigl(\mathbb{P}_{n}[z]\bigr)=n+1$.
+\end{definition}
+
+\begin{definition}\label{def:producto-interno-general-medida}
+	Sea $\mu$ una medida de Borel positiva con soporte infinito $\operatorname{supp}(\mu)=\{z\;\mu(B_r(z))>0\;\forall r>0\}$. Definimos en $\mathbb{P}[z]$ un \emph{producto interno} cualquiera por
+	\[
+		\langle p,q\rangle
+		\;=\;
+		\int p(z)\,\overline{q(z)}\,\mathrm d\mu(z),
+		\qquad p,q\in\mathbb{P}[z].
+	\]
+	Esta forma sesqui-lineal satisface:
+	\begin{enumerate}
+		\item $\langle p,q\rangle=\overline{\langle q,p\rangle}$,
+		\item $\langle \alpha p+\beta r,q\rangle
+			      =\alpha\langle p,q\rangle+\beta\langle r,q\rangle$,
+		\item $\langle p,p\rangle>0$ si $p\neq0$.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}\label{def:prehilbert_space}
+	Un \textbf{espacio prehilbertiano} o \textbf{espacio con producto interno} $(X, \langle \cdot, \cdot \rangle)$ es un espacio vectorial $X$ dotado de un producto interno $\langle \cdot, \cdot \rangle: X \times X \rightarrow \mathbb{C}$ (o $\mathbb{R}$), que satisface las siguientes propiedades para todo $x, y, z \in X$ y $\alpha \in \mathbb{C}$ (o $\mathbb{R}$):
+	\begin{enumerate}
+		\item $\langle x, y \rangle = \overline{\langle y, x \rangle}$ (simetría hermitiana)
+		\item $\langle \alpha x + \beta y, z \rangle = \alpha \langle x, z \rangle + \beta \langle y, z \rangle$ (linealidad en la primera variable)
+		\item $\langle x, x \rangle \geq 0$ y $\langle x, x \rangle = 0$ si y solo si $x = 0$ (definida positiva)
+	\end{enumerate}
+
+	Un \textbf{espacio de Hilbert} es un espacio prehilbertiano que además es completo respecto a la norma inducida por el producto interno $\|x\| = \sqrt{\langle x, x \rangle}$, es decir, toda sucesión de Cauchy converge a un elemento del espacio.
+\end{definition}
+
+\begin{definition}\label{def:gram-schmidt}
+	Sea $\{v_0,v_1,\dots,v_n\}$ un sistema generador de un
+	subespacio $W\subset V$ con producto interno.
+	Construimos recursivamente
+	\[
+		u_0=v_0,\qquad
+		u_k= v_k-\sum_{j=0}^{k-1}
+		\frac{\langle v_k,u_j\rangle}{\langle u_j,u_j\rangle}\,u_j,
+		\;k=1,\dots,n.
+	\]
+	El conjunto ortonormal
+	$\displaystyle e_k=\frac{u_k}{\|u_k\|}$ satisface
+	$\langle e_i,e_j\rangle=\delta_{ij}$ y
+	$\operatorname{span}\{e_0,\dots,e_n\}=W$.
+\end{definition}
+
+\begin{definition}\label{def:polinomios-ortonormales}
+	Dado un producto interno $\langle\cdot,\cdot\rangle$ en $\mathbb{P}[z]$,
+	la \emph{sucesión de polinomios ortonormales}
+	$\{P_n\}_{n\ge 0}$ se obtiene aplicando
+	el algoritmo de Gram-Schmidt a la base monomial $\{1,z,z^2,\dots\}$:
+	\[
+		\deg P_n=n,\qquad
+		\langle P_n,P_k\rangle=\delta_{nk}.
+	\]
+	Cada $P_n$ es único salvo su signo si se exige que su coeficiente líder sea positivo.
+\end{definition}
+
+\begin{definition}\label{def:ceros}
+	Sea $p\in\mathbb{P}[z]\setminus\{0\}$.
+	El \emph{conjunto de ceros} de $p$ es
+	\[
+		Z(p)=\bigl\{\,z\in\mathbb{C}\;:\;p(z)=0\bigr\}.
+	\]
+	Además, para la sucesión de polinomios ortonormales \(\{P_n\}_{n\ge0}\) asociada al producto interno, definimos el conjunto de ceros común
+	\[
+		Z \;=\; \bigcup_{n=0}^{\infty} Z(P_n)
+		\;=\;\bigl\{\,z\in\mathbb{C} : \exists\,n\in\mathbb{N},\;P_n(z)=0\bigr\}.
+	\]
+\end{definition}
+
+
+\section{Matrices de momentos asociadas a productos internos}
+
 \begin{definition}\label{def:hermitian_matrix}
-	\cite{Horn_Johnson_2012} Una matriz $A \in \mathcal{M}_{n}(\mathbb{C})$ se denomina \textit{hermitiana} si $A = A^*$, donde $A^*$ denota la matriz conjugada transpuesta de $A$. En el caso real, una matriz simétrica satisface $A = A^t$.
+	\cite{Horn_Johnson_2012} Una matriz $A \in \mathcal{M}_{n}(\mathbb{C})$ se denomina \textbf{hermitiana} si $A = A^*$, donde $A^*$ denota la matriz conjugada transpuesta de $A$. En el caso real, una matriz simétrica satisface $A = A^t$.
 
 	Una matriz hermitiana $A$ se dice:
 	\begin{enumerate}
-		\item \textit{Definida positiva} (HPD) si para todo vector no nulo $x \in \mathbb{C}^n$, se cumple $x^*Ax > 0$. Equivalentemente, si todos sus autovalores son estrictamente positivos.
+		\item \textbf{Definida positiva} (HPD) si para todo vector no nulo $x \in \mathbb{C}^n$, se cumple $x^*Ax > 0$. Equivalentemente, si todos sus autovalores son estrictamente positivos.
 
-		\item \textit{Semidefinida positiva} (HPSD) si para todo vector $x \in \mathbb{C}^n$, se cumple $x^*Ax \geq 0$. Equivalentemente, si todos sus autovalores son no negativos.
+		\item \textbf{Semidefinida positiva} (HPSD) si para todo vector $x \in \mathbb{C}^n$, se cumple $x^*Ax \geq 0$. Equivalentemente, si todos sus autovalores son no negativos.
 	\end{enumerate}
 
 	Para una matriz hermitiana, el producto escalar $\langle x, y \rangle_A = x^*Ay$ define un producto interno si y solo si $A$ es definida positiva.
 \end{definition}
 
+\begin{definition}\label{def:moment_matrix}
+	Sea \(\langle\!\cdot,\cdot\!\rangle\) un producto interno en el espacio de los polinomios
+	\(\mathbb{P}[z]\) y considérese la base canónica
+	\(\mathcal{B}=\{\,z^{k}\,\}_{k\ge 0}\).
+	La \emph{matriz de momentos} asociada a \(\langle\!\cdot,\cdot\!\rangle\) es la matriz
+	infinita
+	\[
+		M=\bigl(c_{i,j}\bigr)_{i,j\ge 0},
+		\qquad
+		c_{i,j}:=\bigl\langle z^{i},\,z^{j}\bigr\rangle ,\; i,j\in\mathbb N_{0}.
+	\]
+
+	En particular, si existe una medida de Borel \(\mu\) con soporte infinito tal que
+	\(
+	\langle p,q\rangle=\displaystyle\int p(z)\,\overline{q(z)}\,\mathrm d\mu(z),
+	\)
+	entonces
+	\[
+		c_{i,j}=\int z^{\,i}\,\overline{z^{\,j}}\,\mathrm d\mu(z)\, .
+	\]%
+\end{definition}
+
+Desde una perspectiva matricial, que facilita el análisis algebraico, podemos considerar que una matriz infinita HPD $M$ induce en $\mathbb{P}[z]$ el siguiente producto:
+\begin{equation}
+	\langle p(z), q(z) \rangle_M = v M w^{*},
+\end{equation}
+donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, \ldots) \in c_{00} = \{(x_n)_{n=1}^{\infty} \in \mathbb{C}^{\mathbb{N}} : \exists n_0 \in \mathbb{N} \quad | \quad x_n=0 ,\forall n\geq n_0\}$ para polinomios $p(z) = \sum_{k=0}^n v_k z^k$ y $q(z) = \sum_{k=0}^m w_k z^k$. La matriz de momentos $M = (c_{ij})^{\infty}_{i,j=0}$ definida por: $c_{ij} = \langle z^i, z^j \rangle_{M}$ Esto induce una norma Hilbertiana denotada por: $\|p(z)\|^{2}_{M} = \langle p(z), p(z)\rangle_{M},\forall p(z) \in P[z]$
+
+%-------------------------------------------------
+\begin{definition}\label{def:section_matrix}
+	Sea \(A=\bigl(a_{ij}\bigr)_{\,i,j\ge 1}\) una matriz infinita.
+	Para cada \(n\in\mathbb{N}\) definimos su \emph{sección principal de orden \(n\)} (también llamada
+	\emph{truncación} o \emph{submatriz principal}) como
+
+	\[
+		A_n \;=\;
+		\bigl(a_{ij}\bigr)_{\,1\le i,j\le n}\;=\;
+		\begin{pmatrix}
+			a_{11} & a_{12} & \dots  & a_{1n} \\
+			a_{21} & a_{22} & \dots  & a_{2n} \\
+			\vdots & \vdots & \ddots & \vdots \\
+			a_{n1} & a_{n2} & \dots  & a_{nn}
+		\end{pmatrix}.
+	\]
+
+	Estas secciones permiten “aproximar” \(A\) por operadores de rango finito y realizar cálculos numéricos.
+\end{definition}
+%-------------------------------------------------
+
+
+\section{Operador multiplicación por z}
+
+\begin{definition}\label{def:d_application}
+	El operador multiplicación por $z$, lo denotaremos como $\mathcal{D}$, y es la aplicación $\mathcal{D}:\mathbb{P}[z] \mapsto \mathbb{P}[z]$ tal que: $D(p(z))=zp(z)$.
+	Esta aplicación es lineal ya que
+	$$\mathcal{D}(\alpha p(z) + \beta q(z))=z(\alpha p(z) + \beta q(z))=\alpha \mathcal{D}(p(z)) + \beta \mathcal{D}(q(z))$$
+	\noindent Nos referiremos como $\mathbf{D}$ a la representación matricial del operador multiplicación por $z$ en la base de los polinomios ortonormales.
+\end{definition}
+
+Sea \(M=(c_{ij})_{i,j\ge 0}\) la matriz de momentos asociada a \(\langle\!\cdot,\cdot\!\rangle\)
+(de modo que \(\|z^{n}\|^{2}=c_{n,n}\)).
+Entonces
+\[
+	\boxed{\;
+	\|D\|^{2}\;=\;\sup_{n\ge 0}\,\frac{c_{\,n+1,n+1}}{c_{\,n,n}}
+	\; } .
+\]
+En particular,
+\[
+	D\text{ es acotado}\;\Longleftrightarrow\;
+	\sup_{n\ge 0}\,\frac{c_{\,n+1,n+1}}{c_{\,n,n}}<\infty .
+\]
+
+\begin{definition}\label{def:d_representation}
+	Sea \(\{\varphi_n\}_{n\ge0}\) una base ortonormal de \(\mathbb{P}[z]\) respecto a un
+	producto interior \(\langle\!\cdot,\cdot\!\rangle\) (real o complejo).
+	Definimos la matriz infinita
+	\[
+		\mathbf{D}=\bigl(d_{i,j}\bigr)_{i,j\ge0},
+		\qquad
+		d_{i,j}\;:=\;\bigl\langle z\,\varphi_j,\;\varphi_i\bigr\rangle .
+	\]
+	Entonces, para cualquier \(p=\sum_{j=0}^N c_j\varphi_j\) se cumple
+	\(
+	Dp=\sum_{i=0}^\infty\Bigl(\sum_{j=0}^\infty d_{i,j}\,c_j\Bigr)\varphi_i,
+	\)
+	es decir, \(D\) actúa sobre los vectores de coordenadas como el operador lineal
+	inducido por \(\mathbf{D}\).
+\end{definition}
+
+\begin{proposition}\label{prop:matriz_hessenberg}
+	Para todos los índices \(i,j\ge0\) se verifica
+	\[
+		d_{i,j}=0
+		\quad\text{si }\,i>j+1.
+	\]
+	En consecuencia
+	\(\mathbf{D}\) es una **matriz (super-)Hessenberg infinita**:
+
+	\[
+		\mathbf{D}=\begin{pmatrix}
+			d_{0,0} & d_{0,1} & d_{0,2} & d_{0,3} & \cdots \\
+			d_{1,0} & d_{1,1} & d_{1,2} & d_{1,3} & \cdots \\
+			0       & d_{2,1} & d_{2,2} & d_{2,3} & \cdots \\
+			0       & 0       & d_{3,2} & d_{3,3} & \cdots \\
+			\vdots  & \vdots  & \vdots  & \vdots  & \ddots
+		\end{pmatrix}.
+	\]
+	El patrón de ceros proviene del hecho de que
+	\(\deg(z\varphi_j)=j+1\), de modo que al expandir \(z\varphi_j\) en la base
+	solo aparecen \(\varphi_0,\dots,\varphi_{j+1}\).
+\end{proposition}
+
+\paragraph{Observaciones adicionales}
+\begin{itemize}
+	\item Si el producto interior procede de una medida real en un intervalo
+	      (caso clásico), la relación de tres términos
+	      \(z\varphi_j=a_{j+1}\varphi_{j+1}+b_j\varphi_j+a_j\varphi_{j-1}\)
+	      hace que \(\mathbf{D}\) sea \emph{tridiagonal y simétrica} (matriz de Jacobi),
+	      un caso particular dentro de las Hessenberg.
+	\item Para polinomios ortogonales en el círculo unitario (OPUC) la
+	      expansión involucra también todos los índices \(\le j\),
+	      y \(\mathbf{D}\) resulta ser una Hessenberg unitaria (matriz de Szegő).
+	\item Las secciones principales
+	      \(\mathbf{D}_n=(d_{i,j})_{0\le i,j\le n}\) son matrices \((n+1)\times(n+1)\)
+	      cuyas transpuestas tienen como autovalores los ceros del polinomio
+	      \(\varphi_{n+1}\).
+	      Esto conecta la teoría espectral de \(\mathbf{D}\) con la localización de ceros.
+	\item Si la sucesión de cocientes
+	      \(c_{n+1,n+1}/c_{n,n}\) de la matriz de momentos asociada está acotada,
+	      entonces \(D\) es un operador acotado y
+	      \(\mathbf{D}\) define un operador limitado en \(\ell^2\).
+\end{itemize}
+
+\begin{definition}\label{def:section_hessenberg}
+	Sea \(\mathbf{D}=(d_{i,j})_{i,j\ge 1}\) la matriz infinita de tipo Hessenberg que representa
+	al operador multiplicación \(D(p)=z\,p\) en la base ortonormal
+	\(\{\varphi_{k}\}_{k\ge1}\).
+	Para cada \(n\in\mathbb N_{0}\) definimos su \emph{sección principal de orden \(n\)} como
+	\[
+		\mathbf{D}_{n}
+		:=(d_{i,j})_{1\le i,j\le n}\in\mathbb{C}^{n\times n}.
+	\]
+	Por construcción, \(\mathbf{D}_{n}\) conserva la estructura Hessenberg:
+	\(d_{i,j}=0\) cuando \(i>j+1\).
+\end{definition}
+
+Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabemos que los polinomios mónicos ortogonales de Sobolev se pueden obtener a partir de la matriz del operador multiplicación $\mathcal{D}$ y la matriz de momentos asociada al producto interno $\mathbf{M}$.
+
+\begin{proposition}\label{prop:ceros_polinomios_ortogonales}
+	\cite{escribano2025boundedness} Sea \(\mathcal{D}\) el operador multiplicación por \(z\) en el espacio de los polinomios \(\mathbb{P}[z]\) y sea \(\mathbf{M}\) la matriz de momentos asociada al producto interno \(\langle\cdot,\cdot\rangle\). Sea \(\{\varphi_{n}\}_{n\ge0}\) la sucesión de polinomios ortonormales asociados a \(\langle\cdot,\cdot\rangle\).
+	Entonces, los polinomios mónicos ortogonales de Sobolev se pueden expresar como:
+	\[
+		P_n(z)=\kappa_n\,\varphi_n(z),
+	\]
+	donde \(\kappa_n\) es una constante normalizadora y \(P_n(z)\) es el polinomio mónico de grado \(n\) ortogonal respecto al producto interno \(\langle\cdot,\cdot\rangle\).
+	Sea
+	\(P_{n+1}(z):=\det\bigl(z\,I_{n+1}-\mathbf{D}_{n}\bigr)\).
+	Entonces, salvo una constante normalizadora,
+	\[
+		P_{n+1}(z)=\kappa_{n+1}\,\varphi_{\,n+1}(z),
+		\qquad\kappa_{n+1}\neq0,
+	\]
+	por lo que los ceros de \(\varphi_{\,n+1}\) coinciden con los autovalores de
+	\(\mathbf{D}_{n}\) :contentReference[oaicite:0]{index=0}.
+\end{proposition}
+
+Por lo tanto, el estudio de los ceros de los polinomios ortogonales de Sobolev se reduce al estudio de los autovalores de la matriz $\mathcal{D}$, si esta fuese hermitiana sería diagonalizable con autovalores reales que coincidirían con los valores singulares, por la \textit{Definición \ref{def:singular_values}} sabemos que la norma del operador multiplicación $\mathcal{D}$ es igual al mayor valor singular $\sigma_{1}$, si este no fuese acotado entonces los ceros no estarían acotados. Sin embargo no podemos asegurar que la matriz $\mathcal{D}$ sea hermitiana, por lo que puede suceder que $\mathcal{D}$ no esta acotada y por el contrario los ceros de los polinomios ortogonales de Sobolev estén acotados, de pasar esto se intentará proponer otras condiciones de acotación utilizando la matriz $\mathcal{D}$.
+
 \begin{definition}\label{def:spectral_radius}
-	\cite{dunford1963linear} El \textit{radio espectral} de una matriz cuadrada $A \in \mathcal{M}_{n}(\mathbb{C})$, denotado por $\rho(A)$, se define como el máximo de los valores absolutos de sus autovalores:
+	\cite{dunford1963linear} El \textbf{radio espectral} de una matriz cuadrada $A \in \mathcal{M}_{n}(\mathbb{C})$, denotado por $\rho(A)$, se define como el máximo de los valores absolutos de sus autovalores:
 	\begin{equation}
 		\rho(A) = \max\{|\lambda| : \lambda \text{ es autovalor de } A\}
 	\end{equation}
@@ -62,18 +320,9 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 	\end{enumerate}
 \end{definition}
 
+\section{Productos internos de Sobolev}
+
 \noindent Una vez establecidos los conceptos básicos del álgebra lineal, debemos extender nuestro marco teórico al contexto de espacios funcionales, donde se desarrolla el estudio de los polinomios ortogonales de Sobolev. Para ello, necesitamos introducir las nociones de espacios prehilbertianos y espacios de Hilbert, que nos permitirán formalizar los distintos productos internos respecto a los cuales definiremos la ortogonalidad. Estos productos internos pueden tomar diversas formas, ya sean continuos o discretos, reales o complejos, y son fundamentales para caracterizar las propiedades de los polinomios ortogonales asociados.
-
-\begin{definition}\label{def:prehilbert_space}
-	Un \textit{espacio prehilbertiano} o \textit{espacio con producto interno} $(X, \langle \cdot, \cdot \rangle)$ es un espacio vectorial $X$ dotado de un producto interno $\langle \cdot, \cdot \rangle: X \times X \rightarrow \mathbb{C}$ (o $\mathbb{R}$), que satisface las siguientes propiedades para todo $x, y, z \in X$ y $\alpha \in \mathbb{C}$ (o $\mathbb{R}$):
-	\begin{enumerate}
-		\item $\langle x, y \rangle = \overline{\langle y, x \rangle}$ (simetría hermitiana)
-		\item $\langle \alpha x + \beta y, z \rangle = \alpha \langle x, z \rangle + \beta \langle y, z \rangle$ (linealidad en la primera variable)
-		\item $\langle x, x \rangle \geq 0$ y $\langle x, x \rangle = 0$ si y solo si $x = 0$ (definida positiva)
-	\end{enumerate}
-
-	Un \textit{espacio de Hilbert} es un espacio prehilbertiano que además es completo respecto a la norma inducida por el producto interno $\|x\| = \sqrt{\langle x, x \rangle}$, es decir, toda sucesión de Cauchy converge a un elemento del espacio.
-\end{definition}
 
 \begin{definition}\label{def:circum_lebesgue_measure}
 	Sea
@@ -121,11 +370,16 @@ Los productos internos que se trabajarán son de la forma:
 	      \end{equation}
 \end{enumerate}
 
-Desde una perspectiva matricial, que facilita el análisis algebraico, podemos considerar que una matriz infinita HPD $M$ induce en $\mathbb{P}[z]$ el siguiente producto:
-\begin{equation}
-	\langle p(z), q(z) \rangle_M = v M w^{*},
-\end{equation}
-donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, \ldots) \in c_{00} = \{(x_n)_{n=1}^{\infty} \in \mathbb{C}^{\mathbb{N}} : \exists n_0 \in \mathbb{N} \quad | \quad x_n=0 ,\forall n\geq n_0\}$ para polinomios $p(z) = \sum_{k=0}^n v_k z^k$ y $q(z) = \sum_{k=0}^m w_k z^k$. La matriz de momentos $M = (c_{ij})^{\infty}_{i,j=0}$ definida por: $c_{ij} = \langle z^i, z^j \rangle_{M}$ Esto induce una norma Hilbertiana denotada por: $\|p(z)\|^{2}_{M} = \langle p(z), p(z)\rangle_{M},\forall p(z) \in P[z]$
+\paragraph{Observación}
+\label{rem:R_support}
+En todos los casos definimos
+\(
+R:=\max\bigl\{|z|:z\in\operatorname{supp}\mu_{0}\cup\operatorname{supp}\mu_{1}\bigr\},
+\)
+donde \(\mu_{0},\mu_{1}\) son las medidas subyacentes al par \((w_{0},w_{1})\)
+o a \((dm_{b;r_b},dm_{a;r_a})\).
+El número \(R\) acota, como veremos en el Cap.~\ref{chap:D},
+el radio de todos los ceros de los polinomios ortogonales asociados.
 
 \begin{definition}\label{def:sobolev_matrix_product}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_0,\textbf{M}_1\}$ un conjunto de matrices HPSD, siendo $\textbf{M}_0$ HPD, el producto matricial de Sobolev inducido, denotado por $\langle \cdot, \cdot \rangle_{\textbf{M}_{\textbf{S}}}$, se define como:
@@ -134,35 +388,45 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	\end{equation}
 \end{definition}
 
-\begin{definition}\label{def:d_application}
-	Sea $\mathcal{D}$ la aplicación $\mathcal{D}:\mathbb{P}[z] \mapsto \mathbb{P}[z]$ tal que: $D(p(z))=zp(z)$.
-	Esta aplicación es lineal ya que
-	$$\mathcal{D}(\alpha p(z) + \beta q(z))=z(\alpha p(z) + \beta q(z))=\alpha \mathcal{D}(p(z)) + \beta \mathcal{D}(q(z))$$
-	\noindent Nos referiremos como $\mathbf{D}$ a la representación matricial del operador multiplicación por $z$ en la base de los polinomios ortonormales.
-\end{definition}
+\paragraph{Observación}
+Cuando \(\mathbf{M}_{0}\) proviene de una medida \(\mu_{0}\) y
+\(\mathbf{M}_{1}\) de \(\mu_{1}\), las cuatro clases \(\textbf{(S1)}\)–\(\textbf{(S4)}\)
+se recuperan como casos particulares de \eqref{eq:Sobolev_matrix_product}.
 
-\begin{definition}\label{def:bounded_eval_point}
-	\cite{escribano2025zeros}
-	Decimos que \(a\in\mathbb{C}\) es un \textit{punto de evaluación acotado} de una medida \(\mu\) (abreviado \emph{bpe} de \(\mu\)) si existe una constante \(C>0\) tal que
-	\[
-		|p(a)|^{2} \leq C \int |p(z)|^{2}\,d\mu(z), \qquad p(z)\in\mathbb{P}[z].
-	\]
-	Denotamos el conjunto de todos los puntos de evaluación acotados de \(\mu\) por
-	\[
-		bpe(\mu) =
-		\left\{ a\in\mathbb{C} :\, a\ \text{es un bpe de } \mu \right\}.
-	\]
-\end{definition}
+\section{Planteamiento del problema}
 
-\begin{definition}\label{def:poly_convex_hull}
-	\cite{escribano2025zeros}
-	Para un conjunto compacto \(K \subset \mathbb{C}\), la \textit{envoltura convexa polinómica} de \(K\), denotada por \(P_C(K)\), se define como
-	\[
-		P_C(K) =
-		\left\{ z \in \mathbb{C} :\, |p(z)| \leq \max_{\xi\in K}|p(\xi)|\ \text{ para todo } p\in\mathbb{P}[z] \right\}.
-	\]
-\end{definition}
-Nótese que para el caso real, $P_C(K)$ coincide con los intervalos del soporte, y para el caso circunferencia, $P_C(K)$ coincide con las circunferencias del soporte.
+Como se ha puede observar, estudio de los ceros de los polinomios ortogonales de Sobolev se ha abordado desde el enfoque de acotar el operador multiplicación $\mathcal{D}$. En este trabajo nos proponemos estudiar el comportamiento asintótico de $\rho(\mathcal{D}_n)$, ya que sabemos que si este es acotado entonces todos los ceros lo serán. Para ello usaremos herramientas de cálculo númerico como Maple, que nos permitirá calcular y visualizar los polinomios ortogonales de Sobolev y sus ceros.
+
+El estudio de los ceros de los polinomios ortogonales de Sobolev se
+traslada, mediante la representación matricial del
+operador multiplicación \(D\), al análisis del \emph{radio espectral}
+\[
+	\rho\bigl(\mathbf{D}_{n}\bigr)
+	:=
+	\max\bigl\{|\lambda|:
+	\lambda\text{ autovalor de }\mathbf{D}_{n}\bigr\}.
+\]
+Sabemos que si la sucesión \(\{\rho(\mathbf{D}_{n})\}_{n\ge0}\) está
+acotada, entonces el \emph{conjunto global de ceros}
+\(Z=\{z:\exists n,\varphi_{n}(z)=0\}\) también lo está
+(Prop.~\ref{prop:bounded_D_implies_bounded_zeros}, cap.~\ref{chap:D}).
+
+\textbf{Objetivo: }
+Determinar el comportamiento asintótico de \(\rho(\mathbf{D}_{n})\)
+en cada uno de los casos \textbf{(S1)}–\textbf{(S4)} y, en particular,
+establecer condiciones —sobre las medidas, los pesos o las matrices—
+bajo las cuales la sucesión es acotada.
+
+\paragraph{Metodología: }
+Para la parte computacional emplearemos
+\textsc{Maple}\,\footnote{%
+	Los scripts se incluyen en el fichero \texttt{maple.txt} adjunto al proyecto.}
+con el fin de:
+\begin{enumerate}
+	\item generar las matrices \(\mathbf{D}_{n}\) para valores crecientes de \(n\),
+	\item visualizar los polinomios ortogonales y sus ceros,
+	\item contrastar numéricamente las cotas teóricas obtenidas.
+\end{enumerate}
 
 \section{Estado del arte}
 
@@ -264,15 +528,38 @@ Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente do
 	radio el diámetro de co($S_{\mu_0}$) $\cup$ co($S_{\mu_1}$).
 \end{theorem}
 
-\begin{lemma}\label{lem:bounded_eval_point_in_hull}
-	\cite{escribano2025zeros} Todo \emph{punto de evaluación acotado} de una medida $\mu$ está contenido en la envoltura polinómicamente convexa del soporte de $\mu$.
+\begin{definition}\label{def:bounded_eval_point}
+	\cite{escribano2025zeros}
+	Decimos que \(a\in\mathbb{C}\) es un \textbf{punto de evaluación acotado} de una medida \(\mu\) (abreviado \textbf{bpe} de \(\mu\)) si existe una constante \(C>0\) tal que
+	\[
+		|p(a)|^{2} \leq C \int |p(z)|^{2}\,d\mu(z), \qquad p(z)\in\mathbb{P}[z].
+	\]
+	Denotamos el conjunto de todos los puntos de evaluación acotados de \(\mu\) por
+	\[
+		bpe(\mu) =
+		\left\{ a\in\mathbb{C} :\, a\ \text{es un bpe de } \mu \right\}.
+	\]
+\end{definition}
 
-	\noindent Además, todo \emph{punto de evaluación acotado} de una medida $\mu$ es un punto de evaluación de la matriz de momentos asociada a $\mu$.
+\begin{definition}\label{def:poly_convex_hull}
+	\cite{escribano2025zeros}
+	Para un conjunto compacto \(K \subset \mathbb{C}\), la \textbf{envoltura convexa polinómica} de \(K\), denotada por \(P_C(K)\), se define como
+	\[
+		P_C(K) =
+		\left\{ z \in \mathbb{C} :\, |p(z)| \leq \max_{\xi\in K}|p(\xi)|\ \text{ para todo } p\in\mathbb{P}[z] \right\}.
+	\]
+\end{definition}
+Nótese que para el caso real, $P_C(K)$ coincide con los intervalos del soporte, y para el caso circunferencia, $P_C(K)$ coincide con las circunferencias del soporte.
+
+\begin{lemma}\label{lem:bounded_eval_point_in_hull}
+	\cite{escribano2025zeros} Todo \textbf{punto de evaluación acotado} de una medida $\mu$ está contenido en la envoltura polinómicamente convexa del soporte de $\mu$.
+
+	\noindent Además, todo \textbf{punto de evaluación acotado} de una medida $\mu$ es un punto de evaluación de la matriz de momentos asociada a $\mu$.
 \end{lemma}
 
 \begin{definition}\label{def:bounded_eval_point_matrix}
 	\cite{escribano2025zeros} Sea $M$ una matriz hermítica positiva definida (HPD) y $a\in\mathbb{C}$.
-	Decimos que $a$ es un \emph{punto de evaluación acotado} (bpe) de $M$ si existe una constante $C>0$ tal que
+	Decimos que $a$ es un \textbf{punto de evaluación acotado} (bpe) de $M$ si existe una constante $C>0$ tal que
 	\[ |p(a)|^{2}\;\le\;C\,\|p(z)\|_{M}^{2}, \quad p(z)\in\mathbb{P}[z]. \]
 \end{definition}
 
@@ -280,7 +567,7 @@ Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente do
 \begin{proposition}\label{prop:equiv_bounded_eval_point}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD y $a\in\mathbb{C}$. Entonces son equivalentes:
 	\begin{enumerate}
-		\item $a$ es un \emph{punto de evaluación acotado} de $M$;
+		\item $a$ es un \textbf{punto de evaluación acotado} de $M$;
 		\item el conjunto $\{M,\,M(a)\}$ es secuencialmente dominado;
 		\item $\gamma_{a}(M) > 0$.
 	\end{enumerate}
@@ -309,16 +596,5 @@ Cuando $[c,d] \nsubseteq [a,b]$ entonces no podemos hablar de secuencialmente do
 	En consecuencia, el conjunto de ceros de los polinomios ortogonales de Sobolev asociados está acotado.
 \end{corollary}
 
-\section{Motivación y Objetivos}
 
-Como se ha puede observar, estudio de los ceros de los polinomios ortogonales de Sobolev se ha abordado desde el enfoque de acotar el operador multiplicación $\mathcal{D}$. En este trabajo nos proponemos estudiar el comportamiento asintótico de $\rho(\mathcal{D}_n)$, ya que sabemos que si este es acotado entonces todos los ceros lo serán. Para ello usaremos herramientas de cálculo númerico como Maple, que nos permitirá calcular y visualizar los polinomios ortogonales de Sobolev y sus ceros.
-
-Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabemos que los polinomios mónicos ortogonales de Sobolev se pueden obtener a partir de la matriz del operador multiplicación $\mathcal{D}$ y la matriz de momentos asociada al producto interno $\mathbf{M}$.
-$$
-	P_n(z)=\lvert zI_n-\mathcal{D}_n\rvert,\;
-	\mathcal{D}=(c_{i,j})_{i,j=0}^\infty\;\text{con}\;
-	c_{i,j}=\langle z\varphi_j,\varphi_i\rangle_{\mathbf{M}},\;
-	\varphi_i,\varphi_j\;\text{ortonormales}
-$$
-Luego los ceros de los polinomios ortogonales de Sobolev se pueden obtener como los autovalores de la matriz $\mathcal{D}$. Por lo tanto, el estudio de los ceros de los polinomios ortogonales de Sobolev se reduce al estudio de los autovalores de la matriz $\mathcal{D}$, si esta fuese hermitiana sería diagonalizable con autovalores reales que coincidirían con los valores singulares, por la \textit{Definición \ref{def:singular_values}} sabemos que la norma del operador multiplicación $\mathcal{D}$ es igual al mayor valor singular $\sigma_{1}$, si este no fuese acotado entonces los ceros no estarían acotados. Sin embargo no podemos asegurar que la matriz $\mathcal{D}$ sea hermitiana, por lo que puede suceder que $\mathcal{D}$ no esta acotada y por el contrario los ceros de los polinomios ortogonales de Sobolev estén acotados, de pasar esto se intentará proponer otras condiciones de acotación utilizando la matriz $\mathcal{D}$.
 
