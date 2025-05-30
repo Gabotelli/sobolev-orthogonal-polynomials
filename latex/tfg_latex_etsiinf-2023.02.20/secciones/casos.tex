@@ -1,7 +1,11 @@
 \chapter{Casos Analizados y Conjeturas}
 \label{ch:caso_real}
 
-$Definicion: valores singulares de D_n, sigma_1,n...,rho(D_n),maxZ_n (Introducir notacion de las secciones nxn)$
+Para abordar la visualización y análisis de los ceros, introduciremos la notación de los conceptos presentados anteriormente para secciones $n \times n$ del operador $\mathbf{D}$ que vamos a considerar en los ejemplos.
+
+\begin{proposition}
+	\todo{Poner el resultado de traslacion de los ceros, por lo que se trasladara atomo al 0}
+\end{proposition}
 
 \section{Caso Real}
 
@@ -486,10 +490,51 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0
 
 \section{Análisis y Conjeturas}
 
-Tras ver todos los ejemplos podemos conjeturar lo siguiente:
+\begin{proposition}\label{prop:bounded_operator_continuous}
+	Para el caso continuo real secuencialmente dominado con soportes $I_1=I_2=[a,b]$, definamos
+	\(
+	R = \max\{|a|,|b|\},
+	\qquad
+	\alpha = \max_{t\in[a,b]}\frac{w_1(t)}{w_0(t)}.
+	\)
+	Entonces el operador multiplicación $\mathcal{D}$
+	es acotado en el producto Sobolev y satisface
+	\(
+	\|\mathcal{D}\|\;\le\;\sqrt{R^{2}+2\alpha}\,.
+	\)
+\end{proposition}
 
+\begin{proof}
+	Sea $p(t)\in\mathbb{P}[t]$.
+	\noindent Utilizando que $(a+b)^2\leq 2(a^2+b^2)$ para $a,b\ge0$, se obtiene:
+	$$
+		\Vert \mathcal{D}(p(t))\Vert^{2}
+		= \int_{a}^{b} t^2 p^2(t) w_0(t)\,dt
+		\;+\;\int_{a}^{b} \Bigl[(tp(t))'\Bigr]^2 w_1(t)\,dt
+	$$
+	$$
+		= \int_{a}^{b} t^2 p^2(t) w_0(t)\,dt
+		+ \int_{a}^{b} \Bigl(p(t)+tp'(t)\Bigr)^2 w_1(t)\,dt
+		\;\le\;
+	$$
+	$$
+		\int_{a}^{b} t^2p^2(t)w_0(t)\; dt+2\Bigl(\int_{a}^{b} p(t)^2w_1(t)\; dt +\int_{a}^{b} t^2p'(t)^2w_1(t)\; dt\Bigr) \leq
+	$$
+	$$
+		R^{2} \Bigl(\int_{a}^{b} p^2(t)w_0(t)\; dt +  2\int_{a}^{b} p'(t)^2w_1(t)\; dt\Bigr)+ 2\int_{a}^{b} p(t)^2w_1(t)\; dt \leq
+	$$
+	$$
+		2R^{2} \Vert p(t)\Vert^{2} + 2\alpha \int_{a}^{b} p(t)^2w_0(t)\; dt \leq 2(R^{2}+\alpha)\Vert p(t) \Vert^{2}
+	$$
+
+\end{proof}
+
+\noindent Por ejemplo, si $[a,b]=[-1,1]$ y $\alpha=1$, entonces
+$\|\mathcal{D}\|\le\sqrt{2+2}=\sqrt{4}=2$.
+
+\todo{reordenar analisis}
 \begin{itemize}
-	\item El segundo mayor valor singular de $\mathcal{D}_{n}$ converge al extremo con mayor módulo de los soportes. Se puede encontrar una constante de proporción o de desviacion $K$ que depende de los soportes (extremos,intersección, tamaño) para poder acotar los ceros.\todo{puede que la k y K esten relacionadas}
+	\item El segundo mayor valor singular de $\mathcal{D}_{n}$ converge al extremo con mayor módulo de los soportes. Se puede encontrar una constante de proporción o de desviacion $K$ que depende de los soportes (extremos,intersección, tamaño) para poder acotar los ceros.
 	\item $\lim_{n \to \infty} \max{Z_n}=\max\{|a|,|b|,|c|,|d|\} + k = \max\{|a|,|b|,|c|,|d|\} \cdot k'$
 	\item El $k$ cuando $\max\{|a|,|b|\} < \max\{|c|,|d|\}$ es notablemente mayor que el $k$ cuando ocurre lo contrario.
 	\item $k$ o $k'$ depende de la posición relativa entre los soportes.
@@ -511,3 +556,23 @@ A raíz de estos ejemplos podemos conjeturar lo siguiente:
 	\item Si $c \notin [a,b]$ entonces los ceros convergen al átomo, y podemos usar el átomo como cota. Pero necesitamos determinar el coeficiente $k$ para poder abarcar todos los ceros.
 \end{itemize}
 
+\begin{conjetura}
+	Para los 4 casos (1.3)-(1.6) se tiene que
+	$$
+		\lim_{n \to \infty} \rho(\mathbf{D}_n) < \infty
+	$$
+\end{conjetura}
+
+\paragraph{Resultado}
+En todos los ejemplo se tiene que $\lim_{n \to \infty} \sigma_{2,n} < \infty$.
+
+\begin{conjetura}
+	Para los 4 casos (1.3)-(1.6) se tiene que si $\lim_{n \to \infty} \sigma_{1,n} < \infty$ entonces
+	$$
+		\lim_{n \to \infty} \sigma_{2,n} < \infty
+	$$
+\end{conjetura}
+
+\todo{poner resultado entrelazamiento y terminar de formalizar conjeturas}
+
+\todo{cuando el centro de la segunda circunferencia está dentro del disco abierto de la primera, la D esta acotada, y cuando esta fuera no se sabe que pasa.}
