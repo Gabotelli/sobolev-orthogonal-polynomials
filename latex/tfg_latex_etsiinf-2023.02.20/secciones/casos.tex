@@ -1,10 +1,22 @@
 \chapter{Casos Analizados y Conjeturas}
 \label{ch:caso_real}
 
-Para abordar la visualización y análisis de los ceros, introduciremos la notación de los conceptos presentados anteriormente para secciones $n \times n$ del operador $\mathbf{D}$ que vamos a considerar en los ejemplos.
-
-\begin{proposition}
-	\todo{Poner el resultado de traslacion de los ceros, por lo que se trasladara atomo al 0}
+\begin{proposition}\label{prop:singular_values_limit}
+	Sea $\mathcal{D}$ el operador multiplicación por $z$ en
+	$(\mathbb{P}[z],\langle\cdot,\cdot\rangle)$ y
+	$\mathbf{D}=(d_{i,j})_{i,j\ge0}$ su matriz infinita
+	(Proposición \ref{def:d_representation}). Sea
+	$\mathbf{D}_n=(d_{i,j})_{0\le i,j\le n}$ la sección principal de orden $n+1$
+	(Definición \ref{def:section_matrix}) y
+	\[
+		\sigma_{1,n}\ge\sigma_{2,n}\ge\cdots\ge\sigma_{n+1,n}
+	\]
+	sus valores singulares (Definición \ref{def:singular_values}).
+	Entonces
+	\[
+		\lim_{n\to\infty}\sigma_{1,n}
+		\;=\;\|\mathcal{D}\|.
+	\]
 \end{proposition}
 
 \section{Caso Real}
@@ -555,6 +567,10 @@ A raíz de estos ejemplos podemos conjeturar lo siguiente:
 	\item Si $c \in [a,b]$ entonces los ceros convergen al límite del soporte, y podemos usar el segundo mayor valor singular como cota.
 	\item Si $c \notin [a,b]$ entonces los ceros convergen al átomo, y podemos usar el átomo como cota. Pero necesitamos determinar el coeficiente $k$ para poder abarcar todos los ceros.
 \end{itemize}
+
+\begin{proposition}
+	\todo{Poner el resultado de traslacion de los ceros, por lo que se trasladara atomo al 0}
+\end{proposition}
 
 \begin{conjetura}
 	Para los 4 casos (1.3)-(1.6) se tiene que

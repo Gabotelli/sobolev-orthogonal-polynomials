@@ -71,11 +71,11 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 
 Dado un producto interno $\langle\cdot,\cdot\rangle$ en $\mathbb{P}[z]$,
 la \emph{sucesión de polinomios ortonormales}
-$\{P_n\}_{n\ge 0}$ se obtiene aplicando
+$\{\varphi_n\}_{n\ge 0}$ se obtiene aplicando
 el algoritmo de Gram-Schmidt a la base monomial $\{1,z,z^2,\dots\}$:
 \[
-	\deg P_n=n,\qquad
-	\langle P_n,P_k\rangle=\delta_{nk}.
+	\deg \varphi_n=n,\qquad
+	\langle \varphi_n,\varphi_k\rangle=\delta_{nk}.
 \]
 Cada $P_n$ es único salvo su signo si se exige que su coeficiente principal sea positivo.
 
@@ -178,30 +178,13 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 \end{definition}
 
 \begin{proposition}\label{def:d_representation}
-	Sea \(\{\varphi_n\}_{n\ge0}\) una base \todo{agregar definicion de D del pdf ceros trasladados} ortonormal de \(\mathbb{P}[z]\) respecto a un
-	producto interior \(\langle\!\cdot,\cdot\!\rangle\) (real o complejo).
-	Definimos la matriz infinita
-	\[
-		\mathbf{D}=\bigl(d_{i,j}\bigr)_{i,j\ge0},
-		\qquad
-		d_{i,j}\;:=\;\bigl\langle z\,\varphi_j,\;\varphi_i\bigr\rangle .
-	\]
-	Entonces, para cualquier \(p=\sum_{j=0}^N c_j\varphi_j\) se cumple
-	\(
-	Dp=\sum_{i=0}^\infty\Bigl(\sum_{j=0}^\infty d_{i,j}\,c_j\Bigr)\varphi_i,
-	\)
-	es decir, \(D\) actúa sobre los vectores de coordenadas como el operador lineal
-	inducido por \(\mathbf{D}\).
-
-	\[
-		\mathbf{D}=\begin{pmatrix}
-			d_{0,0} & d_{0,1} & d_{0,2} & d_{0,3} & \cdots \\
-			d_{1,0} & d_{1,1} & d_{1,2} & d_{1,3} & \cdots \\
-			0       & d_{2,1} & d_{2,2} & d_{2,3} & \cdots \\
-			0       & 0       & d_{3,2} & d_{3,3} & \cdots \\
-			\vdots  & \vdots  & \vdots  & \vdots  & \ddots
-		\end{pmatrix}.
-	\]
+	Sea \(\{\varphi_n\}_{n\ge0}\) una base ortonormal de \(\mathbb{P}[z]\) respecto a un
+	producto interior \(\langle\!\cdot,\cdot\!\rangle\).
+	$z\varphi_n(z)$ es un polinomio de grado $n+1$ que se puede expresar en términos de la base ortonormal como:
+	$$
+		z\varphi_n(z)= d_{0,0}\varphi_0(z)+d_{1,0}\varphi_1(z)+\dots+d_{n,0}\varphi_n(z)+d_{n,n+1}\varphi_{n+1}(z)
+	$$
+	\noindent Esta expresión recurrente define la matriz infinita $\mathbf{D}=(d_{i,j})_{i,j=0}^{\infty}$ que representa al operador multiplicación $\mathcal{D}$ respecto de la base de polinomios ortonormales. Denotamos por $\mathbf{D}_n$ a la sección de orden $n$.
 \end{proposition}
 
 \begin{proposition}\label{prop:matriz_hessenberg}
@@ -239,11 +222,44 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	      cuya transpuesta tiene como autovalores los ceros del polinomio
 	      \(\varphi_{n+1}\).
 	      Esto conecta la teoría espectral de \(\mathbf{D}\) con la localización de ceros.
+	\item El determinante de $\mathbf{D}_n -z \mathbf{I}_n$ denotado por $\vert \mathbf{D}_n -z \mathbf{I}_n\vert $ donde $\mathbf{I}_n$ es la matriz identidad de dimensiones $(n+1)\times (n+1)$ es un polinomio proporcional a $\varphi_{n+1}(z)$, es decir, tienen las misma raíces.
 \end{itemize}
 
 \begin{proof}
-	\todo{poner demostracion de que los ceros son los autovalores del determinante}
+	\noindent Sea $z_0$ una raíz de $\varphi_{n+1}(z)$, es decir, $\varphi_{n+1}(z_0)=0$. Entonces:
+
+	$$
+		z_0\varphi_0(z_0)= d_{0,0}\varphi_0(z_0)+d_{1,0}\varphi_1(z_0)
+	$$
+	$$
+		z_0\varphi_1(z_0)= d_{0,1}\varphi_0(z_0)+d_{1,1}\varphi_1(z_0)+d_{2,1}\varphi_{2}(z_0)
+	$$
+	$$
+		----------------
+	$$
+	$$
+		z_0\varphi_n(z_0)= d_{0,n}\varphi_0(z_0)+d_{1,n}\varphi_1(z_0)+\dots+d_{n,n}\varphi_n(z_0)+d_{n+1,n}\varphi_{n+1}(z_0)
+	$$
+
+	\noindent Puesto que $\varphi_{n+1}(z_0)=0$, la última igualdad queda:
+	$$
+		z_0\varphi_n(z_0)= d_{0,0}\varphi_0(z_0)+d_{1,0}\varphi_1(z_0)+\dots+d_{n,0}\varphi_n(z_0).
+	$$
+
+	\noindent Esto se puede expresar matricialmente de la siguiente forma
+	$$
+		z_0\begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix} = \mathbf{D}^{t}_n \begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix}
+	$$
+
+	\noindent lo cual significa que $z_0$ es autovalor de la matriz $\mathbf{D}^{t}_n$ siendo el autovector \newline
+	$(\varphi_0(z_0),\varphi_1(z_0),\dots,\varphi_n(z_0))$ (que es no nulo ya que $\varphi_0(z)$ es constante).
+
+	\noindent Por lo tanto, todos las raíces de $\varphi_n$ son autovalores de la matriz $\mathbf{D}^{t}_n$.
+
+	\noindent
 \end{proof}
+
+\noindent Como consecuencia, el determinante de $\mathbf{D}_n -z \mathbf{I}_n$ un polinomio mónico.
 
 Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabemos que los polinomios mónicos ortogonales de Sobolev se pueden obtener a partir de la matriz del operador multiplicación $\mathcal{D}$ y la matriz de momentos asociada al producto interno $\mathbf{M}$.
 
@@ -288,16 +304,15 @@ Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabe
 	\end{enumerate}
 \end{definition}
 
-\begin{definition}
-	\begin{definition}\label{def:notation_matrix_sections}
-		Sea $\mathbf{D}_{n}$ la sección de la matriz infinita $\mathbf{D}$ operador multiplicación por $z$ definido en el espacio de polinomios $\mathbb{P}[z]$. Definimos:
-		\begin{enumerate}
-			\item Los valores singulares de $\mathbf{D}_{n}$ se denotan como $\sigma_{1,n} \ge \sigma_{2,n} \ge \ldots, \sigma_{n,n}$
-			\item El radio espectral como $\rho(\mathbf{D}_{n})$
-			\item El conjunto de ceros de $\varphi_n$ como $Z_{n}$
-		\end{enumerate}
-	\end{definition}
+\begin{definition}\label{def:notation_matrix_sections}
+	Sea $\mathbf{D}_{n}$ la sección de la matriz infinita $\mathbf{D}$ operador multiplicación por $z$ definido en el espacio de polinomios $\mathbb{P}[z]$. Definimos:
+	\begin{enumerate}
+		\item Los valores singulares de $\mathbf{D}_{n}$ se denotan como $\sigma_{1,n} \ge \sigma_{2,n} \ge \ldots, \sigma_{n,n}$
+		\item El radio espectral como $\rho(\mathbf{D}_{n})$
+		\item El conjunto de ceros de $\varphi_n$ como $Z_{n}$
+	\end{enumerate}
 \end{definition}
+
 
 \section{Productos internos de Sobolev}
 
@@ -351,8 +366,8 @@ Los productos internos que se trabajarán son de la forma:
 
 \begin{definition}\label{def:sobolev_product}
 	\cite{escribano2025boundedness}
-	Sea \(\boldsymbol{\mu}=(\mu_1,\mu_2)\) un sistema de medidas de Borel,
-	positivas y finitas, con soportes \(\operatorname{supp}_{\mu_1},\operatorname{supp}_{\mu_2}\subset\mathbb C\) y \( \mu_1\) con soporte infinito,
+	Sea \(\boldsymbol{\mu}=(\mu_1,\mu_2)\) un conjunto de medidas de Borel,
+	positivas y finitas, con soportes \(\operatorname{supp}(\mu_1),\operatorname{supp}(\mu_2)\subset\mathbb C\) y \( \mu_1\) con soporte infinito,
 	y sea \(p,q\in\mathbb P[z]\).
 	Definimos el \emph{producto de Sobolev de orden \(m\)} asociado a
 	\(\boldsymbol{\mu}\) como
@@ -401,10 +416,11 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 
 \begin{definition}
 	\label{rem:R_support}
-	En todos los casos denotamos
+	En los casos continuos denotamos
 	\(
-	R:=\max\bigl\{|z|:z\in\operatorname{supp}\mu_{0}\cup\operatorname{supp}\mu_{1}\bigr\},
+	R:=\max\bigl\{|z|:z\in\operatorname{supp}(\mu_{1})\cup\operatorname{supp}(\mu_{2})\bigr\},
 	\)
+	y en el caso discreto con átomo, $R:=\max\bigl\{|z|:z\in\operatorname{supp}(\mu_{1})\cup\{c\}\bigr\}$.
 \end{definition}
 
 \begin{definition}\label{def:sobolev_matrix}
@@ -428,13 +444,30 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 		\boldsymbol{\Lambda}^{\,*}
 	\]
 
-	Luego el \emph{producto matricial interno de Sobolev} asociado a un conjunto de matrices HPSD \(\{\textbf{M}_1,\textbf{M}_2\}\) con $\textbf{M}_1$ siendo HPD en $\mathbb{P}[z]$ se define como:
+	donde $\boldsymbol{\Lambda} = (\lambda_{i,j})_{i,j\ge0}$ es la matriz infinita que representa el operador derivación definida por:
+	\[
+		\lambda_{i,j} = \begin{cases}
+			j & \text{si } i = j-1  \\
+			0 & \text{en otro caso}
+		\end{cases}
+	\]
+	o equivalentemente:
+	\[
+		\boldsymbol{\Lambda} = \begin{pmatrix}
+			0      & 1      & 2      & 3      & 4      & \cdots \\
+			0      & 0      & 1      & 2      & 3      & \cdots \\
+			0      & 0      & 0      & 1      & 2      & \cdots \\
+			0      & 0      & 0      & 0      & 1      & \cdots \\
+			\vdots & \vdots & \vdots & \vdots & \vdots & \ddots
+		\end{pmatrix}
+	\]
+
+	Luego el \emph{producto matricial interno de Sobolev} asociada a un conjunto de matrices HPSD \(\{\textbf{M}_1,\textbf{M}_2\}\) con $\textbf{M}_1$ siendo HPD en $\mathbb{P}[z]$ se define como:
 
 	$$
 		\langle p(t), q(t) \rangle_{\textbf{M}_{S}} = v \Bigl( \textbf{M}_1 + \boldsymbol{\Lambda}\,\textbf{M}_2\,
 		\boldsymbol{\Lambda}^{\,*}\Bigr) w^{*}.
 	$$
-	donde $\boldsymbol{\Lambda} = .$
 \end{definition}
 
 \begin{definition}\label{def:dirac_measure}
@@ -449,25 +482,24 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 
 	La \emph{matriz de momentos} asociada,
 	denotada \(M(a)=M(\delta_{a})\), es por tanto
-	\todo{poner los conjugados en la matriz}
 	\[
 		M(a)=\bigl(a^{\,n}\,\overline{a}^{\,m}\bigr)_{n,m\ge0}
 		=
 		\begin{pmatrix}
-			1      & a      & a^{2}  & a^{3}  & \dots  \\
-			a      & a^{2}  & a^{3}  & a^{4}  & \dots  \\
-			a^{2}  & a^{3}  & a^{4}  & a^{5}  & \dots  \\
-			a^{3}  & a^{4}  & a^{5}  & a^{6}  & \dots  \\
-			\vdots & \vdots & \vdots & \vdots & \ddots
+			1      & \overline{a}      & \overline{a}^{2}      & \overline{a}^{3}      & \dots  \\
+			a      & |a|^{2}           & a\overline{a}^{2}     & a\overline{a}^{3}     & \dots  \\
+			a^{2}  & a^{2}\overline{a} & |a|^{4}               & a^{2}\overline{a}^{3} & \dots  \\
+			a^{3}  & a^{3}\overline{a} & a^{3}\overline{a}^{2} & |a|^{6}               & \dots  \\
+			\vdots & \vdots            & \vdots                & \vdots                & \ddots
 		\end{pmatrix}.
 	\]
 
 	Nótese que dicha matriz de momentos no define un producto interno.
 \end{definition}
 
-\todo{poner frase de transicion, escribano y gonzalo generalizaron la definicion de producto interno de Sobolev a producto interno de Sobolev matricial, con matrices no necesariamente de momentos.}
+Escribano y Gonzalo generalizaron la definición de producto interno de Sobolev a producto interno de Sobolev matricial, considerando matrices que no necesariamente provienen de medidas de Borel.
 
-\begin{definition}\label{def:sobolev_matrix_product}\todo{Ahora que tengo la def 19, hace falta la 20?}
+\begin{definition}\label{def:sobolev_matrix_product}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HPSD, siendo $\textbf{M}_1$ HPD, el producto matricial de Sobolev inducido, denotado por $\langle \cdot, \cdot \rangle_{\textbf{M}_{\textbf{S}}}$, se define como:
 	\begin{equation}
 		\langle p(z), q(z) \rangle_{\textbf{M}_{\textbf{S}}} = \langle p(z), q(z) \rangle_{\textbf{M}_1} + \langle p'(z), q'(z) \rangle_{\textbf{M}_2},\quad \forall p(z), q(z) \in \mathbb{P}[z]
@@ -479,12 +511,13 @@ Cuando \(\mathbf{M}_{1}\) es la matriz de momentos de una medida \(\mu_{1}\) y
 \(\mathbf{M}_{2}\) de \(\mu_{2}\), los cuatro casos (1.3)-(1.6) se recuperan como casos particulares.
 
 \section{Planteamiento del problema}
-\todo{sean mu1 mu2 dos medidas de soporte compacto, sea <,> el producto Sobolev y Sea Z el conjunto de ceros de los polinomios de Sobolev. Es Z acotado?}
-El problema central que motiva este trabajo es el siguiente: \textbf{¿Si tenemos dos medidas con soportes acotados, entonces el conjunto de ceros $Z$ es necesariamente acotado?} Esta cuestión fundamental no ha sido completamente resuelta en la literatura, especialmente cuando los soportes son disjuntos o cuando no se cumple la hipótesis de dominación secuencial, que se veran despues.
+Sean $\mu_1$ y $\mu_2$ dos medidas de Borel positivas con soporte compacto, con $\mu_1$ con soporte infinito, sea $\langle\cdot,\cdot\rangle_S$ el producto interno de Sobolev asociado y sea $Z$ el conjunto de ceros de los polinomios ortonormales de Sobolev $\{\varphi_i\}_{i\ge 0}$. ¿Es $Z$ acotado?
 
-El estudio de los ceros de los polinomios ortogonales de Sobolev se
+El problema central que motiva este trabajo es el siguiente: Esta cuestión fundamental no ha sido completamente resuelta en la literatura, especialmente cuando los soportes son disjuntos o cuando no se cumple la hipótesis de dominación secuencial, conceptos que se verán después.
+
+El estudio de la acotación de los ceros de los polinomios ortogonales de Sobolev se
 traslada, mediante el uso de la representación matricial del
-operador multiplicación \(D\), al análisis del \emph{radio espectral} de las secciones de la matriz infinita. Sabemos que si la sucesión \(\{\rho(\mathbf{D}_{n})\}_{n\ge0}\) esta acotada, entonces el \emph{conjunto de ceros}
+operador multiplicación $\mathcal{D}$, al análisis del \emph{radio espectral} de las secciones de la matriz infinita. Sabemos que si la sucesión \(\{\rho(\mathbf{D}_{n})\}_{n\ge0}\) esta acotada, entonces el \emph{conjunto de ceros}
 \(Z\) estará acotado.
 
 \textbf{Objetivo: }
@@ -537,14 +570,15 @@ Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino
 	$$d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}).$$
 \end{definition}
 
-En el caso continuo real, se tiene que \todo{poner como consecuencia}
-\begin{proposition}
+En el caso continuo real, se tiene que como consecuencia de la Definición \ref{def:seq_dominated}:
+
+\begin{corollary}
 	El producto interno de Sobolev
 	$$\langle p(t), q(t) \rangle = \int_{a}^{b} p(t) q(t) w_1(t) \, dt + \int_{c}^{d} p'(t) q'(t) w_2(t) \, dt$$
 	es secuencialmente dominado cuando se cumple que $[c,d] \subset [a,b]$ y $\exists c > 0, w_2(t)\leq c \cdot w_1(t)$ continuos.
-\end{proposition}
+\end{corollary}
 
-Para trabajar con matrices de momentos introduciremos la definición para esta noción de secuencial dominación y un teorema análogo que nos dará la acotación. \todo{poner que fueron generalizados por escribano y gonzalo}
+Para trabajar con matrices de momentos introduciremos la definición para esta noción de secuencial dominación y un teorema análogo que nos dará la acotación. Estos conceptos fueron generalizados por Escribano y Gonzalo \cite{escribano2025boundedness} para el caso matricial.
 
 \begin{definition}\label{def:seq_dominated}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_1,\textbf{M}_2\}$ es secuencialmente dominada si existe una constante positiva $C$ tal que
@@ -558,17 +592,16 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 	Entonces, el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$
 \end{theorem}
 
-\begin{proposition}\label{prop:seq_dominated_sobolev}
-	\cite{escribano2025boundedness}
-	El producto interno de Sobolev
+\begin{corollary}\label{cor:seq_dominated_sobolev}
+	Como consecuencia del Teorema \ref{thm:bounded_operator}, el producto interno de Sobolev
 	$$\langle p(z) , q(z) \rangle_{S}\;=\;
 		\int_{S_{b}(r_b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
 		\;+\;
 		\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
-	es secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, \todo{poner definicion de disco} la condición en los pesos se tiene ya que $w_1(z)\equiv w_2(z) \equiv 1$.
-\end{proposition}
+	es secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, donde $\mathbb{D}_b(r_b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$. La condición en los pesos se tiene ya que $w_1(z)\equiv w_2(z) \equiv 1$.
+\end{corollary}
 
-\todo{poner introduccion a los puntos de evaluacion acotados y conexion con acotacion de polinomios}
+Los puntos de evaluación acotados constituyen una herramienta fundamental para extender los resultados de acotación del operador multiplicación a productos internos de Sobolev con componentes discretas. Como veremos en los resultados siguientes, cuando un punto es de evaluación acotada respecto a la medida principal $\mu_1$, es posible garantizar la acotación del operador multiplicación en productos internos de Sobolev que incluyen términos discretos como $|p'(a)|^2$, lo que a su vez asegura la acotación del conjunto de ceros de los polinomios ortogonales asociados.
 
 \begin{definition}\label{def:bounded_eval_point}
 	\cite{escribano2025zeros}
@@ -587,7 +620,7 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 	\]
 \end{definition}
 
-En particular:\todo{poner referencia}
+En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 \begin{enumerate}
 	\item Para el caso real, cuando $K$ es union de intervalos, $P_C(K)$ coincide con $K$.
 	\item Para el caso circunferencia, cuando $K$ es $S_a(r)$, $P_C(K)$ coincide con $\mathbb{D}_a(r)$.
@@ -616,20 +649,20 @@ En particular:\todo{poner referencia}
 
 \begin{proposition}\label{prop:bounded_derivative_eval}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD tal que el operador de multiplicación $D$
-	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{M}\bigr)$, y sea $a_{1}\in\mathbb{C}$ punto de evaluación acotado de $M$.
+	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{M}\bigr)$, y sea $a_\in\mathbb{C}$ punto de evaluación acotado de $M$.
 	Entonces $D$ también es acotado en $\mathbb{P}[z]$ respecto a la norma
 	\[
 		\|p(z)\|_{MS}^{2}\;=\;\|p(z)\|_{M}^{2}\;+\;
-		\bigl|p'(a_{1})\bigr|^{2}.
+		\bigl|p'(a_)\bigr|^{2}.
 	\]
 \end{proposition}
 
 \begin{corollary}\label{cor:bounded_zeros_circle}
 	\cite{escribano2025zeros}
 	Sea $m_{b;r_b}$ una medida de Lebesgue soportada en una circunferencia $S_{b}(r_b)$.
-	Supongamos que $a_{1}\in \mathbb{D}_{b}(r_b)$ y consideremos la norma de Sobolev discreta
+	Supongamos que $a\in \mathbb{D}_{b}(r_b)$ y consideremos la norma de Sobolev discreta
 	\[
-		\|p\|_{S}^{2}= \int_{S_{b}(r_b)} |p(z)|^{2}\,dm_{b;r_b}\;+\;\bigl|p'(a_{1})\bigr|^{2},
+		\|p\|_{S}^{2}= \int_{S_{b}(r_b)} |p(z)|^{2}\,dm_{b;r_b}\;+\;\bigl|p'(a)\bigr|^{2},
 		\qquad p\in\mathbb{P}[z].
 	\]
 	Entonces el operador multiplicación $D\colon p(z)\mapsto z\,p(z)$
@@ -637,10 +670,25 @@ En particular:\todo{poner referencia}
 	En consecuencia, el conjunto de ceros de los polinomios ortogonales de Sobolev asociados está acotado.
 \end{corollary}
 
-Otras tecnicas de estudio la acotacion el conjunto de ceros\todo{no se ultiza matrices ni acotacion de operadores}
+Además de las técnicas basadas en matrices de momentos y acotación de operadores, existen otros enfoques en la literatura para estudiar la acotación del conjunto de ceros de polinomios ortogonales de Sobolev. Estos métodos alternativos no requieren necesariamente el uso de representaciones matriciales ni el análisis de la acotación del operador multiplicación.
+
+Un enfoque geométrico importante se basa en el análisis directo de las propiedades de los soportes de las medidas involucradas. Por ejemplo, cuando los soportes de las medidas $\mu_1$ y $\mu_2$ son disjuntos, es posible obtener cotas explícitas para la localización de los ceros utilizando técnicas de análisis complejo y teoría de potencial.
+
+Otro método relevante utiliza las propiedades asintóticas de los coeficientes de las relaciones de recurrencia de tres términos que satisfacen los polinomios ortogonales de Sobolev. Este enfoque, desarrollado por varios autores, permite estudiar el comportamiento de los ceros sin necesidad de construir explícitamente las matrices asociadas.
+
+También se han desarrollado técnicas basadas en desigualdades integrales y métodos variacionales que proporcionan información sobre la distribución asintótica de los ceros. Estos métodos son particularmente útiles cuando se busca información cualitativa sobre el comportamiento de los ceros más que cotas cuantitativas precisas.
+
+Un ejemplo concreto de estas técnicas alternativas se presenta en el siguiente resultado para soportes disjuntos:
 
 \begin{theorem}\label{thm:disjoint_support}
-	\cite{garcia2001ceros} En un producto Sobolev del Caso Real Continuo, si \todo{definir co}co($S_{\mu_1}$) $\cap$ co($S_{\mu_2}$) = $\emptyset$, entonces, los ceros de $Q_n$ están
-	contenidos en el disco centrado en el punto de co($S_{\mu_2}$) más alejado de co($S_{\mu_1}$) y
-	radio el diámetro de co($S_{\mu_1}$) $\cup$ co($S_{\mu_2}$).
+	\cite{lagomasino2001sobolev} En un producto Sobolev del Caso Real Continuo, si $\operatorname{co}(\operatorname{supp}(\mu_1)) \cap \operatorname{co}(\operatorname{supp}(\mu_2)) = \emptyset$, entonces, los ceros de $\varphi_n$ están contenidos en el disco centrado en el punto de $\operatorname{co}(\operatorname{supp}(\mu_2))$ más alejado de $\operatorname{co}(\operatorname{supp}(\mu_1))$ y
+	radio el diámetro de $\operatorname{co}(\operatorname{supp}(\mu_1)) \cup \operatorname{co}(\operatorname{supp}(\mu_2))$. Donde $\operatorname{co}(K)$ es la envoltura convexa de un conjunto \(K\),
+	\[
+		\operatorname{co}(K)=\Bigl\{\sum_{j=1}^m \lambda_j x_j \;:\;
+		x_j\in K,\;
+		\lambda_j\ge 0,\;
+		\sum_{j=1}^m \lambda_j =1,\;
+		m\in \mathbb{N}\Bigr\};
+	\]
+	es decir, el menor conjunto convexo que contiene a \(K\) o, equivalentemente, la intersección de todos los subconjuntos convexos cerrados de \(C\) que contienen a \(K\).
 \end{theorem}
