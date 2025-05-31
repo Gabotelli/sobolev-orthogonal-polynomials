@@ -1,23 +1,22 @@
 \chapter{Casos Analizados y Conjeturas}
 \label{ch:caso_real}
 
-\begin{proposition}\label{prop:singular_values_limit}
-	Sea $\mathcal{D}$ el operador multiplicación por $z$ en
-	$(\mathbb{P}[z],\langle\cdot,\cdot\rangle)$ y
-	$\mathbf{D}=(d_{i,j})_{i,j\ge0}$ su matriz infinita
-	(Proposición \ref{def:d_representation}). Sea
-	$\mathbf{D}_n=(d_{i,j})_{0\le i,j\le n}$ la sección principal de orden $n+1$
-	(Definición \ref{def:section_matrix}) y
-	\[
-		\sigma_{1,n}\ge\sigma_{2,n}\ge\cdots\ge\sigma_{n+1,n}
-	\]
-	sus valores singulares (Definición \ref{def:singular_values}).
-	Entonces
-	\[
-		\lim_{n\to\infty}\sigma_{1,n}
-		\;=\;\|\mathcal{D}\|.
-	\]
-\end{proposition}
+En el capítulo \ref{ch:intro} se establecieron los cimientos teóricos que guiarán todo el trabajo: se revisaron las nociones básicas de polinomios ortogonales y sus matrices de momentos, se introdujo el operador de multiplicación \(\mathcal{D}\) y se formalizó la ortogonalidad de Sobolev junto con el problema central de la localización de ceros. Además, se contextualizó el estado del arte resaltando la utilidad de la aproximación matricial y de los estudios numéricos para desvelar la geometría de los ceros bajo diferentes productos internos.
+
+El objetivo de este segundo capítulo es \emph{aplicar} aquel armazón teórico a los 4 casos concretos y, a partir de la evidencia obtenida, \emph{formular conjeturas} que orienten futuras demostraciones rigurosas. Con este fin, el capítulo se organiza en tres secciones principales:
+
+\begin{itemize}
+	\item \textbf{2.1 Caso real} - Se analizan productos de Sobolev definidos sobre soportes en la recta real. La simplicidad geométrica permite contrastar los resultados con referencias clásicas y calibrar las herramientas algebraicas presentadas anteriormente.
+	\item \textbf{2.2 Caso circunferencia} - El estudio se traslada al plano complejo considerando medidas soportadas en circunferencias. Esta configuración pone de relieve la influencia de transformaciones de semejanza y la interacción entre la topología del soporte y la distribución de ceros.
+	\item \textbf{2.3 Análisis y conjeturas} - Reúne las observaciones extraídas de ambos escenarios para proponer conjeturas sobre:
+	      \begin{enumerate}
+		      \item Cotas uniformes para los ceros en función del radio o de la posición relativa de los soportes.
+		      \item El comportamiento asintótico de valores singulares sucesivos de las secciones \(\mathbf{D}_n\) y su relación con el radio espectral.
+		      \item La influencia de la dominación secuencial o matricial en la acotación de \(\mathbf{D}\).
+	      \end{enumerate}
+\end{itemize}
+
+A lo largo del capítulo se alternarán \emph{demostraciones analíticas} y \emph{experimentos numéricos}, reforzando la filosofía descrita en la introducción: combinar la teoría de matrices de Hessenberg con simulaciones para obtener una visión más completa de los ceros de los polinomios ortogonales de Sobolev.
 
 \section{Caso Real}
 
@@ -588,6 +587,70 @@ En todos los ejemplo se tiene que $\lim_{n \to \infty} \sigma_{2,n} < \infty$.
 		\lim_{n \to \infty} \sigma_{2,n} < \infty
 	$$
 \end{conjetura}
+
+\noindent Veamos un resultado que apoya a la conjetura.
+
+\noindent {\bf Teorema de entrelazamiento de Cauchy} Sea  $A$ una matriz de orden  $n$ y sea  $B$ una submatriz principal de  $A$ de  orden  $n-1$. Si $\lambda_n\leq \dots \leq \lambda_2\leq \lambda_1$ son los autovalores de $A$ y  $\mu_{n-1}\leq \dots \leq \mu_2\leq \mu_1$ son los autovalores de  $B$ entonces
+$$
+	\lambda_n \leq \mu_{n-1} \leq \dots \leq \mu_2 \leq \lambda_1.
+$$
+
+
+\begin{proposition} Sea $\mathbf{M}$ HPSD. Sean
+
+	$$
+		0 \leq \lambda_{n,n}\leq \dots \lambda_{2,n} \leq \lambda_{1,n}.
+	$$
+	\noindent los autovalores de la matriz $\mathbf{M}_n$. Entonces La sucesión $\{ \lambda_{2,n}\}_{n=1}^{\infty}$ es una sucesión creciente, es decir,
+	$$
+		\lambda_{2,n+1} \leq \lambda_{2,n} \qquad \forall n\in \mathbb{N}.
+	$$
+	\noindent por lo que existe $\displaystyle{\lim_{n\to \infty} \lambda_{2,n}}$ pudiendo ser finito o infinito.
+\end{proposition}
+
+
+\begin{proof} Utilizando el teorema de entrelazamiento se tiene que:
+
+	$$
+		0 \leq \lambda_{n+1,n+1} \leq \lambda_{n,n} \lambda_{n,n+1} \leq \dots \lambda_{2,n}  \leq \lambda_{2,n+1} \leq \lambda_{1,n} \leq \lambda_{1,n+1}
+	$$
+
+	\noindent En particular,
+	$$
+		\lambda_{2,n+1} \leq \lambda_{2,n} \qquad \forall n\in \mathbb{N}.
+	$$
+\end{proof}
+
+\noindent
+
+\begin{lemma} Sea $\mathbf{D}$ una matriz infinita de Hessemberg superior y $\mathbf{D}_n$ las secciones de orden $n+1$. Entonces se tiene que
+	\begin{enumerate}
+
+		\item $$
+			      (\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})_{n} = \mathbf{D}_n^{*}\mathbf{D}_n
+		      $$
+		\item
+		      $$(\mathbf{D}^{*}\mathbf{D})_{n}= \mathbf{D}_n^{*}\mathbf{D}_n
+		      $$
+
+	\end{enumerate}
+\end{lemma}
+
+\noindent ES POSIBLE ENCONTRAR UNA REFERENCIA DE ESTE RESULTADO EN LOS TRABAJOS DE EMILIO.
+
+\begin{proposition}
+	Sea $\mathbf{D}$ una matriz infinita de Hessemberg, y $\mathbf{D}_n$ las secciones de orden $n$ entonces si $$
+		0 \leq \sigma_{n,n}\leq \dots \sigma_{2,n} \leq \sigma_{1,n}.
+	$$
+
+	\noindent los valores singulares de la matriz $\mathbf{D}_n$ se tiene que
+	la sucesión $\{\sigma_{2,n}\}_{n=1}^{\infty}$ es creciente y existe
+	$$
+		\lim_{n\to \infty} \sigma_{2,n} \leq \infty
+	$$
+
+
+\end{proposition}
 
 \todo{poner resultado entrelazamiento y terminar de formalizar conjeturas}
 

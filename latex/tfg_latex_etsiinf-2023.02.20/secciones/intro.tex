@@ -313,6 +313,24 @@ Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabe
 	\end{enumerate}
 \end{definition}
 
+\begin{proposition}\label{prop:singular_values_limit}
+	Sea $\mathcal{D}$ el operador multiplicación por $z$ en
+	$\ell_2$ y
+	$\mathbf{D}=(d_{i,j})_{i,j\ge0}$ su matriz infinita
+	. Sea
+	$\mathbf{D}_n=(d_{i,j})_{0\le i,j\le n}$ la sección de orden $n+1$. Entonces
+	\[
+		\lim_{n\to\infty}\|\mathbf{D}_n\|
+		\;=\;\|\mathcal{D}\|.
+	\]
+\end{proposition}
+
+\noindent Utilizando este resultado se tiene que:
+$$
+	\lim_{n\to \infty} \sigma_{1,n}(\mathbf{D}_n)= \lim_{n \to \infty} \Vert \mathbf{D}_n\Vert= \Vert \mathcal{D}\Vert
+$$
+
+\noindent que siempre existe pudiendo ser $\infty$ en el caso no acotado.
 
 \section{Productos internos de Sobolev}
 
