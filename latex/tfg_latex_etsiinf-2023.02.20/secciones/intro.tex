@@ -68,6 +68,7 @@ Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de
 	$\operatorname{span}\{e_0,\dots,e_n\}=W$.
 \end{definition}
 
+El proceso de Gram-Schmidt es fundamental para construir bases ortonormales, una herramienta esencial en el estudio de los polinomios ortogonales.
 
 Dado un producto interno $\langle\cdot,\cdot\rangle$ en $\mathbb{P}[z]$,
 la \emph{sucesión de polinomios ortonormales}
@@ -94,6 +95,7 @@ Cada $P_n$ es único salvo su signo si se exige que su coeficiente principal sea
 	donde $Z_n = Z(P_n)$ es el conjunto de ceros del polinomio $P_n$.
 \end{definition}
 
+La localización y propiedades de estos conjuntos de ceros son un tema central en la teoría de polinomios ortogonales. Para facilitar su estudio, a menudo se recurre a representaciones matriciales.
 
 \section{Matrices de momentos asociadas a productos internos}
 
@@ -132,6 +134,8 @@ Cada $P_n$ es único salvo su signo si se exige que su coeficiente principal sea
 	\]%
 \end{definition}
 
+Esta matriz de momentos encapsula la información del producto interno respecto a la base monomial.
+
 Desde una perspectiva matricial, que facilita el análisis algebraico, podemos considerar que una matriz infinita HPD $M$ induce en $\mathbb{P}[z]$ el siguiente producto:
 \begin{equation}
 	\langle p(z), q(z) \rangle_M = v M w^{*},
@@ -159,6 +163,7 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 \end{definition}
 %-------------------------------------------------
 
+Las secciones principales son cruciales para el análisis numérico y la aproximación de operadores definidos por matrices infinitas.
 
 \section{Operador multiplicación por z}
 
@@ -176,6 +181,8 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	\]
 	La menor constante $C$ que satisface esta desigualdad se denomina \textbf{norma del operador} y se denota por $\|\mathcal{D}\|$.
 \end{definition}
+
+La acotación de este operador tiene importantes consecuencias para la localización de los ceros de los polinomios ortogonales. A continuación, se presenta cómo se representa este operador en la base de polinomios ortonormales.
 
 \begin{proposition}\label{def:d_representation}
 	Sea \(\{\varphi_n\}_{n\ge0}\) una base ortonormal de \(\mathbb{P}[z]\) respecto a un
@@ -210,6 +217,8 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	solo aparecen \(\varphi_0,\dots,\varphi_{j+1}\).
 \end{proposition}
 
+La estructura de Hessenberg de la matriz $\mathbf{D}$ es una propiedad clave que simplifica muchos análisis. Esta matriz posee varias propiedades importantes, especialmente en relación con los ceros de los polinomios ortonormales.
+
 \paragraph{Propiedades de la matriz $\mathbf{D}$}
 \begin{itemize}
 	\item Si el producto interior procede de una medida real en un intervalo
@@ -224,6 +233,8 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	      Esto conecta la teoría espectral de \(\mathbf{D}\) con la localización de ceros.
 	\item El determinante de $\mathbf{D}_n -z \mathbf{I}_n$ denotado por $\vert \mathbf{D}_n -z \mathbf{I}_n\vert $ donde $\mathbf{I}_n$ es la matriz identidad de dimensiones $(n+1)\times (n+1)$ es un polinomio proporcional a $\varphi_{n+1}(z)$, es decir, tienen las misma raíces.
 \end{itemize}
+
+La conexión entre los autovalores de las secciones de $\mathbf{D}$ y los ceros de los polinomios ortonormales es un resultado fundamental, cuya demostración se detalla a continuación.
 
 \begin{proof}
 	\noindent Sea $z_0$ una raíz de $\varphi_{n+1}(z)$, es decir, $\varphi_{n+1}(z_0)=0$. Entonces:
@@ -259,7 +270,11 @@ donde $v = (v_0, v_1, \ldots, v_n, 0, \ldots)$, $w = (w_0, w_1, \ldots, w_m, 0, 
 	\noindent
 \end{proof}
 
+Este resultado establece una correspondencia directa entre el problema algebraico de encontrar autovalores y el problema analítico de encontrar ceros de polinomios.
+
 \noindent Como consecuencia, el determinante de $\mathbf{D}_n -z \mathbf{I}_n$ un polinomio mónico.
+
+El enfoque matricial no solo se limita a la representación del operador multiplicación, sino que también permite caracterizar los propios polinomios ortogonales.
 
 Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabemos que los polinomios mónicos ortogonales de Sobolev se pueden obtener a partir de la matriz del operador multiplicación $\mathcal{D}$ y la matriz de momentos asociada al producto interno $\mathbf{M}$.
 
@@ -304,6 +319,8 @@ Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabe
 	\end{enumerate}
 \end{definition}
 
+Los valores singulares, especialmente el mayor, están directamente relacionados con la norma del operador, lo que es crucial para el análisis de la acotación. Para simplificar la discusión futura, introducimos la siguiente notación.
+
 \begin{definition}\label{def:notation_matrix_sections}
 	Sea $\mathbf{D}_{n}$ la sección de la matriz infinita $\mathbf{D}$ operador multiplicación por $z$ definido en el espacio de polinomios $\mathbb{P}[z]$. Definimos:
 	\begin{enumerate}
@@ -325,12 +342,16 @@ Siguiendo con el enfoque matricial propuesto por C. Escribano y R. Gonzalo, sabe
 	\]
 \end{proposition}
 
+Esta proposición establece una conexión importante entre las normas de las secciones finitas y la norma del operador infinito.
+
 \noindent Utilizando este resultado se tiene que:
 $$
 	\lim_{n\to \infty} \sigma_{1,n}(\mathbf{D}_n)= \lim_{n \to \infty} \Vert \mathbf{D}_n\Vert= \Vert \mathcal{D}\Vert
 $$
 
 \noindent que siempre existe pudiendo ser $\infty$ en el caso no acotado.
+
+Con estos fundamentos de álgebra lineal y teoría de operadores establecidos, podemos ahora adentrarnos en la definición específica de los productos internos de Sobolev.
 
 \section{Productos internos de Sobolev}
 
@@ -352,6 +373,8 @@ $$
 	de modo que \(dm_{a;r}\) queda normalizada
 	\(\bigl(dm_{a;r}(S_{a}(r))=1\bigr)\).
 \end{definition}
+
+Esta medida es fundamental para definir productos internos en el plano complejo, especialmente en el contexto de los polinomios ortogonales en la circunferencia unitaria o en otras circunferencias.
 
 Los productos internos que se trabajarán son de la forma:
 \begin{enumerate}
@@ -395,6 +418,8 @@ Los productos internos que se trabajarán son de la forma:
 		\int_{\mathbb C} p(z)\,\overline{q(z)}\,\mathrm d\mu_{1}(z) + \int_{\mathbb C} p'(z)\,\overline{q'(z)}\,\mathrm d\mu_{2}(z).
 	\]
 \end{definition}
+
+Para los casos discretos, la medida de Dirac juega un papel crucial.
 
 \begin{definition}\label{def:dirac_measure}
 	Sea $a\in\mathbb{C}$.
@@ -440,6 +465,8 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 	\)
 	y en el caso discreto con átomo, $R:=\max\bigl\{|z|:z\in\operatorname{supp}(\mu_{1})\cup\{c\}\bigr\}$.
 \end{definition}
+
+Este valor $R$ proporciona una medida del tamaño de la región donde se definen las medidas del producto de Sobolev. Al igual que con los productos internos generales, los productos de Sobolev también admiten una representación matricial.
 
 \begin{definition}\label{def:sobolev_matrix}
 	\cite{escribano2025boundedness}
@@ -488,6 +515,8 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 	$$
 \end{definition}
 
+La matriz $\boldsymbol{\Lambda}$ representa el operador de derivación en la base monomial. Cuando se utilizan medidas de Dirac, la matriz de momentos asociada tiene una estructura particular.
+
 \begin{definition}\label{def:dirac_measure}
 	\cite{escribano2025boundedness}
 	Sea \(\delta_{a}\) la medida de Dirac concentrada en \(a\in\mathbb C\).
@@ -515,6 +544,8 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 	Nótese que dicha matriz de momentos no define un producto interno.
 \end{definition}
 
+Aunque $M(a)$ por sí sola no define un producto interno (ya que no es definida positiva, solo semidefinida positiva), puede ser un componente en la construcción de productos internos de Sobolev más generales.
+
 Escribano y Gonzalo generalizaron la definición de producto interno de Sobolev a producto interno de Sobolev matricial, considerando matrices que no necesariamente provienen de medidas de Borel.
 
 \begin{definition}\label{def:sobolev_matrix_product}
@@ -527,6 +558,8 @@ Escribano y Gonzalo generalizaron la definición de producto interno de Sobolev 
 \paragraph{Observación}
 Cuando \(\mathbf{M}_{1}\) es la matriz de momentos de una medida \(\mu_{1}\) y
 \(\mathbf{M}_{2}\) de \(\mu_{2}\), los cuatro casos (1.3)-(1.6) se recuperan como casos particulares.
+
+Con estas definiciones establecidas, podemos formular el problema central de este trabajo.
 
 \section{Planteamiento del problema}
 Sean $\mu_1$ y $\mu_2$ dos medidas de Borel positivas con soporte compacto, con $\mu_1$ con soporte infinito, sea $\langle\cdot,\cdot\rangle_S$ el producto interno de Sobolev asociado y sea $Z$ el conjunto de ceros de los polinomios ortonormales de Sobolev $\{\varphi_i\}_{i\ge 0}$. ¿Es $Z$ acotado?
@@ -557,6 +590,8 @@ Para la parte computacional emplearemos
 	\item contrastar numéricamente las cotas teóricas obtenidas y explorar casos donde las condiciones clásicas de dominación secuencial no se satisfacen.
 \end{enumerate}
 
+Antes de abordar este problema, es importante revisar el estado actual del conocimiento en esta área.
+
 \section{Estado del arte}
 
 En la literatura se ha abordado el problema de los ceros de polinomios ortogonales de Sobolev mayoritariamente desde la perspectiva de la localización general de los ceros.
@@ -580,6 +615,7 @@ Primero vamos a probar que la acotacion del operador multiplicación $\mathcal{D
 \end{proof}
 
 Este resultado fundamental y usado extensamente en la literatura establece que los ceros de polinomios ortogonales de Sobolev están contenidos en un disco centrado en cero cuyo radio es la norma del operador $\mathcal{D}$, si dicho operador está acotado. Veamos resultados que nos permiten acotar la norma del operador multiplicación $\mathcal{D}$.
+
 Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino1999zero} introdujeron el concepto de medidas secuencialmente dominadas.
 
 \begin{definition}
@@ -587,6 +623,8 @@ Para acotar el operador multiplicación, G. López y H. Pijeira \cite{lagomasino
 	$$supp(\mu_2) \subset supp(\mu_{1}) , \qquad j = 1,2.$$ y
 	$$d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}).$$
 \end{definition}
+
+Esta condición de dominación secuencial es clave para garantizar la acotación del operador multiplicación en ciertos casos.
 
 En el caso continuo real, se tiene que como consecuencia de la Definición \ref{def:seq_dominated}:
 
@@ -610,6 +648,8 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 	Entonces, el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_S}.$
 \end{theorem}
 
+Este teorema es una herramienta poderosa para establecer la acotación del operador multiplicación en el contexto de productos de Sobolev matriciales. Un corolario directo se aplica a los productos de Sobolev definidos en circunferencias.
+
 \begin{corollary}\label{cor:seq_dominated_sobolev}
 	Como consecuencia del Teorema \ref{thm:bounded_operator}, el producto interno de Sobolev
 	$$\langle p(z) , q(z) \rangle_{S}\;=\;
@@ -618,6 +658,8 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 		\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
 	es secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, donde $\mathbb{D}_b(r_b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$. La condición en los pesos se tiene ya que $w_1(z)\equiv w_2(z) \equiv 1$.
 \end{corollary}
+
+Cuando se introducen términos discretos en el producto de Sobolev, como la evaluación de la derivada en un punto, el concepto de punto de evaluación acotado se vuelve relevante.
 
 Los puntos de evaluación acotados constituyen una herramienta fundamental para extender los resultados de acotación del operador multiplicación a productos internos de Sobolev con componentes discretas. Como veremos en los resultados siguientes, cuando un punto es de evaluación acotada respecto a la medida principal $\mu_1$, es posible garantizar la acotación del operador multiplicación en productos internos de Sobolev que incluyen términos discretos como $|p'(a)|^2$, lo que a su vez asegura la acotación del conjunto de ceros de los polinomios ortogonales asociados.
 
@@ -638,11 +680,15 @@ Los puntos de evaluación acotados constituyen una herramienta fundamental para 
 	\]
 \end{definition}
 
+La envoltura convexa polinómica juega un papel importante en la caracterización de los puntos de evaluación acotados.
+
 En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 \begin{enumerate}
 	\item Para el caso real, cuando $K$ es union de intervalos, $P_C(K)$ coincide con $K$.
 	\item Para el caso circunferencia, cuando $K$ es $S_a(r)$, $P_C(K)$ coincide con $\mathbb{D}_a(r)$.
 \end{enumerate}
+
+Estos resultados conectan la geometría del soporte de la medida con las propiedades analíticas de los puntos de evaluación.
 
 \begin{lemma}\label{lem:bounded_eval_point_in_hull}
 	\cite{escribano2025zeros} Todo \textbf{punto de evaluación acotado} de una medida $\mu$ está contenido en la envoltura polinómica convexa del soporte de $\mu$.
@@ -650,12 +696,15 @@ En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 	\noindent Además, todo \textbf{punto de evaluación acotado} de una medida $\mu$ es un punto de evaluación de la matriz de momentos asociada a $\mu$.
 \end{lemma}
 
+La noción de punto de evaluación acotado se extiende naturalmente al contexto de matrices de momentos.
+
 \begin{definition}\label{def:bounded_eval_point_matrix}
 	\cite{escribano2025zeros} Sea $M$ una matriz hermítica positiva definida (HPD) y $a\in\mathbb{C}$.
 	Decimos que $a$ es un \textbf{punto de evaluación acotado} (bpe) de $M$ si existe una constante $C>0$ tal que
 	\[ |p(a)|^{2}\;\le\;C\,\|p(z)\|_{M}^{2}, \quad p(z)\in\mathbb{P}[z]. \]
 \end{definition}
 
+Existe una equivalencia útil entre ser un punto de evaluación acotado y la dominación secuencial.
 
 \begin{proposition}\label{prop:equiv_bounded_eval_point}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD y $a\in\mathbb{C}$. Entonces son equivalentes:
@@ -664,6 +713,8 @@ En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 		\item el conjunto $\{M,\,M(a)\}$ es secuencialmente dominado;
 	\end{enumerate}
 \end{proposition}
+
+Esta equivalencia permite aplicar resultados de dominación secuencial al estudio de puntos de evaluación acotados. La siguiente proposición muestra cómo la propiedad de ser un punto de evaluación acotado se preserva bajo la adición de un término de derivada.
 
 \begin{proposition}\label{prop:bounded_derivative_eval}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD tal que el operador de multiplicación $D$
@@ -674,6 +725,8 @@ En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 		\bigl|p'(a_)\bigr|^{2}.
 	\]
 \end{proposition}
+
+Un corolario importante de este resultado se aplica a productos de Sobolev discretos en circunferencias.
 
 \begin{corollary}\label{cor:bounded_zeros_circle}
 	\cite{escribano2025zeros}
@@ -687,6 +740,8 @@ En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{S}\bigr)$.
 	En consecuencia, el conjunto de ceros de los polinomios ortogonales de Sobolev asociados está acotado.
 \end{corollary}
+
+Estos resultados proporcionan condiciones suficientes para la acotación de los ceros en varios escenarios importantes.
 
 Además de las técnicas basadas en matrices de momentos y acotación de operadores, existen otros enfoques en la literatura para estudiar la acotación del conjunto de ceros de polinomios ortogonales de Sobolev. Estos métodos alternativos no requieren necesariamente el uso de representaciones matriciales ni el análisis de la acotación del operador multiplicación.
 
