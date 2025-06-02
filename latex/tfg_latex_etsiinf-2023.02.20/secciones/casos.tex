@@ -852,7 +852,7 @@ Esta convergencia se manifiesta consistentemente en todos los casos estudiados.
 	\label{conj:sigma2_Dn_bounded_if_sigma1_unbounded}
 	Basándose en la observación anterior, y con especial énfasis en aquellos casos donde el operador de multiplicación $\mathcal{D}$ es no acotado (lo cual se infiere de $\lim_{n \to \infty} \sigma_{1,n} = \infty$), se postula la siguiente conjetura:
 	$$
-		\text{Si } \lim_{n \to \infty} \sigma_{1,n} = \infty, \quad \text{entonces} \quad \lim_{n \to \infty} \sigma_{2,n} < \infty.
+		\text{Si } \lim_{n \to \infty} \sigma_{1,n} = \infty, \quad \text{entonces} \quad \lim_{n \to \infty} \sigma_{2,n} = R < \infty.
 	$$
 \end{conjetura}
 
@@ -864,12 +864,12 @@ $$
 $$
 
 
-\begin{proposition} Sea $\mathbf{M}$ HPSD. Sean
+\begin{proposition} Sea $\mathbf{M}$ una matriz infinita  hermitiana semidefinida positiva. Sean
 
 	$$
 		0 \leq \lambda_{n,n}\leq \dots \lambda_{2,n} \leq \lambda_{1,n}.
 	$$
-	\noindent los autovalores de la matriz $\mathbf{M}_n$. Entonces La sucesión $\{ \lambda_{2,n}\}_{n=1}^{\infty}$ es una sucesión creciente, es decir,
+	\noindent los autovalores de la matriz $\mathbf{M}_n$. Entonces La sucesión $\{ \sigma_{2,n}\}_{n=1}^{\infty}$ es una sucesión creciente, es decir,
 	$$
 		\lambda_{2,n+1} \leq \lambda_{2,n} \qquad \forall n\in \mathbb{N}.
 	$$
@@ -891,23 +891,58 @@ $$
 
 \noindent
 
-\begin{lemma} Sea $\mathbf{D}$ una matriz infinita de Hessemberg superior y $\mathbf{D}_n$ las secciones de orden $n+1$. Entonces se tiene que
-	\begin{enumerate}
+\begin{lemma} Sea $\mathbf{D}$ una matriz infinita de Hessenberg superior y $\mathbf{D}_n$ las secciones de orden $n$. Entonces se tiene que
 
-		\item $$
-			      (\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})_{n} = \mathbf{D}_n^{*}\mathbf{D}_n
-		      $$
-		\item
-		      $$(\mathbf{D}^{*}\mathbf{D})_{n}= \mathbf{D}_n^{*}\mathbf{D}_n
-		      $$
-
-	\end{enumerate}
+	$$
+		(\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})_{n} = \mathbf{D}_n^{*}\mathbf{D}_n +\begin{pmatrix}
+			0 & \dots  & 0 & 0           \\
+			  & \ddots &   & \vdots      \\
+			  & \dots  &   & 0           \\
+			0 & \dots  & 0 & d_{n+1,n}^2
+		\end{pmatrix}
+	$$
 \end{lemma}
 
-\noindent ES POSIBLE ENCONTRAR UNA REFERENCIA DE ESTE RESULTADO EN LOS TRABAJOS DE EMILIO. \todo{encontré una referencia pero lo menciona muy por encima}
+\begin{proof} Expresando el producto $(\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})$ adecuadamente y multiplicando por cajas, obtenemos el resultado:
+	\[ (\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1}) =
+		\left (   \mbox{
+			\begin{tabular}{ccc|c}
+				              & $$                   &               & $0$             \\
+				$$            & $\mathbf{D}_{n}^{*}$ &               & $\vdots$        \\
+				              &                      &               & $d_{n+1,n}^*$   \\  \hline
 
-\begin{proposition}
-	Sea $\mathbf{D}$ una matriz infinita de Hessemberg, y $\mathbf{D}_n$ las secciones de orden $n$ entonces si $$
+				$d_{1,n+1}^*$ & $\ldots$             & $d_{n,n+1}^*$ & $d_{n+1,n+1}^*$ \\
+			\end{tabular}
+		} \right ) \left (   \mbox{
+			\begin{tabular}{ccc|c}
+				    & $$               &             & $d_{1,n+1}$   \\
+				$$  & $\mathbf{D}_{n}$ &             & $\vdots$      \\
+				    &                  &             & $d_{n,n+1}$   \\  \hline
+
+				$0$ & $\ldots$         & $d_{n+1,n}$ & $d_{n+1,n+1}$ \\
+			\end{tabular}
+		} \right )
+	\]
+
+	\[
+		\left (   \mbox{
+			\begin{tabular}{ccc|c}
+				   & $$                                                &    &       \\
+				$$ & $\mathbf{D}_{n}^{*}\mathbf{D}_{n}+\begin{pmatrix}
+						                                       0 & \ldots & 0 & 0           \\
+						                                         & \ddots &   & \vdots      \\
+						                                         & \dots  &   & 0           \\
+						                                       0 & \dots  & 0 & d_{n+1,n}^2
+					                                       \end{pmatrix}$ &    & $X$ \\
+				   &                                                   &    & $$    \\  \hline
+
+				$$ & $Y$                                               & $$ & $Z$   \\
+			\end{tabular}
+		} \right )
+	\]
+\end{proof}
+
+\begin{proposition} Sea $\mathbf{D}$ una matriz infinita de Hessenberg, y $\mathbf{D}_n$ las secciones de orden $n$ entonces si $$
 		0 \leq \sigma_{n,n}\leq \dots \sigma_{2,n} \leq \sigma_{1,n}.
 	$$
 
@@ -919,3 +954,28 @@ $$
 
 
 \end{proposition}
+
+\begin{proof}
+	Sean $\lambda_{2,n}$ los segundos autovalores de una   matriz hermitiana de orden n. Denotamos por $H_n$  la siguiente matriz de orden $n$:
+	\[
+		H_n=\begin{pmatrix}
+			0 & \ldots & 0 & 0           \\
+			  & \ddots &   & \vdots      \\
+			  & \dots  &   & 0           \\
+			0 & \dots  & 0 & d_{n+1,n}^2
+		\end{pmatrix}
+	\]
+	Teniendo en cuenta que $H_n$ es hermitiana semidefinida positiva y utilizando las propiedades de monotonía de Weyl (\cite{Bhatia1997}):
+	\[
+		\lambda_{2,n} \mathbf{D}_n^{*}\mathbf{D}_n \leq  \lambda_{2,n}(\mathbf{D}_n^{*}\mathbf{D}_n +H_n)=\lambda_{2,n}(
+		\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})_{n}   \]
+	Ahora por las propiedades de entrelazamiento
+	\[
+		\lambda_{2,n}(
+		\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1})_{n} \leq \lambda_{2,n+1}(
+		\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1}), \]
+	de donde
+	\[
+		\lambda_{2,n}(\mathbf{D}_n^{*}\mathbf{D}_n) \leq \lambda_{2,n+1}(
+		\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1}). \] Por tanto $\sigma_{2,n}\leq\sigma_{2,n+1}$  y se verifica el resultado.
+\end{proof}

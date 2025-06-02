@@ -1,11 +1,54 @@
 \chapter*{Resumen}
 
-\todo[inline]{Aquí va el resumen del TFG. Extensión máxima 2 páginas.}
+El presente Trabajo Fin de Grado aborda, desde una perspectiva simultáneamente teórica y computacional, la cuestión central de la \emph{localización de los ceros de los polinomios ortogonales de Sobolev} cuando el producto interior incorpora derivadas de primer orden.  Mientras que en la ortogonalidad estándar los ceros permanecen confinados a la envoltura convexa del soporte de la medida, en el contexto Sobolev pueden emigrar fuera de dicha envoltura e incluso adquirir parte imaginaria, fenómeno detectado por Althammer y Meijer y aún insuficientemente caracterizado.  El objetivo esencial del trabajo es identificar criterios que garanticen la acotación (o revelen la fuga) de los ceros y, con ello, clarificar la relación entre la geometría de los soportes, la estructura del producto de Sobolev y el espectro del operador multiplicación por \(z\).
+
+Para conseguirlo se ha elaborado primero un \textbf{marco teórico unificado}.  Tras repasar los conceptos básicos de polinomios ortogonales y matrices de momentos, se extiende la teoría al caso Sobolev continuo y discreto, introduciendo la familia de truncaciones de operadores \(\mathbf{D}_n\) y analizando su radio espectral \(\rho(\mathbf{D}_n)\) y sus valores singulares \(\sigma_{k,n}\).  Esta caracterización permite conectar la acotación de los ceros con la norma de \(D\) y con la convergencia asintótica de \(\rho(\mathbf{D}_n)\), al tiempo que pone de relieve el papel diagnóstico del segundo valor singular \(\sigma_{2,n}\), poco atendido en la literatura previa.
+
+Sobre esta base se ha implementado en \textsc{Maple} un \textbf{módulo genérico} que, a partir de cualquier par de medidas \((\mu_0,\mu_1)\) con soportes finitos o compactos, (i) genera la matriz de Gram, (ii) produce la sucesión de polinomios ortogonales normalizados, (iii) construye las matrices \(\mathbf{D}_n\) y calcula \(\rho(\mathbf{D}_n)\) y \(\sigma_{k,n}\), y (iv) dibuja en el plano complejo los ceros y los soportes, y en la recta real los valores singulares y los módulos de los ceros.
+
+Con la infraestructura anterior se han analizado tres \textbf{familias representativas}:
+
+\emph{Caso real}.  Para medidas reales absolutamente continuas y derivadas hasta primer orden, los experimentos confirman que los ceros permanecen acotados exactamente por el radio de la envoltura convexa cuando \(\mathcal{D}\) es acotado; además, \(\rho(\mathbf{D}_n)\) converge monótonamente a ese radio y \(\sigma_{2,n}\) se separa linealmente de \(\sigma_{1,n}\), lo que sugiere su utilidad como test de acotación.
+
+\emph{Caso circunferencia}.  Se han reproducido y extendido los ejemplos de dos circunferencias concéntricas, tangentes y disjuntas.  En todos ellos la familia \(\{\varphi_n\}\) mantiene sus ceros dentro del disco de cota \(\|\mathcal{D}\|\), aun cuando los soportes no se intersectan, lo que refuerza la hipótesis de que la acotación depende sólo de la envoltura convexa global y no de la conectividad del soporte.
+
+\emph{Caso discreto}.  En la mezcla de una medida continua con un átomo externo se observa la \emph{pérdida repentina de acotación}: a partir de cierto grado, un subconjunto de ceros se fuga hacia el átomo, fenómeno que se refleja en la divergencia simultánea de \(\rho(\mathbf{D}_n)\) y \(\sigma_{2,n}\).  Esta evidencia sustenta la necesidad de condiciones adicionales —más allá de la finitud de los momentos— para asegurar la estabilidad de los ceros en presencia de masas puntuales.
+
+De la combinación de teoría y experimentación surgen dos \textbf{conjeturas originales}.  (i) En todo producto Sobolev cuyos soportes sean compactos, el límite \(\lim_{n\to\infty}\rho(\mathbf{D}_n)\) coincide con el radio máximo de la envoltura convexa de \(\operatorname{supp}({\mu_0})\cup \operatorname{supp}({\mu_1})\).  (ii) Cuando la norma \(\|\mathcal{D}\|\) es infinita, el segundo valor singular satisface \(\lim_{n\to\infty}\sigma_{2,n}= \max_{z\in \operatorname{supp}({\mu_0})\cup \operatorname{supp}({\mu_1})}|z|\), proporcionando así una nueva cota inferior para la desconexión espectral.
+
+Las \textbf{aportaciones principales} del trabajo pueden resumirse así: (1) unificar en un mismo texto los distintos criterios de acotación de ceros dispersos en la bibliografía; (2) introducir diagramas \((\rho(D_n),\sigma_{2,n})\) como herramienta gráfica para diagnosticar la acotación de \(D\); (3) aportar evidencia empírica sobre la influencia de átomos externos y soportes no conexos; y (4) formular conjeturas que, de ser probadas, refinarían las cotas espectrales convencionales.
+
+En conjunto, el trabajo ilustra la \emph{sinergia entre análisis funcional, teoría espectral y experimentación numérica}, mostrando cómo la visualización interactiva puede guiar la intuición y acelerar el descubrimiento de patrones ocultos.  Sus resultados consolidan algunos teoremas clásicos, extienden otros a geometrías más generales y abren líneas futuras hacia productos Sobolev de orden superior, medidas matriciales y algoritmos paralelos para grados elevados.  Creemos que estas contribuciones constituyen un paso significativo en la comprensión del comportamiento de los ceros de los polinomios ortogonales de Sobolev y sientan las bases para desarrollos posteriores tanto teóricos como computacionales.
+
+\textbf{Palabras clave:} Polinomios ortogonales de Sobolev, ceros, radio espectral, valores singulares, visualización numérica, operador de multiplicación.
+
 
 \begin{otherlanguage}{english}
-  \chapter*{Abstract}
+  \section*{Abstract}
+  This Final Degree Project tackles, from a joint theoretical-computational perspective, the central question of the \emph{location of the zeros of Sobolev orthogonal polynomials} when the inner product includes first-order derivatives.  Whereas in standard orthogonality the zeros remain confined to the convex hull of the measure’s support, in the Sobolev setting they may escape that hull and even acquire an imaginary component—a phenomenon detected by Althammer and Meijer that is still not fully characterised.  The essential goal of the work is to identify criteria that guarantee the boundedness (or reveal the escape) of the zeros and, in doing so, to clarify the relationship among the geometry of the supports, the structure of the Sobolev product, and the spectrum of the multiplication operator by \(z\).
 
-  \todo[inline]{Abstract of the Final Degree Project. Maximum length: 2 pages.}
+  To this end a \textbf{unified theoretical framework} has been developed.  After reviewing the basic concepts of orthogonal polynomials and moment matrices, the theory is extended to the continuous and discrete Sobolev cases, introducing the family of operator truncations \(\mathbf{D}_n\) and analysing their spectral radius \(\rho(\mathbf{D}_n)\) and singular values \(\sigma_{k,n}\).  This characterisation connects the boundedness of the zeros with the norm of \(D\) and with the asymptotic behaviour of \(\rho(\mathbf{D}_n)\), while highlighting the diagnostic role of the second singular value \(\sigma_{2,n}\), scarcely addressed in previous literature.
+
+  On this basis a \textbf{generic \textsc{Maple} module} has been implemented that, for any pair of measures \((\mu_0,\mu_1)\) with finite or compact supports, (i) builds the Gram matrix, (ii) generates the normalised sequence of orthogonal polynomials, (iii) constructs the matrices \(\mathbf{D}_n\) and computes \(\rho(\mathbf{D}_n)\) and \(\sigma_{k,n}\), and (iv) plots in the complex plane the zeros and the supports, and on the real line the singular values and the moduli of the zeros.
+
+  With this infrastructure three \textbf{representative families} have been analysed:
+
+  \emph{Real case}.  For absolutely continuous real measures and first-order derivatives, experiments confirm that the zeros remain bounded exactly by the radius of the convex hull when \(\mathcal{D}\) is bounded; moreover, \(\rho(\mathbf{D}_n)\) converges monotonically to that radius and \(\sigma_{2,n}\) separates linearly from \(\sigma_{1,n}\), suggesting its usefulness as a boundedness test.
+
+  \emph{Circular case}.  The examples of two concentric, tangent, and disjoint circles have been reproduced and extended.  In all of them the family \(\{\varphi_n\}\) keeps its zeros inside the disc of radius \(\|\mathcal{D}\|\), even when the supports do not intersect, reinforcing the hypothesis that boundedness depends only on the global convex hull and not on the connectivity of the support.
+
+  \emph{Discrete case}.  In the mixture of a continuous measure with an external atom, a \emph{sudden loss of boundedness} is observed: beyond a certain degree, a subset of zeros escapes towards the atom, a phenomenon reflected in the simultaneous divergence of \(\rho(\mathbf{D}_n)\) and \(\sigma_{2,n}\).  This evidence underlines the need for additional conditions—beyond finite moments—to ensure the stability of zeros in the presence of point masses.
+
+  \begin{sloppypar}
+    From the combination of theory and experimentation two \textbf{original conjectures} emerge.  (i) For every Sobolev product with compact supports, \(\lim_{n\to\infty}\rho(\mathbf{D}_n)\) equals the maximum radius of the convex hull of \(\operatorname{supp}({\mu_0})\cup \operatorname{supp}({\mu_1})\).  (ii) When the norm \(\|\mathcal{D}\|\) is infinite, the second singular value satisfies \(\lim_{n\to\infty}\sigma_{2,n}= \max_{z\in \operatorname{supp}({\mu_0})\cup \operatorname{supp}({\mu_1})}|z|\), thus providing a new lower bound for spectral disconnection.
+  \end{sloppypar}
+
+  The \textbf{main contributions} can be summarised as follows: (1) unifying in a single text the different criteria for zero boundedness scattered throughout the literature; (2) introducing \((\rho(D_n),\sigma_{2,n})\) diagrams as a graphical tool to diagnose the boundedness of \(\mathcal{D}\); (3) providing empirical evidence on the influence of external atoms and non-connected supports; and (4) formulating conjectures that, once proven, would refine conventional spectral bounds.
+
+  Overall, the work illustrates the \emph{synergy between functional analysis, spectral theory, and numerical experimentation}, showing how interactive visualisation can guide intuition and accelerate the discovery of hidden patterns.  Its results consolidate some classical theorems, extend others to more general geometries, and open future lines towards higher-order Sobolev products, matrix-valued measures, and parallel algorithms for high degrees.  We believe that these contributions represent a significant step towards understanding the behaviour of the zeros of Sobolev orthogonal polynomials and lay the groundwork for further theoretical and computational developments.
+
+  \textbf{Keywords:} Sobolev orthogonal polynomials, zeros, spectral radius, singular values, numerical visualisation, multiplication operator.
+
 \end{otherlanguage}
 
 

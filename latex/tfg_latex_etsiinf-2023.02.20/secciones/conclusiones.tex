@@ -3,34 +3,86 @@
 
 \section{Trabajos Futuros}
 
-\todo{incluir ejemplos de segunda derivada y hablar de $\sigma_3$, tratar producto con atomo bpe como caso secuencialmente dominado}
-Sin embargo, no es evidente que si la sucesión \(\{\rho(\mathbf{D}_{n})\}_{n\ge0}\) tiene límite entonces la sucesión $\max{Z_n}$ tenga límite también. \todo{reescribir mejor}
+El presente TFG abre diversos frentes de investigación que, de abordarse con mayor profundidad, podrían consolidar y ampliar los resultados obtenidos. A continuación se describen varias líneas prioritarias, agrupadas según su naturaleza teórica, computacional y aplicada, pero sin perder de vista las ideas nucleares ya esbozadas en el texto.
+
+\emph{Productos Sobolev de orden superior \((N>1)\).}
+Un paso natural es incorporar derivadas de segundo y tercer orden en el producto interior. Continuar con el análisis de los valores singulares siguientes ($\sigma_{3,n}, \sigma_{4,n},...$), como se ilustrará en los ejemplos posteriores.
+
+\emph{Leyes de distribución de ceros.}
+Derivar distribuciones límite (tipo medida de equilibrio) para los ceros en distintos regímenes de soportes y pesos Sobolev proporcionaría una analogía con la Ley de Zeros de Ullman-Stahl en la ortogonalidad estándar.
+
+\emph{Convergencia del autovalor máximo.}
+Investigar la convergencia de $\max{Z_n}$, verificando si el autovalor que determina el radio espectral converge.
+
+\emph{Átomos bpe como caso secuencialmente dominado.}
+Finalmente, se profundizará en el estudio de los átomos, utilizando como base los trabajos de Gonzalo y Escribano sobre la secuencialidad matricial de los átomos.
+
+\textbf{Ejemplo 1.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t)\, dt + \int_{30}^{40} p'(t)q'(t) \, dt + \int_{60}^{70} p'(t)q''(t) \, dt$
+
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_zero.png}
+
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_zeros.png}
+
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_traza.png}
+\end{center}
+
+\textbf{Ejemplo 2.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t)\, dt + \int_{30}^{40} p'(t)q'(t) \, dt + p''(0) c''(0) \, dt$
+
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_zero.png}
+
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_zeros.png}
+
+	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_traza.png}
+\end{center}
+
+Como se puede observar en los ejemplos, $\sigma_{1,n} = \infty$ y $\sigma_{2,n} = \infty $ , mientras que $\sigma_{3,n} = R < \infty$.
 
 \section{Conclusiones y aportaciones}
-Resumen de resultados obtenidos en el TFG, conclusiones personales del
-estudiante sobre el trabajo realizado y potencial trabajo futuro si
-existiera.
+
+En este Trabajo Fin de Grado hemos llevado a cabo un estudio integral —tanto teórico como computacional— del conjunto de ceros de los \emph{polinomios ortogonales de Sobolev} cuando el producto interior incorpora derivadas de primer orden y las medidas están soportadas en la recta real o en subconjuntos compactos del plano complejo. El manuscrito ofrece un marco teórico unificado que recopila y organiza resultados clásicos y recientes sobre matrices de momentos, operadores de multiplicación de tipo Hessenberg y criterios de acotación de ceros basados en la norma del operador \(\mathcal{D}\). Esta panorámica sitúa el problema dentro de la teoría espectral moderna y facilita la comparación con otros contextos de ortogonalidad no estándar.
+
+Sobre el plano computacional, se diseñó e implementó en \textsc{Maple} un módulo genérico que, a partir de los datos de la medida, construye la matriz de Gram, ortonormaliza la base monomial, genera la familia de matrices \(\mathbf{D}_n\) y calcula tanto sus radios espectrales \(\rho(D_n)\) como sus valores singulares \(\sigma_{k,n}\). A partir de esta infraestructura se elaboró un sistema interactivo de visualización que superpone los soportes de las medidas, la circunferencia de cota teórica \((|z|\le \|\mathcal{D}\|)\) y las trayectorias de los ceros al crecer el grado \(n\), facilitando la validación numérica de conjeturas y la formulación de nuevas hipótesis.
+
+Los resultados experimentales confirman, para los casos continuos de dos circunferencias concéntricas, tangentes y disjuntas, el acotamiento uniforme de los ceros cuando el operador \(D\) es acotado, reproduciendo y extendiendo los ejemplos existentes en la literatura. Por primera vez se analiza de forma sistemática el comportamiento del segundo valor singular \(\sigma_{2,n}\) en situaciones donde el operador no es secuencialmente dominado, observándose su convergencia hacia el radio máximo del soporte combinado y sugiriendo refinamientos en las cotas espectrales actuales. En el caso discreto —una medida continua perturbada por un átomo— se pone de manifiesto que la presencia del átomo fuera del disco de la medida base provoca la pérdida de acotación y la fuga de algunos ceros, aportando evidencia visual a una cuestión hasta ahora abierta.
+
+Desde el punto de vista original, el trabajo propone criterios gráficos basados en diagramas \((\rho(D_n),\sigma_{2,n})\) que permiten diagnosticar de forma cualitativa la acotación de \(\mathcal{D}\) y detectar transiciones en su comportamiento espectral. Asimismo, se presentan dos conjeturas: (i) la convergencia de \(\rho(D_n)\) al radio de la envolvente convexa del soporte para todo producto Sobolev compacto-compacto y (ii) la convergencia de \(\sigma_{2,n}\) al máximo módulo de los puntos de soporte cuando \(\|\mathcal{D}\|=\infty\). Finalmente, se ha creado un repositorio de casos de prueba —código y datos— que garantiza la reproducibilidad y abre la puerta a futuros análisis con derivadas de orden superior y medidas matriciales.
+
+En conjunto, el trabajo integra teoría, experimentación computacional y visualización interactiva, aportando nuevas evidencias y herramientas que favorecen la exploración de los polinomios ortogonales de Sobolev en contexto poco estudiados. Consideramos que estas contribuciones no sólo consolidan resultados previos, sino que abren vías prometedoras hacia una comprensión más profunda de la interacción entre la geometría del soporte, la estructura del producto de Sobolev y el espectro del operador de multiplicación.
 
 \[
 	\boxed{\!\!
 		\begin{array}{c}
-			\text{\bf Producto de Sobolev Matricial} \\[2pt]
+			%--- Producto de Sobolev matricial -----------------------------
+			\displaystyle
+			\langle p(z),q(z)\rangle_{MS}
+			=\langle p(z),q(z)\rangle_{M_1}
+			+\langle p'(z),q'(z)\rangle_{M_2}  % definición matricial
+			\\[6pt]                            % ← ajusta a gusto
+			%--- Producto de Sobolev en medidas ----------------------------
 			\boxed{\!\!
 				\begin{array}{c}
-					\text{\bf Producto de Sobolev en medidas} \\[2pt]
+					\displaystyle
+					\langle p,q\rangle_{S}
+					=\int_{\mathbb{C}} p(z)\,q(z)\,d\mu_1(z)
+					+\int_{\mathbb{C}} p'(z)\,q'(z)\,d\mu_2(z)   % definición con medidas
+					\\[6pt]
+					%--- Sobolev  ----------------------------------------------
 					\boxed{\!\!
 						\begin{array}{c}
-							\text{\bf Sobolev} \\[4pt]
+							\textbf{Sobolev} \\[4pt]
 							\boxed{\text{Real}}\quad
 							\boxed{\text{Circunferencia}}
 						\end{array}
-					}\!
+					}%
 				\end{array}
-			}\!
+			}%
 		\end{array}
 	}\!
 \]
-\todo{agregar los productos}
 
 
 
