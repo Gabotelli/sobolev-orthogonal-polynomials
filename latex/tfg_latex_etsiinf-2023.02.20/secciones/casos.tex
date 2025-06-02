@@ -18,6 +18,7 @@ El objetivo de este segundo capítulo es \emph{aplicar} aquel armazón teórico 
 
 A lo largo del capítulo se alternarán \emph{demostraciones analíticas} y \emph{experimentos numéricos}, reforzando la filosofía descrita en la introducción: combinar la teoría de matrices de Hessenberg con simulaciones para obtener una visión más completa de los ceros de los polinomios ortogonales de Sobolev.
 
+\todo{hacer referencia a la metodologia y que es lo que se pinta y como se pinta}
 \section{Caso Real}
 
 
@@ -33,10 +34,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-1}^{1} p(t)q(t)t^2 \, dt + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.2760$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.9999$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=1.1333$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.2760$
+	\item $\sigma_{1,70}=1.2760$
+	\item $ \rho(\mathbf{D}_{70})=0.9999$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.1333$
+	\item $\sigma_{2,70}=1.2760$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 2.}
@@ -49,12 +51,13 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-2}^{2} p(t)q(t) \, dt + \int_{-
 
 	\includegraphics[width=0.9\textwidth]{include/a-2b2c1d-1_zeros.png}
 \end{center}
-
+\todo{agregar caption a las imagenes}
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.999$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.999$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=1.999$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.999$
+	\item $\sigma_{1,70}=1.999$
+	\item $\rho(\mathbf{D}_{70})=1.999$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.999$
+	\item $\sigma_{2,70}=1.999$
+	\item $R = 2$
 \end{enumerate}
 
 \textbf{Ejemplo 3.}
@@ -69,10 +72,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-1}^{1} p(t)q(t)t^{10} \, dt + \
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=2.204$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.000$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=1.275$
-	\item $\lim_{n \to 50}\sigma_{2,n}=2.122$
+	\item $\sigma_{1,50}=2.204$
+	\item $\rho(\mathbf{D}_{50})=1.000$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=1.275$
+	\item $\sigma_{2,50}=2.122$
+	\item $R = 1$
 \end{enumerate}
 
 
@@ -88,10 +92,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{3
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=9.272\times10^{16}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=42.930$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=50.052$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.998$
+	\item $\sigma_{1,50}=9.272\times10^{16}$
+	\item $\rho(\mathbf{D}_{50})=42.930$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=50.052$
+	\item $\sigma_{2,50}=39.998$
+	\item $R = 40$
 \end{enumerate}
 
 \textbf{Ejemplo 5.}
@@ -106,10 +111,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=9.272\times10^{16}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=39.991$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=39.991$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.991$
+	\item $\sigma_{1,50}=9.272\times10^{16}$
+	\item $\rho(\mathbf{D}_{50})=39.991$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=39.991$
+	\item $\sigma_{2,50}=39.991$
+	\item $R = 40$
 \end{enumerate}
 
 \textbf{Ejemplo 6.}
@@ -124,10 +130,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{3
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=5.990\times10^{13}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=52.656$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=59.814$
-	\item $\lim_{n \to 50}\sigma_{2,n}=49.983$
+	\item $\sigma_{1,50}=5.990\times10^{13}$
+	\item $\rho(\mathbf{D}_{50})=52.656$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=59.814$
+	\item $\sigma_{2,50}=49.983$
+	\item $R = 50$
 \end{enumerate}
 
 \textbf{Ejemplo 7.}
@@ -142,10 +149,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{50} p(t)q(t) \, dt + \int_{
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=3.752\times10^{13}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=49.987$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=49.987$
-	\item $\lim_{n \to 50}\sigma_{2,n}=49.987$
+	\item $\sigma_{1,50}=3.752\times10^{13}$
+	\item $\rho(\mathbf{D}_{50})=49.987$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=49.987$
+	\item $\sigma_{2,50}=49.987$
+	\item $R = 50$
 \end{enumerate}
 
 \textbf{Ejemplo 8.}
@@ -160,10 +168,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{20} p(t)q(t) \, dt + \int_{3
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=2.944\times10^{9}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=40.951$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=44.196$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.985$
+	\item $\sigma_{1,50}=2.944\times10^{9}$
+	\item $\rho(\mathbf{D}_{50})=40.951$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=44.196$
+	\item $\sigma_{2,50}=39.985$
+	\item $R = 40$
 \end{enumerate}
 
 \textbf{Ejemplo 9.}
@@ -178,10 +187,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=4.136\times10^{8}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=39.989$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=39.989$
-	\item $\lim_{n \to 50}\sigma_{2,n}=39.989$
+	\item $\sigma_{1,50}=4.136\times10^{8}$
+	\item $\rho(\mathbf{D}_{50})=39.989$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=39.989$
+	\item $\sigma_{2,50}=39.989$
+	\item $R = 40$
 \end{enumerate}
 
 \textbf{Ejemplo 10.}
@@ -196,10 +206,11 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=3.711\times10^{10}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=17.107$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=21.152$
-	\item $\lim_{n \to 50}\sigma_{2,n}=15.990$
+	\item $\sigma_{1,50}=3.711\times10^{10}$
+	\item $\rho(\mathbf{D}_{50})=17.107$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=21.152$
+	\item $\sigma_{2,50}=15.990$
+	\item $R = 16$
 \end{enumerate}
 
 \textbf{Ejemplo 11.}
@@ -214,13 +225,15 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=2.338\times10^{11}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=15.094$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=19.007$
-	\item $\lim_{n \to 50}\sigma_{2,n}=14.992$
+	\item $\sigma_{1,50}=2.338\times10^{11}$
+	\item $\rho(\mathbf{D}_{50})=15.094$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=19.007$
+	\item $\sigma_{2,50}=14.992$
+	\item $R = 15$
 \end{enumerate}
 
-\textbf{Ejemplo 12.} $\langle p(t),q(t) \rangle = \int_{-1}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
+\textbf{Ejemplo 12.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S} = \int_{-1}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
 
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{include/a-1b1t0.png}
@@ -231,13 +244,15 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=4.704$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=0.999$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
+	\item $\sigma_{1,50}=4.704$
+	\item $\rho(\mathbf{D}_{50})=0.999$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.999$
+	\item $\sigma_{2,50}=0.999$
+	\item $R = 1$
 \end{enumerate}
 
-\textbf{Ejemplo 13.} $\langle p(t),q(t) \rangle = \int_{-1}^{1} p(t) q(t) \, dt + |p'(2)||q'(2)|.$
+\textbf{Ejemplo 13.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S} = \int_{-1}^{1} p(t) q(t) \, dt + p'(2) q'(2).$
 
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{include/a-1b1t2.png}
@@ -248,13 +263,15 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=7.441\times10^{36}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.025$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=2.933$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
+	\item $\sigma_{1,50}=7.441\times10^{36}$
+	\item $\rho(\mathbf{D}_{50})=2.025$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=2.933$
+	\item $\sigma_{2,50}=0.999$
+	\item $R = 2$
 \end{enumerate}
 
-\textbf{Ejemplo 14.} $\langle p(t),q(t) \rangle = \int_{0}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
+\textbf{Ejemplo 14.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S} = \int_{0}^{1} p(t) q(t) \, dt + |p'(0)||q'(0)|.$
 
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{include/a0b1t0.png}
@@ -265,13 +282,15 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=35.000$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.999$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=0.999$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
+	\item $\sigma_{1,50}=35.000$
+	\item $\rho(\mathbf{D}_{50})=0.999$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.999$
+	\item $\sigma_{2,50}=0.999$
+	\item $R = 1$
 \end{enumerate}
 
-\textbf{Ejemplo 15.} $\langle p(t),q(t) \rangle = \int_{0}^{1} p(t) q(t) \, dt + |p'(2)||q'(2)|.$
+\textbf{Ejemplo 15.}
+$\langle p(t),q(t) \rangle_{\textbf{M}_S} = \int_{0}^{1} p(t) q(t) \, dt + |p'(2)||q'(2)|.$
 
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{include/a0b1t2.png}
@@ -282,38 +301,39 @@ $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.405\times10^{50}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=2.021$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=3.299$
-	\item $\lim_{n \to 50}\sigma_{2,n}=0.999$
+	\item $\sigma_{1,50}=1.405\times10^{50}$
+	\item $\rho(\mathbf{D}_{50})=2.021$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=3.299$
+	\item $\sigma_{2,50}=0.999$
+	\item $R = 2$
 \end{enumerate}
 
 \begin{sidewaystable}
 	\centering
-	\small
+	\footnotesize
 	\caption{Resumen de ejemplos sobre la localización de ceros.}
 	\begin{tabular}{|c|cccc|cccc|cccc|}
 		\hline
-		\multirow{3}{*}{\textbf{Parámetros}}       & \multicolumn{4}{c|}{\textbf{SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{NO SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{ÁTOMO}}                                                                                                                                                            \\
-		                                           & \multicolumn{4}{c|}{\textbf{DOMINADO}}        & \multicolumn{4}{c|}{\textbf{DOMINADO}}           & \multicolumn{4}{c|}{}                                                                                                                                                                          \\
+		\multirow{3}{*}{\textbf{Parámetros}}       & \multicolumn{4}{c|}{\textbf{SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{NO SECUENCIALMENTE}} & \multicolumn{4}{c|}{\textbf{ÁTOMO}}                                                                                                                                                                      \\
+		                                           & \multicolumn{4}{c|}{\textbf{DOMINADO}}        & \multicolumn{4}{c|}{\textbf{DOMINADO}}           & \multicolumn{4}{c|}{}                                                                                                                                                                                    \\
 		\cline{2-13}
-		                                           & $\sigma_{1,n}$                                & $\sigma_{2,n}$                                   & $\rho(\mathcal{D}_{n})$             & $\max Z$ & $\sigma_{1,n}$  & $\sigma_{2,n}$ & $\rho(\mathcal{D}_{n})$ & $\max Z$ & $\sigma_{1,n}$  & $\sigma_{2,n}$ & $\rho(\mathcal{D}_{n})$ & $\max Z$ \\
+		                                           & $\sigma_{1,n}$                                & $\sigma_{2,n}$                                   & $\rho(\mathcal{D}_{n})$             & $\max Z$ & $\sigma_{1,n}$       & $\sigma_{2,n}$ & $\rho(\mathcal{D}_{n})$ & $\max Z$ & $\sigma_{1,n}$       & $\sigma_{2,n}$ & $\rho(\mathcal{D}_{n})$ & $\max Z$ \\
 		\hline
-		\textbf{Ej.1}: $[-1,1]t^2, [-1,1]t^{10}$   & 1.2760                                        & 1.2760                                           & 0.9999                              & 1.1333   & -               & -              & -                       & -        & -               & -              & -                       & -        \\
-		\textbf{Ej.2}: $[-2,2], [-1,1]$            & 1.9990                                        & 1.9990                                           & 1.9990                              & 1.9990   & -               & -              & -                       & -        & -               & -              & -                       & -        \\
-		\textbf{Ej.3}: $[-1,1]t^{10}, [-1,1]t^{2}$ & -                                             & -                                                & -                                   & -        & 2.2040          & 2.1220         & 1.0000                  & 1.2750   & -               & -              & -                       & -        \\
-		\textbf{Ej.4}: $[0,10], [30,40]$           & -                                             & -                                                & -                                   & -        & $9.272×10^{16}$ & 39.9980        & 42.9300                 & 50.0520  & -               & -              & -                       & -        \\
-		\textbf{Ej.5}: $[30,40], [0,10]$           & -                                             & -                                                & -                                   & -        & $9.272×10^{16}$ & 39.9910        & 39.9910                 & 39.9910  & -               & -              & -                       & -        \\
-		\textbf{Ej.6}: $[0,10], [30,50]$           & -                                             & -                                                & -                                   & -        & $5.990×10^{13}$ & 49.9830        & 52.6560                 & 59.8140  & -               & -              & -                       & -        \\
-		\textbf{Ej.7}: $[30,50], [0,10]$           & -                                             & -                                                & -                                   & -        & $3.752×10^{13}$ & 49.9870        & 49.9870                 & 49.9870  & -               & -              & -                       & -        \\
-		\textbf{Ej.8}: $[0,20], [30,40]$           & -                                             & -                                                & -                                   & -        & $2.944×10^{9}$  & 39.9850        & 40.9510                 & 44.1960  & -               & -              & -                       & -        \\
-		\textbf{Ej.9}: $[30,40], [0,20]$           & -                                             & -                                                & -                                   & -        & $4.136×10^{8}$  & 39.9890        & 39.9890                 & 39.9890  & -               & -              & -                       & -        \\
-		\textbf{Ej.10}: $[-15,-5], [5,16]$         & -                                             & -                                                & -                                   & -        & $3.711×10^{10}$ & 15.9900        & 17.1070                 & 21.1520  & -               & -              & -                       & -        \\
-		\textbf{Ej.11}: $[-15,-5], [5,14]$         & -                                             & -                                                & -                                   & -        & $2.338×10^{11}$ & 14.9920        & 15.0940                 & 19.0070  & -               & -              & -                       & -        \\
-		\textbf{Ej.12}: $[-1,1], c=0$              & -                                             & -                                                & -                                   & -        & -               & -              & -                       & -        & 4.7040          & 0.9990         & 0.9990                  & 0.9990   \\
-		\textbf{Ej.13}: $[-1,1], c=2$              & -                                             & -                                                & -                                   & -        & -               & -              & -                       & -        & $7.441×10^{36}$ & 0.9990         & 2.0250                  & 2.9330   \\
-		\textbf{Ej.14}: $[0,1], c=0$               & -                                             & -                                                & -                                   & -        & -               & -              & -                       & -        & 35.0000         & 0.9990         & 0.9990                  & 0.9990   \\
-		\textbf{Ej.15}: $[0,1], c=2$               & -                                             & -                                                & -                                   & -        & -               & -              & -                       & -        & $1.405×10^{50}$ & 0.9990         & 2.0210                  & 3.2990   \\
+		\textbf{Ej.1}: $[-1,1]t^2, [-1,1]t^{10}$   & 1.276                                         & 1.276                                            & 1.000                               & 1.133    & -                    & -              & -                       & -        & -                    & -              & -                       & -        \\
+		\textbf{Ej.2}: $[-2,2], [-1,1]$            & 1.999                                         & 1.999                                            & 1.999                               & 1.999    & -                    & -              & -                       & -        & -                    & -              & -                       & -        \\
+		\textbf{Ej.3}: $[-1,1]t^{10}, [-1,1]t^{2}$ & -                                             & -                                                & -                                   & -        & 2.204                & 2.122          & 1.000                   & 1.275    & -                    & -              & -                       & -        \\
+		\textbf{Ej.4}: $[0,10], [30,40]$           & -                                             & -                                                & -                                   & -        & $9.272\times10^{16}$ & 39.998         & 42.930                  & 50.052   & -                    & -              & -                       & -        \\
+		\textbf{Ej.5}: $[30,40], [0,10]$           & -                                             & -                                                & -                                   & -        & $9.272\times10^{16}$ & 39.991         & 39.991                  & 39.991   & -                    & -              & -                       & -        \\
+		\textbf{Ej.6}: $[0,10], [30,50]$           & -                                             & -                                                & -                                   & -        & $5.990\times10^{13}$ & 49.983         & 52.656                  & 59.814   & -                    & -              & -                       & -        \\
+		\textbf{Ej.7}: $[30,50], [0,10]$           & -                                             & -                                                & -                                   & -        & $3.752\times10^{13}$ & 49.987         & 49.987                  & 49.987   & -                    & -              & -                       & -        \\
+		\textbf{Ej.8}: $[0,20], [30,40]$           & -                                             & -                                                & -                                   & -        & $2.944\times10^{9}$  & 39.985         & 40.951                  & 44.196   & -                    & -              & -                       & -        \\
+		\textbf{Ej.9}: $[30,40], [0,20]$           & -                                             & -                                                & -                                   & -        & $4.136\times10^{8}$  & 39.989         & 39.989                  & 39.989   & -                    & -              & -                       & -        \\
+		\textbf{Ej.10}: $[-15,-5], [5,16]$         & -                                             & -                                                & -                                   & -        & $3.711\times10^{10}$ & 15.990         & 17.107                  & 21.152   & -                    & -              & -                       & -        \\
+		\textbf{Ej.11}: $[-15,-5], [5,14]$         & -                                             & -                                                & -                                   & -        & $2.338\times10^{11}$ & 14.992         & 15.094                  & 19.007   & -                    & -              & -                       & -        \\
+		\textbf{Ej.12}: $[-1,1], c=0$              & -                                             & -                                                & -                                   & -        & -                    & -              & -                       & -        & 4.704                & 0.999          & 0.999                   & 0.999    \\
+		\textbf{Ej.13}: $[-1,1], c=2$              & -                                             & -                                                & -                                   & -        & -                    & -              & -                       & -        & $7.441\times10^{36}$ & 0.999          & 2.025                   & 2.933    \\
+		\textbf{Ej.14}: $[0,1], c=0$               & -                                             & -                                                & -                                   & -        & -                    & -              & -                       & -        & 35.000               & 0.999          & 0.999                   & 0.999    \\
+		\textbf{Ej.15}: $[0,1], c=2$               & -                                             & -                                                & -                                   & -        & -                    & -              & -                       & -        & $1.405\times10^{50}$ & 0.999          & 2.021                   & 3.299    \\
 		\hline
 	\end{tabular}
 \end{sidewaystable}
@@ -337,10 +357,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 25}\sigma_{1,n}=1.516$
-	\item $\lim_{n \to 25} \rho(\mathcal{D}_{n})=0.667$
-	\item $\max\{Z_{n}\}_{n=0}^{25}=0.672$
-	\item $\lim_{n \to 25}\sigma_{2,n}=1.000$
+	\item $\sigma_{1,25}=1.516$
+	\item $\rho(\mathbf{D}_{25})=0.667$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=0.672$
+	\item $\sigma_{2,25}=1.000$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 2.} % Originalmente Ejemplo 3
@@ -355,10 +376,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 25}\sigma_{1,n}=3.470$
-	\item $\lim_{n \to 25} \rho(\mathcal{D}_{n})=1.108$
-	\item $\max\{Z_{n}\}_{n=0}^{25}=1.112$
-	\item $\lim_{n \to 25}\sigma_{2,n}=2.968$
+	\item $\sigma_{1,25}=3.470$
+	\item $\rho(\mathbf{D}_{25})=1.108$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=1.112$
+	\item $\sigma_{2,25}=2.968$
+	\item $R = 2.5$
 \end{enumerate}
 
 \textbf{Ejemplo 3.} % Originalmente Ejemplo 3
@@ -373,10 +395,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 25}\sigma_{1,n}=15.248$
-	\item $\lim_{n \to 25} \rho(\mathcal{D}_{n})=1.068$
-	\item $\max\{Z_{n}\}_{n=0}^{25}=1.185$
-	\item $\lim_{n \to 25}\sigma_{2,n}=13.972$
+	\item $\sigma_{1,25}=15.248$
+	\item $\rho(\mathbf{D}_{25})=1.068$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=1.185$
+	\item $\sigma_{2,25}=13.972$
+	\item $R = 10.5$
 \end{enumerate}
 
 % CASOS NO SECUENCIALMENTE DOMINADOS
@@ -392,10 +415,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 70}\sigma_{1,n}=2.672$
-	\item $\lim_{n \to 70} \rho(\mathcal{D}_{n})=1.933$
-	\item $\max\{Z_{n}\}_{n=0}^{70}=1.963$
-	\item $\lim_{n \to 70}\sigma_{2,n}=2.672$
+	\item $\sigma_{1,70}=2.672$
+	\item $\rho(\mathbf{D}_{70})=1.933$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.963$
+	\item $\sigma_{2,70}=2.672$
+	\item $R = 2$
 \end{enumerate}
 
 \textbf{Ejemplo 5.} % Originalmente Ejemplo 4
@@ -410,10 +434,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 70}\sigma_{1,n}=4.963 \times 10^{14}$
-	\item $\lim_{n \to 70} \rho(\mathcal{D}_{n})=12.424$
-	\item $\max\{Z_{n}\}_{n=0}^{70}=15.074$
-	\item $\lim_{n \to 70}\sigma_{2,n}=11.211$
+	\item $\sigma_{1,70}=4.963 \times 10^{14}$
+	\item $\rho(\mathbf{D}_{70})=12.424$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=15.074$
+	\item $\sigma_{2,70}=11.211$
+	\item $R = 11$
 \end{enumerate}
 
 \textbf{Ejemplo 6.} % Originalmente Ejemplo 6
@@ -428,10 +453,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{-10}(0.25)} p(z)\overline{q(z)}\, dm_{-10;0.
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 70}\sigma_{1,n}=9.660 \times 10^{22}$
-	\item $\lim_{n \to 70} \rho(\mathcal{D}_{n})=10.035$
-	\item $\max\{Z_{n}\}_{n=0}^{70}=10.035$
-	\item $\lim_{n \to 70}\sigma_{2,n}=10.249$
+	\item $\sigma_{1,70}=9.660 \times 10^{22}$
+	\item $\rho(\mathbf{D}_{70})=10.035$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=10.035$
+	\item $\sigma_{2,70}=10.249$
+	\item $R = 10.25$
 \end{enumerate}
 
 \textbf{Ejemplo 7.} % Nuevo ejemplo
@@ -446,10 +472,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + \int
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.409 \times 10^{23}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=11.641$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=14.981$
-	\item $\lim_{n \to 50}\sigma_{2,n}=10.2977$
+	\item $\sigma_{1,50}=1.409 \times 10^{23}$
+	\item $\rho(\mathbf{D}_{50})=11.641$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=14.981$
+	\item $\sigma_{2,50}=10.298$
+	\item $R = 10.25$
 \end{enumerate}
 
 % CASOS CON ÁTOMO
@@ -469,10 +496,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=33.5602$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=31.4890$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=31.4890$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.4573$
+	\item $\sigma_{1,50}=33.560$
+	\item $\rho(\mathbf{D}_{50})=31.489$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=31.489$
+	\item $\sigma_{2,50}=1.457$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 9.} % Originalmente Ejemplo 5
@@ -487,10 +515,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{-0.5-0.5i}(1)} p(z)\overline{q(z)}\, dm_{-0.
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=314.848$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=270.137$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=270.137$
-	\item $\lim_{n \to 50}\sigma_{2,n}=54.035$
+	\item $\sigma_{1,50}=314.848$
+	\item $\rho(\mathbf{D}_{50})=270.137$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=270.137$
+	\item $\sigma_{2,50}=54.035$
+	\item $R = 1.5$
 \end{enumerate}
 
 \textbf{Ejemplo 10.} % Originalmente Ejemplo 7
@@ -509,10 +538,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.5417$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.5333$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=0.6514$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.000$
+	\item $\sigma_{1,50}=1.542$
+	\item $\rho(\mathbf{D}_{50})=0.533$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.651$
+	\item $\sigma_{2,50}=1.000$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 11.}% Originalmente Ejemplo 7
@@ -527,10 +557,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{-0.5}(1)} p(z)\overline{q(z)}\, dm_{-0.5;1} 
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.525$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=1.017$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=1.031$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.500$
+	\item $\sigma_{1,50}=1.525$
+	\item $\rho(\mathbf{D}_{50})=1.017$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=1.031$
+	\item $\sigma_{2,50}=1.500$
+	\item $R = 1.5$
 \end{enumerate}
 
 \textbf{Ejemplo 12.} % Originalmente Ejemplo 8
@@ -549,10 +580,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=1.4142$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=0.0000$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=0.0000$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.000$
+	\item $\sigma_{1,50}=1.414$
+	\item $\rho(\mathbf{D}_{50})=0.000$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.000$
+	\item $\sigma_{2,50}=1.000$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 13.} % Originalmente Ejemplo 9
@@ -571,10 +603,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=6.3250$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=5.3106$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=5.3106$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.4923$
+	\item $\sigma_{1,50}=6.325$
+	\item $\rho(\mathbf{D}_{50})=5.311$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=5.311$
+	\item $\sigma_{2,50}=1.492$
+	\item $R = 1$
 \end{enumerate}
 
 \textbf{Ejemplo 14.} % Originalmente Ejemplo 9
@@ -589,10 +622,11 @@ $\langle p(z),q(z) \rangle=\int_{S_{-0.5i}(1)} p(z)\overline{q(z)}\, dm_{-0.5i;1
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 70}\sigma_{1,n}=9690.60$
-	\item $\lim_{n \to 70} \rho(\mathcal{D}_{n})=9665.19$
-	\item $\max\{Z_{n}\}_{n=0}^{70}=9665.19$
-	\item $\lim_{n \to 70}\sigma_{2,n}=1647.79$
+	\item $\sigma_{1,70}=9690.600$
+	\item $\rho(\mathbf{D}_{70})=9665.190$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=9665.190$
+	\item $\sigma_{2,70}=1647.790$
+	\item $R = 1.5$
 \end{enumerate}
 
 \textbf{Ejemplo 15.} % Originalmente Ejemplo 9
@@ -607,15 +641,16 @@ $\langle p(z),q(z) \rangle=\int_{S_{0}(1)} p(z)\overline{q(z)}\, dm_{0;1} + p'(1
 \end{center}
 
 \begin{enumerate}
-	\item $\lim_{n \to 50}\sigma_{1,n}=3.502\times10^{26}$
-	\item $\lim_{n \to 50} \rho(\mathcal{D}_{n})=10.345$
-	\item $\max\{Z_{n}\}_{n=0}^{50}=14.975$
-	\item $\lim_{n \to 50}\sigma_{2,n}=1.000$
+	\item $\sigma_{1,50}=3.502\times10^{26}$
+	\item $\rho(\mathbf{D}_{50})=10.345$
+	\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=14.975$
+	\item $\sigma_{2,50}=1.000$
+	\item $R = 10$
 \end{enumerate}
 
 \begin{sidewaystable}
 	\centering
-	\small
+	\footnotesize
 	\caption{Resumen de ejemplos sobre la localización de ceros en el caso de circunferencias.}
 	\begin{tabular}{|c|cccc|cccc|cccc|}
 		\hline
@@ -691,7 +726,7 @@ El Cuadro 2.1, que resume los experimentos numéricos para el caso real, revela 
 
 \end{proof}
 
-\noindent Aplicando la Proposición \ref{prop:bounded_operator_continuous} al \textbf{Ejemplo 1} del Caso Real: tenemos $I_1 = [-1,1]$ (con $w_0(t)=t^2$) y $I_2 = [-1,1]$ (con $w_1(t)=t^{10}$). Así, $R = \max\{|-1|,|1|\} = 1$. El cociente de pesos $w_1(t)/w_0(t) = t^8$ (para $t \neq 0$) implica $\alpha = \sup_{t\in[-1,1], t \neq 0} t^8 = 1$. Por lo tanto, la cota es $\|\mathcal{D}\| \le \sqrt{2(R^2 + \alpha)} = \sqrt{2(1^2 + 1)} = \sqrt{4} = 2$. Este resultado es consistente con el valor numérico $\lim_{n \to 50}\sigma_{1,n} \approx 1.2760$ (Cuadro 2.1), ya que $1.2760 \le 2$.
+\noindent Aplicando la Proposición \ref{prop:bounded_operator_continuous} al \textbf{Ejemplo 1} del Caso Real: tenemos $I_1 = [-1,1]$ (con $w_0(t)=t^2$) y $I_2 = [-1,1]$ (con $w_1(t)=t^{10}$). Así, $R = \max\{|-1|,|1|\} = 1$. El cociente de pesos $w_1(t)/w_0(t) = t^8$ (para $t \neq 0$) implica $\alpha = 1$. Por lo tanto, la cota es $\|\mathcal{D}\| \le \sqrt{2(R^2 + \alpha)} = \sqrt{2(1^2 + 1)} = \sqrt{4} = 2$. Este resultado es consistente con el valor numérico $\lim_{n \to 50}\sigma_{1,n} \approx 1.2760$ (Cuadro 2.1), ya que $1.2760 \le 2$.
 
 \noindent Para el \textbf{Ejemplo 2}, tenemos $I_1 = [-2,2]$ (con $w_0(t)=1$) y $I_2 = [-1,1]$ (con $w_1(t)=1$). Aquí, $R = \max\{|-2|,|2|,|-1|,|1|\} = 2$. Como $w_1(t)/w_0(t) = 1$ para $t \in [-1,1]$, tenemos $\alpha = 1$. Así, obtenemos $\|\mathcal{D}\| \le \sqrt{2(R^2 + \alpha)} = \sqrt{2(2^2 + 1)} = \sqrt{2(4 + 1)} = \sqrt{10} \approx 3.16$. Esto también es consistente con el valor experimental $\lim_{n \to 50}\sigma_{1,n} \approx 1.999$, confirmando que la cota teórica es válida.
 
@@ -800,35 +835,7 @@ Pasando ahora al \textbf{Caso Circunferencia}, resumido en el Cuadro 2.2, se inv
 
 Estas observaciones indican que la geometría de los soportes en el plano complejo (posición relativa de circunferencias y átomos) es determinante para las propiedades del operador de multiplicación y la distribución de los ceros. Las transformaciones de semejanza, que se discuten a continuación, ofrecen herramientas para comprender cómo los cambios de escala y las traslaciones afectan estas propiedades.
 
-\begin{proposition}
-	Sea $\mu $ una medida con soporte en el plano complejo $\mathbb{C} $ y  $f(z)=\alpha z+\beta $ una semejanza con $\alpha > 0
-		%=|\alpha | e^{i \theta}
-	$   y sea $\mathbf{D}$ la matriz del operador  multiplicación por $z$ respecto de la SPON definida por $\mu $. Entonces, si consideramos la medida imagen de $\mu $ por $f$, $\mu_{f}=\mu \circ f^{-1}$, obtenemos un nuevo producto interior y una secuencia de polinomios ortonormales, tal que la matriz $D^{f}$ del operador multiplicación por $z$ tiene como sección de orden $n$ la matriz
-	\[
-		D^{f}_{n} = \alpha\;  D_{n} + \beta I_{n}.
-	\]
 
-\end{proposition}
-De este resultado podemos deducir el comportamiento de los ceros de los polinomios si transformamos el soporte mediante una semejanza, puesto que  los ceros de los polinomios mónicos  son  autovalores de las secciones $\mathbf{D}_n$.
-\begin{corollary}
-	En las condiciones de  proposición anterior,
-	denotamos por $\{P_{k}(z)\}_{0}^{\infty}$ y $\{P_{k}^{f}(z)\}_{0}^{\infty}$, las secuencias de polinomios mónicos asociados respectivamente a $\mu$ y a $\mu_f$, entonces
-	\[
-		P_{n}^{f}(z)=\alpha^n P_{n}(\frac{z-\beta}{\alpha}).
-	\]
-\end{corollary}
-
-\begin{proof}
-	\[
-		P_{n}^{f}(z)= \vert z \mathbf{I}_{n}-\mathbf{D}^f_{n} \vert =\vert z \mathbf{I}_{n}-(\alpha \mathbf{D}_{n} + \beta I_{n})\vert =
-		\vert( z-\beta)\mathbf{I}_{n}-\alpha \mathbf{D}_{n} \vert=
-	\]
-	\[
-		\vert(\alpha\frac{z-\beta}{\alpha} )\mathbf{I}_{n}-\alpha \mathbf{D}_{n} \vert=\vert\alpha(\frac{z-\beta}{\alpha} \mathbf{I}_{n}-\mathbf{D}_{n}) \vert=
-		\alpha^n P_{n}(\frac{z-\beta}{\alpha}).
-	\]
-\end{proof}
-Por lo que  $z_0$ es un cero de $P_{k}^{f}(z)\Leftrightarrow P_{n}^{f}(z_0)=0 \Leftrightarrow P_{n}(\frac{z_0-\beta}{\alpha})=0\Leftrightarrow \omega_0=\frac{z_0-\beta}{\alpha}$ es un cero de $P_{n}(z)$, esto es, $\alpha \omega_0+\beta=z_0$.
 
 En el contexto de los productos internos de Sobolev, la aplicabilidad directa de este corolario sobre la transformación de los ceros no es, en general, válida según visto en los ejemplos. Se puede obsrvar como al hacer traslaciones con un vector con componentes complejas, se obtiene un comportamiento diferente al del corolario. Habría que investigar si es un error de cálculo o si es un resultado que no se puede aplicar directamente a los productos internos de Sobolev.
 
@@ -856,9 +863,9 @@ Esta convergencia se manifiesta consistentemente en todos los casos estudiados.
 	$$
 \end{conjetura}
 
-\noindent Veamos un resultado que apoya a la conjetura.
+\noindent En esta dirección hemos obtenido unos resultados que apoyan esta conjetura \cite{singularValuesOfHessenbergMatrices}.
 
-\noindent {\bf Teorema de entrelazamiento de Cauchy} Sea  $A$ una matriz de orden  $n$ y sea  $B$ una submatriz principal de  $A$ de  orden  $n-1$. Si $\lambda_n\leq \dots \leq \lambda_2\leq \lambda_1$ son los autovalores de $A$ y  $\mu_{n-1}\leq \dots \leq \mu_2\leq \mu_1$ son los autovalores de  $B$ entonces
+\noindent {\bf Teorema de entrelazamiento de Cauchy} \cite{Bhatia1997} Sea  $A$ una matriz de orden  $n$ y sea  $B$ una submatriz principal de  $A$ de  orden  $n-1$. Si $\lambda_n\leq \dots \leq \lambda_2\leq \lambda_1$ son los autovalores de $A$ y  $\mu_{n-1}\leq \dots \leq \mu_2\leq \mu_1$ son los autovalores de  $B$ entonces
 $$
 	\lambda_n \leq \mu_{n-1} \leq \dots \leq \mu_2 \leq \lambda_1.
 $$
@@ -979,3 +986,42 @@ $$
 		\lambda_{2,n}(\mathbf{D}_n^{*}\mathbf{D}_n) \leq \lambda_{2,n+1}(
 		\mathbf{D}_{n+1}^{*}\mathbf{D}_{n+1}). \] Por tanto $\sigma_{2,n}\leq\sigma_{2,n+1}$  y se verifica el resultado.
 \end{proof}
+
+\paragraph{Observación Empírica sobre la traslación de los soportes}
+:
+
+\begin{conjetura}
+	Basándonos en la observación del comportamiento de los ceros de Sobolev cuando trasladamos los soportes de ambas medidas mediantes una traslacion en el eje real, se postula la siguiente conjetura:
+	\label{conj:zeros_sobolev_translation}
+	Los ceros de los polinomios ortogonales de Sobolev asociados a las nuevas medidas trasladadas, se trasladan mediante la misma traslacion.
+\end{conjetura}
+
+\begin{proposition}
+	\cite{Escribano2012} Sea $\mu $ una medida con soporte en el plano complejo $\mathbb{C} $ y  $f(z)=\alpha z+\beta $ una semejanza con $\alpha > 0
+		%=|\alpha | e^{i \theta}
+	$   y sea $\mathbf{D}$ la matriz del operador  multiplicación por $z$ respecto de la SPON definida por $\mu $. Entonces, si consideramos la medida imagen de $\mu $ por $f$, $\mu_{f}=\mu \circ f^{-1}$, obtenemos un nuevo producto interior y una secuencia de polinomios ortonormales, tal que la matriz $D^{f}$ del operador multiplicación por $z$ tiene como sección de orden $n$ la matriz
+	\[
+		D^{f}_{n} = \alpha\;  D_{n} + \beta I_{n}.
+	\]
+
+\end{proposition}
+De este resultado podemos deducir el comportamiento de los ceros de los polinomios si transformamos el soporte mediante una semejanza, puesto que  los ceros de los polinomios mónicos  son  autovalores de las secciones $\mathbf{D}_n$.
+\begin{corollary}
+	En las condiciones de  proposición anterior,
+	denotamos por $\{P_{k}(z)\}_{0}^{\infty}$ y $\{P_{k}^{f}(z)\}_{0}^{\infty}$, las secuencias de polinomios mónicos asociados respectivamente a $\mu$ y a $\mu_f$, entonces
+	\[
+		P_{n}^{f}(z)=\alpha^n P_{n}(\frac{z-\beta}{\alpha}).
+	\]
+\end{corollary}
+
+\begin{proof}
+	\[
+		P_{n}^{f}(z)= \vert z \mathbf{I}_{n}-\mathbf{D}^f_{n} \vert =\vert z \mathbf{I}_{n}-(\alpha \mathbf{D}_{n} + \beta I_{n})\vert =
+		\vert( z-\beta)\mathbf{I}_{n}-\alpha \mathbf{D}_{n} \vert=
+	\]
+	\[
+		\vert(\alpha\frac{z-\beta}{\alpha} )\mathbf{I}_{n}-\alpha \mathbf{D}_{n} \vert=\vert\alpha(\frac{z-\beta}{\alpha} \mathbf{I}_{n}-\mathbf{D}_{n}) \vert=
+		\alpha^n P_{n}(\frac{z-\beta}{\alpha}).
+	\]
+\end{proof}
+Por lo que  $z_0$ es un cero de $P_{k}^{f}(z)\Leftrightarrow P_{n}^{f}(z_0)=0 \Leftrightarrow P_{n}(\frac{z_0-\beta}{\alpha})=0\Leftrightarrow \omega_0=\frac{z_0-\beta}{\alpha}$ es un cero de $P_{n}(z)$, esto es, $\alpha \omega_0+\beta=z_0$.

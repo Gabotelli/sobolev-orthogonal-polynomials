@@ -184,7 +184,7 @@ Las secciones principales son cruciales para el análisis numérico y la aproxim
 
 La acotación de este operador tiene importantes consecuencias para la localización de los ceros de los polinomios ortogonales. A continuación, se presenta cómo se representa este operador en la base de polinomios ortonormales.
 
-\begin{proposition}\label{def:d_representation}
+\begin{definition}\label{def:d_representation}
 	Sea \(\{\varphi_n\}_{n\ge0}\) una base ortonormal de \(\mathbb{P}[z]\) respecto a un
 	producto interior \(\langle\!\cdot,\cdot\!\rangle\).
 	$z\varphi_n(z)$ es un polinomio de grado $n+1$ que se puede expresar en términos de la base ortonormal como:
@@ -192,7 +192,7 @@ La acotación de este operador tiene importantes consecuencias para la localizac
 		z\varphi_n(z)= d_{0,0}\varphi_0(z)+d_{1,0}\varphi_1(z)+\dots+d_{n,0}\varphi_n(z)+d_{n,n+1}\varphi_{n+1}(z)
 	$$
 	\noindent Esta expresión recurrente define la matriz infinita $\mathbf{D}=(d_{i,j})_{i,j=0}^{\infty}$ que representa al operador multiplicación $\mathcal{D}$ respecto de la base de polinomios ortonormales. Denotamos por $\mathbf{D}_n$ a la sección de orden $n$.
-\end{proposition}
+\end{definition}
 
 \begin{proposition}\label{prop:matriz_hessenberg}
 	Para todos los índices \(i,j\ge0\) se verifica
@@ -266,13 +266,11 @@ La conexión entre los autovalores de las secciones de $\mathbf{D}$ y los ceros 
 	$(\varphi_0(z_0),\varphi_1(z_0),\dots,\varphi_n(z_0))$ (que es no nulo ya que $\varphi_0(z)$ es constante).
 
 	\noindent Por lo tanto, todos las raíces de $\varphi_n$ son autovalores de la matriz $\mathbf{D}^{t}_n$.
-
-	\noindent
 \end{proof}
 
 Este resultado establece una correspondencia directa entre el problema algebraico de encontrar autovalores y el problema analítico de encontrar ceros de polinomios.
 
-\noindent Como consecuencia, el determinante de $\mathbf{D}_n -z \mathbf{I}_n$ un polinomio mónico.
+\noindent Como consecuencia, el determinante $|\mathbf{D}_n -z \mathbf{I}_n|$ es un polinomio ortogonal mónico.
 
 El enfoque matricial no solo se limita a la representación del operador multiplicación, sino que también permite caracterizar los propios polinomios ortogonales.
 
@@ -355,7 +353,7 @@ Con estos fundamentos de álgebra lineal y teoría de operadores establecidos, p
 
 \section{Productos internos de Sobolev}
 
-\noindent Una vez establecidos los conceptos básicos del álgebra lineal, debemos extender nuestro marco teórico al contexto de espacios funcionales, donde se desarrolla el estudio de los polinomios ortogonales de Sobolev. Para ello, necesitamos introducir las nociones de espacios prehilbertianos y espacios de Hilbert, que nos permitirán formalizar los distintos productos internos respecto a los cuales definiremos la ortogonalidad. Estos productos internos pueden tomar diversas formas, ya sean continuos o discretos, reales o complejos, y son fundamentales para caracterizar las propiedades de los polinomios ortogonales asociados.
+\noindent Una vez establecidos los conceptos básicos del álgebra lineal, debemos extender nuestro marco teórico al contexto de espacios funcionales, donde se desarrolla el estudio de los polinomios ortogonales de Sobolev. Para ello, necesitamos introducir los productos de Sobolev, que nos permitirán formalizar los distintos productos internos respecto a los cuales definiremos la ortogonalidad. Estos productos internos pueden tomar diversas formas, ya sean continuos o discretos, reales o complejos, y son fundamentales para caracterizar las propiedades de los polinomios ortogonales asociados.
 
 \begin{definition}\label{def:circum_lebesgue_measure}
 	Sea
@@ -376,7 +374,7 @@ Con estos fundamentos de álgebra lineal y teoría de operadores establecidos, p
 
 Esta medida es fundamental para definir productos internos en el plano complejo, especialmente en el contexto de los polinomios ortogonales en la circunferencia unitaria o en otras circunferencias.
 
-Los productos internos que se trabajarán son de la forma:
+Los productos internos de Sobolev que se trabajará son de la forma:
 \begin{enumerate}
 	\item Continuo Real con Soportes Compactos
 	      \begin{equation}
@@ -405,12 +403,13 @@ Los productos internos que se trabajarán son de la forma:
 	      \end{equation}
 \end{enumerate}
 
+Mas generalmente,
 \begin{definition}\label{def:sobolev_product}
 	\cite{escribano2025boundedness}
 	Sea \(\boldsymbol{\mu}=(\mu_1,\mu_2)\) un conjunto de medidas de Borel,
 	positivas y finitas, con soportes \(\operatorname{supp}(\mu_1),\operatorname{supp}(\mu_2)\subset\mathbb C\) y \( \mu_1\) con soporte infinito,
 	y sea \(p,q\in\mathbb P[z]\).
-	Definimos el \emph{producto de Sobolev de orden \(m\)} asociado a
+	Definimos el \emph{producto de Sobolev} asociado a
 	\(\boldsymbol{\mu}\) como
 	\[
 		\langle p,q \rangle_{S}
@@ -459,12 +458,45 @@ En los casos discretos con atomo, la medida utilizada es la medida de Dirac, es 
 
 \begin{definition}
 	\label{rem:R_support}
-	En los casos continuos denotamos
-	\(
-	R:=\max\bigl\{|z|:z\in\operatorname{supp}(\mu_{1})\cup\operatorname{supp}(\mu_{2})\bigr\},
-	\)
-	y en el caso discreto con átomo, $R:=\max\bigl\{|z|:z\in\operatorname{supp}(\mu_{1})\cup\{c\}\bigr\}$.
+	\noindent En un espacio de Sobolev asociado a dos medidas se define el número  $R$
+	$$
+		R= \max \{ \vert z \vert : z\in {\it supp}(\mu_1)\cup {\it supp}(\mu_2)\},
+	$$
 \end{definition}
+\noindent En particular, en los casos tratados:
+\begin{enumerate}
+	\item Caso continuo real
+	      $$
+		      R= \max \{ \vert a \vert,\vert b \vert, \vert c \vert, \vert d \vert\}
+	      $$
+	\item Caso continuo con átomo:
+	      $$
+		      R= \max \{\vert a \vert, \vert b \vert, \vert c \vert\}
+	      $$
+	\item Caso continuo complejo
+	      $$
+		      R=\max \{ z \in S_{r_a}(a)\cup S_{r_b}(b)\}= \max \{ \vert a \vert + r_{a}, \vert b \vert + r_b \}
+	      $$
+	\item Caso complejo con átomo
+	      $$
+		      R= \max\{ \max{\vert z \vert : z\in S_{r_a}(a)}, \vert c \vert \}= \max \{ \vert a \vert + r_a,\vert c \vert \}
+	      $$
+\end{enumerate}
+
+\noindent Hay que destacar que este número, en el caso de un productos internos asociados a una sóla medida, es decir, el caso standard de polinomios ortogonales asociados a una medida del tipo
+$$
+	<p,q>=\int p(z) \overline{q(z)} \; d\mu
+$$
+
+\noindent
+coincide con
+$$
+	R=\max \{ \vert z \vert : z\in {\it supp}(\mu)\}
+$$
+
+\noindent Es conocido que cuando la medida tiene soporte acotado,
+$$\lim_{n\to \infty} \sigma_{1,n} = \Vert \mathcal{D}\Vert = R$$
+
 
 Este valor $R$ proporciona una medida del tamaño de la región donde se definen las medidas del producto de Sobolev. Al igual que con los productos internos generales, los productos de Sobolev también admiten una representación matricial.
 
@@ -481,7 +513,7 @@ Este valor $R$ proporciona una medida del tamaño de la región donde se definen
 	\]
 	las respectivas matrices de momentos (cada una HSPD).
 	\vspace{0.4em}
-	La \emph{matriz de momentos Sobolev} de orden \(k\)
+	La \emph{matriz de momentos Sobolev}
 	asociada al sistema \(\mu\) es entonces
 	\[
 		\textbf{M}_S \;=\;
@@ -499,10 +531,10 @@ Este valor $R$ proporciona una medida del tamaño de la región donde se definen
 	o equivalentemente:
 	\[
 		\boldsymbol{\Lambda} = \begin{pmatrix}
-			0      & 1      & 2      & 3      & 4      & \cdots \\
-			0      & 0      & 1      & 2      & 3      & \cdots \\
-			0      & 0      & 0      & 1      & 2      & \cdots \\
-			0      & 0      & 0      & 0      & 1      & \cdots \\
+			0      & 0      & 0      & 0      & 0      & \cdots \\
+			1      & 0      & 0      & 0      & 0      & \cdots \\
+			0      & 2      & 0      & 0      & 0      & \cdots \\
+			0      & 0      & 3      & 0      & 0      & \cdots \\
 			\vdots & \vdots & \vdots & \vdots & \vdots & \ddots
 		\end{pmatrix}
 	\]
@@ -517,7 +549,7 @@ Este valor $R$ proporciona una medida del tamaño de la región donde se definen
 
 La matriz $\boldsymbol{\Lambda}$ representa el operador de derivación en la base monomial. Cuando se utilizan medidas de Dirac, la matriz de momentos asociada tiene una estructura particular.
 
-\begin{definition}\label{def:dirac_measure}
+\begin{definition}\label{def:dirac_measure_matrix}
 	\cite{escribano2025boundedness}
 	Sea \(\delta_{a}\) la medida de Dirac concentrada en \(a\in\mathbb C\).
 	Sus momentos son
@@ -562,9 +594,10 @@ Cuando \(\mathbf{M}_{1}\) es la matriz de momentos de una medida \(\mu_{1}\) y
 Con estas definiciones establecidas, podemos formular el problema central de este trabajo.
 
 \section{Planteamiento del problema}
-Sean $\mu_1$ y $\mu_2$ dos medidas de Borel positivas con soporte compacto, con $\mu_1$ con soporte infinito, sea $\langle\cdot,\cdot\rangle_S$ el producto interno de Sobolev asociado y sea $Z$ el conjunto de ceros de los polinomios ortonormales de Sobolev $\{\varphi_i\}_{i\ge 0}$. ¿Es $Z$ acotado?
 
-El problema central que motiva este trabajo es el siguiente: Esta cuestión fundamental no ha sido completamente resuelta en la literatura, especialmente cuando los soportes son disjuntos o cuando no se cumple la hipótesis de dominación secuencial, conceptos que se verán después.
+El problema central de investigación que motiva este trabajo es el siguiente: Sean $\mu_1$ y $\mu_2$ dos medidas de Borel positivas con soporte compacto, con $\mu_1$ con soporte infinito, sea $\langle\cdot,\cdot\rangle_S$ el producto interno de Sobolev asociado y sea $Z$ el conjunto de ceros de los polinomios ortonormales de Sobolev $\{\varphi_i\}_{i\ge 0}$. ¿Es $Z$ acotado?
+
+Esta cuestión fundamental no ha sido completamente resuelta en la literatura, especialmente en el caso complejo cuando los soportes son disjuntos o cuando no se cumple la hipótesis de dominación secuencial, conceptos que se verán después.
 
 El estudio de la acotación de los ceros de los polinomios ortogonales de Sobolev se
 traslada, mediante el uso de la representación matricial del
@@ -577,7 +610,7 @@ Determinar condiciones necesarias y suficientes para la acotación del \emph{con
 	\item la acotación de $Z$,
 	\item la acotación del operador multiplicación $\mathcal{D}$,
 	\item el comportamiento asintótico de $\rho(\mathbf{D}_{n})$.
-	\item el comportamient asintótico $\sigma_{1,n}$ y $\sigma_{2,n}$.
+	\item el comportamiento asintótico $\sigma_{1,n}$ y $\sigma_{2,n}$.
 \end{itemize}
 
 \paragraph{Metodología: }
@@ -642,6 +675,13 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 	donde $\textbf{A} \leq \textbf{B}$ significa que $v\textbf{A}v^* \leq v\textbf{B}v^*$ para todo $v \in c_{00}$.
 \end{definition}
 
+Como consecuencia de \cite{escribano2025zeros} Proposición 5, se tiene que el producto Sobolev
+$$\langle p(z) , q(z) \rangle_{S}\;=\;
+	\int_{S_{b}(r_b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
+	\;+\;
+	\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
+es matricialmente secuencialmente dominado, es decir, $\{\textbf{M}(m_{b;r_b}),\textbf{M}(m_{a;r_a})\}$ forman un conjunto de matrices secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, donde $\mathbb{D}_b(r_b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$.
+
 \begin{theorem}\label{thm:bounded_operator}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para $j=1,2$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
 	$$\langle p(t),q(t) \rangle_{\textbf{M}_S}=\langle p(t),q(t) \rangle_{\textbf{M}_1}+\langle p'(t),q'(t) \rangle_{\textbf{M}_2}.$$
@@ -656,7 +696,7 @@ Este teorema es una herramienta poderosa para establecer la acotación del opera
 		\int_{S_{b}(r_b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
 		\;+\;
 		\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
-	es secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, donde $\mathbb{D}_b(r_b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$. La condición en los pesos se tiene ya que $w_1(z)\equiv w_2(z) \equiv 1$.
+	el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{S}$ cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$. Y por tanto el conjunto $Z$ está acotado.
 \end{corollary}
 
 Cuando se introducen términos discretos en el producto de Sobolev, como la evaluación de la derivada en un punto, el concepto de punto de evaluación acotado se vuelve relevante.
@@ -685,7 +725,7 @@ La envoltura convexa polinómica juega un papel importante en la caracterizació
 En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 \begin{enumerate}
 	\item Para el caso real, cuando $K$ es union de intervalos, $P_C(K)$ coincide con $K$.
-	\item Para el caso circunferencia, cuando $K$ es $S_a(r)$, $P_C(K)$ coincide con $\mathbb{D}_a(r)$.
+	\item Para el caso en el que $K$ es una circunferencia, cuando $K$ es $S_a(r)$, $P_C(K)$ coincide con $\mathbb{D}_a(r)$.
 \end{enumerate}
 
 Estos resultados conectan la geometría del soporte de la medida con las propiedades analíticas de los puntos de evaluación.
@@ -718,11 +758,11 @@ Esta equivalencia permite aplicar resultados de dominación secuencial al estudi
 
 \begin{proposition}\label{prop:bounded_derivative_eval}
 	\cite{escribano2025zeros} Sea $M$ una matriz HPD tal que el operador de multiplicación $D$
-	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{M}\bigr)$, y sea $a_\in\mathbb{C}$ punto de evaluación acotado de $M$.
+	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{M}\bigr)$, y sea $a\in\mathbb{C}$ punto de evaluación acotado de $M$.
 	Entonces $D$ también es acotado en $\mathbb{P}[z]$ respecto a la norma
 	\[
-		\|p(z)\|_{MS}^{2}\;=\;\|p(z)\|_{M}^{2}\;+\;
-		\bigl|p'(a_)\bigr|^{2}.
+		\|p(z)\|_{\textbf{M}_{S}}^{2}\;=\;\|p(z)\|_{M}^{2}\;+\;
+		\bigl|p'(a)\bigr|^{2}.
 	\]
 \end{proposition}
 
@@ -736,7 +776,7 @@ Un corolario importante de este resultado se aplica a productos de Sobolev discr
 		\|p\|_{S}^{2}= \int_{S_{b}(r_b)} |p(z)|^{2}\,dm_{b;r_b}\;+\;\bigl|p'(a)\bigr|^{2},
 		\qquad p\in\mathbb{P}[z].
 	\]
-	Entonces el operador multiplicación $D\colon p(z)\mapsto z\,p(z)$
+	Entonces el operador multiplicación $\mathcal{D}\colon p(z)\mapsto z\,p(z)$
 	es acotado en $\bigl(\mathbb{P}[z],\|\cdot\|_{S}\bigr)$.
 	En consecuencia, el conjunto de ceros de los polinomios ortogonales de Sobolev asociados está acotado.
 \end{corollary}
