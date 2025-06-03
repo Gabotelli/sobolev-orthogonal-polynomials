@@ -21,22 +21,40 @@ Finalmente, se profundizará en el estudio de los átomos, utilizando como base 
 $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t)\, dt + \int_{30}^{40} p'(t)q'(t) \, dt + \int_{60}^{70} p'(t)q''(t) \, dt$
 
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_zero.png}
-
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_zeros.png}
-
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40e60f70_traza.png}
+	\begin{tabular}{cc}
+		\includegraphics[width=0.45\textwidth]{include/a0b10c30d40e60f70_zero.png} &
+		\includegraphics[width=0.45\textwidth]{include/a0b10c30d40e60f70_zeros.png}  \\
+	\end{tabular}
+	\begin{minipage}[b]{0.45\textwidth}
+		\begin{enumerate}
+			\item $\sigma_{1,70}=4.939\times10^{8}$
+			\item $\sigma_{2,70}=1.847\times10^{8}$
+			\item $\sigma_{3,70}=69.956$
+			\item $R = 70$
+			\item $ \rho(\mathbf{D}_{70})=73.791$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=88.570$
+		\end{enumerate}
+	\end{minipage}
 \end{center}
 
 \textbf{Ejemplo 2.}
 $\langle p(t),q(t) \rangle_{\textbf{M}_S}=\int_{0}^{10} p(t)q(t)\, dt + \int_{30}^{40} p'(t)q'(t) \, dt + p''(0) c''(0) \, dt$
 
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_zero.png}
-
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_zeros.png}
-
-	\includegraphics[width=0.9\textwidth]{include/a0b10c30d40t0_traza.png}
+	\begin{tabular}{cc}
+		\includegraphics[width=0.45\textwidth]{include/a0b10c30d40t0_zero.png} &
+		\includegraphics[width=0.45\textwidth]{include/a0b10c30d40t0_zeros.png}  \\
+	\end{tabular}
+	\begin{minipage}[b]{0.45\textwidth}
+		\begin{enumerate}
+			\item $\sigma_{1,70}=1.521\times10^{12}$
+			\item $\sigma_{2,70}=212.771$
+			\item $\sigma_{3,70}=39.976$
+			\item $R = 40$
+			\item $ \rho(\mathbf{D}_{70})=43.136$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=50.046$
+		\end{enumerate}
+	\end{minipage}
 \end{center}
 
 Como se puede observar en los ejemplos, $\sigma_{1,n} = \infty$ y $\sigma_{2,n} = \infty $ , mientras que $\sigma_{3,n} = R < \infty$.
@@ -52,7 +70,6 @@ Los resultados experimentales confirman, para los casos continuos de dos circunf
 Desde el punto de vista original, el trabajo propone criterios gráficos basados en diagramas \((\rho(D_n),\sigma_{2,n})\) que permiten diagnosticar de forma cualitativa la acotación de \(\mathcal{D}\) y detectar transiciones en su comportamiento espectral. Asimismo, se presentan dos conjeturas: (i) la convergencia de \(\rho(D_n)\) al radio de la envolvente convexa del soporte para todo producto Sobolev compacto-compacto y (ii) la convergencia de \(\sigma_{2,n}\) al máximo módulo de los puntos de soporte cuando \(\|\mathcal{D}\|=\infty\). Finalmente, se ha creado un repositorio de casos de prueba —código y datos— que garantiza la reproducibilidad y abre la puerta a futuros análisis con derivadas de orden superior y medidas matriciales.
 
 En conjunto, el trabajo integra teoría, experimentación computacional y visualización interactiva, aportando nuevas evidencias y herramientas que favorecen la exploración de los polinomios ortogonales de Sobolev en contexto poco estudiados. Consideramos que estas contribuciones no sólo consolidan resultados previos, sino que abren vías prometedoras hacia una comprensión más profunda de la interacción entre la geometría del soporte, la estructura del producto de Sobolev y el espectro del operador de multiplicación.
-
 \[
 	\boxed{\!\!
 		\begin{array}{c}

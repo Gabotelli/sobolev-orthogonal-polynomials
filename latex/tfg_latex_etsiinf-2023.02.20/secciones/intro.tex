@@ -1,9 +1,54 @@
 \chapter{Introducción}
 \label{ch:intro}
 
-Los polinomios ortogonales constituyen un área fundamental de la matemática con numerosas aplicaciones. En este trabajo nos centramos en una generalización particular: los polinomios ortogonales de Sobolev. La característica distintiva de estos polinomios es que su ortogonalidad viene dada por productos internos que involucran derivadas, lo que resulta en propiedades notablemente diferentes a las de los polinomios ortogonales clásicos.
+Los \textbf{polinomios ortogonales} constituyen una herramienta transversal en Matemática, Física e Ingeniería: intervienen en fórmulas de cuadratura, métodos espectrales para ecuaciones en derivadas parciales, aproximación e interpolación, teoría de matrices aleatorias y procesamiento de señales.
+En la situación clásica —ortogonalidad respecto a una medida de Borel positiva sin derivadas— la teoría quedó sólidamente establecida durante la primera mitad del siglo~XX, con resultados emblemáticos como la relación de recurrencia de tres términos, la distribución real y entrelazada de los ceros y la conexión directa entre dichos ceros y las reglas de cuadratura de Gauss.
 
-Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de Sobolev, es esencial establecer el marco teórico que usaremos a lo largo del trabajo. En este sentido, comenzaremos por definir los siguientes conceptos del álgebra lineal.
+Sin embargo, la creciente demanda de modelos numéricos más flexibles motivó la \textbf{generalización de la ortogonalidad estándar}.  Ya en los años sesenta Althammer, Brenner y Cohen introdujeron productos interiores que incorporan derivadas —los hoy denominados \emph{productos de Sobolev}— con el fin de mejorar la aproximación simultánea de una función y sus derivadas\,\cite{Althammer1962,Brenner1972,Cohen1975}.
+Desde entonces se han revelado fenómenos ausentes en el caso clásico:
+
+\begin{itemize}
+	\item Los ceros pueden \emph{abandonar el soporte real} e incluso recorrer dominios complejos; algunos polinomios exhiben ceros ``errantes'' que escapan de la envoltura convexa original, como muestran los ejemplos de Althammer y Meijer\,\cite{Meijer1993,Meijer1994}.
+	\item El operador de multiplicación por $z$ deja de ser, en general, autoadjunto; su \textbf{norma} se convierte en el parámetro crítico que controla la explosión o acotación de los ceros.  Estudios recientes formulan este fenómeno en términos de la norma de las secciones de Hessenberg y de sus \textbf{valores singulares}.
+\end{itemize}
+
+La investigación se ha desarrollado en dos frentes complementarios:
+
+\begin{enumerate}
+	\item \textbf{Resultados analíticos.}
+	      López\,Lagomasino y Pijeira demostraron que, para soportes compactos, los ceros permanecen en un disco cuyo radio viene dado por $\|D\|$, enlazando el problema con la teoría espectral de matrices de momento\,\cite{lagomasino2001sobolev}.
+	      Durán y Saff extendieron técnicas de localización de ceros a polinomios ``no estándar'', estableciendo cotas precisas mediante transformaciones matriciales\,\cite{DuranSaff2001}.
+	      Investigaciones más recientes, apoyadas en desigualdades de tipo Wirtinger y en el estudio de \emph{valores singulares generalizados}, han descubierto ejemplos donde la acotación se verifica incluso sin dominancia secuencial de los pesos.
+	\item \textbf{Experimentación numérica y visualización.}
+	      Usando herramientas simbólico-numéricas (Maple, Matlab, Python) se
+	      construye la matriz de Hessenberg asociada, calcular autovalores/valores
+	      singulares y \textbf{dibujar la nube de ceros}. Esta vía computacional
+	      ha revelado, por ejemplo, la convergencia del \emph{segundo valor singular}
+	      hacia el radio de la envoltura convexa en casos donde el primero diverge,
+	      ofreciendo nueva evidencia para las conjeturas actuales.
+\end{enumerate}
+
+Profundizar en la localización de los ceros de los \textbf{polinomios ortogonales de Sobolev} resulta crucial porque:
+
+\begin{itemize}
+	\item Permite diseñar \emph{reglas de cuadratura Sobolev} estables, útiles en la resolución numérica de EDP con condiciones derivativas.
+	\item Ayuda a analizar la \textbf{estabilidad de métodos de Galerkin} y de \emph{aproximación espectral} cuando se añaden términos disipativos u operadores de orden superior.
+	\item Conecta con problemas abiertos en \textbf{teoría espectral} de matrices infinitas y en \textbf{teoría del potencial} en el plano complejo.
+	\item Refuerza la comprensión de fenómenos de \emph{transición de fase} en matrices aleatorias con restricciones derivativas, con aplicaciones en física estadística y teoría cuántica de la información.
+\end{itemize}
+
+Este Trabajo Fin de Grado desarrolla un \textbf{marco teórico--computacional unificado} que:
+
+\begin{enumerate}
+	\item Formaliza la construcción de la matriz de momentos y del operador de multiplicación en productos Sobolev de primer orden.
+	\item Relaciona la acotación de los ceros con la norma y con los dos primeros valores singulares de sus secciones de Hessenberg, reforzando y extendiendo los criterios existentes.
+	\item Implementa un módulo en \emph{Maple} que automatiza el cálculo y la \textbf{visualización bidimensional y tridimensional} de ceros, soportes y espectro, posibilitando la contrastación de conjeturas y la obtención de evidencia empírica.
+	\item Presenta \textbf{familias de ejemplos} (medidas reales, circunferencias, mezclas discretas) que ilustran cómo la geometría del soporte influye en la dinámica de los ceros y en la convergencia de los valores singulares.
+\end{enumerate}
+
+Con ello se persigue clarificar la interacción entre \textbf{geometría}, \textbf{álgebra matricial} y \textbf{análisis complejo}, así como proponer nuevas conjeturas sobre el límite del radio espectral y el papel del segundo valor singular en la descripción fina del conjunto de ceros.
+
+Antes de adentrarnos en el estudio de los ceros de los polinomios ortogonales de Sobolev, es esencial establecer el marco teórico que usaremos a lo largo del trabajo. En este sentido, comenzaremos por definir conceptos necesarios a continuación.
 
 \section{Polinomios Ortogonales}
 
@@ -358,18 +403,18 @@ Con estos fundamentos de álgebra lineal y teoría de operadores establecidos, p
 \begin{definition}\label{def:circum_lebesgue_measure}
 	Sea
 	\(
-	S_{a}(r)\;=\;\bigl\{\,z\in\mathbb{C}\;:\;|z-a|=r\bigr\}
+	S_{r}(a)\;=\;\bigl\{\,z\in\mathbb{C}\;:\;|z-a|=r\bigr\}
 	\)
 	la circunferencia de centro \(a\in\mathbb{C}\) y radio \(r>0\).
-	Denotaremos por \(dm_{a;r}\) la \textbf{medida de Lebesgue} en \(S_{a}(r)\).
-	Para toda función continua \(f:S_{a}(r)\to\mathbb{C}\) definimos
+	Denotaremos por \(dm_{a;r}\) la \textbf{medida de Lebesgue} en \(S_{r}(a)\).
+	Para toda función continua \(f:S_{r}(a)\to\mathbb{C}\) definimos
 	$$
-		\int_{S_{a}(r)} f(z)\,dm_{a;r}(z)
+		\int_{S_{r}(a)} f(z)\,dm_{a;r}(z)
 		\;:=\;
 		\frac{1}{2\pi}\int_{0}^{2\pi} f\!\bigl(a+re^{i\theta}\bigr)\,d\theta,
 	$$
 	de modo que \(dm_{a;r}\) queda normalizada
-	\(\bigl(dm_{a;r}(S_{a}(r))=1\bigr)\).
+	\(\bigl(dm_{a;r}(S_{r}(a))=1\bigr)\).
 \end{definition}
 
 Esta medida es fundamental para definir productos internos en el plano complejo, especialmente en el contexto de los polinomios ortogonales en la circunferencia unitaria o en otras circunferencias.
@@ -389,15 +434,15 @@ Los productos internos de Sobolev que se trabajará son de la forma:
 	\item Continuo Complejo en Circunferencias
 	      \begin{equation}
 		      \langle p(z) , q(z) \rangle_{S}\;=\;
-		      \int_{S_{b}(r_b)}     p(z)\,\overline{q(z)} \, dm_{b;r_b}
+		      \int_{S_{r_b}(b)}     p(z)\,\overline{q(z)} \, dm_{b;r_b}
 		      \;+\;
-		      \int_{S_{a}(r_a)}
+		      \int_{S_{r_a}(a)}
 		      p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.
 	      \end{equation}
 	\item Discreto Complejo en Circunferencia con Átomo
 	      \begin{equation}
 		      \langle p(z) , q(z) \rangle_{S}\;=\;
-		      \int_{S_{b}(r_b)} p(z)\,\overline{q(z)}\,dm_{b;r_b}
+		      \int_{S_{r_b}(b)} p(z)\,\overline{q(z)}\,dm_{b;r_b}
 		      \;+\;
 		      p'(c)\,\overline{q'(c)}.
 	      \end{equation}
@@ -667,7 +712,7 @@ En el caso continuo real, se tiene que como consecuencia de la Definición \ref{
 	es secuencialmente dominado cuando se cumple que $[c,d] \subset [a,b]$ y $\exists c > 0, w_2(t)\leq c \cdot w_1(t)$ continuos.
 \end{corollary}
 
-Para trabajar con matrices de momentos introduciremos la definición para esta noción de secuencial dominación y un teorema análogo que nos dará la acotación. Estos conceptos fueron generalizados por Escribano y Gonzalo \cite{escribano2025boundedness} para el caso matricial.
+Para trabajar con matrices de momentos introduciremos la definición para esta noción de secuencial dominacion y un teorema análogo que nos dará la acotación. Estos conceptos fueron generalizados por Escribano y Gonzalo \cite{escribano2025boundedness} para el caso matricial.
 
 \begin{definition}\label{def:seq_dominated}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_1,\textbf{M}_2\}$ es secuencialmente dominada si existe una constante positiva $C$ tal que
@@ -677,10 +722,10 @@ Para trabajar con matrices de momentos introduciremos la definición para esta n
 
 Como consecuencia de \cite{escribano2025zeros} Proposición 5, se tiene que el producto Sobolev
 $$\langle p(z) , q(z) \rangle_{S}\;=\;
-	\int_{S_{b}(r_b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
+	\int_{S_{r_b}(b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
 	\;+\;
-	\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
-es matricialmente secuencialmente dominado, es decir, $\{\textbf{M}(m_{b;r_b}),\textbf{M}(m_{a;r_a})\}$ forman un conjunto de matrices secuencialmente dominado cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$, donde $\mathbb{D}_b(r_b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$.
+	\int_{S_{r_a}(a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
+es matricialmente secuencialmente dominado, es decir, $\{\textbf{M}(m_{b;r_b}),\textbf{M}(m_{a;r_a})\}$ forman un conjunto de matrices secuencialmente dominado cuando se cumple que $S_{r_a}(a)\subset \mathbb{D}_{r_b}(b)$, donde $\mathbb{D}_{r_b}(b) = \{z \in \mathbb{C} : |z - b| < r_b\}$ denota el disco abierto de centro $b$ y radio $r_b$.
 
 \begin{theorem}\label{thm:bounded_operator}
 	\cite{escribano2025boundedness} Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HPD secuencialmente dominada. Asuma que para $j=1,2$ el operador multiplicación $\mathcal{D}_j$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{\textbf{M}_j}$. Considera el producto matricial de Sobolev siguiente:
@@ -693,10 +738,10 @@ Este teorema es una herramienta poderosa para establecer la acotación del opera
 \begin{corollary}\label{cor:seq_dominated_sobolev}
 	Como consecuencia del Teorema \ref{thm:bounded_operator}, el producto interno de Sobolev
 	$$\langle p(z) , q(z) \rangle_{S}\;=\;
-		\int_{S_{b}(r_b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
+		\int_{S_{r_b}(b)} p(z)\,\overline{q(z)} \, dm_{b;r_b}
 		\;+\;
-		\int_{S_{a}(r_a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
-	el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{S}$ cuando se cumple que $S_{a}(r_a)\subset \mathbb{D}_b(r_b)$. Y por tanto el conjunto $Z$ está acotado.
+		\int_{S_{r_a}(a)} p'(z)\,\overline{q'(z)} \, dm_{a;r_a}.$$
+	el operador multiplicación $\mathcal{D}$ está acotado en $(\mathbb{P}[z],\langle \cdot,\cdot \rangle)_{S}$ cuando se cumple que $S_{r_a}(a)\subset \mathbb{D}_{r_b}(b)$. Y por tanto el conjunto $Z$ está acotado.
 \end{corollary}
 
 Cuando se introducen términos discretos en el producto de Sobolev, como la evaluación de la derivada en un punto, el concepto de punto de evaluación acotado se vuelve relevante.
@@ -725,7 +770,7 @@ La envoltura convexa polinómica juega un papel importante en la caracterizació
 En particular, por \cite{Conway1978}, \cite{Gamelin1969}
 \begin{enumerate}
 	\item Para el caso real, cuando $K$ es union de intervalos, $P_C(K)$ coincide con $K$.
-	\item Para el caso en el que $K$ es una circunferencia, cuando $K$ es $S_a(r)$, $P_C(K)$ coincide con $\mathbb{D}_a(r)$.
+	\item Para el caso en el que $K$ es una circunferencia, cuando $K$ es $S_{r}(a)$, $P_C(K)$ coincide con $\mathbb{D}_{r}(a)$.
 \end{enumerate}
 
 Estos resultados conectan la geometría del soporte de la medida con las propiedades analíticas de los puntos de evaluación.
@@ -770,10 +815,10 @@ Un corolario importante de este resultado se aplica a productos de Sobolev discr
 
 \begin{corollary}\label{cor:bounded_zeros_circle}
 	\cite{escribano2025zeros}
-	Sea $m_{b;r_b}$ una medida de Lebesgue soportada en una circunferencia $S_{b}(r_b)$.
-	Supongamos que $a\in \mathbb{D}_{b}(r_b)$ y consideremos la norma de Sobolev discreta
+	Sea $m_{b;r_b}$ una medida de Lebesgue soportada en una circunferencia $S_{r_b}(b)$.
+	Supongamos que $a\in \mathbb{D}_{r_b}(b)$ y consideremos la norma de Sobolev discreta
 	\[
-		\|p\|_{S}^{2}= \int_{S_{b}(r_b)} |p(z)|^{2}\,dm_{b;r_b}\;+\;\bigl|p'(a)\bigr|^{2},
+		\|p\|_{S}^{2}= \int_{S_{r_b}(b)} |p(z)|^{2}\,dm_{b;r_b}\;+\;\bigl|p'(a)\bigr|^{2},
 		\qquad p\in\mathbb{P}[z].
 	\]
 	Entonces el operador multiplicación $\mathcal{D}\colon p(z)\mapsto z\,p(z)$
