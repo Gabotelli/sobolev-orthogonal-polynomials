@@ -38,32 +38,84 @@ Estos gráficos se complementan con una tabla numérica que resume las principal
 \section{Caso Real}
 
 
-\textbf{Ejemplo 1.}
-$\langle p(t),q(t) \rangle_{S}=\int_{-1}^{1} p(t)q(t)t^2 \, dt + \int_{-1}^{1} p'(t)q'(t)t^{10} \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 1.}\;
+	$\displaystyle
+		\langle p,q\rangle_S
+		=\int_{-1}^{1} p(t)q(t)\,t^{2}\,dt
+		+ \int_{-1}^{1} p'(t)q'(t)\,t^{10}\,dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2t10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2t10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2t10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2t10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-1b1-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2t10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-1b1-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2t10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-1b1-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=1.2760$
 			\item $\sigma_{2,70}=1.2760$
 			\item $R = 1$
-			\item $ \rho(\mathbf{D}_{70})=0.9999$
+			\item $\rho(\mathbf{D}_{70})=0.9999$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.1333$
 		\end{enumerate}
-	\end{minipage}                                    \\
-\end{tabular}
+		\label{fig:a-1b1-data}
+	\end{subfigure}
+	\label{fig:a-1b1-pack}
+\end{minipage}
 
-\textbf{Ejemplo 2.}
-$\langle p(t),q(t) \rangle_{S}=\int_{-2}^{2} p(t)q(t) \, dt + \int_{-1}^{1} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 2.}\;
+	$\displaystyle
+		\langle p,q\rangle_S
+		=\int_{-2}^{2} p(t)q(t) \, dt
+		+ \int_{-1}^{1} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-2b2c1d-1_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-2b2c1d-1_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-2b2c1d-1.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-2b2c1d-1_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-2b2c1d-1-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-2b2c1d-1_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-2b2c1d-1-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-2b2c1d-1.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-2b2c1d-1-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=1.999$
 			\item $\sigma_{2,70}=1.999$
@@ -71,17 +123,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{-2}^{2} p(t)q(t) \, dt + \int_{-1}^{1} p'(t
 			\item $\rho(\mathbf{D}_{70})=1.999$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.999$
 		\end{enumerate}
-	\end{minipage}                                    \\
-\end{tabular}
+		\label{fig:a-2b2c1d-1-data}
+	\end{subfigure}
+	\label{fig:a-2b2c1d-1-pack}
+\end{minipage}
 
-\textbf{Ejemplo 3.}
-$\langle p(t),q(t) \rangle_{S}=\int_{-1}^{1} p(t)q(t)t^{10} \, dt + \int_{-1}^{1} p'(t)q'(t)t^{2} \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 3.}\;
+	$\displaystyle
+		\langle p,q\rangle_S
+		=\int_{-1}^{1} p(t)q(t)\,t^{10}\,dt
+		+ \int_{-1}^{1} p'(t)q'(t)\,t^{2}\,dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t10t2_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t10t2_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t10t2.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t10t2_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-1b1t10t2-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t10t2_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-1b1t10t2-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t10t2.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-1b1t10t2-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=2.204$
 			\item $\sigma_{2,70}=2.122$
@@ -89,18 +168,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{-1}^{1} p(t)q(t)t^{10} \, dt + \int_{-1}^{1
 			\item $\rho(\mathbf{D}_{70})=1.000$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.275$
 		\end{enumerate}
-	\end{minipage}                                    \\
-\end{tabular}
+		\label{fig:a-1b1t10t2-data}
+	\end{subfigure}
+	\label{fig:a-1b1t10t2-pack}
+\end{minipage}
 
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 4.}\;
+	$\displaystyle
+		\langle p,q\rangle_S
+		=\int_{0}^{10} p(t)q(t) \, dt
+		+ \int_{30}^{40} p'(t)q'(t) \, dt$
 
-\textbf{Ejemplo 4.}
-$\langle p(t),q(t) \rangle_{S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{40} p'(t)q'(t) \, dt $
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d40_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d40_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d40.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d40_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a0b10c30d40-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d40_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a0b10c30d40-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d40.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a0b10c30d40-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=9.272\times10^{16}$
 			\item $\sigma_{2,70}=39.998$
@@ -108,17 +213,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{40} p'(
 			\item $\rho(\mathbf{D}_{70})=42.930$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=50.052$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a0b10c30d40-data}
+	\end{subfigure}
+	\label{fig:a0b10c30d40-pack}
+\end{minipage}
 
-\textbf{Ejemplo 5.}
-$\langle p(t),q(t) \rangle_{S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{10} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 5.}\;
+	$\displaystyle
+		\langle p,q\rangle_S
+		=\int_{30}^{40} p(t)q(t) \, dt
+		+ \int_{0}^{10} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a30b40c0d10-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a30b40c0d10-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a30b40c0d10-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=9.272\times10^{16}$
 			\item $\sigma_{2,70}=39.991$
@@ -126,17 +258,45 @@ $\langle p(t),q(t) \rangle_{S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{10} p'(
 			\item $\rho(\mathbf{D}_{70})=39.991$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=39.991$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a30b40c0d10-data}
+	\end{subfigure}
+	\label{fig:a30b40c0d10-pack}
+\end{minipage}
 
-\textbf{Ejemplo 6.}
-$\langle p(t),q(t) \rangle_{S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{50} p'(t)q'(t) \, dt $
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d50_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d50_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a0b10c30d50.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 6.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{0}^{10} p(t)q(t) \, dt
+		+ \int_{30}^{50} p'(t)q'(t) \, dt$
+
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d50_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a0b10c30d50-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d50_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a0b10c30d50-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b10c30d50.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a0b10c30d50-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=5.990\times10^{13}$
 			\item $\sigma_{2,70}=49.983$
@@ -144,17 +304,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{0}^{10} p(t)q(t) \, dt + \int_{30}^{50} p'(
 			\item $\rho(\mathbf{D}_{70})=52.656$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=59.814$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a0b10c30d50-data}
+	\end{subfigure}
+	\label{fig:a0b10c30d50-pack}
+\end{minipage}
 
-\textbf{Ejemplo 7.}
-$\langle p(t),q(t) \rangle_{S}=\int_{30}^{50} p(t)q(t) \, dt + \int_{0}^{10} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 7.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{30}^{50} p(t)q(t) \, dt
+		+ \int_{0}^{10} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a30b50c0d10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a30b50c0d10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a30b50c0d10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b50c0d10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a30b50c0d10-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b50c0d10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a30b50c0d10-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b50c0d10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a30b50c0d10-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=3.752\times10^{13}$
 			\item $\sigma_{2,70}=49.987$
@@ -162,17 +349,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{30}^{50} p(t)q(t) \, dt + \int_{0}^{10} p'(
 			\item $\rho(\mathbf{D}_{70})=49.987$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=49.987$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a30b50c0d10-data}
+	\end{subfigure}
+	\label{fig:a30b50c0d10-pack}
+\end{minipage}
 
-\textbf{Ejemplo 8.}
-$\langle p(t),q(t) \rangle_{S}=\int_{0}^{20} p(t)q(t) \, dt + \int_{30}^{40} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 8.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{0}^{20} p(t)q(t) \, dt
+		+ \int_{30}^{40} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a0b20c30d40_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a0b20c30d40_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a0b20c30d40.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b20c30d40_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a0b20c30d40-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b20c30d40_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a0b20c30d40-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b20c30d40.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a0b20c30d40-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=2.944\times10^{9}$
 			\item $\sigma_{2,70}=39.985$
@@ -180,17 +394,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{0}^{20} p(t)q(t) \, dt + \int_{30}^{40} p'(
 			\item $\rho(\mathbf{D}_{70})=40.951$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=44.196$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a0b20c30d40-data}
+	\end{subfigure}
+	\label{fig:a0b20c30d40-pack}
+\end{minipage}
 
-\textbf{Ejemplo 9.}
-$\langle p(t),q(t) \rangle_{S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{20} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 9.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{30}^{40} p(t)q(t) \, dt
+		+ \int_{0}^{20} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d20_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d20_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a30b40c0d20.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d20_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a30b40c0d20-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d20_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a30b40c0d20-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a30b40c0d20.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a30b40c0d20-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=4.136\times10^{8}$
 			\item $\sigma_{2,70}=39.989$
@@ -198,17 +439,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{30}^{40} p(t)q(t) \, dt + \int_{0}^{20} p'(
 			\item $\rho(\mathbf{D}_{70})=39.989$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=39.989$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:a30b40c0d20-data}
+	\end{subfigure}
+	\label{fig:a30b40c0d20-pack}
+\end{minipage}
 
-\textbf{Ejemplo 10.}
-$\langle p(t),q(t) \rangle_{S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{16} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 10.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{-15}^{-5} p(t)q(t) \, dt
+		+ \int_{5}^{16} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d16_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d16_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d16.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d16_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-15b-5c5d16-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d16_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-15b-5c5d16-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d16.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-15b-5c5d16-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=3.711\times10^{10}$
 			\item $\sigma_{2,70}=15.990$
@@ -216,17 +484,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{16} p'
 			\item $\rho(\mathbf{D}_{70})=17.107$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=21.152$
 		\end{enumerate}
-	\end{minipage}                                      \\
-\end{tabular}
+		\label{fig:a-15b-5c5d16-data}
+	\end{subfigure}
+	\label{fig:a-15b-5c5d16-pack}
+\end{minipage}
 
-\textbf{Ejemplo 11.}
-$\langle p(t),q(t) \rangle_{S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{14} p'(t)q'(t) \, dt $
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 11.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		=\int_{-15}^{-5} p(t)q(t) \, dt
+		+ \int_{5}^{14} p'(t)q'(t) \, dt$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d14_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d14_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-15b-5c5d14.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d14_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-15b-5c5d14-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d14_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-15b-5c5d14-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-15b-5c5d14.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-15b-5c5d14-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=2.338\times10^{11}$
 			\item $\sigma_{2,70}=14.992$
@@ -234,17 +529,44 @@ $\langle p(t),q(t) \rangle_{S}=\int_{-15}^{-5} p(t)q(t) \, dt + \int_{5}^{14} p'
 			\item $\rho(\mathbf{D}_{70})=15.094$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=19.007$
 		\end{enumerate}
-	\end{minipage}                                      \\
-\end{tabular}
+		\label{fig:a-15b-5c5d14-data}
+	\end{subfigure}
+	\label{fig:a-15b-5c5d14-pack}
+\end{minipage}
 
-\textbf{Ejemplo 12.}
-$\langle p(t),q(t) \rangle_{S} = \int_{-1}^{1} p(t) q(t) \, dt + p'(0)q'(0).$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 12.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		= \int_{-1}^{1} p(t) q(t) \, dt
+		+ p'(0)q'(0)$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-1b1t0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-1b1t0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-1b1t0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=4.704$
 			\item $\sigma_{2,70}=0.999$
@@ -252,17 +574,44 @@ $\langle p(t),q(t) \rangle_{S} = \int_{-1}^{1} p(t) q(t) \, dt + p'(0)q'(0).$
 			\item $\rho(\mathbf{D}_{70})=0.999$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=0.999$
 		\end{enumerate}
-	\end{minipage}                                 \\
-\end{tabular}
+		\label{fig:a-1b1t0-data}
+	\end{subfigure}
+	\label{fig:a-1b1t0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 13.}
-$\langle p(t),q(t) \rangle_{S} = \int_{-1}^{1} p(t) q(t) \, dt + p'(2) q'(2).$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 13.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		= \int_{-1}^{1} p(t) q(t) \, dt
+		+ p'(2) q'(2)$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a-1b1t2.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a-1b1t2-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a-1b1t2-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a-1b1t2.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a-1b1t2-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=7.441\times10^{36}$
 			\item $\sigma_{2,70}=0.999$
@@ -270,17 +619,44 @@ $\langle p(t),q(t) \rangle_{S} = \int_{-1}^{1} p(t) q(t) \, dt + p'(2) q'(2).$
 			\item $\rho(\mathbf{D}_{70})=2.025$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=2.933$
 		\end{enumerate}
-	\end{minipage}                                 \\
-\end{tabular}
+		\label{fig:a-1b1t2-data}
+	\end{subfigure}
+	\label{fig:a-1b1t2-pack}
+\end{minipage}
 
-\textbf{Ejemplo 14.}
-$\langle p(t),q(t) \rangle_{S} = \int_{0}^{1} p(t) q(t) \, dt + p'(0)q'(0).$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 14.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		= \int_{0}^{1} p(t) q(t) \, dt
+		+ p'(0)q'(0)$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a0b1t0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a0b1t0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a0b1t0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a0b1t0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a0b1t0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a0b1t0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=35.000$
 			\item $\sigma_{2,70}=0.999$
@@ -288,17 +664,44 @@ $\langle p(t),q(t) \rangle_{S} = \int_{0}^{1} p(t) q(t) \, dt + p'(0)q'(0).$
 			\item $\rho(\mathbf{D}_{70})=0.999$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=0.999$
 		\end{enumerate}
-	\end{minipage}                                \\
-\end{tabular}
+		\label{fig:a0b1t0-data}
+	\end{subfigure}
+	\label{fig:a0b1t0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 15.}
-$\langle p(t),q(t) \rangle_{S} = \int_{0}^{1} p(t) q(t) \, dt + p'(2)q'(2).$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 15.}\;
+	$\displaystyle
+		\langle p(t),q(t) \rangle_S
+		= \int_{0}^{1} p(t) q(t) \, dt
+		+ p'(2)q'(2)$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/a0b1t2_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/a0b1t2_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/a0b1t2.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t2_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:a0b1t2-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t2_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:a0b1t2-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/a0b1t2.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:a0b1t2-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=1.405\times10^{50}$
 			\item $\sigma_{2,70}=0.999$
@@ -306,8 +709,10 @@ $\langle p(t),q(t) \rangle_{S} = \int_{0}^{1} p(t) q(t) \, dt + p'(2)q'(2).$
 			\item $\rho(\mathbf{D}_{70})=2.021$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=3.299$
 		\end{enumerate}
-	\end{minipage}                                \\
-\end{tabular}
+		\label{fig:a0b1t2-data}
+	\end{subfigure}
+	\label{fig:a0b1t2-pack}
+\end{minipage}
 
 \begin{sidewaystable}
 	\centering
@@ -346,14 +751,37 @@ $\langle p(t),q(t) \rangle_{S} = \int_{0}^{1} p(t) q(t) \, dt + p'(2)q'(2).$
 En este capítulo analizamos el comportamiento de los ceros de polinomios ortogonales de Sobolev en el caso complejo, donde las medidas están soportadas en circunferencias. Este enfoque nos permite extender nuestro estudio más allá del eje real y comprender mejor los fenómenos de distribución de ceros en el plano complejo.
 
 % CASOS SECUENCIALMENTE DOMINADOS
-\textbf{Ejemplo 1.} % Originalmente Ejemplo 1
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{0.4}(0.4)} p'(z)\overline{q'(z)}\, dm_{0.4;0.4}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 1.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{0.4}(0.4)} p'(z)\overline{q'(z)}\, dm_{0.4;0.4}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.4c2_0.4_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.4c2_0.4_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.4c2_0.4.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.4c2_0.4_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_0.4c2_0.4-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.4c2_0.4_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_0.4c2_0.4-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.4c2_0.4.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{25}$.}
+		\label{fig:r1_1c1_0r2_0.4c2_0.4-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,25}=1.516$
 			\item $\sigma_{2,25}=1.000$
@@ -361,17 +789,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{25})=0.667$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=0.672$
 		\end{enumerate}
-	\end{minipage}                                              \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_0.4c2_0.4-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_0.4c2_0.4-pack}
+\end{minipage}
 
-\textbf{Ejemplo 2.} % Originalmente Ejemplo 3
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{2}(0.5)} p'(z)\overline{q'(z)}\, dm_{0.5;2}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 2.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{2}(0.5)} p'(z)\overline{q'(z)}\, dm_{0.5;2}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_2c2_0.5_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_2c2_0.5_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_2c2_0.5.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_2c2_0.5_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_2c2_0.5-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_2c2_0.5_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_2c2_0.5-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_2c2_0.5.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{25}$.}
+		\label{fig:r1_1c1_0r2_2c2_0.5-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,25}=3.470$
 			\item $\sigma_{2,25}=2.968$
@@ -379,17 +832,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{25})=1.108$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=1.112$
 		\end{enumerate}
-	\end{minipage}                                            \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_2c2_0.5-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_2c2_0.5-pack}
+\end{minipage}
 
-\textbf{Ejemplo 3.} % Originalmente Ejemplo 3
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{10}(0.5)} p'(z)\overline{q'(z)}\, dm_{0.5;10}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 3.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{10}(0.5)} p'(z)\overline{q'(z)}\, dm_{0.5;10}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_10c2_0.5_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_10c2_0.5_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_10c2_0.5.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_10c2_0.5_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_10c2_0.5-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_10c2_0.5_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{25}$.}
+		\label{fig:r1_1c1_0r2_10c2_0.5-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_10c2_0.5.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{25}$.}
+		\label{fig:r1_1c1_0r2_10c2_0.5-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,25}=15.248$
 			\item $\sigma_{2,25}=13.972$
@@ -397,18 +875,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{25})=1.068$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{25}=1.185$
 		\end{enumerate}
-	\end{minipage}                                             \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_10c2_0.5-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_10c2_0.5-pack}
+\end{minipage}
 
-% CASOS NO SECUENCIALMENTE DOMINADOS
-\textbf{Ejemplo 4.} % Originalmente Ejemplo 2
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{1}(1)} p'(z)\overline{q'(z)}\, dm_{1;1}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 4.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{1}(1)} p'(z)\overline{q'(z)}\, dm_{1;1}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_1_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_1_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_1.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_1_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_1-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_1_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_1-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_1.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_1-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=2.672$
 			\item $\sigma_{2,70}=2.672$
@@ -416,17 +918,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{70})=1.933$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.963$
 		\end{enumerate}
-	\end{minipage}                                          \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_1c2_1-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_1c2_1-pack}
+\end{minipage}
 
-\textbf{Ejemplo 5.} % Originalmente Ejemplo 4
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{1}(-10)} p'(z)\overline{q'(z)}\, dm_{-10;1}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 5.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{1}(-10)} p'(z)\overline{q'(z)}\, dm_{-10;1}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_-10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_-10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_1c2_-10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_-10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_-10-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_-10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_-10-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_1c2_-10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_0r2_1c2_-10-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=4.963 \times 10^{14}$
 			\item $\sigma_{2,70}=11.211$
@@ -434,17 +961,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{70})=12.424$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=15.074$
 		\end{enumerate}
-	\end{minipage}                                            \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_1c2_-10-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_1c2_-10-pack}
+\end{minipage}
 
-\textbf{Ejemplo 6.} % Originalmente Ejemplo 6
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{0.25}(-10)} p(z)\overline{q(z)}\, dm_{-10;0.25} + \int_{S_{1}(0)} p'(z)\overline{q'(z)}\, dm_{0;1}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 6.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{0.25}(-10)} p(z)\overline{q(z)}\, dm_{-10;0.25} + \int_{S_{1}(0)} p'(z)\overline{q'(z)}\, dm_{0;1}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_0.25c1_-10r2_1c2_0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_0.25c1_-10r2_1c2_0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_0.25c1_-10r2_1c2_0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_0.25c1_-10r2_1c2_0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_0.25c1_-10r2_1c2_0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_0.25c1_-10r2_1c2_0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_0.25c1_-10r2_1c2_0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_0.25c1_-10r2_1c2_0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_0.25c1_-10r2_1c2_0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=9.660 \times 10^{22}$
 			\item $\sigma_{2,70}=10.249$
@@ -452,36 +1004,80 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{0.25}(-10)} p(z)\overline{q(z)}\, dm_{-1
 			\item $\rho(\mathbf{D}_{70})=10.035$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=10.035$
 		\end{enumerate}
-	\end{minipage}                                               \\
-\end{tabular}
+		\label{fig:r1_0.25c1_-10r2_1c2_0-data}
+	\end{subfigure}
+	\label{fig:r1_0.25c1_-10r2_1c2_0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 7.} % Nuevo ejemplo
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{0.25}(-10)} p'(z)\overline{q'(z)}\, dm_{-10;0.25}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 7.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + \int_{S_{0.25}(-10)} p'(z)\overline{q'(z)}\, dm_{-10;0.25}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.25c2_-10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.25c2_-10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0r2_0.25c2_-10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.25c2_-10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_0.25c2_-10-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.25c2_-10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_0r2_0.25c2_-10-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0r2_0.25c2_-10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_0r2_0.25c2_-10-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
-			\item $\sigma_{1,50}=1.409 \times 10^{23}$
-			\item $\sigma_{2,50}=10.298$
+			\item $\sigma_{1,70}=1.409 \times 10^{23}$
+			\item $\sigma_{2,70}=10.298$
 			\item $R = 10.25$
-			\item $\rho(\mathbf{D}_{50})=11.641$
-			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=14.981$
+			\item $\rho(\mathbf{D}_{70})=11.641$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=14.981$
 		\end{enumerate}
-	\end{minipage}                                               \\
-\end{tabular}
+		\label{fig:r1_1c1_0r2_0.25c2_-10-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0r2_0.25c2_-10-pack}
+\end{minipage}
 
-% CASOS CON ÁTOMO
-\textbf{Ejemplo 8.} % Originalmente Ejemplo 5
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5+0.5i)\overline{q'(0.5+0.5i)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 8.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5+0.5i)\overline{q'(0.5+0.5i)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_(0.5)(0.5).png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_(0.5)(0.5)_zeros.png} \\
-	                                                                          &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_(0.5)(0.5).png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{50}$.}
+		\label{fig:r1_1c1_0c2_0.5_0.5-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_(0.5)(0.5)_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{50}$.}
+		\label{fig:r1_1c1_0c2_0.5_0.5-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,50}=33.560$
 			\item $\sigma_{2,50}=1.457$
@@ -489,35 +1085,80 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{50})=31.489$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=31.489$
 		\end{enumerate}
-	\end{minipage}                                              \\
-\end{tabular}
+		\label{fig:r1_1c1_0c2_0.5_0.5-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0c2_0.5_0.5-pack}
+\end{minipage}
 
-\textbf{Ejemplo 9.} % Originalmente Ejemplo 5
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5-0.5i)} p(z)\overline{q(z)}\, dm_{-0.5-0.5i;1} + p'(0)\overline{q'(0)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 9.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5-0.5i)} p(z)\overline{q(z)}\, dm_{-0.5-0.5i;1} + p'(0)\overline{q'(0)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)(-0.5)c2_0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)(-0.5)c2_0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)(-0.5)c2_0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)(-0.5)c2_0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5_-0.5c2_0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)(-0.5)c2_0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5_-0.5c2_0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)(-0.5)c2_0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_-0.5_-0.5c2_0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
-			\item $\sigma_{1,50}=314.848$
-			\item $\sigma_{2,50}=54.035$
+			\item $\sigma_{1,70}=314.848$
+			\item $\sigma_{2,70}=54.035$
 			\item $R = 1.5$
-			\item $\rho(\mathbf{D}_{50})=270.137$
-			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=270.137$
+			\item $\rho(\mathbf{D}_{70})=270.137$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=270.137$
 		\end{enumerate}
-	\end{minipage}                                                 \\
-\end{tabular}
+		\label{fig:r1_1c1_-0.5_-0.5c2_0-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_-0.5_-0.5c2_0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 10.} % Originalmente Ejemplo 7
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5)\overline{q'(0.5)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 10.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5)\overline{q'(0.5)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_0.5.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_0.5_zeros.png} \\
-	                                                                   &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_0.5.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{50}$.}
+		\label{fig:r1_1c1_0c2_0.5-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_0.5_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{50}$.}
+		\label{fig:r1_1c1_0c2_0.5-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,50}=1.542$
 			\item $\sigma_{2,50}=1.000$
@@ -525,35 +1166,80 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{50})=0.533$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.651$
 		\end{enumerate}
-	\end{minipage}                                       \\
-\end{tabular}
+		\label{fig:r1_1c1_0c2_0.5-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0c2_0.5-pack}
+\end{minipage}
 
-\textbf{Ejemplo 11.}% Originalmente Ejemplo 7
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5)} p(z)\overline{q(z)}\, dm_{-0.5;1} + p'(0)\overline{q'(0)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 11.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5)} p(z)\overline{q(z)}\, dm_{-0.5;1} + p'(0)\overline{q'(0)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)c2_0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)c2_0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5)c2_0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)c2_0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5c2_0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)c2_0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5c2_0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5)c2_0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_-0.5c2_0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
-			\item $\sigma_{1,50}=1.525$
-			\item $\sigma_{2,50}=1.500$
+			\item $\sigma_{1,70}=1.525$
+			\item $\sigma_{2,70}=1.500$
 			\item $R = 1.5$
-			\item $\rho(\mathbf{D}_{50})=1.017$
-			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=1.031$
+			\item $\rho(\mathbf{D}_{70})=1.017$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=1.031$
 		\end{enumerate}
-	\end{minipage}                                           \\
-\end{tabular}
+		\label{fig:r1_1c1_-0.5c2_0-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_-0.5c2_0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 12.} % Originalmente Ejemplo 8
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0)\overline{q'(0)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 12.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0)\overline{q'(0)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_0.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_0_zeros.png} \\
-	                                                                 &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{50}$.}
+		\label{fig:r1_1c1_0c2_0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{50}$.}
+		\label{fig:r1_1c1_0c2_0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,50}=1.414$
 			\item $\sigma_{2,50}=1.000$
@@ -561,17 +1247,37 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{50})=0.000$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=0.000$
 		\end{enumerate}
-	\end{minipage}                                     \\
-\end{tabular}
+		\label{fig:r1_1c1_0c2_0-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0c2_0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 13.} % Originalmente Ejemplo 9
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5i)\overline{q'(0.5i)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 13.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(0.5i)\overline{q'(0.5i)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_(0)(0.5).png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_(0)(0.5)_zeros.png} \\
-	                                                                        &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_(0)(0.5).png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{50}$.}
+		\label{fig:r1_1c1_0c2_0_0.5i-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_(0)(0.5)_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{50}$.}
+		\label{fig:r1_1c1_0c2_0_0.5i-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,50}=6.325$
 			\item $\sigma_{2,50}=1.492$
@@ -579,17 +1285,42 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + 
 			\item $\rho(\mathbf{D}_{50})=5.311$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=5.311$
 		\end{enumerate}
-	\end{minipage}                                            \\
-\end{tabular}
+		\label{fig:r1_1c1_0c2_0_0.5i-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0c2_0_0.5i-pack}
+\end{minipage}
 
-\textbf{Ejemplo 14.} % Originalmente Ejemplo 9
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5i)} p(z)\overline{q(z)}\, dm_{-0.5i;1} + p'(0)\overline{q'(0)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 14.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5i)} p(z)\overline{q(z)}\, dm_{-0.5i;1} + p'(0)\overline{q'(0)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5i)c2_0_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5i)c2_0_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_(-0.5i)c2_0.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5i)c2_0_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5ic2_0-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5i)c2_0_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_-0.5ic2_0-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_(-0.5i)c2_0.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_-0.5ic2_0-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
 			\item $\sigma_{1,70}=9690.600$
 			\item $\sigma_{2,70}=1647.790$
@@ -597,26 +1328,53 @@ $\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(-0.5i)} p(z)\overline{q(z)}\, dm_{-0.
 			\item $\rho(\mathbf{D}_{70})=9665.190$
 			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=9665.190$
 		\end{enumerate}
-	\end{minipage}                                            \\
-\end{tabular}
+		\label{fig:r1_1c1_-0.5ic2_0-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_-0.5ic2_0-pack}
+\end{minipage}
 
-\textbf{Ejemplo 15.} % Originalmente Ejemplo 9
-$\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(10)\overline{q'(10)}$
+\begin{minipage}{\textwidth}
+	%--- título y definición del producto --------------
+	\textbf{Ejemplo 15.}\;
+	$\displaystyle
+		\langle p(z),q(z) \rangle_{S}=\int_{S_{1}(0)} p(z)\overline{q(z)}\, dm_{0;1} + p'(10)\overline{q'(10)}$
 
-\begin{tabular}{cc}
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_10_zero.png} &
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_10_zeros.png}  \\
-	\includegraphics[width=0.45\textwidth]{include/r1_1c1_0c2_10.png}      &
-	\begin{minipage}[b]{0.45\textwidth}
+	\medskip           % separación visual
+	\captionsetup{type=figure} % lo que viene se numera como "Figura"
+
+	%--------------- FILA 1 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_10_zero.png}
+		\caption{Conjunto de ceros de $\varphi_{70}$.}
+		\label{fig:r1_1c1_0c2_10-zero}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_10_zeros.png}
+		\caption{Conjunto de ceros de $\varphi_{0},\dots,\varphi_{70}$.}
+		\label{fig:r1_1c1_0c2_10-zeros}
+	\end{subfigure}
+
+	\vspace{1em}       % salto entre filas (ajusta si deseas)
+
+	%--------------- FILA 2 ----------------------------
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\linewidth]{include/r1_1c1_0c2_10.png}
+		\caption{Secuencia de $\{\sigma_{1,n}$, $\sigma_{2,n}$, $\rho(\mathbf{D}_n)\}_{n=0}^{70}$.}
+		\label{fig:r1_1c1_0c2_10-curve}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
 		\begin{enumerate}
-			\item $\sigma_{1,50}=3.502\times10^{26}$
-			\item $\sigma_{2,50}=1.000$
+			\item $\sigma_{1,70}=3.502\times10^{26}$
+			\item $\sigma_{2,70}=1.000$
 			\item $R = 10$
-			\item $\rho(\mathbf{D}_{50})=10.345$
-			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{50}=14.975$
+			\item $\rho(\mathbf{D}_{70})=10.345$
+			\item $\max\{\rho(\mathbf{D}_{n})\}_{n=0}^{70}=14.975$
 		\end{enumerate}
-	\end{minipage}                                       \\
-\end{tabular}
+		\label{fig:r1_1c1_0c2_10-data}
+	\end{subfigure}
+	\label{fig:r1_1c1_0c2_10-pack}
+\end{minipage}
 
 \begin{sidewaystable}
 	\centering
@@ -704,11 +1462,11 @@ El Cuadro 3.1, que resume los experimentos numéricos para el caso real, revela 
 
 Para continuar el análisis, aplicaré el Teorema 2 de la Introducción a los \textit{Ejemplos 4-11}, explorando cómo la relación entre los soportes de las medidas afecta la acotación del operador y la distribución de ceros.
 
-Para los casos no secuencialmente dominados (\textit{Ejemplos 3-11}), podemos observar patrones interesantes. En el \textit{Ejemplo 3}, donde $I_1=[-1,1]$ (con $w_0(t)=t^{10}$) y $I_2=[-1,1]$ (con $w_1(t)=t^{2}$), aunque los soportes coinciden, el cociente $w_1(t)/w_0(t)=t^{-8}$ no está acotado cerca de $t=0$. Esto se refleja en $\sigma_{1,70} = 2.204$, mientras que $\rho(\mathcal{D}_{70}) = 1.000$, evidenciando un operador acotado pero no necesariamente por las razones del Teorema 2.
+Para los casos no secuencialmente dominados (\textit{Ejemplos 3-11}), podemos observar patrones interesantes. En el \textit{Ejemplo 3}, donde $I_1=[-1,1]$ (con $w_0(t)=t^{10}$) y $I_2=[-1,1]$ (con $w_1(t)=t^{2}$), aunque los soportes coinciden, el cociente $w_1(t)/w_0(t)=t^{-8}$ no está acotado cerca de $t=0$. Esto se refleja en $\sigma_{1,70} = 2.204$, mientras que $\rho(\mathbf{D}_{70}) = 1.000$, evidenciando un operador acotado pero no necesariamente por las razones del Teorema 2.
 
-Los \textit{Ejemplos 4 y 5} muestran casos donde $I_1=[0,10]$ e $I_2=[30,40]$ (y viceversa), con soportes disjuntos y relativamente distantes. Aquí observamos que $\sigma_{1,n}$ crece exponencialmente ($\approx 9.272\times10^{16}$), sugiriendo un operador no acotado, mientras que $\rho(\mathbf{D}_n)$ permanece acotado (42.930 y 39.991 respectivamente). Es importante destacar que, aunque $\sigma_{1,n}$ sugiere un operador no acotado en estos casos, $\sigma_{2,n}$ parece converger al máximo absoluto de los extremos de los soportes, $R = \max\{|a|,|b|,|c|,|d|\}$. Por ejemplo, en los Ejemplos 4 y 5, $R=40$, y los valores de $\sigma_{2,70}$ son $39.998$ y $39.991$ respectivamente (según el Cuadro 2.1). Esta tendencia de $\sigma_{2,n}$ a aproximarse a $R$ se mantiene en los siguientes ejemplos de este grupo (Ejemplos 6-11). Notablemente, cuando el soporte de la medida sin derivada está a la derecha del soporte con derivada (Ejemplo 5), los ceros tienden a permanecer dentro del soporte de mayor magnitud, con $\rho(\mathbf{D}_70) = 39.991$.
+Los \textit{Ejemplos 4 y 5} muestran casos donde $I_1=[0,10]$ e $I_2=[30,40]$ (y viceversa), con soportes disjuntos y relativamente distantes. Aquí observamos que $\sigma_{1,n}$ crece exponencialmente ($\approx 9.272\times10^{16}$), sugiriendo un operador no acotado, mientras que $\rho(\mathbf{D}_n)$ permanece acotado (42.930 y 39.991 respectivamente). Es importante destacar que, aunque $\sigma_{1,n}$ sugiere un operador no acotado en estos casos, $\sigma_{2,n}$ parece converger al máximo absoluto de los extremos de los soportes, $R = \max\{|a|,|b|,|c|,|d|\}$. Por ejemplo, en los Ejemplos 4 y 5, $R=40$, y los valores de $\sigma_{2,70}$ son $39.998$ y $39.991$ respectivamente (según el Cuadro 2.1). Esta tendencia de $\sigma_{2,n}$ a aproximarse a $R$ se mantiene en los siguientes ejemplos de este grupo (Ejemplos 6-11). Notablemente, cuando el soporte de la medida sin derivada está a la derecha del soporte con derivada (Ejemplo 5), los ceros tienden a permanecer dentro del soporte de mayor magnitud, con $\rho(\mathbf{D}_{70}) = 39.991$.
 
-Los \textit{Ejemplos 6 y 7} con $I_1=[0,10]$ e $I_2=[30,50]$ (y viceversa) confirman esta tendencia. Cuando la segunda medida tiene un soporte más amplio (Ejemplo 6), los ceros se extienden más allá del soporte máximo ($\rho(\mathbf{D}_70) = 59.814 > 50$), mientras que en el Ejemplo 7, con la configuración inversa, los ceros permanecen confinados ($\rho(\mathbf{D}_70) = 49.987 \approx 50$).
+Los \textit{Ejemplos 6 y 7} con $I_1=[0,10]$ e $I_2=[30,50]$ (y viceversa) confirman esta tendencia. Cuando la segunda medida tiene un soporte más amplio (Ejemplo 6), los ceros se extienden más allá del soporte máximo ($\rho(\mathbf{D}_{70}) = 59.814 > 50$), mientras que en el Ejemplo 7, con la configuración inversa, los ceros permanecen confinados ($\rho(\mathbf{D}_{70}) = 49.987 \approx 50$).
 
 Los \textit{Ejemplos 8-11} con diferentes configuraciones de soportes $[0,20]$ y $[30,40]$ (y viceversa), así como $[-15,-5]$ y $[5,16]$ (o $[5,14]$), refuerzan esta observación: cuando la medida sin derivada ($I_1$) tiene el soporte de mayor magnitud, los ceros tienden a permanecer dentro de ese soporte (es decir, $\rho(\mathbf{D}_{70}) \approx R$). Por el contrario, cuando la medida con derivada ($I_2$) tiene el soporte más extremo, los ceros pueden exceder significativamente $R$. En estos casos, la localización de los ceros más externos, $\rho(\mathbf{D}_n)$, puede describirse como $R + k$, donde el factor $k$ (positivo en este contexto) depende de la geometría relativa de los soportes $I_1$ e $I_2$, incluyendo su separación, tamaños relativos y cuál de ellos corresponde a la medida con derivada.
 
@@ -743,12 +1501,12 @@ En resumen, la influencia del átomo en $c$ sobre los ceros en los casos reales 
 \begin{itemize}
 	\item Si el átomo $c$ se encuentra \textbf{dentro} del intervalo de integración $[a,b]$ (e.g., Ej. 12, 14):
 	      \begin{itemize}
-		      \item El radio espectral $\rho(\mathcal{D}_n)$ convergen a $R_0 = \max\{|a|,|b|\} = R$, que es el radio del soporte de la integral.
+		      \item El radio espectral $\rho(\mathbf{D}_n)$ convergen a $R_0 = \max\{|a|,|b|\} = R$, que es el radio del soporte de la integral.
 		      \item El segundo valor singular $\sigma_{2,n}$ también converge a $R_0$, sirviendo como un estimador de esta cota para los ceros.
 	      \end{itemize}
 	\item Si el átomo $c$ se encuentra \textbf{fuera} del intervalo de integración $[a,b]$ (e.g., Ej. 13, 15):
 	      \begin{itemize}
-		      \item El radio espectral $\rho(\mathcal{D}_n)$ se aproxima a $|c|=R$.
+		      \item El radio espectral $\rho(\mathbf{D}_n)$ se aproxima a $|c|=R$.
 		      \item Los ceros máximos de $\varphi_n$ son fuertemente atraídos por la posición del átomo, localizándose en la vecindad de $c$ y pudiendo tener módulo mayor que $R$ (y que $R_0$). La cota efectiva para los ceros parece depender de $R$ y su distancia al intervalo $[a,b]$.
 		      \item Aunque el operador $\mathcal{D}$ es generalmente no acotado (evidenciado por $\sigma_{1,n}$ grande), $\sigma_{2,n}$ sigue convergiendo a $R_0$.
 	      \end{itemize}
@@ -772,11 +1530,11 @@ Pasando ahora al \textbf{Caso Circunferencia}, resumido en el Cuadro 3.2, se inv
 	      \end{itemize}
 	\item \textbf{Cuando el centro de la segunda circunferencia $a$ no está contenido en el primer disco abierto $D_{r_b}(b)$}: Este es un caso no secuencialmente dominado, y el comportamiento de $\mathcal{D}$ no se conoce teóricamente de forma general.
 	      \begin{itemize}
-		      \item El \textit{Ejemplo 5} ($S_{1}(0)$ y $S_{1}(-10)$): $a=-10 \notin \mathbb{D}_1(0)$. $\sigma_{1,n} \approx 4.963 \times 10^{14}$.
-		      \item El \textit{Ejemplo 6} ($S_{0.25}(-10)$ y $S_{1}(0)$): $b=-10, r_b=0.25$, $a=0$. $a=0 \notin \mathbb{D}_{0.25}(-10)$. $\sigma_{1,n} \approx 9.660 \times 10^{22}$.
-		      \item El \textit{Ejemplo 7} ($S_{1}(0)$ y $S_{0.25}(-10)$): $a=-10 \notin \mathbb{D}_1(0)$. $\sigma_{1,n} \approx 1.409 \times 10^{23}$.
+		      \item El \textit{Ejemplo 5} ($S_{1}(0)$ y $S_{1}(-10)$): $a=-10 \notin \mathbb{D}_1(0)$. $\sigma_{1,70} = 4.963 \times 10^{14}$.
+		      \item El \textit{Ejemplo 6} ($S_{0.25}(-10)$ y $S_{1}(0)$): $b=-10, r_b=0.25$, $a=0$. $a=0 \notin \mathbb{D}_{0.25}(-10)$. $\sigma_{1,70} = 9.660 \times 10^{22}$.
+		      \item El \textit{Ejemplo 7} ($S_{1}(0)$ y $S_{0.25}(-10)$): $a=-10 \notin \mathbb{D}_1(0)$. $\sigma_{1,70} = 1.409 \times 10^{23}$.
 		            En estos ejemplos, los valores extremadamente grandes de $\sigma_{1,n}$ sugieren que $\mathcal{D}$ es no acotado.
-		      \item El \textit{Ejemplo 4} ($S_{1}(0)$ y $S_{1}(1)$): $a=1$, que está en el borde de $\mathbb{D}_1(0)$ (no en el disco abierto). $\sigma_{1,n} \approx 2.672$. A pesar de no poder asegurar acotación, parece que los ceros si lo están.
+		      \item El \textit{Ejemplo 4} ($S_{1}(0)$ y $S_{1}(1)$): $a=1$, que está en el borde de $\mathbb{D}_1(0)$ (no en el disco abierto). $\sigma_{1,70} = 2.672$. A pesar de no poder asegurar acotación, parece que los ceros si lo están.
 	      \end{itemize}
 \end{enumerate}
 
@@ -789,17 +1547,17 @@ Pasando ahora al \textbf{Caso Circunferencia}, resumido en el Cuadro 3.2, se inv
 			            \item \textit{Ejemplo 10} ($S_1(0), c=0.5$): $0.5 \in \mathbb{D}_1(0)$. $\sigma_{1,50} = 1.542$.
 			            \item \textit{Ejemplo 12} ($S_1(0), c=0$): $0 \in \mathbb{D}_1(0)$. $\sigma_{1,50} = 1.414$.
 			            \item \textit{Ejemplo 13} ($S_1(0), c=0.5i$): $0.5i \in \mathbb{D}_1(0)$. $\sigma_{1,50} = 6.325$.
-			            \item \textit{Ejemplo 11} ($S_1(-0.5), c=0$): $0 \in \mathbb{D}_1(-0.5)$. $\sigma_{1,50} = 1.525$.
+			            \item \textit{Ejemplo 11} ($S_1(-0.5), c=0$): $0 \in \mathbb{D}_1(-0.5)$. $\sigma_{1,70} = 1.525$.
 			            \item \textit{Ejemplo 8} ($S_1(0), c=0.5+0.5i$): $c \in \mathbb{D}_1(0)$ ya que $|0.5+0.5i| \approx 0.707 < 1$. $\sigma_{1,50} = 33.560$.
-			            \item \textit{Ejemplo 9} ($S_1(-0.5-0.5i), c=0$): $c \in \mathbb{D}_1(-0.5-0.5i)$ ya que $|0-(-0.5-0.5i)| \approx 0.707 < 1$. $\sigma_{1,50} = 314.848$.
-			            \item \textit{Ejemplo 14} ($S_1(-0.5i), c=0$): $c \in \mathbb{D}_1(-0.5i)$ ya que $|0-(-0.5i)| = 0.5 < 1$. $\sigma_{1,50} = 9690.60$.
+			            \item \textit{Ejemplo 9} ($S_1(-0.5-0.5i), c=0$): $c \in \mathbb{D}_1(-0.5-0.5i)$ ya que $|0-(-0.5-0.5i)| \approx 0.707 < 1$. $\sigma_{1,70} = 314.848$.
+			            \item \textit{Ejemplo 14} ($S_1(-0.5i), c=0$): $c \in \mathbb{D}_1(-0.5i)$ ya que $|0-(-0.5i)| = 0.5 < 1$. $\sigma_{1,70} = 9690.60$.
 
 			                  En todos estos casos, $\sigma_{1,n}$ es finito, lo que es consistente con la acotación teórica de $\mathcal{D}$, aunque el límite de la magnitud de la cota puede variar considerablemente.
 		            \end{itemize}
 	      \end{enumerate}
 	\item \textbf{Cuando el átomo $c$ está fuera del disco abierto $\mathbb{D}_{r_b}(b)$}: El comportamiento de $\mathcal{D}$ no se conoce teóricamente de forma general, pero la experimentación numérica sugiere que podría ser no acotado.
 	      \begin{itemize}
-		      \item \textit{Ejemplo 15} ($S_1(0), c=10$): $c=10 \notin \mathbb{D}_1(0)$. $\sigma_{1,50} = 3.502 \times 10^{26}$, un valor muy grande que sugiere la no acotación de $\mathcal{D}$.
+		      \item \textit{Ejemplo 15} ($S_1(0), c=10$): $c=10 \notin \mathbb{D}_1(0)$. $\sigma_{1,70} = 3.502 \times 10^{26}$, un valor muy grande que sugiere la no acotación de $\mathcal{D}$.
 	      \end{itemize}
 \end{enumerate}
 
