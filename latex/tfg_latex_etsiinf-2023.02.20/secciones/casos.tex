@@ -18,7 +18,7 @@ El objetivo de este segundo capítulo es \emph{aplicar} aquel armazón teórico 
 
 A lo largo del capítulo se alternarán \emph{demostraciones analíticas} y \emph{experimentos numéricos}, reforzando la filosofía descrita en la introducción: combinar la teoría de matrices de Hessenberg con simulaciones para obtener una visión más completa de los ceros de los polinomios ortogonales de Sobolev.
 
-En estos experimentos, utilizaremos la metodología computacional expuesta en el Plantemiento del problema del Capítulo \ref{ch:marco-teorico}, que nos permite calcular y visualizar los ceros de polinomios ortogonales de Sobolev. Las gráficas presentadas para cada ejemplo muestran:
+En estos experimentos, utilizaremos la metodología computacional expuesta en el Planteamiento del problema del Capítulo \ref{ch:marco-teorico}, que nos permite calcular y visualizar los ceros de polinomios ortogonales de Sobolev. Las gráficas presentadas para cada ejemplo muestran:
 
 \begin{enumerate}
 	\item Una primera imagen que muestra los ceros del polinomio ortogonal $\varphi_n$ para un grado fijo, donde el punto rojo destaca el cero de mayor módulo que determina el radio espectral de la matriz $\mathbf{D}_n$.
@@ -35,8 +35,8 @@ En estos experimentos, utilizaremos la metodología computacional expuesta en el
 
 Estos gráficos se complementan con una tabla numérica que resume las principales magnitudes espectrales calculadas mediante nuestro algoritmo en Maple, incluyendo los valores singulares dominantes, el radio espectral y el máximo de los radios espectrales en la secuencia, lo que permite contrastar hipótesis sobre la acotación de ceros.
 
+\newpage
 \section{Caso Real}
-
 
 \begin{minipage}{\textwidth}
 	%--- título y definición del producto --------------
@@ -1564,11 +1564,11 @@ Pasando ahora al \textbf{Caso Circunferencia}, resumido en el Cuadro 3.2, se inv
 Analizando globalmente los resultados obtenidos en ambos casos (real y circunferencia), podemos observar patrones significativos respecto a la acotación del operador multiplicación y la localización de los ceros. A pesar de la diversidad de configuraciones estudiadas, destaca una característica sorprendente: incluso cuando el operador $\mathcal{D}$ no es acotado (como sugieren los valores extremadamente grandes de $\sigma_{1,n}$), los ceros de los polinomios ortogonales correspondientes parecen permanecer acotados en todos los casos. Además, existe una aparente correlación entre el segundo valor singular $\sigma_{2,n}$ y el máximo de los extremos de los soportes $R$. Esta evidencia numérica nos lleva a formular una conjetura fundamental sobre el comportamiento asintótico del radio espectral de las matrices truncadas $\mathbf{D}_n$, que tiene importantes implicaciones para la teoría de polinomios ortogonales de Sobolev.
 
 \paragraph{Observación Empírica sobre el radio espectral}
-Una observación fundamental, verificada en la totalidad de los ejemplos numéricos presentados en los Cuadros 3.1 y 3.2 (representativos de las categorías de productos de Sobolev (1.3)-(1.6)), es la convergencia del segundo mayor valor singular de la matriz de multiplicación truncada $\mathbf{D}_n$:
+Una observación fundamental, verificada en la totalidad de los ejemplos numéricos presentados en los Cuadros 3.1 y 3.2, es que el radio espectral de las matrices de multiplicación truncadas $\mathbf{D}_n$ permanece acotado incluso cuando el operador $\mathcal{D}$ no es acotado (como indican los valores extremadamente grandes de $\sigma_{1,n}$). Esta acotación del radio espectral se manifiesta de diferentes maneras según la configuración de los soportes:
 $$
-	\lim_{n \to \infty} \sigma_{2,n} < \infty.
+	\lim_{n \to \infty} \rho(\mathbf{D}_n) < \infty.
 $$
-Esta convergencia se manifiesta consistentemente en todos los casos estudiados.
+Específicamente, cuando la medida sin derivada $I_1$ contiene el soporte de mayor magnitud, $\rho(\mathbf{D}_n)$ tiende a converger aproximadamente a $R = \max\{|a|,|b|,|c|,|d|\}$. Cuando la medida con derivada $I_2$ contiene el soporte de mayor magnitud, $\rho(\mathbf{D}_n)$ puede exceder $R$, aproximándose a $R + k$ donde $k \geq 0$ depende de la separación entre soportes y sus tamaños relativos.
 
 \begin{conjetura}
 	\label{conj:rho_Dn_bounded}
@@ -1579,7 +1579,7 @@ Esta convergencia se manifiesta consistentemente en todos los casos estudiados.
 	Esta propiedad parece mantenerse incluso en escenarios donde el operador $\mathcal{D}$ no es acotado. De hecho, los ejemplos sugieren que el radio espectral $\rho(\mathbf{D}_n)$ tiende a converger $R + k$ con $k \in \mathbb{R}$ dependiente de las posiciones y tamaños relativos de los soportes y si se alcanza en el soporte de la derivada o no.
 \end{conjetura}
 
-\paragraph{Observación Empírica sobre el Segundo Valor Singular}: Una observación fundamental, verificada en la totalidad de los ejemplos numéricos presentados en los Cuadros 3.1 y 3.2 (representativos de las categorías de productos de Sobolev (1.3)-(1.6)), es la convergencia del segundo mayor valor singular de la matriz de multiplicación truncada $\mathbf{D}_n$:
+\paragraph{Observación Empírica sobre el Segundo Valor Singular}: Una observación fundamental, verificada en la totalidad de los ejemplos numéricos presentados en los Cuadros 3.1 y 3.2 (representativos de las categorías de productos de Sobolev (1.3)-(1.6)), es la convergencia del segundo mayor valor singular de la matriz de multiplicación truncada $\mathbf{D}_n$, en los casos reales con soportes compactos, converge a $R$, en casos reales con átomo, converge a $R_0$:
 $$
 	\lim_{n \to \infty} \sigma_{2,n} < \infty.
 $$
@@ -1589,13 +1589,13 @@ Esta convergencia se manifiesta consistentemente en todos los casos estudiados.
 	\label{conj:sigma2_Dn_bounded_if_sigma1_unbounded}
 	Basándose en la observación anterior, y con especial énfasis en aquellos casos donde el operador de multiplicación $\mathcal{D}$ es no acotado (lo cual se infiere de $\lim_{n \to \infty} \sigma_{1,n} = \infty$), se postula la siguiente conjetura:
 	$$
-		\text{Si } \lim_{n \to \infty} \sigma_{1,n} = \infty, \quad \text{entonces} \quad \lim_{n \to \infty} \sigma_{2,n} = R < \infty.
+		\text{Si } \lim_{n \to \infty} \sigma_{1,n} = \infty, \quad \text{entonces} \quad \lim_{n \to \infty} \sigma_{2,n} < \infty.
 	$$
 \end{conjetura}
 
 \noindent En esta dirección hemos obtenido unos resultados que apoyan esta conjetura \cite{singularValuesOfHessenbergMatrices}.
 
-\noindent {\bf Teorema de entrelazamiento de Cauchy} \cite{Bhatia1997} Sea  $A$ una matriz de orden  $n$ y sea  $B$ una submatriz principal de  $A$ de  orden  $n-1$. Si $\lambda_n\leq \dots \leq \lambda_2\leq \lambda_1$ son los autovalores de $A$ y  $\mu_{n-1}\leq \dots \leq \mu_2\leq \mu_1$ son los autovalores de  $B$ entonces
+\noindent {\bf Teorema de entrelazamiento de Cauchy} \cite{Bhatia1997} Sea  $A$ una matriz de orden  $n$ y sea  $B$ una submatriz principal de  $A$ de  orden  $n-1$. Si $\lambda_n\leq \dots \leq \lambda_2\leq \lambda_1$ son los autovalores de $A$ y  $\mu_{n-1}\leq \dots \leq \mu_2\leq \mu_1$ son los autovalores de $B$, entonces
 $$
 	\lambda_n \leq \mu_{n-1} \leq \dots \leq \mu_2 \leq \lambda_1.
 $$
@@ -1720,12 +1720,14 @@ $$
 \paragraph{Observación Empírica sobre la traslación de los soportes}: Se ha observado que cuando los soportes están en la recta real y se trasladan a lo largo del eje real, los ceros también se trasladan de igual manera. Sin embargo, si la traslación de los soportes tiene una componente imaginaria, se observan comportamientos anómalos en la localización de los ceros.
 
 \begin{conjetura}
-	Basándonos en la observación del comportamiento de los ceros de Sobolev cuando trasladamos los soportes de ambas medidas mediantes una traslacion en el eje real, se postula la siguiente conjetura:
+	Basándonos en la observación del comportamiento de los ceros de Sobolev cuando trasladamos los soportes de ambas medidas mediante una traslación en el eje real, se postula la siguiente conjetura:
 	\label{conj:zeros_sobolev_translation}
-	Los ceros de los polinomios ortogonales de Sobolev asociados a las nuevas medidas trasladadas, se trasladan mediante la misma traslacion.
+	Los ceros de los polinomios ortogonales de Sobolev asociados a las nuevas medidas trasladadas, se trasladan mediante la misma traslación.
 \end{conjetura}
 
-El siguiente resultado refleja la situacion de traslacion de ceros en el caso estándar de polinomios ortogonales asociados a una medida.
+Estas observaciones indican que la geometría de los soportes en el plano complejo (posición relativa de circunferencias y átomos) es determinante para las propiedades del operador de multiplicación y la distribución de los ceros. Las transformaciones de semejanza, que se discuten a continuación, ofrecen herramientas para comprender cómo los cambios de escala y las translaciones afectan estas propiedades.
+
+El siguiente resultado refleja la situación de traslación de ceros en el caso estándar de polinomios ortogonales asociados a una medida.
 
 \begin{proposition}
 	\cite{Escribano2012} Sea $\mu $ una medida con soporte en el plano complejo $\mathbb{C} $ y  $f(z)=\alpha z+\beta $ una semejanza con $\alpha > 0
@@ -1757,8 +1759,4 @@ De este resultado podemos deducir el comportamiento de los ceros de los polinomi
 \end{proof}
 Por lo que  $z_0$ es un cero de $P_{k}^{f}(z)\Leftrightarrow P_{n}^{f}(z_0)=0 \Leftrightarrow P_{n}(\frac{z_0-\beta}{\alpha})=0\Leftrightarrow \omega_0=\frac{z_0-\beta}{\alpha}$ es un cero de $P_{n}(z)$, esto es, $\alpha \omega_0+\beta=z_0$.
 
-Estas observaciones indican que la geometría de los soportes en el plano complejo (posición relativa de circunferencias y átomos) es determinante para las propiedades del operador de multiplicación y la distribución de los ceros. Las transformaciones de semejanza, que se discuten a continuación, ofrecen herramientas para comprender cómo los cambios de escala y las traslaciones afectan estas propiedades.
-
-
-
-En el contexto de los productos internos de Sobolev, la aplicabilidad directa de este corolario sobre la transformación de los ceros no es, en general, válida según visto en los ejemplos. Se puede observar como al hacer traslaciones con un vector con componentes complejas, se obtiene un comportamiento diferente al del corolario. Habría que investigar si es un error de cálculo o si es un resultado que no se puede aplicar directamente a los productos internos de Sobolev.
+En el contexto de los productos internos de Sobolev, la aplicabilidad directa de este corolario sobre la transformación de los ceros no es, en general, válida según visto en los ejemplos. Se puede observar cómo al hacer traslaciones con un vector con componentes complejas, se obtiene un comportamiento diferente al del corolario. Habría que investigar si es un error de cálculo o si es un resultado que no se puede aplicar directamente a los productos internos de Sobolev.
