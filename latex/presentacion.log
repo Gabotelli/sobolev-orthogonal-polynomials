@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  12 JUN 2025 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  12 JUN 2025 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -804,7 +804,7 @@ Overfull \hbox (13.44466pt too wide) in paragraph at lines 29--29
  []
 
 
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 34--34
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 35--35
  [] [] 
  []
 
@@ -818,54 +818,10 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [1
 
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 56--56
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 57--57
  [] [] 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 56.
-(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 56.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 56.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 56.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 56.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
- (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 56.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
 
 
 
@@ -875,7 +831,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [2
 
-{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+]
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -885,7 +841,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 67--67
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 69--69
  [] [] 
  []
 
@@ -899,11 +855,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 86--86
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 84--84
  [] [] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 86.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 84.
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -943,14 +899,12 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 109--109
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 107--107
  [] [] 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 109.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 109.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 107.
 
 
 
@@ -970,33 +924,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 136--136
- [] [] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 136.
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1006,6 +933,45 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [11
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 131--131
+ [] [] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 131.
+(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 131.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 131.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 131.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 131.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 131.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 131.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 131.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 131.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 131.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 131.
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1014,18 +980,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [12
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 147--147
- [] [] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 147.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 147.
-
+{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1035,10 +990,44 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 158--158
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 159--159
  [] [] 
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 159.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 159.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
 
 
 
@@ -1049,11 +1038,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 172--172
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1063,6 +1047,17 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [15
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 171--171
+ [] [] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 171.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1072,12 +1067,10 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 190--190
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 183--183
  [] [] 
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 190.
 
 
 
@@ -1088,6 +1081,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [17
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 198--198
+ [] [] 
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1097,11 +1095,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 208--208
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1111,6 +1104,13 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [19
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 217--217
+ [] [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 217.
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1120,11 +1120,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 220--220
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1134,6 +1129,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [21
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 236--236
+ [] [] 
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1143,29 +1143,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 228--228
- [] [] 
- []
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 228.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 228.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 228.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 228.
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1175,12 +1152,8 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 247--247
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 249--249
  [] [] 
- []
-
-
-Overfull \vbox (5.62921pt too high) detected at line 247
  []
 
 
@@ -1193,10 +1166,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [24
 
 ]
-Overfull \vbox (5.62921pt too high) detected at line 247
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1206,28 +1175,28 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 264--264
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 258--258
  [] [] 
  []
 
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 264.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 264.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 264.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 264.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 258.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 258.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 258.
 
 
 
@@ -1238,6 +1207,15 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [26
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 278--278
+ [] [] 
+ []
+
+
+Overfull \vbox (5.62921pt too high) detected at line 278
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1247,22 +1225,9 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 287--287
- [] [] 
+Overfull \vbox (5.62921pt too high) detected at line 278
  []
 
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <12> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 287.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 287.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 287.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 287.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 287.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 287.
 
 
 
@@ -1273,6 +1238,29 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [28
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 296--296
+ [] [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 296.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 296.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 296.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 296.
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1282,11 +1270,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 298--298
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1296,10 +1279,22 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 309--309
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 320--320
  [] [] 
  []
 
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <12> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 320.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 320.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 320.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 320.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 320.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 320.
 
 
 
@@ -1310,11 +1305,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 330--330
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1324,6 +1314,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [32
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 332--332
+ [] [] 
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1333,7 +1328,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 338--338
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 344--344
  [] [] 
  []
 
@@ -1347,7 +1342,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 355--355
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 366--366
  [] [] 
  []
 
@@ -1361,11 +1356,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 370--370
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1375,6 +1365,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [36
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 375--375
+ [] [] 
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1382,20 +1377,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  []
 
 [37
-
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 379--379
- [] [] 
- []
-
-
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[38
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 393--393
@@ -1409,14 +1390,23 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[39
+[38
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 403--403
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 409--409
  [] [] 
  []
 
 
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[39
+
+]
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1440,7 +1430,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [41
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 431--431
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 434--434
  [] [] 
  []
 
@@ -1454,7 +1444,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 447--447
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 445--445
  [] [] 
  []
 
@@ -1468,7 +1458,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [43
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 461--461
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 462--462
  [] [] 
  []
 
@@ -1482,25 +1472,10 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [44
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 498--498
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 475--475
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png, id=1777, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png  used on input line 498.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png, id=1778, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png  used on input line 498.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png, id=1779, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png  used on input line 498.
-(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1510,8 +1485,8 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [45
 
- <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 505--505
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 492--492
  [] [] 
  []
 
@@ -1525,25 +1500,10 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [46
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 542--542
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 508--508
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png, id=1847, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png  used on input line 542.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png, id=1848, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png  used on input line 542.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png, id=1849, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png  used on input line 542.
-(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1553,19 +1513,26 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [47
 
- <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 563--563
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 545--545
  [] [] 
  []
 
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png  used on input line 563.
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png, id=1866, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png  used on input line 545.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png  used on input line 563.
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png, id=1867, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png  used on input line 545.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png, id=1868, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png  used on input line 545.
+(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1575,15 +1542,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [48
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 588--588
+ <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 552--552
  [] [] 
  []
 
-File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png  used on input line 588.
-(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1594,24 +1557,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [49
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 625--625
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 589--589
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png, id=1932, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png  used on input line 625.
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png, id=1937, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png  used on input line 589.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png, id=1933, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png  used on input line 625.
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png, id=1938, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png  used on input line 589.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png, id=1934, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png  used on input line 625.
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png, id=1939, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png  used on input line 589.
 (pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
@@ -1622,11 +1585,19 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [50
 
- <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 634--634
+ <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 610--610
  [] [] 
  []
 
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png  used on input line 610.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png  used on input line 610.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
 
 
 
@@ -1637,24 +1608,13 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [51
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 669--669
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 635--635
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png, id=2001, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png  used on input line 669.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png, id=2002, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png  used on input line 669.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png, id=2003, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png  used on input line 669.
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png  used on input line 635.
 (pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
@@ -1665,11 +1625,26 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [52
 
- <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 677--677
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 672--672
  [] [] 
  []
 
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png, id=2021, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png  used on input line 672.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png, id=2022, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png  used on input line 672.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png, id=2023, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png  used on input line 672.
+(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1679,26 +1654,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [53
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 712--712
+ <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 681--681
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png, id=2070, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png  used on input line 712.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png, id=2071, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png  used on input line 712.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png, id=2072, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png  used on input line 712.
-(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1708,11 +1668,26 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [54
 
- <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 721--721
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 716--716
  [] [] 
  []
 
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png, id=2090, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png  used on input line 716.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png, id=2091, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png  used on input line 716.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png, id=2092, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png  used on input line 716.
+(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1722,26 +1697,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [55
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 756--756
+ <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 724--724
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png, id=2140, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png  used on input line 756.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png, id=2141, 1003.75pt x 803.0pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png  used on input line 756.
-(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png, id=2142, 1003.75pt x 301.125pt>
-File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png Graphic file (type png)
-<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png>
-Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png  used on input line 756.
-(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1751,11 +1711,26 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [56
 
- <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png (PNG copy)>]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 765--765
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 759--759
  [] [] 
  []
 
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png, id=2160, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png  used on input line 759.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png, id=2161, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png  used on input line 759.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png, id=2162, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png  used on input line 759.
+(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1765,8 +1740,8 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [57
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 777--777
+ <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 768--768
  [] [] 
  []
 
@@ -1780,10 +1755,25 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [58
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 784--784
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 803--803
  [] [] 
  []
 
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png, id=2229, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png  used on input line 803.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png, id=2230, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png  used on input line 803.
+(pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png, id=2231, 1003.75pt x 301.125pt>
+File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png  used on input line 803.
+(pdftex.def)             Requested size: 136.91603pt x 41.07283pt.
 
 
 
@@ -1793,8 +1783,8 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [59
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 798--798
+ <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 812--812
  [] [] 
  []
 
@@ -1808,7 +1798,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [60
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 808--808
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 828--828
  [] [] 
  []
 
@@ -1822,11 +1812,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [61
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 815--815
- [] [] 
- []
-
-
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1836,7 +1821,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [62
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 828--828
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 842--842
  [] [] 
  []
 
@@ -1850,6 +1835,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [63
 
 ]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 852--852
+ [] [] 
+ []
+
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1859,7 +1849,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [64
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 838--838
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 859--859
  [] [] 
  []
 
@@ -1873,14 +1863,11 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [65
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 847--847
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 872--872
  [] [] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 847.
-(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1889,12 +1876,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [66
 
-{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 857--857
- [] [] 
- []
-
-
+]
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1904,7 +1886,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [67
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 868--868
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 882--882
  [] [] 
  []
 
@@ -1918,11 +1900,14 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [68
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 878--878
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 891--891
  [] [] 
  []
 
-
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 891.
+(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 
 Overfull \hbox (13.44466pt too wide) has occurred while \output is active
@@ -1931,8 +1916,8 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 
 [69
 
-]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 889--889
+{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 901--901
  [] [] 
  []
 
@@ -1946,7 +1931,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [70
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 899--899
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 921--921
  [] [] 
  []
 
@@ -1960,7 +1945,228 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [71
 
 ]
-Overfull \hbox (13.44466pt too wide) in paragraph at lines 906--906
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[72
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 941--941
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[73
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[74
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 961--961
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[75
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[76
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[77
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 979--979
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[78
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[79
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[80
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1003--1003
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[81
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[82
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[83
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1020--1020
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[84
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[85
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1048--1048
+ [] [] 
+ []
+
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png, id=3227, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png  used on input line 1048.
+(pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png, id=3228, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png  used on input line 1048.
+(pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
+
+Overfull \vbox (1.29257pt too high) detected at line 1048
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[86
+
+ <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1077--1077
+ [] [] 
+ []
+
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png, id=3256, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png  used on input line 1077.
+(pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png, id=3257, 1003.75pt x 803.0pt>
+File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png Graphic file (type png)
+<use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png>
+Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png  used on input line 1077.
+(pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
+
+Overfull \vbox (8.63348pt too high) detected at line 1077
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[87
+
+ <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png (PNG copy)>]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1091--1091
+ [] [] 
+ []
+
+
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[88
+
+]
+Overfull \hbox (13.44466pt too wide) in paragraph at lines 1097--1097
  [] [] 
  []
 
@@ -1971,7 +2177,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[72
+[89
 
  <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 
@@ -1980,7 +2186,17 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[73
+[90
+
+
+]
+
+
+Overfull \hbox (13.44466pt too wide) has occurred while \output is active
+ [] [] 
+ []
+
+[91
 
 
 ]
@@ -2005,17 +2221,17 @@ Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26131 strings out of 473682
- 519714 string characters out of 5718264
- 867182 words of memory out of 5000000
- 48504 multiletter control sequences out of 15000+600000
- 722142 words of font info for 148 fonts, out of 8000000 for 9000
+ 26209 strings out of 473682
+ 522127 string characters out of 5718264
+ 873216 words of memory out of 5000000
+ 48546 multiletter control sequences out of 15000+600000
+ 721823 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,428b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentacion.pdf (73 pages, 1512816 bytes).
+<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on presentacion.pdf (91 pages, 1770536 bytes).
 PDF statistics:
- 2998 PDF objects out of 3580 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 2467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3572 PDF objects out of 3580 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
+ 2757 words of extra memory for PDF output out of 10000 (max. 10000000)
 

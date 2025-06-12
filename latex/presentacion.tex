@@ -28,6 +28,7 @@
 
 \begin{document}
 
+% --- CORRESPONDE A: intro.tex ---
 % --- DIAPOSITIVA 1 ---
 \begin{frame}
 	\titlepage
@@ -44,12 +45,12 @@
 	\pause
 	\begin{alertblock}{Generalización: Polinomios Ortogonales de Sobolev} \scriptsize % Tamaño de fuente reducido
 		\begin{itemize}
-			\item Productos internos que incluyen derivadas: $\langle p, q \rangle_S = \int p \bar{q} d\mu_1 + \int p' \bar{q}' d\mu_2$.
+			\item Productos internos que consideran derivadas de los polinomios.
 			\item Motivación: Mejorar aproximación de funciones y sus derivadas.
 			\item Fenómenos nuevos:
 			      \begin{itemize}
-				      \item Ceros pueden ser complejos y "errantes".
-				      \item Operador $\D(p)=zp$, no necesariamente autoadjunto. Su norma y valores singulares son clave.
+				      \item Ceros pueden ser complejos y ``errantes'' (alejarse de las regiones esperadas).
+				      \item El operador de multiplicación por la variable no siempre se comporta de forma simple. Su norma y ciertos parámetros espectrales (como los valores singulares) se vuelven clave para entender el comportamiento de los ceros.
 			      \end{itemize}
 		\end{itemize}
 	\end{alertblock}
@@ -59,32 +60,53 @@
 \begin{frame}{Introducción: Contexto y Motivación (II)}
 	\begin{block}{Importancia del Estudio de los Ceros de Polinomios de Sobolev} \footnotesize % Tamaño de fuente reducido
 		\begin{itemize}
-			\item Diseño de reglas de cuadratura Sobolev estables.
-			\item Estabilidad de métodos numéricos para EDP.
-			\item Conexiones con teoría espectral y teoría del potencial.
+			\item Diseño de reglas de cuadratura (fórmulas de integración numérica) de Sobolev estables.
+			\item Estabilidad de métodos numéricos para Ecuaciones en Derivadas Parciales (EDP).
+			\item Conexiones con teoría espectral (estudio de autovalores) y teoría del potencial.
+			\item Comprensión de fenómenos de transición de fase en matrices aleatorias con aplicaciones (física estadística, teoría cuántica).
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-% --- DIAPOSITIVA 3: INTRODUCCIÓN - OBJETIVOS ---
-\begin{frame}{Introducción: Objetivos del TFG}
+% --- DIAPOSITIVA 3: INTRODUCCIÓN - OBJETIVOS (I) --- % Título modificado
+\begin{frame}{Introducción: Objetivos del TFG (I)} % Título modificado
 	\footnotesize % Tamaño de fuente reducido para toda la diapositiva
 	Este trabajo se centra en:
 	\begin{enumerate}
-		\item \textbf{Recopilar y estudiar la teoría} de polinomios ortogonales de Sobolev, unificando conceptos sobre acotación de ceros y comportamiento espectral.
+		\item \textbf{Recopilar y estudiar la teoría} de polinomios ortogonales de Sobolev, unificando conceptos sobre la acotación de sus ceros y el comportamiento espectral de las matrices asociadas.
 		      \pause
-		\item \textbf{Diseñar algoritmos} para la visualización del conjunto de ceros a partir de las representaciones matriciales del operador multiplicación.
+		\item \textbf{Diseñar algoritmos} para la visualización del conjunto de ceros a partir de las representaciones matriciales del operador de multiplicación por la variable.
 		      \pause
-		\item \textbf{Implementar computacionalmente} en \texttt{Maple} dichos algoritmos, automatizando la construcción de matrices, cálculo de parámetros espectrales y visualización.
+		\item \textbf{Implementar computacionalmente} en \texttt{Maple} dichos algoritmos, automatizando la construcción de matrices, el cálculo de parámetros espectrales relevantes y la visualización interactiva.
 		      \pause
-		\item \textbf{Analizar y verificar resultados teóricos} mediante experimentación numérica, contrastar cotas y explorar nuevos patrones para formular conjeturas.
+		\item \textbf{Analizar y verificar resultados teóricos} mediante experimentación numérica, contrastar cotas conocidas y explorar nuevos patrones para formular conjeturas.
 	\end{enumerate}
-	\vspace{0.3cm} % Reducido vspace
+\end{frame}
+
+% --- NUEVA DIAPOSITIVA 3B: INTRODUCCIÓN - OBJETIVOS (II) - ENFOQUE Y ALCANCE ---
+\begin{frame}{Introducción: Objetivos del TFG (II) - Enfoque y Alcance}
+	\footnotesize % Tamaño de fuente reducido para toda la diapositiva
+	La investigación se desarrolla en dos \textbf{frentes complementarios}:
+	\begin{itemize}
+		\item \textit{Resultados analíticos:} Avances en teoría espectral, localización de ceros y condiciones de acotación del operador de multiplicación por la variable \cite{lagomasino2001sobolev, DuranSaff2001, escribano2025zeros}.
+		\item \textit{Experimentación numérica y visualización:} Uso de \texttt{Maple} para generar matrices, analizar su espectro, visualizar ceros y validar conjeturas (e.g., convergencia del segundo valor singular más grande).
+	\end{itemize}
+	\pause
+	Este TFG desarrolla un \textbf{marco teórico-computacional unificado} que:
+	\begin{itemize}
+		\item Formaliza la construcción de matrices (de momentos, del operador de multiplicación) para productos de Sobolev de primer orden.
+		\item Relaciona la acotación de los ceros con la norma y ciertos valores singulares (el primero y el segundo más grandes) de las matrices del operador.
+		\item Implementa algoritmos en \texttt{Maple} para cálculo y visualización 2D de ceros, soportes de las medidas y espectro.
+		\item Presenta ejemplos (casos reales, circunferencias, mezclas con términos discretos) ilustrando la influencia de la geometría de los soportes.
+	\end{itemize}
+	\pause
+	\vspace{0.2cm}
 	\begin{center}
-		Se busca unificar el marco teórico-computacional para entender la interacción entre geometría del soporte, álgebra matricial y análisis funcional.
+		\textit{Se persigue clarificar la interacción entre geometría del soporte, álgebra matricial y análisis funcional, y proponer nuevas conjeturas sobre comportamientos asintóticos (radios espectrales, segundos valores singulares).}
 	\end{center}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 4: MARCO TEÓRICO - POLINOMIOS ORTOGONALES Y CEROS ---
 \begin{frame}{Marco Teórico: Polinomios Ortogonales y Ceros}
 	\begin{block}{Conceptos Fundamentales} \footnotesize % Tamaño de fuente reducido
@@ -108,6 +130,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 5: MARCO TEÓRICO - OPERADOR MULTIPLICACIÓN (I) ---
 \begin{frame}{Marco Teórico: Operador Multiplicación $\D(p)=zp$ (I)}
 	\begin{block}{Definición y Acotación} \small
@@ -135,6 +158,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 6: MARCO TEÓRICO - OPERADOR MULTIPLICACIÓN (II) - CONEXIÓN ESPECTRAL ---
 \begin{frame}{Marco Teórico: Operador Multiplicación (II) - Conexión Espectral}
 	Sea $\mathbf{D}_n$ la sección principal de orden $n+1$ de $\mathbf{D}$.
@@ -146,6 +170,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 6A: MARCO TEÓRICO - OPERADOR MULTIPLICACIÓN (II) - CONEXIÓN ESPECTRAL (RESULTADO) ---
 \begin{frame}{Marco Teórico: Operador Multiplicación (II) - Conexión Espectral (Resultado)}
 	Sea $\mathbf{D}_n$ la sección principal de orden $n+1$ de $\mathbf{D}$.
@@ -157,6 +182,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 6B: MARCO TEÓRICO - OPERADOR MULTIPLICACIÓN (II) - CONEXIÓN ESPECTRAL (DEMOSTRACIÓN) ---
 \begin{frame}{Marco Teórico: Operador Multiplicación (II) - Conexión Espectral (Demostración)}
 	\begin{block}{Demostración (Idea)} \small
@@ -171,6 +197,7 @@
 	\end{itemize}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 7: MARCO TEÓRICO - PARÁMETROS ESPECTRALES CLAVE ---
 \begin{frame}{Marco Teórico: Parámetros Espectrales Clave}
 	\footnotesize % Reducido tamaño de fuente
@@ -189,6 +216,7 @@
 	\end{itemize}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 7A: MARCO TEÓRICO - PARÁMETROS ESPECTRALES CLAVE (DEFINICIONES) ---
 \begin{frame}{Marco Teórico: Parámetros Espectrales Clave (Definiciones)}
 	\footnotesize % Reducido tamaño de fuente
@@ -207,6 +235,7 @@
 	\end{itemize}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 7B: MARCO TEÓRICO - PARÁMETROS ESPECTRALES CLAVE (CONVERGENCIA Y NOTACIÓN) ---
 \begin{frame}{Marco Teórico: Parámetros Espectrales Clave (Convergencia y Notación)}
 	\footnotesize % Reducido tamaño de fuente
@@ -219,6 +248,7 @@
 	Usaremos la notación: $\rho_n = \rho(\mathbf{D}_n)$, $\sigma_{1,n} = \sigma_1(\mathbf{D}_n)$, $\sigma_{2,n} = \sigma_2(\mathbf{D}_n)$.
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 8A: MARCO TEÓRICO - PRODUCTOS INTERNOS DE SOBOLEV (I) - DEFINICIÓN ---
 \begin{frame}{Marco Teórico: Productos Internos de Sobolev (I) - Definición}
 	\begin{alertblock}{Definición General \cite{escribano2025boundedness}}
@@ -227,6 +257,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 8B: MARCO TEÓRICO - PRODUCTOS INTERNOS DE SOBOLEV (I) - EJEMPLOS ---
 \begin{frame}{Marco Teórico: Productos Internos de Sobolev (I) - Ejemplos}
 	\begin{block}{Ejemplos Comunes} \scriptsize % Tamaño de fuente reducido
@@ -246,7 +277,8 @@
 	\end{itemize}
 \end{frame}
 
-% --- DIAPOSITIVA 9A: MARCO TEÓRICO - PRODUCTOS INTERNOS DE SOBOLEV (IIA) ---
+% --- CORRESPONDE A: marco_teorico.tex ---
+% --- DIAPOSITIVA 9A: MARCO TEÓRICO - PRODUCTOS SOBOLEV (IIA) ---
 \begin{frame}{Marco Teórico: Productos Sobolev (IIa) - Matriz $\mathbf{M}_S$}
 	\begin{block}{Radio del Soporte Combinado} \small
 		Se define $R = \max \{ |z| : z \in \operatorname{supp}(\mu_1) \cup \operatorname{supp}(\mu_2) \}$.
@@ -263,6 +295,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 9B: MARCO TEÓRICO - PRODUCTOS INTERNOS DE SOBOLEV (IIB) ---
 \begin{frame}{Marco Teórico: Productos Sobolev (IIb) - Matriz $\boldsymbol{\Lambda}$ y Casos Discretos}
 	\begin{block}{Matriz de Derivación $\boldsymbol{\Lambda}$} \small
@@ -286,6 +319,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 10: MARCO TEÓRICO - PROBLEMA CENTRAL Y METODOLOGÍA ---
 \begin{frame}{Marco Teórico: Problema Central y Metodología}
 	\begin{alertblock}{Problema Central de Investigación} \footnotesize % Reducido tamaño
@@ -297,6 +331,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 10A: MARCO TEÓRICO - PROBLEMA CENTRAL ---
 \begin{frame}{Marco Teórico: Problema Central de Investigación}
 	\begin{alertblock}{Problema Central de Investigación} \footnotesize % Reducido tamaño
@@ -308,6 +343,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 10B: MARCO TEÓRICO - OBJETIVO Y METODOLOGÍA ---
 \begin{frame}{Marco Teórico: Objetivo Específico y Metodología}
 	\begin{block}{Objetivo Específico del Marco Teórico} \footnotesize % Reducido tamaño
@@ -329,6 +365,7 @@
 	\end{block}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 11A.1: MARCO TEÓRICO - ESTADO DEL ARTE (IA) - ACOTACIÓN DE CEROS ---
 \begin{frame}{Marco Teórico: Estado del Arte (Ia) - Acotación de Ceros}
 	\begin{block}{Acotación del Operador Implica Acotación de Ceros} \small
@@ -337,6 +374,7 @@
 	\end{block}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 11A.2: MARCO TEÓRICO - ESTADO DEL ARTE (IA) - DOMINACIÓN SECUENCIAL ---
 \begin{frame}{Marco Teórico: Estado del Arte (Ia) - Dominación Secuencial}
 	\begin{alertblock}{Dominación Secuencial (Definiciones)} \scriptsize
@@ -354,6 +392,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 11B: MARCO TEÓRICO - ESTADO DEL ARTE (IB) ---
 \begin{frame}{Marco Teórico: Estado del Arte (Ib) - Dominación Secuencial (Teorema)}
 	\begin{alertblock}{Dominación Secuencial (Teorema y Corolario)} \scriptsize
@@ -369,6 +408,7 @@
 	\textit{Nota:} Hay casos donde $\mathcal{D}$ es acotado incluso sin dominación secuencial (e.g., $a \in \mathbb{D}_{r_b}(b)$ para el producto en circunferencias \cite{escribano2025zeros}).
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 12A.1: MARCO TEÓRICO - ESTADO DEL ARTE (IIA) - PUNTOS DE EVALUACIÓN ACOTADOS (DEFINICIÓN) ---
 \begin{frame}{Marco Teórico: Estado del Arte (IIa) - Puntos de Evaluación Acotados}
 	Para productos con términos discretos como $|p'(a)|^2$.
@@ -378,6 +418,7 @@
 	\end{block}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 12A.2: MARCO TEÓRICO - ESTADO DEL ARTE (IIA) - BPE (PROPIEDADES Y LEMA) ---
 \begin{frame}{Marco Teórico: Estado del Arte (IIa) - bpe (Propiedades y Lema)}
 	\scriptsize
@@ -392,6 +433,7 @@
 	\end{itemize}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 12B: MARCO TEÓRICO - ESTADO DEL ARTE (IIB) ---
 \begin{frame}{Marco Teórico: Estado del Arte (IIb) - bpe (Resultado Clave)}
 	\begin{alertblock}{Resultado Clave para Términos Discretos} \small
@@ -402,6 +444,7 @@
 	\end{alertblock}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 13A.1: MARCO TEÓRICO - ESTADO DEL ARTE (IIIA) - OTROS ENFOQUES: SOPORTES DISJUNTOS ---
 \begin{frame}{Marco Teórico: Estado del Arte (IIIa) - Otros Enfoques: Soportes Disjuntos}
 	Existen enfoques que no dependen directamente de la acotación del operador $\mathcal{D}$.
@@ -418,6 +461,7 @@
 	\end{block}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 13A.2: MARCO TEÓRICO - ESTADO DEL ARTE (IIIA) - SOPORTES DISJUNTOS (TEOREMA DETALLADO) ---
 \begin{frame}{Marco Teórico: Estado del Arte (IIIa) - Soportes Disjuntos (Teorema Detallado)}
 	\begin{block}{Soportes Disjuntos (Caso Real Continuo) - Continuación} \small
@@ -430,9 +474,10 @@
 	\end{block}
 \end{frame}
 
+% --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 13B: MARCO TEÓRICO - ESTADO DEL ARTE (IIIB) ---
-\begin{frame}{Marco Teórico: Estado del Arte (IIIb) - Otros Métodos}
-	\begin{block}{Otros Métodos} \small
+\begin{frame}{Marco Teórico: Estado del Arte (IIIb) - Otros Métodos y Enfoques Recientes} % Título modificado
+	\begin{block}{Otros Métodos Clásicos} \small
 		\begin{itemize}
 			\item Análisis de propiedades asintóticas de coeficientes de recurrencia.
 			\item Técnicas de análisis complejo y teoría del potencial.
@@ -446,9 +491,11 @@
 	\end{center}
 \end{frame}
 
+% --- CORRESPONDE A: casos.tex ---
 % --- DIAPOSITIVA 14: CASOS DE ESTUDIO Y CONJETURAS ---
 \begin{frame}{Casos de Estudio y Conjeturas}
-	A continuación, se presentan ejemplos numéricos para ilustrar el comportamiento de los ceros y los parámetros espectrales en diferentes escenarios. Estos ejemplos motivarán las conjeturas clave del trabajo.
+	\footnotesize % Ajustar tamaño de fuente si es necesario
+	A continuación, se presentan ejemplos numéricos para ilustrar el comportamiento de los ceros y los parámetros espectrales en diferentes escenarios. Estos ejemplos motivarán las conjetas clave del trabajo.
 
 	\textbf{Metodología de Visualización:}
 	Para cada ejemplo, se muestra:
@@ -508,8 +555,8 @@
 \begin{frame}{Caso Real: Ejemplo Soportes Disjuntos}
 	\textbf{Ejemplo 2:}\;
 	$\displaystyle
-		\langle p,q\rangle_S
-		=\int_{0}^{10} p(t)q(t) \, dt
+		\langle p, q \rangle_S
+		= \int_{0}^{10} p(t)q(t) \, dt
 		+ \int_{30}^{40} p'(t)q'(t) \, dt$
 	\vspace{-0.8em}
 	\begin{figure}
@@ -545,8 +592,8 @@
 \begin{frame}{Caso Real: Ejemplo Soportes Disjuntos (Gráficos de Ceros)}
 	\textbf{Ejemplo 2:}\;
 	$\displaystyle
-		\langle p,q\rangle_S
-		=\int_{0}^{10} p(t)q(t) \, dt
+		\langle p, q \rangle_S
+		= \int_{0}^{10} p(t)q(t) \, dt
 		+ \int_{30}^{40} p'(t)q'(t) \, dt$
 	\vspace{-0.8em}
 	\begin{figure}
@@ -774,10 +821,7 @@
 			\item Los ceros están acotados por $\|\mathcal{D}\|$.
 		\end{itemize}
 	\end{block}
-\end{frame}
-
-% --- DIAPOSITIVA 21A.2: ANÁLISIS Y CONJETURAS (IA) - OBSERVACIONES (VERIFICACIÓN EN EJEMPLOS) ---
-\begin{frame}{Análisis y Conjeturas (Ia): Observaciones (Verificación en Ejemplos)}
+	\pause
 	\begin{block}{Verificación en Ejemplos} \small
 		Esto se verifica en ejemplos como el Ej.1 y Ej.2 del caso real.
 	\end{block}
@@ -814,7 +858,7 @@
 	\end{block}
 \end{frame}
 
-% --- DIAPOSITIVA 22b: CONJETURAS PRINCIPALES (IIb) - FORMULACIÓN ---
+% --- DIAPOSITIVA 22b: CONJETURAS PRINCIPALES (IIIB) - FORMULACIÓN ---
 \begin{frame}{Análisis y Conjeturas (IIb): Conjetura 2 y Soporte Teórico}
 	\begin{block}{Conjetura 2: Convergencia del Segundo Valor Singular} \small
 		El segundo mayor valor singular $\sigma_{2,n}$ de $\mathbf{D}_n$ converge:
@@ -856,48 +900,195 @@
 	\end{alertblock}
 \end{frame}
 
-% --- DIAPOSITIVA 24A.1: RESULTADOS ADICIONALES (PARTE 1) ---
-\begin{frame}{Resultados Adicionales Clave del TFG (Parte 1)}
-	\begin{block}{Resultados Adicionales Clave del TFG} \small
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 24: CONCLUSIONES (I) - RESUMEN Y ENFOQUE ---
+\begin{frame}{Conclusiones (I): Resumen y Enfoque}
+	\footnotesize
+	En este TFG hemos analizado y visualizado los ceros de polinomios ortogonales de Sobolev (P.O.S.) con derivadas de primer orden y medidas en $\mathbb{R}$ o $\mathbb{C}$.
+	\begin{itemize}
+		\item Se ofrece un marco teórico unificado (clásico y reciente) sobre matrices de momentos, operadores de multiplicación Hessenberg y criterios de acotación de ceros vía norma del operador $\mathcal{D}$.
+		\item Esto sitúa el problema en la teoría espectral moderna y facilita la comparación con otras ortogonalidades no estándar.
+	\end{itemize}
+	\pause
+	\begin{alertblock}{Enfoque Matricial}
+		El enfoque matricial ha sido fundamental para:
 		\begin{itemize}
-			\item Implementación de algoritmos en \texttt{Maple} para cálculo y visualización.
-			\item Validación numérica de condiciones de acotación de $\mathcal{D}$.
-			\item Análisis del comportamiento de $\sigma_{2,n}$ en casos no secuencialmente dominados.
+			\item Caracterizar los P.O.S. mediante estructuras algebraicas.
+			\item Conectar análisis funcional y teoría de matrices.
+			\item Proporcionar herramientas computacionales robustas para el estudio de propiedades espectrales.
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 25: CONCLUSIONES (II) - PRINCIPALES LOGROS ---
+\begin{frame}{Conclusiones (II): Principales Logros}
+	\footnotesize
+	\begin{itemize}
+		\item Desarrollo de un marco teórico unificado para P.O.S. (perspectiva matricial).
+		\item Implementación de algoritmos eficientes en \texttt{Maple} (Gram, ortonormalización, $\mathbf{D}_n$).
+		\item Creación de un sistema interactivo de visualización (soportes, cotas, ceros).
+		\item Validación numérica de condiciones de acotación de $\mathcal{D}$.
+		\item Análisis del comportamiento de $\sigma_{2,n}$ en operadores no secuencialmente dominados.
+		\item Caracterización del efecto de átomos en la distribución de ceros.
+	\end{itemize}
+	\pause
+	\textbf{Computacionalmente:}
+	\begin{itemize}
+		\item \texttt{Maple} construye matriz de Gram, ortonormaliza, genera $\mathbf{D}_n$, calcula $\rho(\mathbf{D}_n)$ y $\sigma_{k,n}$.
+		\item Visualización interactiva superpone soportes, cota teórica ($|z|\le \|\mathcal{D}\|$) y trayectorias de ceros.
+	\end{itemize}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 26: CONCLUSIONES (III) - CONTRIBUCIONES ORIGINALES Y PERSPECTIVA ---
+\begin{frame}{Conclusiones (III): Contribuciones Originales y Perspectiva}
+	\footnotesize
+	\begin{block}{Contribuciones Originales}
+		\begin{itemize}
+			\item Criterios gráficos $(\rho(\mathbf{D}_n),\sigma_{2,n})$ para diagnosticar acotación de $\mathcal{D}$.
+			\item Conjetura: $\rho(\mathbf{D}_n) \to \text{radio env. convexa soporte (compacto-compacto)}$.
+			\item Conjetura: $\sigma_{2,n} \to \max_{|z|=R} |z|$ cuando $\|\mathcal{D}\|=\infty$.
+			\item Repositorio de casos de prueba para reproducibilidad.
+		\end{itemize}
+	\end{block}
+	\pause
+	\begin{alertblock}{Integración}
+		El trabajo integra teoría, experimentación computacional y visualización interactiva, aportando nuevas evidencias y herramientas para explorar P.O.S. en contextos poco estudiados.
+	\end{alertblock}
+	\pause
+	\textit{Los experimentos (intervalos, circunferencias, átomos) y la metodología permiten vislumbrar generalizaciones a medidas más generales y productos Sobolev matriciales.}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 27: REFLEXIÓN PERSONAL ---
+\begin{frame}{Reflexión Personal}
+	\footnotesize
+	\begin{itemize}
+		\item El estudio de los espacios de Sobolev me intrigó desde la asignatura de Análisis Funcional. Los resultados obtenidos me han sorprendido y motivado a profundizar más.
+		      \pause
+		\item Este TFG ejemplifica la esencia del Grado en Matemáticas e Informática:
+		      \begin{itemize}
+			      \item Busca puntos de convergencia entre ambas disciplinas.
+			      \item Fundamentado en teoría matemática y desarrollado mediante implementaciones computacionales.
+			      \item Evidencia la interrelación y potenciación mutua de matemáticas e informática.
+		      \end{itemize}
+		      \pause
+		\item La experiencia de traducir conceptos abstractos a modelos computacionales y validarlos ha sido extraordinariamente formativa.
+	\end{itemize}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 28: LÍNEAS DE TRABAJO FUTURO (I) ---
+\begin{frame}{Líneas de Trabajo Futuro (I)}
+	\footnotesize
+	Se abren diversos frentes de investigación:
+	\begin{itemize}
+		\item \textbf{Productos Sobolev de orden superior ($N>1$):}
+		      \begin{itemize}
+			      \item Incorporar derivadas de orden $\ge 2$.
+			      \item Analizar $\sigma_{k,n}$ para $k \ge 3$.
+		      \end{itemize}
+		      \pause
+		\item \textbf{Leyes de distribución de ceros:}
+		      \begin{itemize}
+			      \item Derivar distribuciones límite (tipo medida de equilibrio) para los ceros en distintos regímenes (análogo a Ullman-Stahl).
+		      \end{itemize}
+		      \pause
+		\item \textbf{Convergencia del autovalor máximo:}
+		      \begin{itemize}
+			      \item Investigar si el autovalor que determina $\rho(\mathbf{D}_n)$ converge.
+		      \end{itemize}
+	\end{itemize}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 29: LÍNEAS DE TRABAJO FUTURO (II) ---
+\begin{frame}{Líneas de Trabajo Futuro (II)}
+	\footnotesize
+	Continuación de líneas de investigación:
+	\begin{itemize}
+		\item \textbf{Átomos bpe como caso secuencialmente dominado:}
+		      \begin{itemize}
+			      \item Profundizar en el estudio de productos con átomos usando la teoría de secuencialidad matricial (trabajos de Gonzalo y Escribano).
+		      \end{itemize}
+	\end{itemize}
+	\pause
+	\begin{alertblock}{Ejemplos con Derivadas de Orden Superior}
+		Se ilustra el análisis de $\sigma_{k,n}$ para $k = 3$.
+	\end{alertblock}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 30: LÍNEAS DE TRABAJO FUTURO (III) - EJEMPLO 1 ---
+\begin{frame}{Líneas de Trabajo Futuro (III) - Ejemplo 1}
+	\footnotesize
+	\textbf{Ej. 1:} $\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + \int_{60}^{70} p''q'' \, dt$
+	\begin{figure}
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png}
+			\caption*{\tiny Ceros $\varphi_{70}$}
+		\end{subfigure}\hfill
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png}
+			\caption*{\tiny Ceros $\varphi_{0},\dots,\varphi_{70}$}
+		\end{subfigure}
+	\end{figure}
+	\vspace{-1em}
+	\tiny
+	\textbf{Datos ($n=70$):}
+	\begin{itemize}
+		\item $\sigma_{1,70} \approx 4.94 \times 10^{8}$
+		\item $\sigma_{2,70} \approx 1.85 \times 10^{8}$
+		\item $\sigma_{3,70} \approx 69.956$
+		\item $R = 70$
+		\item $\rho(\mathbf{D}_{70}) \approx 73.791$
+		\item $\max\rho_k \approx 88.570$
+	\end{itemize}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 31: LÍNEAS DE TRABAJO FUTURO (IV) - EJEMPLO 2 ---
+\begin{frame}{Líneas de Trabajo Futuro (IV) - Ejemplo 2}
+	\footnotesize
+	\textbf{Ej. 2:} $\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + p''(0)q''(0)$
+	\begin{figure}
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png}
+			\caption*{\tiny Ceros $\varphi_{70}$}
+		\end{subfigure}\hfill
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png}
+			\caption*{\tiny Ceros $\varphi_{0},\dots,\varphi_{70}$}
+		\end{subfigure}
+	\end{figure}
+	\vspace{-1em}
+	\tiny
+	\textbf{Datos ($n=70$):}
+	\begin{itemize}
+		\item $\sigma_{1,70} \approx 1.52 \times 10^{12}$
+		\item $\sigma_{2,70} \approx 212.771$
+		\item $\sigma_{3,70} \approx 39.976$
+		\item $R = 40$
+		\item $\rho(\mathbf{D}_{70}) \approx 43.136$
+		\item $\max\rho_k \approx 50.046$
+	\end{itemize}
+	\textit{Observación: En ambos ejemplos, $\sigma_{1,n}, \sigma_{2,n} \to \infty$, mientras $\sigma_{3,n} \to R < \infty$.}
+\end{frame}
+
+% --- CORRESPONDE A: conclusiones.tex ---
+% --- DIAPOSITIVA 32: LÍNEAS DE TRABAJO FUTURO (V) - PERSPECTIVA FINAL ---
+\begin{frame}{Líneas de Trabajo Futuro (V): Perspectiva Final}
+	\footnotesize
+	\begin{block}{Promesa de la Investigación Futura}
+		Estas líneas de investigación prometen extender el alcance y la profundidad de los resultados obtenidos en este TFG.
+		\begin{itemize}
+			\item Establecer conexiones más sólidas entre la teoría espectral y los polinomios ortogonales de Sobolev.
+			\item El marco teórico desarrollado y las herramientas computacionales implementadas proporcionan una base robusta para abordar estos desafíos.
+			\item Contribuir a una comprensión más completa de la interacción entre estructura algebraica, propiedades espectrales y comportamiento asintótico en sistemas polinomiales con derivadas.
 		\end{itemize}
 	\end{block}
 \end{frame}
-
-% --- DIAPOSITIVA 24A.2: RESULTADOS ADICIONALES (PARTE 2) ---
-\begin{frame}{Resultados Adicionales Clave del TFG (Parte 2)}
-	\begin{block}{Resultados Adicionales Clave del TFG (Continuación)} \small
-		\begin{itemize}
-			\item Caracterización del efecto de átomos en la distribución de ceros.
-			\item Conjeturas sobre convergencia de $\rho(\mathbf{D}_n)$ y $\sigma_{2,n}$.
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-% --- DIAPOSITIVA 24B.1: TRABAJO FUTURO (PARTE 1) ---
-\begin{frame}{Líneas de Trabajo Futuro (Parte 1)}
-	\begin{block}{Líneas de Trabajo Futuro} \small
-		\begin{itemize}
-			\item \textbf{Productos Sobolev de orden superior ($N>1$):} Incorporar derivadas de orden mayor y analizar $\sigma_{k,n}$ para $k \ge 3$.
-			\item \textbf{Leyes de distribución de ceros:} Derivar distribuciones límite para los ceros (análogo a Ullman-Stahl).
-			\item \textbf{Convergencia del autovalor máximo:} Investigar si el autovalor que determina $\rho(\mathbf{D}_n)$ converge.
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-% --- DIAPOSITIVA 24B.2: TRABAJO FUTURO (PARTE 2) ---
-\begin{frame}{Líneas de Trabajo Futuro (Parte 2)}
-	\begin{block}{Líneas de Trabajo Futuro (Continuación)} \small
-		\begin{itemize}
-			\item \textbf{Átomos bpe y dominación secuencial:} Profundizar en el estudio de productos con átomos usando la teoría de secuencialidad matricial.
-			\item Extender el análisis a medidas más generales y productos Sobolev matriciales.
-		\end{itemize}
-	\end{block}
-\end{frame}
-
 
 % --- DIAPOSITIVA DE REFERENCIAS ---
 \begin{frame}[allowframebreaks]{Referencias}
