@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{singularValuesOfHessenbergMatrices}
+C.~Escribano, R.~Gonzalo, and G.~Suárez, \emph{A note on Singular Values of
+  Hessenberg Matrices and Orthogonal Polynomials}, 2025.
+
 \bibitem{lagomasino2001sobolev}
 G.~L. Lagomasino, H.~P. Cabrera, and I.~P. Izquierdo, ``Sobolev orthogonal
   polynomials in the complex plane,'' \emph{Journal of computational and
@@ -63,9 +67,5 @@ J.~B. Conway, \emph{Functions of One Complex Variable I}, 2nd~ed., ser.
 T.~W. Gamelin, \emph{Uniform Algebras}, ser. Prentice--Hall Series in Modern
   Analysis.\hskip 1em plus 0.5em minus 0.4em\relax Englewood Cliffs, NJ:
   Prentice--Hall, 1969, véase Cap.\ 1, Prop.\ 1.7.
-
-\bibitem{singularValuesOfHessenbergMatrices}
-C.~Escribano, R.~Gonzalo, and G.~Suárez, \emph{A note on Singular Values of
-  Hessenberg Matrices and Orthogonal Polynomials}, 2025.
 
 \end{thebibliography}

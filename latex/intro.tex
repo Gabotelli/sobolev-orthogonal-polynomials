@@ -1,0 +1,71 @@
+% --- DIAPOSITIVA 2A: INTRODUCCIÓN - CONTEXTO Y MOTIVACIÓN (I) ---
+\begin{frame}{Introducción: Contexto y Motivación (I)}
+	\begin{block}{Polinomios Ortogonales Clásicos}
+		\begin{itemize}
+			\item Herramienta fundamental en matemáticas, física e ingeniería.
+			\item Teoría bien establecida: recurrencia de tres términos, ceros reales y entrelazados.
+		\end{itemize}
+	\end{block}
+	\pause
+	\begin{alertblock}{Generalización: Polinomios Ortogonales de Sobolev} % Tamaño de fuente reducido
+		\begin{itemize}
+			\item Productos internos que consideran derivadas de los polinomios.
+			\item Motivación: Mejorar aproximación de funciones y sus derivadas.
+			\item Fenómenos nuevos:
+			      \begin{itemize}
+				      \item Ceros pueden ser complejos y ``errantes''.
+				      \item El operador de multiplicación por $z$ no es autoadjunto; su norma (y la de sus secciones de Hessenberg, vía valores singulares\cite{singularValuesOfHessenbergMatrices}) controla la acotación de los ceros.
+			      \end{itemize}
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+% --- DIAPOSITIVA 2B: INTRODUCCIÓN - CONTEXTO Y MOTIVACIÓN (II) ---
+\begin{frame}{Introducción: Contexto y Motivación (II)}
+	\begin{block}{Importancia del Estudio de los Ceros de Polinomios de Sobolev} \footnotesize % Tamaño de fuente reducido
+		\begin{itemize}
+			\item Diseño de reglas de cuadratura (fórmulas de integración numérica) de Sobolev estables.
+			\item Estabilidad de métodos numéricos para Ecuaciones en Derivadas Parciales (EDP).
+			\item Conexiones con teoría espectral (estudio de autovalores) y teoría del potencial.
+			\item Comprensión de fenómenos de transición de fase en matrices aleatorias con aplicaciones (física estadística, teoría cuántica).
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+% --- DIAPOSITIVA 3: INTRODUCCIÓN - OBJETIVOS (I) --- % Título modificado
+\begin{frame}{Introducción: Objetivos del TFG (I)} % Título modificado
+	\footnotesize % Tamaño de fuente reducido para toda la diapositiva
+	Este trabajo se centra en:
+	\begin{enumerate}
+		\item \textbf{Recopilar y estudiar la teoría} de polinomios ortogonales de Sobolev, unificando conceptos sobre la acotación de sus ceros y el comportamiento espectral de las matrices asociadas.
+		      \pause
+		\item \textbf{Diseñar algoritmos} para la visualización del conjunto de ceros a partir de las representaciones matriciales del operador de multiplicación por la variable.
+		      \pause
+		\item \textbf{Implementar computacionalmente} en \texttt{Maple} dichos algoritmos, automatizando la construcción de matrices, el cálculo de parámetros espectrales relevantes y la visualización interactiva.
+		      \pause
+		\item \textbf{Analizar y verificar resultados teóricos} mediante experimentación numérica, contrastar cotas conocidas y explorar nuevos patrones para formular conjeturas.
+	\end{enumerate}
+\end{frame}
+
+% --- NUEVA DIAPOSITIVA 3B: INTRODUCCIÓN - OBJETIVOS (II) - ENFOQUE Y ALCANCE ---
+\begin{frame}{Introducción: Objetivos del TFG (II) - Enfoque y Alcance}
+	\footnotesize % Tamaño de fuente reducido para toda la diapositiva
+	La investigación se desarrolla en dos \textbf{frentes complementarios}:
+	\begin{itemize}
+		\item \textit{Resultados analíticos:} Avances en teoría espectral, localización de ceros y condiciones de acotación del operador de multiplicación por la variable \cite{lagomasino2001sobolev, DuranSaff2001, escribano2025zeros}.
+		\item \textit{Experimentación numérica y visualización:} Uso de \texttt{Maple} para generar matrices, analizar su espectro, visualizar ceros y validar conjeturas (e.g., convergencia del segundo valor singular más grande).
+	\end{itemize}
+	\pause
+	Este TFG desarrolla un \textbf{marco teórico-computacional unificado} que:
+	\begin{itemize}
+		\item Formaliza la construcción de matrices (de momentos, del operador de multiplicación) para productos de Sobolev de primer orden.
+		\item Relaciona la acotación de los ceros con la norma y ciertos valores singulares (el primero y el segundo más grandes) de las matrices del operador.
+		\item Implementa algoritmos en \texttt{Maple} para cálculo y visualización 2D de ceros, soportes de las medidas y espectro.
+		\item Presenta ejemplos (casos reales, circunferencias, mezclas con términos discretos) ilustrando la influencia de la geometría de los soportes.
+	\end{itemize}
+	\pause
+	\vspace{0.2cm}
+	\begin{center}
+		\textit{Se persigue clarificar la interacción entre geometría del soporte, álgebra matricial y análisis funcional, y proponer nuevas conjeturas sobre comportamientos asintóticos (radios espectrales, segundos valores singulares).}
+	\end{center}
+\end{frame}
