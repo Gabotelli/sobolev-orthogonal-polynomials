@@ -1,78 +1,13 @@
 % --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 24: CONCLUSIONES (I) - RESUMEN Y ENFOQUE ---
-\begin{frame}{Conclusiones (I): Resumen y Enfoque}
-	\footnotesize
-	En este TFG hemos analizado y visualizado los ceros de polinomios ortogonales de Sobolev (P.O.S.) con derivadas de primer orden y medidas en $\mathbb{R}$ o subconjuntos compactos de $\mathbb{C}$.
-	\begin{itemize}
-		\item Se ofrece un marco teórico unificado (clásico y reciente) sobre matrices de momentos, operadores de multiplicación Hessenberg y criterios de acotación de ceros vía norma del operador $\mathcal{D}$.
-		\item Esto sitúa el problema en la teoría espectral moderna y facilita la comparación con otras ortogonalidades no estándar.
-	\end{itemize}
-	\pause
-	\begin{alertblock}{Enfoque Matricial}
-		El enfoque matricial ha sido fundamental para:
-		\begin{itemize}
-			\item Caracterizar los P.O.S. mediante estructuras algebraicas que capturan completamente su comportamiento.
-			\item Conectar análisis funcional y teoría de matrices.
-			\item Proporcionar herramientas computacionales robustas para el estudio de propiedades espectrales.
-		\end{itemize}
-	\end{alertblock}
-\end{frame}
-
-% --- CORRESPONDE A: conclusiones.tex ---
 % --- DIAPOSITIVA 25: CONCLUSIONES (II) - PRINCIPALES LOGROS ---
 \begin{frame}{Conclusiones (II): Principales Logros}
 	\footnotesize
 	\begin{itemize}
-		\item Desarrollo de un marco teórico unificado para P.O.S. (perspectiva matricial).
-		\item Implementación de algoritmos eficientes en \textsc{Maple} (Gram, ortonormalización, $\mathbf{D}_n$).
-		\item Creación de un sistema interactivo de visualización (soportes, cotas, ceros).
+		\item Estudio del marco teórico matricial para Polinomios Ortogonales de Sobolev.
 		\item Validación numérica de condiciones de acotación de $\mathcal{D}$ en diversos contextos geométricos.
 		\item Análisis pionero del comportamiento de $\sigma_{2,n}$ en operadores no secuencialmente dominados.
-		\item Caracterización del efecto de átomos en la distribución de ceros, aportando evidencia visual a una cuestión abierta.
-	\end{itemize}
-	\pause
-	\textbf{Computacionalmente:}
-	\begin{itemize}
-		\item \textsc{Maple} construye matriz de Gram, ortonormaliza, genera $\mathbf{D}_n$, calcula $\rho(\mathbf{D}_n)$ y $\sigma_{k,n}$.
-		\item Visualización interactiva superpone soportes, cota teórica ($|z|\le \|\mathcal{D}\|$) y trayectorias de ceros.
-	\end{itemize}
-\end{frame}
-
-% --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 26: CONCLUSIONES (III) - CONTRIBUCIONES ORIGINALES Y PERSPECTIVA ---
-\begin{frame}{Conclusiones (III): Contribuciones Originales y Perspectiva}
-	\footnotesize
-	\begin{block}{Contribuciones Originales}
-		\begin{itemize}
-			\item Criterios gráficos $(\rho(\mathbf{D}_n),\sigma_{2,n})$ para diagnosticar acotación de $\mathcal{D}$.
-			\item Conjetura: $\rho(\mathbf{D}_n) \to \text{radio env. convexa soporte (compacto-compacto)}$.
-			\item Conjetura: $\sigma_{2,n} \to \max_{|z|=R} |z|$ cuando $\|\mathcal{D}\|=\infty$.
-			\item Repositorio de casos de prueba para reproducibilidad.
-		\end{itemize}
-	\end{block}
-	\pause
-	\begin{alertblock}{Integración}
-		El trabajo integra teoría, experimentación computacional y visualización interactiva, aportando nuevas evidencias y herramientas para explorar P.O.S. en contextos poco estudiados.
-	\end{alertblock}
-	\pause
-	\textit{Los experimentos (intervalos, circunferencias, átomos) y la metodología permiten vislumbrar generalizaciones a medidas más generales y productos Sobolev matriciales.}
-\end{frame}
-
-% --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 27: REFLEXIÓN PERSONAL ---
-\begin{frame}{Reflexión Personal}
-	\footnotesize
-	\begin{itemize}
-		\item Al cursar la asignatura de Análisis Funcional y aprender sobre los espacios de Sobolev, este estudio me intrigó desde el primer momento. Los resultados obtenidos me han sorprendido y motivado a profundizar más.
-		      \pause
-		\item Este TFG muestra perfectamente la esencia del Grado en Matemáticas e Informática:
-		      \begin{itemize}
-			      \item A diferencia de otros dobles grados duales, busca constantemente puntos de convergencia entre ambas disciplinas.
-			      \item Fundamentado en teoría matemática y desarrollado mediante implementaciones computacionales.
-			      \item Evidencia la profunda interrelación entre matemáticas e informática, mostrando cómo cada disciplina potencia a la otra.
-		      \end{itemize}
-		      \pause
-		\item La experiencia de traducir conceptos matemáticos abstractos a modelos computacionales ha sido extraordinariamente formativa y refleja las competencias adquiridas durante mis estudios.
+		\item Implementación de algoritmos eficientes en \textsc{Maple}.
+		\item Creación de un sistema interactivo de visualización.
 	\end{itemize}
 \end{frame}
 
@@ -100,89 +35,50 @@
 	\end{itemize}
 \end{frame}
 
-% --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 29: LÍNEAS DE TRABAJO FUTURO (II) ---
-\begin{frame}{Líneas de Trabajo Futuro (II)}
+% --- DIAPOSITIVA 30: LÍNEAS DE TRABAJO FUTURO (III) - EJEMPLOS CON DERIVADAS DE ORDEN SUPERIOR ---
+\begin{frame}{Líneas de Trabajo Futuro (III) - Ejemplos con Derivadas de Orden Superior}
 	\footnotesize
-	Continuación de líneas de investigación:
-	\begin{itemize}
-		\item \textbf{Átomos bpe como caso secuencialmente dominado:}
-		      \begin{itemize}
-			      \item Profundizar en el estudio de átomos usando como base los trabajos de Gonzalo y Escribano sobre la secuencialidad matricial en productos de Sobolev con átomos.
-		      \end{itemize}
-	\end{itemize}
-	\pause
-	\begin{alertblock}{Ejemplos con Derivadas de Orden Superior}
-		Se ilustra el análisis de $\sigma_{k,n}$ para $k = 3$.
-	\end{alertblock}
-\end{frame}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\textbf{Ejemplo 1:}
+			\tiny
+			$\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + \int_{60}^{70} p''q'' \, dt$
 
-% --- DIAPOSITIVA 30: LÍNEAS DE TRABAJO FUTURO (III) - EJEMPLO 1 ---
-\begin{frame}{Líneas de Trabajo Futuro (III) - Ejemplo 1}
-	\footnotesize
-	\textbf{Ej. 1:} $\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + \int_{60}^{70} p''q'' \, dt$
-	\begin{figure}
-		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png}
-			\caption*{\tiny Ceros $\varphi_{70}$}
-		\end{subfigure}\hfill
-		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png}
-			\caption*{\tiny Ceros $\varphi_{0},\dots,\varphi_{70}$}
-		\end{subfigure}
-	\end{figure}
-	\vspace{-1em}
-	\tiny
-	\textbf{Datos ($n=70$):}
-	\begin{itemize}
-		\item $\sigma_{1,70} \approx 4.94 \times 10^{8}$
-		\item $\sigma_{2,70} \approx 1.85 \times 10^{8}$
-		\item $\sigma_{3,70} \approx 69.956$
-		\item $R = 70$
-		\item $\rho(\mathbf{D}_{70}) \approx 73.791$
-		\item $\max\rho_k \approx 88.570$
-	\end{itemize}
-\end{frame}
+			\vspace{-0.3em}
+			\begin{figure}
+				\includegraphics[width=0.8\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png}
+			\end{figure}
+			\vspace{-1.5em}
 
-% --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 31: LÍNEAS DE TRABAJO FUTURO (IV) - EJEMPLO 2 ---
-\begin{frame}{Líneas de Trabajo Futuro (IV) - Ejemplo 2}
-	\footnotesize
-	\textbf{Ej. 2:} $\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + p''(0)q''(0)$
-	\begin{figure}
-		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png}
-			\caption*{\tiny Ceros $\varphi_{70}$}
-		\end{subfigure}\hfill
-		\begin{subfigure}[b]{0.45\columnwidth}
-			\includegraphics[width=\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png}
-			\caption*{\tiny Ceros $\varphi_{0},\dots,\varphi_{70}$}
-		\end{subfigure}
-	\end{figure}
-	\vspace{-1em}
-	\tiny
-	\textbf{Datos ($n=70$):}
-	\begin{itemize}
-		\item $\sigma_{1,70} \approx 1.52 \times 10^{12}$
-		\item $\sigma_{2,70} \approx 212.771$
-		\item $\sigma_{3,70} \approx 39.976$
-		\item $R = 40$
-		\item $\rho(\mathbf{D}_{70}) \approx 43.136$
-		\item $\max\rho_k \approx 50.046$
-	\end{itemize}
-	\textit{Observación: En ambos ejemplos, $\sigma_{1,n}, \sigma_{2,n} \to \infty$, mientras $\sigma_{3,n} \to R < \infty$.}
-\end{frame}
+			\textbf{Datos ($n=70$):}
+			\begin{itemize}
+				\item $\sigma_{1,70} \approx 4.94 \times 10^{8}$
+				\item $\sigma_{2,70} \approx 1.85 \times 10^{8}$
+				\item $\sigma_{3,70} \approx 69.956$
+				\item $R = 70$
+				\item $\rho(\mathbf{D}_{70}) \approx 73.791$
+			\end{itemize}
+		\end{column}
 
-% --- CORRESPONDE A: conclusiones.tex ---
-% --- DIAPOSITIVA 32: LÍNEAS DE TRABAJO FUTURO (V) - PERSPECTIVA FINAL ---
-\begin{frame}{Líneas de Trabajo Futuro (V): Perspectiva Final}
-	\footnotesize
-	\begin{block}{Promesa de la Investigación Futura}
-		Estas líneas de investigación prometen extender el alcance y la profundidad de los resultados obtenidos en este TFG.
-		\begin{itemize}
-			\item Establecer conexiones más sólidas entre la teoría espectral y los polinomios ortogonales de Sobolev.
-			\item El marco teórico desarrollado y las herramientas computacionales implementadas proporcionan una base robusta para abordar estos desafíos.
-			\item Contribuir a una comprensión más completa de la interacción entre estructura algebraica, propiedades espectrales y comportamiento asintótico en sistemas polinomiales con derivadas.
-		\end{itemize}
-	\end{block}
+		\begin{column}{0.48\textwidth}
+			\textbf{Ejemplo 2:}
+			\tiny
+			$\langle p,q \rangle_{S}=\int_{0}^{10} pq\, dt + \int_{30}^{40} p'q' \, dt + p''(0)q''(0)$
+
+			\vspace{-0.3em}
+			\begin{figure}
+				\includegraphics[width=0.8\linewidth]{tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png}
+			\end{figure}
+			\vspace{-1.5em}
+
+			\textbf{Datos ($n=70$):}
+			\begin{itemize}
+				\item $\sigma_{1,70} \approx 1.52 \times 10^{12}$
+				\item $\sigma_{2,70} \approx 212.771$
+				\item $\sigma_{3,70} \approx 39.976$
+				\item $R = 40$
+				\item $\rho(\mathbf{D}_{70}) \approx 43.136$
+			\end{itemize}
+		\end{column}
+	\end{columns}
 \end{frame}

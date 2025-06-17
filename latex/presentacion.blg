@@ -16,45 +16,45 @@ Database file #1: tfg_latex_etsiinf-2023.02.20/secciones/biblio.bib
 Warning--missing publisher in singularValuesOfHessenbergMatrices
 
 Done.
-You've used 10 entries,
+You've used 8 entries,
             4087 wiz_defined-function locations,
-            889 strings with 9032 characters,
-and the built_in function-call counts, 5871 in all, are:
-= -- 476
-> -- 114
-< -- 36
-+ -- 56
-- -- 20
-* -- 276
-:= -- 939
-add.period$ -- 19
-call.type$ -- 10
-change.case$ -- 9
-chr.to.int$ -- 78
-cite$ -- 11
-duplicate$ -- 447
-empty$ -- 516
-format.name$ -- 28
-if$ -- 1355
+            871 strings with 8672 characters,
+and the built_in function-call counts, 4478 in all, are:
+= -- 356
+> -- 91
+< -- 24
++ -- 44
+- -- 17
+* -- 210
+:= -- 720
+add.period$ -- 15
+call.type$ -- 8
+change.case$ -- 5
+chr.to.int$ -- 48
+cite$ -- 9
+duplicate$ -- 343
+empty$ -- 401
+format.name$ -- 24
+if$ -- 1029
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 74
-newline$ -- 53
-num.names$ -- 10
-pop$ -- 179
+int.to.str$ -- 8
+missing$ -- 58
+newline$ -- 47
+num.names$ -- 8
+pop$ -- 146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 469
+skip$ -- 361
 stack$ -- 0
-substring$ -- 187
-swap$ -- 322
-text.length$ -- 10
+substring$ -- 120
+swap$ -- 243
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 10
+type$ -- 8
 warning$ -- 1
-while$ -- 25
-width$ -- 12
-write$ -- 111
+while$ -- 18
+width$ -- 9
+write$ -- 91
 (There was 1 warning)

@@ -4,6 +4,8 @@
 \usetheme{Madrid}
 \usecolortheme{default}
 
+% Desactivar numeración de páginas y elementos del pie
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} % Para mejorar manejo de fuentes y resolver error de versalitas
 \usepackage{lmodern}    % Proporciona fuentes Latin Modern
@@ -17,7 +19,16 @@
 \title[Ceros de Polinomios Ortogonales de Sobolev]{Ceros de Polinomios Ortogonales de Sobolev: Visualización y Análisis} % Título corto modificado
 \author{Gabriel Aníbal Suárez Araoz}
 \institute[UPM]{Universidad Politécnica de Madrid \\ Grado en Matemáticas e Informática}
-\date{Defensa de Trabajo Fin de Grado - Junio 2025}
+\date{23 de Junio de 2025}
+
+% Agregar información de tutoras
+\newcommand{\tutoras}{%
+    \vspace{0.5cm}
+    \scriptsize
+    \textbf{Tutoras:}\\
+    María Del Carmen Escribano Iglesias\\
+    Raquel Natividad Gonzalo Palomar
+}
 
 % --- DEFINICIÓN DE COMANDOS PERSONALES ---
 \newcommand{\R}{\mathbb{R}}
@@ -32,6 +43,7 @@
 % --- DIAPOSITIVA 1 ---
 \begin{frame}
 	\titlepage
+	\tutoras
 \end{frame}
 
 % --- DIAPOSITIVA DE ÍNDICE ---
@@ -73,8 +85,10 @@
 
 % --- DIAPOSITIVA DE REFERENCIAS ---
 \begin{frame}[allowframebreaks]{Referencias}
+	\setbeamertemplate{bibliography item}{\insertbiblabel}
 	\bibliographystyle{IEEEtran} % Estilo bibliográfico modificado
 	\bibliography{tfg_latex_etsiinf-2023.02.20/secciones/biblio} % Ruta al archivo .bib
 \end{frame}
+
 
 \end{document}
