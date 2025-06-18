@@ -82,6 +82,26 @@
 	\end{alertblock}
 \end{frame}
 
+\begin{frame}{Marco Teórico: Operador Multiplicación (II) - Conexión Espectral}
+	\footnotesize
+	\begin{block}{\footnotesize Propiedades de la Matriz $\mathbf{D}$}
+		\begin{itemize}
+			\item El determinante $\det(\mathbf{D}_n - z\mathbf{I}_{n+1})$ es un polinomio proporcional a $\varphi_{n+1}(z)$.
+			\item Las secciones principales $\mathbf{D}_n$ son matrices $(n+1)\times(n+1)$ cuya transpuesta tiene como autovalores los ceros de $\varphi_{n+1}$.
+		\end{itemize}
+	\end{block}
+	\begin{block}{\footnotesize Demostración (Idea)}
+		Sea $z_0$ una raíz de $\varphi_{n+1}(z)$, entonces:
+		$$
+			z_0\varphi_n(z_0)= d_{0,n}\varphi_0(z_0)+d_{1,n}\varphi_1(z_0)+\dots+d_{n,n}\varphi_n(z_0)+d_{n+1,n}\varphi_{n+1}(z_0)
+		$$
+		\noindent Esto se puede expresar matricialmente de la siguiente forma
+		$$
+			z_0\begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix} = \mathbf{D}^{t}_n \begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix}
+		$$
+	\end{block}
+\end{frame}
+
 % --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 6: MARCO TEÓRICO - OPERADOR MULTIPLICACIÓN (II) - CONEXIÓN ESPECTRAL ---
 \begin{frame}{Marco Teórico: Operador Multiplicación (II) - Conexión Espectral}
@@ -93,15 +113,20 @@
 		\end{itemize}
 	\end{block}
 	\begin{block}{\footnotesize Demostración (Idea)}
-		Si $\varphi_{n+1}(z_0)=0$:
-		\begin{align*} z_0\varphi_k(z_0) &= \sum_{i=0}^{k+1} d_{i,k} \varphi_i(z_0) \quad \text{para } k < n \\ z_0\varphi_n(z_0) &= \sum_{i=0}^{n} d_{i,n} \varphi_i(z_0) \quad (\text{ya que } d_{n+1,n}\varphi_{n+1}(z_0)=0) \end{align*}
-		Esto se escribe como $z_0 \vec{\Phi}(z_0) = \mathbf{D}_n^t \vec{\Phi}(z_0)$, donde $\vec{\Phi}(z_0) = (\varphi_0(z_0), \dots, \varphi_n(z_0))^t$.
+		Sea $z_0$ una raíz de $\varphi_{n+1}(z)$, entonces:
+		$$
+			z_0\varphi_n(z_0)= d_{0,n}\varphi_0(z_0)+d_{1,n}\varphi_1(z_0)+\dots+d_{n,n}\varphi_n(z_0)+\cancel{d_{n+1,n}\varphi_{n+1}(z_0)}
+		$$
+		\noindent Esto se puede expresar matricialmente de la siguiente forma
+		$$
+			z_0\begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix} = \mathbf{D}^{t}_n \begin{pmatrix} \varphi_0(z_0) \\ \varphi_1(z_0) \\  \vdots \\ \varphi_n(z_0) \end{pmatrix}
+		$$
 	\end{block}
 \end{frame}
 
 % --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 7: MARCO TEÓRICO - PARÁMETROS ESPECTRALES CLAVE ---
-\begin{frame}{Marco Teórico: Parámetros Espectrales Clave I}\footnotesize
+\begin{frame}{Marco Teórico: Parámetros Espectrales Clave (I)}\footnotesize
 	\begin{block}{Definición: Radio Espectral \cite{dunford1963linear}}
 		Si $\mathbf{A}$ es cuadrada, su \textbf{radio espectral} $\rho(\mathbf{A})$ es el máximo de los módulos de sus autovalores:
 		$$ \rho(\mathbf{A}) = \max \{ |\lambda| : \lambda \text{ es autovalor de } \mathbf{A} \}. $$
@@ -116,7 +141,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}{Marco Teórico: Parámetros Espectrales Clave II}
+\begin{frame}{Marco Teórico: Parámetros Espectrales Clave (II)}
 	\begin{block}{Definición: Norma Espectral}
 		El \textbf{mayor valor singular} $\sigma_1(\mathbf{A})$ (Criterio de Rayleigh):
 		$$
@@ -182,7 +207,7 @@
 
 % --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 10: MARCO TEÓRICO - PROBLEMA CENTRAL Y METODOLOGÍA ---
-\begin{frame}{Marco Teórico: Problema Central y Metodología}
+\begin{frame}{Marco Teórico: Problema Central}
 	\begin{exampleblock}{Problema Central de Investigación} % Reducido tamaño
 		Sean $\mu_1, \mu_2$ medidas con soporte compacto. Sea $Z$ el conjunto de ceros de los polinomios ortonormales de Sobolev $\{\varphi_n\}$ asociados.
 		\vspace{0.1cm}
