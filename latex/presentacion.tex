@@ -15,6 +15,31 @@
 \usepackage{ragged2e} % Para justificar el texto
 \usepackage{subcaption} % Para subfiguras
 \usepackage{cancel}
+\usepackage{multirow}
+
+% --- CÓDIGO PARA RESALTAR BIBLIOGRAFÍA ---
+\newcounter{bibcounter}
+\newif\ifstartbib
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{
+    \oldthebibliography{#1}
+    \setcounter{bibcounter}{0}
+    \startbibtrue
+    \let\oldbibitem\bibitem
+    \renewcommand{\bibitem}[1]{%
+        \ifstartbib\startbibfalse\else\endgroup\fi
+        \stepcounter{bibcounter}%
+        \begingroup
+        \ifnum\value{bibcounter}=3 \bfseries\fi
+        \ifnum\value{bibcounter}=5 \bfseries\fi
+        \ifnum\value{bibcounter}=8 \bfseries\color{red}\fi
+        \oldbibitem{##1}%
+    }
+}{
+    \endgroup
+    \endoldthebibliography
+}
 
 % --- DATOS DE LA PORTADA ---
 \title[Ceros de Polinomios Ortogonales de Sobolev]{Ceros de Polinomios Ortogonales de Sobolev: Visualización y Análisis} % Título corto modificado

@@ -21,14 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Horn_Johnson_2012}
-R.~A. Horn and C.~R. Johnson, \emph{Matrix Analysis}, 2nd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Cambridge University Press, 2012.
-
 \bibitem{dunford1963linear}
 N.~Dunford and J.~Schwartz, \emph{Linear operators {II}. {S}pectral {T}heory:
   {S}elf {A}djoint {O}perators in {H}ilbert {S}pace}.\hskip 1em plus 0.5em
   minus 0.4em\relax Interscience Publishers, Inc., 1963.
+
+\bibitem{Horn_Johnson_2012}
+R.~A. Horn and C.~R. Johnson, \emph{Matrix Analysis}, 2nd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Cambridge University Press, 2012.
 
 \bibitem{escribano2025boundedness}
 C.~Escribano and R.~Gonzalo, ``Boundedness of zeros of sobolev orthogonal

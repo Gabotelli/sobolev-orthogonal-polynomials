@@ -228,6 +228,27 @@
 	\vspace{-1em}
 \end{frame}
 
+% --- DIAPOSITIVA DE TABLA RESUMEN ---
+\begin{frame}{Resumen de Resultados Numéricos}
+	\scriptsize
+	\centering
+	\textbf{Resumen de ejemplos sobre la localización de ceros.}
+	\vspace{0.5em}
+	\begin{tabular}{|c|l|c|c|c|c|}
+		\hline
+		\textbf{Caso}                   & \textbf{Tipo}                    & $\sigma_{1,n}$   & $\sigma_{2,n}$ & $\rho(\mathbf{D}_{n})$ & $\max\rho_k$ \\
+		\hline
+		\multirow{3}{*}{Real}           & Sec. Dom. (Ej. 1, n=70)          & 1.999            & 1.999          & 1.999                  & 1.999        \\
+		                                & Soportes Disjuntos (Ej. 2, n=70) & $9.27\text{e}16$ & $39.998$       & $42.930$               & $50.052$     \\
+		                                & Átomo Fuera (Ej. 3, n=70)        & $7.44\text{e}36$ & $0.999$        & $2.025$                & $2.933$      \\
+		\hline
+		\multirow{3}{*}{Circunferencia} & Sec. Dom. (Ej. 4, n=25)          & 1.516            & 1.000          & 0.667                  & 0.672        \\
+		                                & Soportes Disjuntos (Ej. 5, n=70) & $4.96\text{e}14$ & $11.211$       & $12.424$               & $15.074$     \\
+		                                & Átomo Fuera (Ej. 6, n=70)        & $3.50\text{e}26$ & $1.000$        & $10.345$               & $14.975$     \\
+		\hline
+	\end{tabular}
+\end{frame}
+
 % --- DIAPOSITIVA 21A.1: ANÁLISIS Y CONJETURAS (IA) - OBSERVACIONES (SEC. DOMINADO) ---
 \begin{frame}{Análisis y Conjeturas: Observaciones (Sec. Dominado)}
 	\begin{block}{Proposición (Caso Continuo Real)} \small
@@ -244,9 +265,9 @@
 \end{frame}
 
 % --- DIAPOSITIVA 22A.1: CONJETURAS PRINCIPALES (IIA) - CONJETURA 1 (ACOTACIÓN) ---
-\begin{frame}{Conjetura 1: Acotación Universal del Radio Espectral}
+\begin{frame}{Conjetura 1: Acotación del Radio Espectral}
 	\begin{block}{Conjetura Principal} \small
-		Basándose en la evidencia numérica exhaustiva de los Cuadros 3.1 y 3.2:
+		Basándose en la evidencia numérica exhaustiva de la tabla:
 		$$\lim_{n \to \infty} \rho(\mathbf{D}_n) < \infty$$
 		Esta propiedad se mantiene incluso cuando el operador $\mathcal{D}$ no es acotado.
 	\end{block}
@@ -277,8 +298,7 @@
 		Resultados parciales apoyan estas conjeturas:
 		\begin{itemize}
 			\item Teorema de entrelazamiento de Cauchy \cite{Bhatia1997}
-			\item Monotonía de Weyl \cite{singularValuesOfHessenbergMatrices}
-			\item Análisis de valores singulares \cite{singularValuesOfHessenbergMatrices}
+			\item Análisis de segundo valor singular \cite{singularValuesOfHessenbergMatrices}
 		\end{itemize}
 	\end{block}
 \end{frame}

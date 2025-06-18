@@ -3,23 +3,6 @@
 % --- DIAPOSITIVA 4A: MARCO TEÓRICO - ESPACIO DE POLINOMIOS ---
 \begin{frame}{Marco Teórico: Espacio de Polinomios}
 	\footnotesize
-	\begin{block}{\footnotesize Espacio de Polinomios }
-		Sea $\mathbb{K}$ un cuerpo.
-		El \emph{espacio de polinomios en una variable} se define como
-		\[
-			\mathbb{P}[z]\;=\;
-			\Bigl\{\,p(z)=\sum_{k=0}^{n} a_k\,z^{\,k}\;:\;
-			a_k\in\mathbb{K},\;n\in\mathbb{N}\Bigr\}.
-		\]
-		Sea $p\in\mathbb{P}[z]\setminus\{0\}$. El \emph{conjunto de ceros} de $p$ es:
-		\(
-		Z(p)=\bigl\{\,z\in\mathbb{C}\;:\;p(z)=0\bigr\}.
-		\)
-		Para la sucesión de polinomios ortonormales $\{\varphi_n\}_{n\ge0}$, el \emph{conjunto total de ceros} $Z$ es:
-		\[
-			Z \;=\; \bigcup_{n=0}^{\infty} Z(\varphi_n).
-		\]
-	\end{block}
 	\begin{block}{\footnotesize Producto Interno }
 		Sea $\mu$ una medida de Borel positiva con soporte infinito $\operatorname{supp}(\mu)=\{z\;\mu(B_r(z))>0\;\forall r>0\}$. Definimos en $\mathbb{P}[z]$ un \emph{producto interno} cualquiera por
 		\[
@@ -28,29 +11,23 @@
 			\int p(z)\,\overline{q(z)}\,\mathrm d\mu(z),
 			\qquad p,q\in\mathbb{P}[z].
 		\]
-	\end{block}
-\end{frame}
-
-% --- NUEVA DIAPOSITIVA: MARCO TEÓRICO - MATRIZ HERMITIANA Y DEFINIDA POSITIVA ---
-\begin{frame}{Marco Teórico: Matriz Hermitiana y Definida Positiva}
-	\footnotesize
-	\begin{block}{\footnotesize Matriz Hermitiana \cite{Horn_Johnson_2012}}
-		$A \in \mathcal{M}_{n}(\mathbb{C})$ es \textbf{hermitiana} si $A = A^*$ (conjugada transpuesta).
-		Si $A \in \mathcal{M}_{n}(\mathbb{R})$, es \textbf{simétrica} si $A = A^t$.
+		$\langle p, q \rangle_{H_n} = pAq^*$ define un producto interno si y solo si $H_n$ es HPD (sección de H).
 	\end{block}
 	\pause
-	\begin{block}{\footnotesize Definición Positiva / Semidefinida Positiva}
-		Una matriz hermitiana $A$ es:
-		\begin{itemize}
-			\item \textbf{Definida positiva (HPD):} $xAx^* > 0$ para todo $x \in \mathbb{C}^n, x \neq 0$. (Todos los autovalores $>0$).
-			\item \textbf{Semidefinida positiva (HPSD):} $xAx^* \ge 0$ para todo $x \in \mathbb{C}^n$. (Todos los autovalores $\ge 0$).
-		\end{itemize}
-		$\langle x, y \rangle_A = xAy^*$ define un producto interno si y solo si $A$ es HPD.
+	\begin{block}{\footnotesize Conjunto de ceros }
+		El \emph{conjunto de ceros} de $p$ es:
+		\(
+		Z(p)=\bigl\{\,z\in\mathbb{C}\;:\;p(z)=0\bigr\}.
+		\)
+		Para la sucesión de polinomios ortonormales $\{\varphi_n\}_{n\ge0}$, el \emph{conjunto total de ceros} $Z$ es:
+		\(
+		Z \;=\; \bigcup_{n=0}^{\infty} Z(\varphi_n).
+		\)
 	\end{block}
 	\begin{block}{\footnotesize Matriz de Momentos} % (Definición \ref{def:moment_matrix})
 		Sea $\langle\cdot,\cdot\rangle$ un producto interno en $\mathbb{P}[z]$ y $\mathcal{B}=\{z^k\}_{k\ge 0}$ la base monomial.
-		La \textbf{matriz de momentos} asociada es $M=(c_{i,j})_{i,j\ge 0}$, donde:
-		\[ c_{i,j} := \langle z^i, z^j \rangle, \quad i,j\in\mathbb{N}_0. \]
+		La \textbf{matriz de momentos} asociada a una medida es $M=(c_{i,j})_{i,j\ge 0}$, donde:
+		\( c_{i,j} := \langle z^i, z^j \rangle, \quad i,j\in\mathbb{N}_0. \)
 	\end{block}
 \end{frame}
 
@@ -69,7 +46,7 @@
 		\begin{itemize}
 			\item En la base de polinomios ortonormales $\{\varphi_n\}$, $z\varphi_j(z) = \sum_{i=0}^{j+1} d_{i,j} \varphi_i(z)$.
 			\item Esto define una matriz infinita $\mathbf{D} = (d_{i,j})_{i,j \ge 0}$.
-			\item $\mathbf{D}$ es una matriz de \textbf{Hessenberg superior}: $d_{i,j}=0$ si $i > j+1$.
+			\item $\mathbf{D}$ es una matriz de \textbf{Hessenberg superior}: $d_{i,j}=0$ si $i > j+1,$ y $ d_{i+1,i}>0$.
 			      \[
 				      \mathbf{D}=\begin{pmatrix}
 					      d_{0,0} & d_{0,1} & d_{0,2} & \cdots \\
@@ -87,7 +64,7 @@
 	\begin{block}{\footnotesize Propiedades de la Matriz $\mathbf{D}$}
 		\begin{itemize}
 			\item El determinante $\det(\mathbf{D}_n - z\mathbf{I}_{n+1})$ es un polinomio proporcional a $\varphi_{n+1}(z)$.
-			\item Las secciones principales $\mathbf{D}_n$ son matrices $(n+1)\times(n+1)$ cuya transpuesta tiene como autovalores los ceros de $\varphi_{n+1}$.
+			\item Las secciones principales $\mathbf{D}_n$ son matrices $(n+1)\times(n+1)$ que tiene como autovalores los ceros de $\varphi_{n+1}$.
 		\end{itemize}
 	\end{block}
 	\begin{block}{\footnotesize Demostración (Idea)}
@@ -130,7 +107,7 @@
 	\begin{block}{Definición: Radio Espectral \cite{dunford1963linear}}
 		Si $\mathbf{A}$ es cuadrada, su \textbf{radio espectral} $\rho(\mathbf{A})$ es el máximo de los módulos de sus autovalores:
 		$$ \rho(\mathbf{A}) = \max \{ |\lambda| : \lambda \text{ es autovalor de } \mathbf{A} \}. $$
-		Para $\mathbf{D}_n$, $\rho(\mathbf{D}_n)$ nos da la localización del cero de $\varphi_{n+1}$ más alejado del origen.
+		Para $\mathbf{D}_n$, $\rho(\mathbf{D}_n)$ \textbf{nos da la localización del cero de $\varphi_{n+1}$ más alejado del origen.}
 	\end{block}
 	\pause
 	\begin{block}{Definición: Valores Singulares \cite{Horn_Johnson_2012}}
@@ -186,16 +163,16 @@
 % --- NUEVA DIAPOSITIVA: MARCO TEÓRICO - PRODUCTO INTERNO DE SOBOLEV MATRICIAL ---
 \begin{frame}{Marco Teórico: Producto Interno de Sobolev Matricial}
 	\footnotesize
-	\begin{block}{Definición Generalizada \cite{escribano2025boundedness}}
+	\begin{block}{\footnotesize Definición Generalizada \cite{escribano2025boundedness}}
 		Sean $\{\mathbf{M}_1, \mathbf{M}_2\}$ matrices HPSD, con $\mathbf{M}_1$ HPD.
 		El \textbf{producto interno de Sobolev matricial} $\langle \cdot, \cdot \rangle_{\mathbf{M}_{S}}$ se define como:
 		$${\footnotesize \langle p, q \rangle_{\mathbf{M}_{S}} = \langle p, q \rangle_{\mathbf{M}_1} + \langle p', q' \rangle_{\mathbf{M}_2}}$$
 		donde $\langle u, v \rangle_{\mathbf{M}_k} = \vec{u}^t \mathbf{M}_k \overline{\vec{v}}$.
 		Equivalentemente, la matriz de momentos de Sobolev es:
-		$$ \mathbf{M}_S = \mathbf{M}_1 + \boldsymbol{\Lambda}\,\mathbf{M}_2\, \boldsymbol{\Lambda}^* $$
+		$$ \mathbf{M}_S = \mathbf{M}_1 + \boldsymbol{\Lambda}\,\mathbf{M}_2\, \boldsymbol{\Lambda}^* \qquad \boldsymbol{\Lambda}_{i,j}=\frac{i!}{(i-1)!}\delta_{1,i-j}$$
 	\end{block}
-	\begin{block}{Casos Particulares}
-		La definición de producto interno de Sobolev matricial:
+	\begin{block}{\footnotesize Casos Particulares}
+		La definición de producto interno de Sobolev representado matricialmente:
 		$$ \langle p, q \rangle_{\mathbf{M}_{S}} = \langle p, q \rangle_{\mathbf{M}_1} + \langle p', q' \rangle_{\mathbf{M}_2} $$
 		recupera los ejemplos comunes (reales, complejos, continuos, discretos) cuando $\mathbf{M}_1$ y $\mathbf{M}_2$ son matrices de momentos de medidas $\mu_1$ y $\mu_2$ respectivamente.
 		\begin{itemize}
@@ -213,26 +190,26 @@
 		\vspace{0.1cm}
 		\centering \textbf{¿Es $Z$ acotado?}
 		\vspace{0.1cm}
-		Esta pregunta no está completamente resuelta, especialmente si los soportes son disjuntos o no hay "dominación secuencial".
+		Esta pregunta no está completamente resuelta, especialmente si los soportes son disjuntos o no hay una "dominación secuencial" de medidas.
 	\end{exampleblock}
 \end{frame}
 
 % --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 11A.2: MARCO TEÓRICO - ESTADO DEL ARTE (IA) - DOMINACIÓN SECUENCIAL ---
-\begin{frame}{Marco Teórico: Técnina de acotación}
+\begin{frame}{Marco Teórico: Técnica de acotación}
 	\footnotesize
-	\begin{block}{\footnotesize Proposición 4 \cite{escribano2025boundedness}}
+	\begin{block}{\footnotesize Proposición: Acotación de ceros \cite{escribano2025boundedness}}
 		Sea \textbf{M} una matriz HPD y $\{\varphi_n(z)\}_{n=0}^{\infty}$ la secuencia de polinomios ortonormales asociados al producto interno inducido por \textbf{M}. Si $\mathcal{D}$ está acotado en $\mathbb{P}[z]$, el conjunto de ceros de los polinomios ortonormales asociados a \textbf{M} está acotado. Además,
 		$$Z=\{z\in\mathbb{C}: \exists n \in \mathbb{N},\varphi_n(z)=0\} \subset \{z\in\mathbb{C}:|z|<\|\mathcal{D}\|\}.$$
 	\end{block}
 	\pause
-	\begin{block}{\footnotesize Definición 22 \cite{lagomasino1999zero}}
+	\begin{block}{\footnotesize Definición: Dominación Secuencial de medidas \cite{lagomasino1999zero}}
 		Diremos que el producto de Sobolev con dos medidas es secuencialmente dominado si
 		$$\operatorname{supp}(\mu_2) \subset \operatorname{supp}(\mu_{1}) \qquad \text{y} \qquad
 			d\mu_2 = f_{1}d\mu_{1}, \qquad f_{1} \in L_{\infty}(\mu_{1}).$$
 	\end{block}
 	\pause
-	\begin{block}{\footnotesize Definición 23 \cite{escribano2025boundedness}}
+	\begin{block}{\footnotesize Definición: Dominación Secuencial Matricial \cite{escribano2025boundedness}}
 		Sea $\{\textbf{M}_1,\textbf{M}_2\}$ un conjunto de matrices HSPD. Diremos que $\{\textbf{M}_1,\textbf{M}_2\}$ es secuencialmente dominada si existe una constante positiva $C$ tal que
 		$$\textbf{M}_2 \leq C \cdot \textbf{M}_{1}.$$
 		donde $\textbf{A} \leq \textbf{B}$ significa que $v\textbf{A}v^* \leq v\textbf{B}v^*$ para todo $v \in c_{00}$.
