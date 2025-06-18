@@ -2,16 +2,25 @@
 
 % --- DIAPOSITIVA 4A: MARCO TEÓRICO - ESPACIO DE POLINOMIOS ---
 \begin{frame}{Marco Teórico: Espacio de Polinomios}
-	\begin{block}{Espacio de Polinomios }
-		Sea $\mathbb{K}$ un cuerpo (normalmente $\mathbb{R}$ o $\mathbb{C}$).
+	\footnotesize
+	\begin{block}{\footnotesize Espacio de Polinomios }
+		Sea $\mathbb{K}$ un cuerpo.
 		El \emph{espacio de polinomios en una variable} se define como
 		\[
 			\mathbb{P}[z]\;=\;
 			\Bigl\{\,p(z)=\sum_{k=0}^{n} a_k\,z^{\,k}\;:\;
 			a_k\in\mathbb{K},\;n\in\mathbb{N}\Bigr\}.
 		\]
+		Sea $p\in\mathbb{P}[z]\setminus\{0\}$. El \emph{conjunto de ceros} de $p$ es:
+		\(
+		Z(p)=\bigl\{\,z\in\mathbb{C}\;:\;p(z)=0\bigr\}.
+		\)
+		Para la sucesión de polinomios ortonormales $\{\varphi_n\}_{n\ge0}$, el \emph{conjunto total de ceros} $Z$ es:
+		\[
+			Z \;=\; \bigcup_{n=0}^{\infty} Z(\varphi_n).
+		\]
 	\end{block}
-	\begin{block}{Producto Interno }
+	\begin{block}{\footnotesize Producto Interno }
 		Sea $\mu$ una medida de Borel positiva con soporte infinito $\operatorname{supp}(\mu)=\{z\;\mu(B_r(z))>0\;\forall r>0\}$. Definimos en $\mathbb{P}[z]$ un \emph{producto interno} cualquiera por
 		\[
 			\langle p,q\rangle
@@ -20,24 +29,6 @@
 			\qquad p,q\in\mathbb{P}[z].
 		\]
 	\end{block}
-\end{frame}
-
-% --- NUEVA DIAPOSITIVA: MARCO TEÓRICO - CEROS DE POLINOMIOS ---
-\begin{frame}{Marco Teórico: Ceros de Polinomios}
-	\begin{block}{Ceros de un Polinomio }
-		Sea $p\in\mathbb{P}[z]\setminus\{0\}$. El \emph{conjunto de ceros} de $p$ es:
-		\[
-			Z(p)=\bigl\{\,z\in\mathbb{C}\;:\;p(z)=0\bigr\}.
-		\]
-		Para la sucesión de polinomios ortonormales $\{\varphi_n\}_{n\ge0}$, el \emph{conjunto total de ceros} $Z$ es:
-		\[
-			Z \;=\; \bigcup_{n=0}^{\infty} Z(\varphi_n).
-		\]
-	\end{block}
-	\pause
-	\begin{alertblock}{Importancia}
-		La localización y propiedades de estos conjuntos de ceros son un tema central en la teoría de polinomios ortogonales. Para facilitar su estudio, a menudo se recurre a representaciones matriciales.
-	\end{alertblock}
 \end{frame}
 
 % --- NUEVA DIAPOSITIVA: MARCO TEÓRICO - MATRIZ HERMITIANA Y DEFINIDA POSITIVA ---
@@ -110,7 +101,7 @@
 
 % --- CORRESPONDE A: marco_teorico.tex ---
 % --- DIAPOSITIVA 7: MARCO TEÓRICO - PARÁMETROS ESPECTRALES CLAVE ---
-\begin{frame}{Marco Teórico: Parámetros Espectrales Clave}\footnotesize
+\begin{frame}{Marco Teórico: Parámetros Espectrales Clave I}\footnotesize
 	\begin{block}{Definición: Radio Espectral \cite{dunford1963linear}}
 		Si $\mathbf{A}$ es cuadrada, su \textbf{radio espectral} $\rho(\mathbf{A})$ es el máximo de los módulos de sus autovalores:
 		$$ \rho(\mathbf{A}) = \max \{ |\lambda| : \lambda \text{ es autovalor de } \mathbf{A} \}. $$
@@ -125,7 +116,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Marco Teórico: Parámetros Espectrales Clave II}
 	\begin{block}{Definición: Norma Espectral}
 		El \textbf{mayor valor singular} $\sigma_1(\mathbf{A})$ (Criterio de Rayleigh):
 		$$
