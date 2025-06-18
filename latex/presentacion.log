@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  16 JUN 2025 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.8)  18 JUN 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -882,15 +882,6 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
 [3
 
 ]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[4
-
-]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 33--33
  [] [] 
  []
@@ -902,7 +893,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[5
+[4
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 48--48
@@ -919,34 +910,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[6
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[7
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[8
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[9
+[5
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 71--71
@@ -962,25 +926,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[10
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[11
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[12
+[6
 
 ]) (marco_teorico.tex
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 21--21
@@ -1006,7 +952,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[13
+[7
 
 {C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 41--41
@@ -1023,7 +969,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[14
+[8
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 58--58
@@ -1043,16 +989,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[15
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[16
+[9
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 82--82
@@ -1066,16 +1003,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[17
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[18
+[10
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 101--101
@@ -1089,16 +1017,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[19
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[20
+[11
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 118--118
@@ -1112,16 +1031,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[21
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[22
+[12
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 130--130
@@ -1135,7 +1045,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[23
+[13
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 150--150
@@ -1155,7 +1065,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[24
+[14
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 167--167
@@ -1173,7 +1083,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[25
+[15
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 195--195
@@ -1197,16 +1107,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[26
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[27
+[16
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 207--207
@@ -1222,7 +1123,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[28
+[17
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 222--222
@@ -1236,16 +1137,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[29
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[30
+[18
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 239--239
@@ -1259,16 +1151,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[31
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[32
+[19
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 259--259
@@ -1282,7 +1165,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[33
+[20
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 272--272
@@ -1296,7 +1179,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[34
+[21
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 291--291
@@ -1310,16 +1193,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[35
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[36
+[22
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 305--305
@@ -1333,7 +1207,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[37
+[23
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 314--314
@@ -1365,7 +1239,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[38
+[24
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 333--333
@@ -1379,16 +1253,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[39
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[40
+[25
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 347--347
@@ -1402,16 +1267,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[41
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[42
+[26
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 370--370
@@ -1455,16 +1311,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[43
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[44
+[27
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 387--387
@@ -1478,7 +1325,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[45
+[28
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 409--409
@@ -1492,25 +1339,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[46
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[47
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[48
+[29
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 421--421
@@ -1524,7 +1353,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[49
+[30
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 434--434
@@ -1538,7 +1367,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[50
+[31
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 446--446
@@ -1552,7 +1381,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[51
+[32
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 469--469
@@ -1566,16 +1395,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[52
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[53
+[33
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 478--478
@@ -1589,7 +1409,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[54
+[34
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 495--495
@@ -1603,7 +1423,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[55
+[35
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 512--512
@@ -1617,16 +1437,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[56
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[57
+[36
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 530--530
@@ -1640,16 +1451,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[58
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[59
+[37
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 548--548
@@ -1663,16 +1465,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[60
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[61
+[38
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 564--564
@@ -1686,7 +1479,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[62
+[39
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 574--574
@@ -1700,7 +1493,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[63
+[40
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 592--592
@@ -1714,16 +1507,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[64
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[65
+[41
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 601--601
@@ -1737,7 +1521,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[66
+[42
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 619--619
@@ -1751,16 +1535,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[67
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[68
+[43
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 631--631
@@ -1774,7 +1549,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[69
+[44
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 645--645
@@ -1788,7 +1563,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[70
+[45
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 658--658
@@ -1802,7 +1577,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[71
+[46
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 671--671
@@ -1816,7 +1591,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[72
+[47
 
 ]) (casos.tex
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 16--16
@@ -1830,7 +1605,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[73
+[48
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 34--34
@@ -1844,7 +1619,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[74
+[49
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 48--48
@@ -1858,24 +1633,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[75
+[50
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 85--85
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png, id=3282, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png, id=1248, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png  used on input line 85.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png, id=3283, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png, id=1249, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png  used on input line 85.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png, id=3284, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png, id=1250, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png  used on input line 85.
@@ -1887,7 +1662,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[76
+[51
 
  <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-2b2c1d-1.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 92--92
@@ -1901,24 +1676,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[77
+[52
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 129--129
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png, id=3352, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png, id=1278, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png  used on input line 129.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png, id=3353, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png, id=1279, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png  used on input line 129.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png, id=3354, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png, id=1280, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png  used on input line 129.
@@ -1930,7 +1705,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[78
+[53
 
  <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 150--150
@@ -1952,7 +1727,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[79
+[54
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 176--176
@@ -1970,24 +1745,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[80
+[55
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 213--213
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png, id=3437, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png, id=1303, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png  used on input line 213.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png, id=3438, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png, id=1304, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png  used on input line 213.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png, id=3439, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png, id=1305, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png  used on input line 213.
@@ -1999,7 +1774,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[81
+[56
 
  <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a-1b1t2.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 222--222
@@ -2013,24 +1788,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[82
+[57
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 258--258
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png, id=3506, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png, id=1332, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png  used on input line 258.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png, id=3507, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png, id=1333, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png  used on input line 258.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png, id=3508, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png, id=1334, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png  used on input line 258.
@@ -2042,7 +1817,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[83
+[58
 
  <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_0.4c2_0.4.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 266--266
@@ -2056,24 +1831,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[84
+[59
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 301--301
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png, id=3575, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png, id=1361, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png  used on input line 301.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png, id=3576, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png, id=1362, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png  used on input line 301.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png, id=3577, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png, id=1363, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png  used on input line 301.
@@ -2085,7 +1860,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[85
+[60
 
  <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0r2_1c2_-10.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 310--310
@@ -2099,24 +1874,24 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[86
+[61
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 345--345
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png, id=3645, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png, id=1391, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png  used on input line 345.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png, id=3646, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png, id=1392, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png  used on input line 345.
 (pdftex.def)             Requested size: 136.91603pt x 109.52757pt.
-<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png, id=3647, 1003.75pt x 301.125pt>
+<tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png, id=1393, 1003.75pt x 301.125pt>
 File: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png  used on input line 345.
@@ -2128,7 +1903,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[87
+[62
 
  <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10_zeros.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/r1_1c1_0c2_10.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 354--354
@@ -2142,7 +1917,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[88
+[63
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 372--372
@@ -2156,16 +1931,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[89
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[90
+[64
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 384--384
@@ -2179,7 +1945,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[91
+[65
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 407--407
@@ -2193,7 +1959,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[92
+[66
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 423--423
@@ -2207,7 +1973,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[93
+[67
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 439--439
@@ -2221,7 +1987,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[94
+[68
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 458--458
@@ -2235,16 +2001,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[95
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[96
+[69
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 473--473
@@ -2258,7 +2015,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[97
+[70
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 489--489
@@ -2272,16 +2029,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[98
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[99
+[71
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 507--507
@@ -2295,16 +2043,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[100
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[101
+[72
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 529--529
@@ -2318,16 +2057,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[102
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[103
+[73
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 544--544
@@ -2341,25 +2071,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[104
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[105
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[106
+[74
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 560--560
@@ -2373,16 +2085,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[107
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[108
+[75
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 580--580
@@ -2396,16 +2099,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[109
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[110
+[76
 
 ]) (conclusiones.tex
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 19--19
@@ -2419,16 +2113,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[111
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[112
+[77
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 39--39
@@ -2446,16 +2131,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[113
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[114
+[78
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 59--59
@@ -2469,25 +2145,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[115
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[116
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[117
+[79
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 77--77
@@ -2501,25 +2159,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[118
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[119
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[120
+[80
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 101--101
@@ -2533,25 +2173,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[121
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[122
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[123
+[81
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 118--118
@@ -2565,28 +2187,19 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[124
-
-]
-
-
-Overfull \hbox (13.44466pt too wide) has occurred while \output is active
- [] [] 
- []
-
-[125
+[82
 
 ]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 145--145
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png, id=5256, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png, id=1876, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png  used on input line 145.
 (pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png, id=5257, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png, id=1877, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png  used on input line 145.
@@ -2602,19 +2215,19 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[126
+[83
 
  <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40e60f70_zeros.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 174--174
  [] [] 
  []
 
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png, id=5285, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png, id=1885, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png  used on input line 174.
 (pdftex.def)             Requested size: 154.03183pt x 123.22618pt.
-<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png, id=5286, 1003.75pt x 803.0pt>
+<tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png, id=1886, 1003.75pt x 803.0pt>
 File: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png Graphic file (type png)
 <use tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png>
 Package pdftex.def Info: tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png  used on input line 174.
@@ -2630,7 +2243,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[127
+[84
 
  <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zero.png (PNG copy)> <./tfg_latex_etsiinf-2023.02.20/include/a0b10c30d40t0_zeros.png (PNG copy)>]
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 188--188
@@ -2644,7 +2257,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[128
+[85
 
 ])
 Overfull \hbox (13.44466pt too wide) in paragraph at lines 78--78
@@ -2658,7 +2271,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[129
+[86
 
  <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 
@@ -2667,7 +2280,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[130
+[87
 
 
 ]
@@ -2677,7 +2290,7 @@ Overfull \hbox (13.44466pt too wide) has occurred while \output is active
  [] [] 
  []
 
-[131
+[88
 
 
 ]
@@ -2702,17 +2315,17 @@ Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26711 strings out of 473682
- 538138 string characters out of 5718264
- 924204 words of memory out of 5000000
- 48948 multiletter control sequences out of 15000+600000
+ 26622 strings out of 473682
+ 537140 string characters out of 5718264
+ 859867 words of memory out of 5000000
+ 48945 multiletter control sequences out of 15000+600000
  751495 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,123p,573b,951s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on presentacion.pdf (131 pages, 2380790 bytes).
+Output written on presentacion.pdf (88 pages, 1577482 bytes).
 PDF statistics:
- 5636 PDF objects out of 6186 (max. 8388607)
- 274 named destinations out of 1000 (max. 500000)
- 5727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2118 PDF objects out of 2487 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 3747 words of extra memory for PDF output out of 10000 (max. 10000000)
 
