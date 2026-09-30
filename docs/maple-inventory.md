@@ -1,6 +1,6 @@
 # Maple inventory and dependency review
 
-Reviewed against commit `5d8b83be6aba4c0bcde0451e06f06c5ef462b07b`. **No Maple files have been deleted.** The review includes the four XML worksheets, the SQLite workbook's referenced executable Equation contents, and the LaTeX manuscript/presentation.
+Reviewed against commit `5d8b83be6aba4c0bcde0451e06f06c5ef462b07b`. **The two exact duplicate states listed below have been removed with the project owner's approval.** The review includes the four XML worksheets, the SQLite workbook's referenced executable Equation contents, and the LaTeX manuscript/presentation.
 
 ## Research sources to keep
 
@@ -16,23 +16,23 @@ Worksheet files also contain cached outputs. That does not make their executable
 
 ## What is generated, and what is required?
 
-All **57 `.m` files are serialized Maple result/state files**, beginning with `M7R0` and saved matrix data. They are not standalone source scripts.
+All **55 remaining `.m` files are serialized Maple result/state files**, beginning with `M7R0` and saved matrix data. They are not standalone source scripts.
 
 - **Building the manuscript or slides:** the LaTeX sources reference existing PNG figures and contain no direct Maple-state input. The `.m` files are not required for TeX compilation; preserve the figures.
 - **Running the current `tfg7.mw`:** Input 24 explicitly reads `r11.c1(-.5)(-.5)c2(0.)(0.).m`. Keep it unless the workflow is changed and verified.
 - **Regenerating experiments:** `tfg6.mw` explicitly saves 11 existing states plus two files absent from this tree: `a-0b10c20d30.m` and `id-025-10Pas.m`. `tfg7.mw` and the workbook assemble output filenames from parameters. These are evidence of generation, not proof that every current state can be regenerated identically.
 - **Additional reproduction gaps:** `Sobolev4.mw` reads `carga` twice and `homo` once; corresponding standalone files are absent from `maple/`. No Maple installation is available here to resolve its library/search-path behavior. Keep the source and document this dependency rather than claiming a clean reproduction.
 
-## Concrete deletion proposal
+## Completed duplicate cleanup
 
-| Proposed deletion | Identical file to retain | Shared Git blob SHA |
+| Removed file | Identical retained file | Shared Git blob SHA |
 | --- | --- | --- |
 | `aabbccddt2.t10..m` | `a-1.b1.c-1.d1.t2.t10..m` | `e0707925a4caab9d673ac786a3f499194cbd4b6b` |
 | `aabbt0..m` | `a-1.b1.t0..m` | `2874f82e91e634bc64f4fb7d1545b57a1e14df0f` |
 
-Neither alias appears in decoded executable inputs of the four worksheets or the workbook. The observed reads are a literal filename or the external names `carga`/`homo`; no read assembled from these aliases was found. Deleting these two files would retain identical bytes under the descriptive filenames. **Await approval before deleting them.**
+Neither alias appears in decoded executable inputs of the four worksheets or the workbook. The observed reads are a literal filename or the external names `carga`/`homo`; no read assembled from these aliases was found. The two aliases were deleted after approval. Identical bytes remain under the descriptive filenames; Git history was not rewritten.
 
-Keep the other **55 saved states** for now. A broader deletion should follow a Maple run that regenerates the relevant experiments and checks the retained manuscript figures. This review does not claim numerical identity without execution.
+Keep the remaining **55 saved states** for now. A broader deletion should follow a Maple run that regenerates the relevant experiments and checks the retained manuscript figures. This review does not claim numerical identity without execution.
 
 ## File-by-file decisions
 
@@ -75,8 +75,6 @@ All paths are relative to `maple/`.
 | `a40.b30.c0.d10.t0.t0..m` | Generated saved state; no exact literal input reference found | Keep pending a verified Maple regeneration |
 | `a40b30c0d10.m` | Generated saved state; no exact literal input reference found | Keep pending a verified Maple regeneration |
 | `a50b60c0d10.m` | Explicit `save` output in `tfg6.mw` | Keep pending a verified Maple regeneration |
-| `aabbccddt2.t10..m` | Exact duplicate of `a-1.b1.c-1.d1.t2.t10..m` | Propose deletion; await approval |
-| `aabbt0..m` | Exact duplicate of `a-1.b1.t0..m` | Propose deletion; await approval |
 | `r1.25c1-10r21.c20.m` | Generated saved state; no exact literal input reference found | Keep pending a verified Maple regeneration |
 | `r11.c1(-.5)(-.5)c2(0)(0).m` | Generated saved state; no exact literal input reference found | Keep pending a verified Maple regeneration |
 | `r11.c1(-.5)(-.5)c2(0.)(0.).m` | Explicit `read` in `tfg7.mw`, Input 24 | Keep: currently loaded by a worksheet |
