@@ -14,16 +14,16 @@ The experiments cover real and complex support configurations and help formulate
 - `tfg7.mw`: a smaller worksheet containing procedures and further calculations.
 - `tfg7.maple`: a Maple workbook stored as a SQLite container, not a plain-text script.
 - `presentacion.mw`: presentation-oriented plotting worksheet.
-- The 57 `.m` files are serialized Maple calculation states, beginning with `M7R0` and saved `D_matX` objects. They are **generated results/cache files**, not 55 independent source programs.
+- The 55 remaining `.m` files are serialized Maple calculation states, beginning with `M7R0` and saved `D_matX` objects. They are **generated results/cache files**, not independent source programs.
 
 Open the worksheets in a compatible Maple installation and inspect their input cells before execution. Some cells load saved results and assemble filenames dynamically; a portable, clean regeneration of every figure has not yet been verified. The existing figures remain available for compiling the manuscript and presentation.
 
-See [the file-by-file Maple inventory](docs/maple-inventory.md) for sources, cached results, exact duplicates and the proposed cleanup. No additional Maple files have been deleted.
+See [the file-by-file Maple inventory](docs/maple-inventory.md) for sources, cached results, dependency gaps and the completed duplicate cleanup. Two exact duplicate states were removed; identical bytes remain under their descriptive filenames.
 
 ## Manuscript and presentation
 
 - `latex/tfg_latex_etsiinf-2023.02.20/tfg_etsiinf_plantilla.tex` — main thesis document; `secciones/` contains the included chapters and bibliography, and `include/` contains the figures and title-page assets.
 - `latex/presentacion.tex` — defense slides, with supporting sections in `latex/`.
-- `maple/` — source worksheets and scripts for the numerical examples.
+- `maple/` — source worksheets, a workbook and saved calculation states for the numerical examples.
 
 Compiled PDFs, TeX build output, template archives, working drafts and unreferenced animations have been removed. A suitable TeX installation is needed to regenerate the manuscript and slides; a clean build has not been verified here.
